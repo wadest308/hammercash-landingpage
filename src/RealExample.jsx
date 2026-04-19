@@ -2,7 +2,7 @@ import React from 'react';
 
 const RealExample = () => {
     return (
-        <section id="real-example" className="py-32 px-8 bg-white pt-32 pb-16">
+        <section id="real-example" className="py-12 md:py-32 px-8 bg-white">
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-[#2D2D2D]">

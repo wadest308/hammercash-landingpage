@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProblemSection = () => {
   return (
-    <section id="problem" className="py-20 px-8 bg-gray-50">
+    <section id="problem" className="py-12 md:py-20 px-8 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-[#2D2D2D] mb-12">Still chasing payments after the job is done?</h2>
         <p className="text-lg text-gray-500 mt-4 mb-6">You do the work first. Then you hope to get paid.</p>

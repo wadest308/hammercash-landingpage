@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pricing = ({ openModal }) => {
   return (
-    <section className="py-32 px-8 bg-[#FFFFFF]" id="pricing">
+    <section className="py-12 md:py-32 px-8 bg-[#FFFFFF]" id="pricing">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
           <span className="bg-[#FF8C00] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">PRICING.</span>
@@ -16,9 +16,9 @@ const Pricing = ({ openModal }) => {
               We take 3% only after your customer pays. Free to start. No risk.
             </p>
             <ul className="text-left space-y-2 mb-10">
-              <li className="flex items-center gap-2"><span style={{ color: '#FF8C00' }}>✓</span> You only pay when money comes in</li>
-              <li className="flex items-center gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Simple and clear pricing</li>
-              <li className="flex items-center gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Built for contractors of all sizes</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> You only pay when money comes in</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Simple and clear pricing</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Built for contractors of all sizes</li>
             </ul>
             <button
               onClick={openModal}

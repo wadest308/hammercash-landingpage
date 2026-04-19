@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = ({ openModal }) => {
   return (
-    <section className="hero-gradient min-h-[921px] flex flex-col justify-center items-center px-6 relative overflow-hidden">
+    <section className="hero-gradient min-h-[921px] flex flex-col justify-center items-center px-6 py-12 md:py-0 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <img
           className="w-full h-full object-cover mix-blend-overlay"
@@ -19,9 +19,9 @@ const Hero = ({ openModal }) => {
           <div className="text-white/80 text-lg leading-relaxed max-w-xl space-y-4">
             <p>Stop guessing if you'll get paid. Lock it in first.</p>
             <ul className="text-white text-lg space-y-2">
-              <li className="flex items-center gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Finish jobs without worrying about payment</li>
-              <li className="flex items-center gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Customers fund the job before you begin</li>
-              <li className="flex items-center gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Get paid step by step as work is completed</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Finish jobs without worrying about payment</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Customers fund the job before you begin</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Get paid step by step as work is completed</li>
             </ul>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">

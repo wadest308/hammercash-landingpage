@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeaturesBentoGrid = () => {
   return (
-    <section id="problem" className="py-32 px-8 bg-surface">
+    <section id="problem" className="py-12 md:py-32 px-8 bg-surface">
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 space-y-4">
           <span className="bg-[#FF8C00] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">The Tradesman’s Trap.</span>

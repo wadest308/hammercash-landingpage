@@ -20,7 +20,7 @@ function App() {
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-[#2D2D2D] dark:bg-neutral-900 flex justify-between items-center px-8 py-4 max-w-full">
         <div className="flex items-center gap-3">
-          <img src="/logo2.png" alt="HammerCash" className="h-12 w-auto" />
+          <img src="/logo2.png" alt="HammerCash" className="h-10 md:h-12 w-auto" />
         </div>
 
         <div className="hidden md:flex gap-8 items-center">
@@ -37,7 +37,7 @@ function App() {
         </div>
         <button
           onClick={openModal}
-          className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[13px] py-2 px-3.5 md:text-[18px] md:py-4 md:px-8">
+          className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[12px] py-2 px-3 md:text-[18px] md:py-4 md:px-8">
           Secure My Next Job
         </button>
       </nav>

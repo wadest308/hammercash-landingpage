@@ -2,7 +2,7 @@ import React from 'react';
 
 const TrustSection = () => {
   return (
-    <section id="trust-security" className="py-32 px-8 bg-gray-50 pt-16 pb-32">
+    <section id="trust-security" className="py-12 md:py-32 px-8 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-[#2D2D2D] mb-12">
           Your Money is Safe and Secure

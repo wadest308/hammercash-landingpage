@@ -2,7 +2,7 @@ import React from 'react';
 
 const FinalCTA = ({ openModal }) => {
   return (
-    <section className="py-40 px-8 bg-[#2D2D2D] text-center">
+    <section className="py-12 md:py-40 px-8 bg-[#2D2D2D] text-center">
       <div className="max-w-4xl mx-auto space-y-8">
         <h2 className="font-headline text-5xl md:text-7xl font-extrabold text-white">Ready to get paid what you're worth, when you're worth it?</h2>
         <p className="text-xl text-white/80 max-w-2xl mx-auto">
