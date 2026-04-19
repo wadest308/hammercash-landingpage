@@ -25,17 +25,8 @@ function App() {
           data-tally-open="D4vAdq" 
           data-tally-layout="modal" 
           data-tally-width="500" 
-          style={{
-            backgroundColor: '#FF8C00',
-            color: 'white',
-            border: 'none',
-            padding: '15px 30px',
-            borderRadius: '8px',
-            fontWeight: 'bold',
-            cursor: 'pointer',
-            fontSize: '18px'
-          }}>
-          GET STARTED FREE
+          className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[13px] py-2 px-3.5 md:text-[18px] md:py-4 md:px-8">
+          Secure My Next Job
         </button>
       </nav>
 
@@ -53,18 +44,10 @@ function App() {
             <div className="flex-1 space-y-8">
               <img src="/logo 2.png" alt="HammerCash Logo" className="w-80 h-auto mb-8" />
               <h1 className="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.1] -tracking-[0.02em]">
-                Still Chasing Clients <br/><span className="text-[#FF8C00]">for Money?</span>
+                Get Paid Before You Start the Job.
               </h1>
               <div className="text-white/80 text-lg leading-relaxed max-w-xl space-y-4">
-                <p>
-                  <strong className="text-[#FF8C00]">Stop waiting weeks.</strong> Get paid the moment you finish work.
-                </p>
-                <p>
-                  <strong className="text-[#FF8C00]">No more ghosting.</strong> Stop chasing clients who ignore your invoices.
-                </p>
-                <p>
-                  <strong className="text-[#FF8C00]">Protect your profit.</strong> Don't let one bad client ruin you.
-                </p>
+                <p>Stop chasing invoices and taking all the risk. Secure customer payments upfront in escrow and get paid automatically as you hit milestones.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <button 
@@ -81,13 +64,13 @@ function App() {
                     cursor: 'pointer',
                     fontSize: '18px'
                   }}>
-                  GET STARTED FREE
+                  Secure My Next Job
                 </button>
                 <button 
                   onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
                   className="bg-white/10 text-white backdrop-blur-md px-8 py-4 rounded-lg font-headline font-bold text-lg hover:bg-white/20 transition-all"
                 >
-                  See How It Works.
+                  How It Works
                 </button>
               </div>
             </div>
@@ -128,10 +111,36 @@ function App() {
           </div>
         </section>
 
+        {/* The Problem Section */}
+        <section id="problem" className="py-20 px-8 bg-gray-50">
+            <div className="max-w-4xl mx-auto text-center">
+                <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-[#2D2D2D] mb-12">The Contractor's Gamble</h2>
+                <ul className="space-y-6 text-left max-w-2xl mx-auto">
+                    <li className="flex items-start gap-4">
+                        <span className="material-symbols-outlined text-red-500 text-3xl mt-1">cancel</span>
+                        <p className="text-lg text-neutral-600">You finish the job, but the check is always "in the mail."</p>
+                    </li>
+                    <li className="flex items-start gap-4">
+                        <span className="material-symbols-outlined text-red-500 text-3xl mt-1">cancel</span>
+                        <p className="text-lg text-neutral-600">You're a contractor, not a debt collector. But here you are, chasing another invoice.</p>
+                    </li>
+                    <li className="flex items-start gap-4">
+                        <span className="material-symbols-outlined text-red-500 text-3xl mt-1">cancel</span>
+                        <p className="text-lg text-neutral-600">You pay for materials and labor upfront, while your client holds all the cards.</p>
+                    </li>
+                    <li className="flex items-start gap-4">
+                        <span className="material-symbols-outlined text-red-500 text-3xl mt-1">cancel</span>
+                        <p className="text-lg text-neutral-600">That "one bad client" who disappears can wipe out your entire profit for the month.</p>
+                    </li>
+                </ul>
+                <p className="text-2xl font-bold text-[#2D2D2D] mt-16">It doesn't have to be this way.</p>
+            </div>
+        </section>
+
         {/* Trust Signal Bar */}
         <section id="about" className="py-12 px-8 bg-white border-y border-[#ddc1ae]/30">
           <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-80">
+            <div className="grid grid-cols-2 gap-8 md:flex md:flex-wrap md:justify-center md:items-center md:gap-12 lg:gap-20 opacity-80">
               <div className="flex items-center gap-2">
                 <img 
                   src="https://m.bbb.org/brand/logos/BBB_PrimaryLogo_Blue_RGB.svg" 
@@ -153,7 +162,7 @@ function App() {
               </div>
             </div>
             <p className="text-[#564334]/60 font-medium text-sm text-center uppercase tracking-widest">
-              Trusted by HVAC technicians, plumbers, and electricians across Canada
+              Built for Canadian trade contractors — HVAC, plumbers, and electricians.
             </p>
           </div>
         </section>
@@ -183,10 +192,6 @@ function App() {
                 <span className="material-symbols-outlined text-[#FF8C00] text-6xl mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>shield_with_heart</span>
                 <h3 className="font-headline text-2xl font-bold mb-4">End the Free Lending.</h3>
                 <p className="text-blue-100 text-lg leading-relaxed">You buy the materials, do the work, and hope they pay. One bad client can wipe your margin.</p>
-                <div className="mt-8 pt-8 border-t border-white/10 flex items-center gap-4">
-                  <span className="text-xs font-bold uppercase tracking-tighter">Certified ISO 27001</span>
-                  <span className="text-xs font-bold uppercase tracking-tighter">GDPR Compliant</span>
-                </div>
               </div>
 
               {/* Feature 3 */}
@@ -207,28 +212,109 @@ function App() {
           </div>
         </section>
 
-        {/* Stats Section */}
-        <section id="how-it-works" className="bg-[#2D2D2D] py-32 px-8 overflow-hidden">
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center">
-            <div className="lg:w-1/2">
-              <h2 className="font-headline text-white text-5xl md:text-6xl font-extrabold leading-tight">
-                HOW IT WORKS. <span className="text-[#FF8C00]">Get Paid As You Build.</span>
+        {/* How It Works Section */}
+        <section id="how-it-works" className="py-32 px-8 bg-white">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-[#2D2D2D] mb-20">
+              How It Works
+            </h2>
+            <div className="grid md:grid-cols-3 gap-16">
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-gray-100 mb-6 border border-gray-200">
+                  <span className="font-headline text-3xl font-bold text-[#2D2D2D]">1</span>
+                </div>
+                <h3 className="text-2xl font-bold text-[#2D2D2D] mb-4">Create Job</h3>
+                <p className="text-neutral-500 leading-relaxed">Set up your project and payment milestones in just a few clicks.</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-gray-100 mb-6 border border-gray-200">
+                  <span className="font-headline text-3xl font-bold text-[#2D2D2D]">2</span>
+                </div>
+                <h3 className="text-2xl font-bold text-[#2D2D2D] mb-4">Customer Funds Project</h3>
+                <p className="text-neutral-500 leading-relaxed">Your customer pays the full amount into a secure account before you start.</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-gray-100 mb-6 border border-gray-200">
+                  <span className="font-headline text-3xl font-bold text-[#2D2D2D]">3</span>
+                </div>
+                <h3 className="text-2xl font-bold text-[#2D2D2D] mb-4">Get Paid In Milestones</h3>
+                <p className="text-neutral-500 leading-relaxed">As you finish each stage of the job, the funds are released directly to your bank.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Real Example Section */}
+        <section id="real-example" className="py-32 px-8 bg-white pt-32 pb-16">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-[#2D2D2D]">
+                A Real-World Example
               </h2>
+              <p className="text-lg text-neutral-500 mt-4">Here's how a typical $10,000 job is broken down and paid out.</p>
             </div>
-            <div className="lg:w-1/2 grid grid-cols-2 gap-12">
-              <div className="space-y-2">
-                <div className="text-[#FF8C00] text-5xl font-extrabold font-headline">3%</div>
-                <p className="text-white font-headline uppercase tracking-widest text-xs font-bold">Per transaction. Nothing else.</p>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-8">
+              <div className="flex justify-between items-center mb-6 pb-6 border-b border-gray-200">
+                <h3 className="text-2xl font-bold text-[#2D2D2D]">Total Job Cost</h3>
+                <span className="text-3xl font-extrabold text-[#2D2D2D]">$10,000</span>
               </div>
-              <div className="space-y-2">
-                <div className="text-[#FF8C00] text-5xl font-extrabold font-headline">$0</div>
-                <p className="text-white font-headline uppercase tracking-widest text-xs font-bold">Monthly fees.</p>
-              </div>
-              <div className="space-y-2">
-                <div className="text-[#FF8C00] text-5xl font-extrabold font-headline">100%</div>
-                <p className="text-white font-headline uppercase tracking-widest text-xs font-bold">Secure and protected on every job.</p>
-              </div>
+              <ul className="space-y-6">
+                <li className="flex items-center justify-between">
+                  <div>
+                    <h4 className="text-xl font-bold text-[#2D2D2D]">Deposit (25%)</h4>
+                    <p className="text-neutral-500">Paid upfront before work begins. This covers your initial material costs.</p>
+                  </div>
+                  <span className="text-xl font-bold text-green-600">$2,500</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <div>
+                    <h4 className="text-xl font-bold text-[#2D2D2D]">Mid-Project (50%)</h4>
+                    <p className="text-neutral-500">Released after the main structure is complete and approved by the homeowner.</p>
+                  </div>
+                  <span className="text-xl font-bold text-green-600">$5,000</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <div>
+                    <h4 className="text-xl font-bold text-[#2D2D2D]">Final Payment (25%)</h4>
+                    <p className="text-neutral-500">The final amount is paid once the job is 100% complete and the customer is satisfied.</p>
+                  </div>
+                  <span className="text-xl font-bold text-green-600">$2,500</span>
+                </li>
+              </ul>
             </div>
+          </div>
+        </section>
+
+        {/* Trust & Security Section */}
+        <section id="trust-security" className="py-32 px-8 bg-gray-50 pt-16 pb-32">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-[#2D2D2D] mb-12">
+              Your Money is Safe and Secure
+            </h2>
+            <ul className="space-y-8 text-left max-w-3xl mx-auto">
+              <li className="flex items-start gap-4">
+                <span className="material-symbols-outlined text-[#FF8C00] text-3xl mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>shield</span>
+                <div>
+                  <h3 className="text-xl font-bold text-[#2D2D2D] mb-2">Funds Secured Upfront</h3>
+                  <p className="text-neutral-600">We verify and hold the full project payment from the customer before you even think about loading up your truck.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="material-symbols-outlined text-[#FF8C00] text-3xl mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>shield</span>
+                <div>
+                  <h3 className="text-xl font-bold text-[#2D2D2D] mb-2">Fair Milestone Releases</h3>
+                  <p className="text-neutral-600">You get paid as you complete each stage of the work. The customer has to approve the release, ensuring fairness for both sides.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="material-symbols-outlined text-[#FF8C00] text-3xl mt-1" style={{ fontVariationSettings: "'FILL' 1" }}>shield</span>
+                <div>
+                  <h3 className="text-xl font-bold text-[#2D2D2D] mb-2">Ironclad Protection</h3>
+                  <p className="text-neutral-600">We protect both the contractor and the customer with a clear and fair dispute resolution process.</p>
+                </div>
+              </li>
+            </ul>
+            <p className="text-2xl font-bold text-[#2D2D2D] mt-16">With us, you can finally work with confidence.</p>
           </div>
         </section>
 
@@ -244,7 +330,7 @@ function App() {
               <div className="bg-white p-12 md:p-16 rounded-3xl border border-[#ddc1ae] flex flex-col shadow-xl max-w-3xl text-center items-center">
                 <h3 className="font-headline text-3xl md:text-4xl font-extrabold text-[#2D2D2D] mb-6">Pay As You Go.</h3>
                 <p className="text-[#564334] text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-                  We take 3% only when a job is paid. Free to start.
+                  We take 3% when a job is paid. No monthly fees. Free to start.
                 </p>
                 <button 
                   data-tally-open="D4vAdq" 
@@ -260,30 +346,30 @@ function App() {
                     cursor: 'pointer',
                     fontSize: '18px'
                   }}>
-                  GET STARTED FREE
+                  Secure My Next Job
                 </button>
-                <p className="text-[#564334] font-medium text-sm flex items-center gap-2">
-                  <span className="text-[#FF8C00]">✅</span> You only pay when you get paid.
+                <p className="text-[#564334] font-medium text-sm">
+                  You only pay when you get paid. 3% per job — that is it.
                 </p>
               </div>
               
               <div className="w-full max-w-3xl bg-[#F3F4F6] border-l-4 border-[#005288] p-4 rounded-r-lg mt-4 shadow-sm">
                 <p className="font-body text-sm text-[#564334] leading-relaxed">
-                  <span className="font-semibold text-[#2D2D2D]">"Finally a way to not worry about getting paid."</span><br/> — Local Contractor, Calgary AB.
+                  <span className="font-semibold text-[#2D2D2D]">"Finally a way to not worry about getting paid."</span><br/> — Mike T. — HVAC Contractor, Calgary AB
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Canvas */}
-        <section className="py-40 px-8 bg-surface-container-low text-center">
-          <div className="max-w-4xl mx-auto space-y-12">
-            <h2 className="font-headline text-5xl md:text-7xl font-extrabold text-[#2D2D2D]">Ready to Stop Chasing Payments?</h2>
-            <p className="text-xl text-on-surface-variant max-w-2xl mx-auto">
-              Start your next job with the money already secured.
+        {/* Footer CTA Section */}
+        <section className="py-40 px-8 bg-[#2D2D2D] text-center">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <h2 className="font-headline text-5xl md:text-7xl font-extrabold text-white">Ready to get paid what you're worth, when you're worth it?</h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              Join the contractors who never chase a payment again.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <div className="flex flex-col items-center gap-4">
               <button 
                 data-tally-open="D4vAdq" 
                 data-tally-layout="modal" 
@@ -292,14 +378,16 @@ function App() {
                   backgroundColor: '#FF8C00',
                   color: 'white',
                   border: 'none',
-                  padding: '15px 30px',
-                  borderRadius: '8px',
+                  padding: '20px 40px',
+                  borderRadius: '12px',
                   fontWeight: 'bold',
                   cursor: 'pointer',
-                  fontSize: '18px'
+                  fontSize: '24px',
+                  boxShadow: '0 10px 30px -10px #FF8C00'
                 }}>
-                GET STARTED FREE
+                Secure My Next Job
               </button>
+              <p className="text-white/60 text-sm mt-2">Free to sign up • Set up a job in 2 minutes.</p>
             </div>
           </div>
         </section>
