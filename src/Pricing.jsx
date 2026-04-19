@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Pricing = () => {
+const Pricing = ({ openModal }) => {
   return (
     <section className="py-32 px-8 bg-[#FFFFFF]" id="pricing">
       <div className="max-w-7xl mx-auto">
@@ -21,9 +21,7 @@ const Pricing = () => {
               <li className="flex items-center gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Built for contractors of all sizes</li>
             </ul>
             <button
-              data-tally-open="D4vAdq"
-              data-tally-layout="modal"
-              data-tally-width="500"
+              onClick={openModal}
               style={{
                 backgroundColor: '#FF8C00',
                 color: 'white',

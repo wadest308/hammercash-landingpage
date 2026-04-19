@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = () => {
+const Hero = ({ openModal }) => {
   return (
     <section className="hero-gradient min-h-[921px] flex flex-col justify-center items-center px-6 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -26,9 +26,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <button
-              data-tally-open="D4vAdq"
-              data-tally-layout="modal"
-              data-tally-width="500"
+              onClick={openModal}
               style={{
                 backgroundColor: '#FF8C00',
                 color: 'white',

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FinalCTA = () => {
+const FinalCTA = ({ openModal }) => {
   return (
     <section className="py-40 px-8 bg-[#2D2D2D] text-center">
       <div className="max-w-4xl mx-auto space-y-8">
@@ -10,9 +10,7 @@ const FinalCTA = () => {
         </p>
         <div className="flex flex-col items-center gap-4">
           <button
-            data-tally-open="D4vAdq"
-            data-tally-layout="modal"
-            data-tally-width="500"
+            onClick={openModal}
             style={{
               backgroundColor: '#FF8C00',
               color: 'white',

@@ -8,10 +8,15 @@ import FounderSection from './FounderSection';
 import FAQ from './FAQ';
 import FinalCTA from './FinalCTA';
 import Footer from './Footer';
+import Modal from './Modal';
+import useModal from './useModal';
 
 function App() {
+  const { isOpen, openModal, closeModal } = useModal();
+
   return (
     <div className="light">
+      <Modal isOpen={isOpen} closeModal={closeModal} />
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-[#2D2D2D] dark:bg-neutral-900 flex justify-between items-center px-8 py-4 max-w-full">
         <div className="flex items-center gap-3">
@@ -31,23 +36,21 @@ function App() {
           <a className="font-headline text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-wider text-sm font-semibold" href="#footer">Contact</a>
         </div>
         <button
-          data-tally-open="D4vAdq"
-          data-tally-layout="modal"
-          data-tally-width="500"
+          onClick={openModal}
           className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[13px] py-2 px-3.5 md:text-[18px] md:py-4 md:px-8">
           Secure My Next Job
         </button>
       </nav>
 
       <main className="pt-16">
-        <Hero />
+        <Hero openModal={openModal} />
         <ProblemSection />
         <HowItWorks />
         <TrustSignalBar />
-        <Pricing />
+        <Pricing openModal={openModal} />
         <FounderSection />
         <FAQ />
-        <FinalCTA />
+        <FinalCTA openModal={openModal} />
       </main>
 
       <Footer />
