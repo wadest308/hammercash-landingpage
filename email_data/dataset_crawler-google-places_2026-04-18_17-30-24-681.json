@@ -1,0 +1,5907 @@
+[{
+  "title": "Pro-West Refrigeration Ltd",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Heating contractor",
+  "address": "8489 40 St SE Unit 130, Calgary, AB T2C 2P1, Canada",
+  "neighborhood": "South Foothills",
+  "street": "8489 40 St SE Unit 130",
+  "city": "Calgary",
+  "postalCode": "T2C 2P1",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "phone": "+1 403-437-4498",
+  "phoneUnformatted": "+14034374498",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9787992,
+    "lng": -113.977705
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJRddx4357cVMRe3tJGIYaaGY",
+  "categories": [
+    "Heating contractor",
+    "Commercial refrigerator supplier"
+  ],
+  "fid": "0x53717b7ee371d745:0x66681a8618497b7b",
+  "cid": "7379177152681966459",
+  "reviewsCount": 20,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 20
+  },
+  "imagesCount": 189,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.772Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Pro-West%20Refrigeration%20Ltd&query_place_id=ChIJRddx4357cVMRe3tJGIYaaGY",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 38,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFBVVr9CDbsafvNdSq7l3P_h7nI_8xxgcOSdX1vi9gKkhPxvD_wTQA-Wgzu1FAzPkkEiMg85tj-YVQJGK3v-G567AzVH0ppIzb5fq02UPqCOdLNC8-LTYbFF-lEZCv_LyQ4xazhZw=w408-h306-k-no",
+  "kgmid": "/g/11s16q22lt",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Paragon",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "10550 48 St SE, Calgary, AB T2C 2B8, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "10550 48 St SE",
+  "city": "Calgary",
+  "postalCode": "T2C 2B8",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://www.paragon.ca/",
+  "phone": "+1 403-250-8275",
+  "phoneUnformatted": "+14032508275",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": 50.9597382,
+    "lng": -113.9648021
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJS353ruZ5cVMRGOwo4uPZk9A",
+  "categories": [
+    "HVAC contractor"
+  ],
+  "fid": "0x537179e6ae777e4b:0xd093d9e3e228ec18",
+  "cid": "15029595954240613400",
+  "reviewsCount": 2,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 2
+  },
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:26.610Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Paragon&query_place_id=ChIJS353ruZ5cVMRGOwo4uPZk9A",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 47,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=092xfcLZa-ROtumRbSmmdQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=83.84213&pitch=0&thumbfov=100",
+  "kgmid": "/g/1tfnsp8g",
+  "domain": "paragon.ca",
+  "scrapedUrls": [
+    "https://www.paragon.ca/",
+    "https://www.paragon.ca/contact-us",
+    "https://www.paragon.ca/about-us/history",
+    "https://www.paragon.ca/about-us/safety",
+    "https://www.paragon.ca/about-us/safety"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [
+    "780-465-2931",
+    "780-466-4958",
+    "403-250-8275",
+    "403-250-8276",
+    "780-439-2179",
+    "780-469-4614",
+    "403-235-3860",
+    "587-387-2934"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Canyon Plumbing & Heating Ltd",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "3185 114 Ave SE, Calgary, AB T2Z 3X2, Canada",
+  "neighborhood": "Shepard Industrial",
+  "street": "3185 114 Ave SE",
+  "city": "Calgary",
+  "postalCode": "T2Z 3X2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://www.canyonplumbing.com/",
+  "phone": "+1 403-258-1505",
+  "phoneUnformatted": "+14032581505",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.949016,
+    "lng": -113.99239
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ-7w570F3cVMRU7aJn-G8Z_I",
+  "categories": [
+    "HVAC contractor",
+    "Plumber"
+  ],
+  "fid": "0x53717741ef39bcfb:0xf267bce19f89b653",
+  "cid": "17467137357010024019",
+  "reviewsCount": 487,
+  "reviewsDistribution": {
+    "oneStar": 47,
+    "twoStar": 5,
+    "threeStar": 8,
+    "fourStar": 29,
+    "fiveStar": 398
+  },
+  "imagesCount": 161,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:26.610Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7:30 AM to 4:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7:30 AM to 4:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7:30 AM to 4:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7:30 AM to 4:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7:30 AM to 4:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      },
+      {
+        "NFC mobile payments": true
+      },
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Canyon%20Plumbing%20%26%20Heating%20Ltd&query_place_id=ChIJ-7w570F3cVMRU7aJn-G8Z_I",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 44,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHsUYMRJxh4cd7tzlyFwlCiOcxLNVwuozfjuf1N7gxsCdc-FSbUDFjD_NvObVdDGAjJlQS4FlG7zliuHHscAFjpmU-h1s1XoQRHmnXusynUDFvrDYteWdZhiu71QHkuCus9XU3e=w408-h408-k-no",
+  "kgmid": "/g/1tlqpnvt",
+  "domain": "canyonplumbing.com",
+  "scrapedUrls": [
+    "https://www.canyonplumbing.com/",
+    "https://www.canyonplumbing.com/careers",
+    "https://www.canyonplumbing.com/contact-us",
+    "https://www.canyonplumbing.com/our-team",
+    "https://www.canyonplumbing.com/about-us"
+  ],
+  "depth": 0,
+  "emails": [
+    "jobs@canyonplumbing.com",
+    "hpratch@canyonplumbing.com",
+    "hvacservice@canyonplumbing.com",
+    "jsimpson@canyonplumbing.com",
+    "service@canyonplumbing.com",
+    "showroom@canyonplumbing.com"
+  ],
+  "phones": [
+    "+1(877)877-9957",
+    "+14032581505",
+    "403-200-9653",
+    "403-203-4852",
+    "403-203-4856",
+    "403-203-4866",
+    "403-203-4867",
+    "403-203-4878",
+    "403-203-4879",
+    "403-203-4880",
+    "403-203-4896"
+  ],
+  "phonesUncertain": [
+    "(403) 258 1505318",
+    "+1 (877) 877-9957",
+    "3185 114",
+    "403 258 1505",
+    "403-200-9653",
+    "403-203-4852",
+    "403-203-4856",
+    "403-203-4866",
+    "403-203-4867",
+    "403-203-4878",
+    "403-203-4879",
+    "403-203-4880",
+    "403-203-4896"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://instagram.com/canyonph"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/canyonpb"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Climate Pro Heating and Cooling Inc.",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "http://www.climateprocalgary.ca/",
+  "phone": "+1 587-892-0707",
+  "phoneUnformatted": "+15878920707",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJJ4E-8QHcXGARxblYl1oe6G0",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Service establishment",
+    "Heating contractor",
+    "Mechanical contractor",
+    "Repair service"
+  ],
+  "fid": "0x605cdc01f13e8127:0x6de81e5a9758b9c5",
+  "cid": "7919613319166081477",
+  "reviewsCount": 115,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 114
+  },
+  "imagesCount": 98,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:26.609Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Climate%20Pro%20Heating%20and%20Cooling%20Inc.&query_place_id=ChIJJ4E-8QHcXGARxblYl1oe6G0",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 43,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHd4YyBmzkLawDs6k0t7BPd-rbsgYucHlWvkS4uSpZ3W_CTsLG1wBHA1tDmzCPXQViHwpOFga59OODTT75MMCkCIWb_S9JKnLEjTpEDjzhpUgxjOIKL4OTLaCkLxVMlsOXwdkHANnTsTE0j=w408-h544-k-no",
+  "kgmid": "/g/11l6bzmv_v",
+  "domain": "climateprocalgary.ca",
+  "scrapedUrls": [
+    "http://climateprocalgary.ca/",
+    "http://climateprocalgary.ca/contact-us/",
+    "http://climateprocalgary.ca/about-us/",
+    "http://climateprocalgary.ca/contact-us/",
+    "http://climateprocalgary.ca/contact-us/"
+  ],
+  "depth": 0,
+  "emails": [
+    "admin@climateprocalgary.ca"
+  ],
+  "phones": [],
+  "phonesUncertain": [
+    "1 (587) 892-0707",
+    "012345678900123",
+    "4567890",
+    "456789001234567",
+    "89001234567890"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Alberta Best Home Plumbing and Heating Ltd.",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Air conditioning contractor",
+  "address": "5222 130 Ave SE #370, Calgary, AB T2Z 5C2, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "5222 130 Ave SE #370",
+  "city": "Calgary",
+  "postalCode": "T2Z 5C2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://www.albertabesthome.framer.website/",
+  "phone": "+1 403-305-5989",
+  "phoneUnformatted": "+14033055989",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9322188,
+    "lng": -113.9599033
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJn1Cbvu797I8RRbFc2R3pXJI",
+  "categories": [
+    "Air conditioning contractor",
+    "Plumber",
+    "Heating contractor",
+    "Mechanical contractor"
+  ],
+  "fid": "0x8fecfdeebe9b509f:0x925ce91dd95cb145",
+  "cid": "10546560741804912965",
+  "reviewsCount": 92,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 1,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 88
+  },
+  "imagesCount": 31,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:26.610Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": false
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Alberta%20Best%20Home%20Plumbing%20and%20Heating%20Ltd.&query_place_id=ChIJn1Cbvu797I8RRbFc2R3pXJI",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 48,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHrvVWM8vwZT-k01ucf13irMtKzYH85kIwuMNBjOzFjeDrjtFhZSa8Q3mBZQIbTOhO873Wi_0p-4wBLnNf2F1Ot-j9zdattYqAaCXo2Q-fqawMtSxJDWYTNXVrioGzJ8SG91aUS=w408-h410-k-no",
+  "kgmid": "/g/11tcvbyng6",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "JDC Mechanical",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "4550 112 Ave SE Bay 30, Calgary, AB T2C 2K2, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "4550 112 Ave SE Bay 30",
+  "city": "Calgary",
+  "postalCode": "T2C 2K2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://jdcmechanical.ca/",
+  "phone": "+1 403-252-5202",
+  "phoneUnformatted": "+14032525202",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9521067,
+    "lng": -113.9705489
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJk7TSU5NwcVMRdXfqUZ6Nenk",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning store",
+    "Air conditioning system supplier",
+    "Furnace repair service",
+    "Furnace store",
+    "Heating contractor",
+    "Refrigerator repair service",
+    "Sheet metal contractor",
+    "Ventilating equipment manufacturer"
+  ],
+  "fid": "0x5371709353d2b493:0x797a8d9e51ea7775",
+  "cid": "8753464536866649973",
+  "reviewsCount": 7,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 7
+  },
+  "imagesCount": 4,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:26.609Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ],
+    "Parking": [
+      {
+        "Free parking lot": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=JDC%20Mechanical&query_place_id=ChIJk7TSU5NwcVMRdXfqUZ6Nenk",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 41,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_I0q7gIVWqsDan4MYB2fOMppgWLIi36Y84ACYumBZtAaC1vU0x_jq18KkHPFjIO7dBTrjUPucuzNa2feqXTXo9L7B22oze6bMLSnVCWNzU98t8_qx-czxnZywhiK3VInFtIJzBAATbD4=w408-h408-k-no",
+  "kgmid": "/g/11h9zml4ms",
+  "domain": "jdcmechanical.ca",
+  "scrapedUrls": [
+    "https://jdcmechanical.ca/",
+    "https://jdcmechanical.ca/about/",
+    "https://jdcmechanical.ca/blog/post-installation-ductwork-inspections-reconfiguration-and-repairs/",
+    "https://jdcmechanical.ca/services/commercial-sheet-metal-ductwork/",
+    "https://jdcmechanical.ca/contact/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "4032525202",
+    "14032525202",
+    "14038629322"
+  ],
+  "phonesUncertain": [
+    "(403) 252-5202",
+    "403-252-5202",
+    "2244355",
+    "(403) 862-9322"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/jdc-mechanical-ltd"
+  ],
+  "twitters": [
+    "https://x.com/JdcMechanical"
+  ],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [
+    "https://pl.pinterest.com/jdcmechanical"
+  ],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Advanpro - Heating, Cooling, Furnace & Duct Cleaning",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Air conditioning contractor",
+  "address": "11985 44 St SE, Calgary, AB T2Z 4G9, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "11985 44 St SE",
+  "city": "Calgary",
+  "postalCode": "T2Z 4G9",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.advanpro.ca/",
+  "phone": "+1 403-873-7779",
+  "phoneUnformatted": "+14038737779",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.94386,
+    "lng": -113.9725531
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJp6rQYTJ3cVMRmC1aF3LM8yk",
+  "categories": [
+    "Air conditioning contractor",
+    "Air duct cleaning service",
+    "Air conditioning repair service",
+    "Furnace repair service",
+    "Heating contractor"
+  ],
+  "fid": "0x5371773261d0aaa7:0x29f3cc72175a2d98",
+  "cid": "3022984565285858712",
+  "reviewsCount": 1050,
+  "reviewsDistribution": {
+    "oneStar": 57,
+    "twoStar": 7,
+    "threeStar": 6,
+    "fourStar": 26,
+    "fiveStar": 954
+  },
+  "imagesCount": 60,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.772Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Advanpro%20-%20Heating%2C%20Cooling%2C%20Furnace%20%26%20Duct%20Cleaning&query_place_id=ChIJp6rQYTJ3cVMRmC1aF3LM8yk",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 37,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGPPBflqdGUyAUwZN8V2hMVlAQwrSU7nRQfVZjvFj-ZbkKNlYEE_pr1Z5KpCZ8wP5L8ORT1Dd-v4E19MWrVvMOkC99Tgt85yOLCbKYH6URS4_T8tGfmJnDRvRYviWGydSxTyNHoow=w408-h544-k-no",
+  "kgmid": "/g/11jgt9wpt_",
+  "domain": "advanpro.ca",
+  "scrapedUrls": [
+    "https://www.advanpro.ca/",
+    "https://www.advanpro.ca/contact-us/",
+    "https://www.advanpro.ca/about-us/",
+    "https://www.advanpro.ca/#",
+    "https://www.advanpro.ca/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "4038737779"
+  ],
+  "phonesUncertain": [
+    "+14038737779",
+    "50.943713",
+    "113.974800",
+    "5371777",
+    "2778176",
+    "0017-49657",
+    "403 873 7779",
+    "(403) 873-7779"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/advanpro-furnace-and-duct-cleaning-ltd"
+  ],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/advanpro.ca"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/AdvanproFurnace"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "ProMaxx Plumbing & Heating Ltd.",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "12180 44 St SE #14, Calgary, AB T2Z 4A2, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "12180 44 St SE #14",
+  "city": "Calgary",
+  "postalCode": "T2Z 4A2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.promaxx.pro/",
+  "phone": "+1 587-847-5683",
+  "phoneUnformatted": "+15878475683",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9416915,
+    "lng": -113.9708
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJifE8_8N3cVMRZQHxE0JSp5A",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Furnace repair service",
+    "Heating contractor",
+    "Heating equipment supplier",
+    "Plumber",
+    "Water filter supplier",
+    "Water softening equipment supplier"
+  ],
+  "fid": "0x537177c3ff3cf189:0x90a7524213f10165",
+  "cid": "10423390306328183141",
+  "reviewsCount": 153,
+  "reviewsDistribution": {
+    "oneStar": 4,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 6,
+    "fiveStar": 143
+  },
+  "imagesCount": 8,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.772Z",
+  "reserveTableUrl": "https://www.google.com/maps/reserve/appt/place/ChIJifE8_8N3cVMRZQHxE0JSp5A/mid/%2Fg%2F11ks_f01b9?sourceurl=https://www.google.com/search?authuser%3D0%26tbm%3Dmap%26q%3Dhvac%2B%26psi%3Dcb_jafvlKuHCgALB_PUh.1776533364932.1%26hl%3Den%26pb%3D!4m12!1m3!1d40224.71222683976!2d-113.88334802444844!3d50.94138981351432!2m3!1f0!2f0!3f0!3m2!1i1920!2i1080!4f13.1!7i20!8i0!10b1!12m36!1m1!18b1!2m3!5m1!6e2!20e3!6m18!4b1!49b1!63m0!73m0!74i150000!75b1!85b1!89b1!91b1!101i97!110m0!114b1!149b1!171b1!176f8!179f90!182b1!183m0!10b1!12b1!13b1!14b1!16b1!17m1!3e1!20m3!5e2!6b1!14b1!19m4!2m3!1i360!2i120!4i8!20m57!2m2!1i203!2i100!3m2!2i4!5b1!6m6!1m2!1i86!2i86!1m2!1i408!2i240!7m42!1m3!1e1!2b0!3e3!1m3!1e2!2b1!3e2!1m3!1e2!2b0!3e3!1m3!1e8!2b0!3e3!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e9!2b1!3e2!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e10!2b0!3e4!2b1!4b1!9b0!22m6!1scb_jafvlKuHCgALB_PUh!2s1i:0,t:20588,p:cb_jafvlKuHCgALB_PUh:22!4m1!2i20588!7e81!12e3!24m92!1m26!13m9!2b1!3b1!4b1!6i1!8b1!9b1!14b1!20b1!25b1!18m15!3b1!4b1!5b1!6b1!13b1!14b1!15b1!17b1!21b1!22b0!25b1!27m1!1b0!28b0!31b0!2b1!5m5!2b1!5b1!6b1!7b1!10b1!10m1!8e3!11m1!3e1!14m1!3b1!17b1!20m2!1e3!1e6!24b1!25b1!26b1!29b1!30m1!2b1!36b1!39m3!2m2!2i1!3i1!43b1!52b1!55b1!56m2!1b1!3b1!65m5!3m4!1m3!1m2!1i224!2i298!71b1!72m17!1m5!1b1!2b1!3b1!5b1!7b1!4b1!8m8!1m6!4m1!1e1!4m1!1e3!4m1!1e4!3sother_user_reviews!9b1!89b1!103b1!113b1!117b1!122m1!1b1!26m4!2m3!1i80!2i92!4i8!30m28!1m6!1m2!1i0!2i0!2m2!1i0!2i0!1m6!1m2!1i0!2i0!2m2!1i0!2i0!1m6!1m2!1i0!2i0!2m2!1i0!2i0!1m6!1m2!1i0!2i0!2m2!1i0!2i0!31b1!34m19!2b1!3b1!4b1!6b1!7b1!8m6!1b1!3b1!4b1!5b1!6b1!7b1!9b1!12b1!14b1!20b1!23b1!25b1!26b1!37m1!1e81!42b1!46m1!1e10!47m0!49m7!3b1!6m2!1b1!2b1!7m2!1e3!2b1!50m25!1m21!2m7!1u3!4zT3RldsWZZW7DqQ!5e1!9s0ahUKEwim7OrA9veTAxX81vACHX5REvkQ_KkBCAgoAw!10m2!3m1!1e1!2m7!1u2!4zTmVqbMOpcGUgaG9kbm9jZW7DqQ!5e1!9s0ahUKEwim7OrA9veTAxX81vACHX5REvkQ_KkBCAcoAg!10m2!2m1!1e1!3m1!1u2!3m1!1u3!4BIAE!2e2!3m1!3b1!59BQ2dBd0Fn!61b1!67m3!7b1!10b1!14b0!69i675",
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ],
+    "Crowd": [
+      {
+        "LGBTQ+ friendly": true
+      },
+      {
+        "Transgender safespace": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=ProMaxx%20Plumbing%20%26%20Heating%20Ltd.&query_place_id=ChIJifE8_8N3cVMRZQHxE0JSp5A",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 34,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGURVGpon_6DUTLBN-iaovEBFnq1D--tGIxHOnM1zSEyU44_kS5RuJvlhlJCncmlqq67ODactfbjhOB_L8A_BNEPAJsCpKa-nni0Xlb7Cfl4QajN9svUkE6Yzpxa7YIHJpNZwU1nWlW1bI=w408-h408-k-no",
+  "kgmid": "/g/11ks_f01b9",
+  "domain": "promaxx.pro",
+  "scrapedUrls": [
+    "http://promaxx.pro/",
+    "https://promaxx.pro/commercialprojects/",
+    "https://promaxx.pro/promaxx-plumbing-heating-cooling/",
+    "https://promaxx.pro/residentialprojects/",
+    "https://promaxx.pro/industrialprojects/"
+  ],
+  "depth": 0,
+  "emails": [
+    "office@furnacefellas.ca",
+    "kevin@promaxxmechanical.com"
+  ],
+  "phones": [
+    "4034605846",
+    "5872001051"
+  ],
+  "phonesUncertain": [
+    "(403) 460 5846",
+    "403-460-5846",
+    "+1 (403) 460 5846"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [
+    "https://www.facebook.com/promaxxplumbingheating",
+    "https://www.facebook.com/furnacefellas"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Alberta General Plumbing",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "12180 44 St SE Bay 38, Calgary, AB T2Z 4A2, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "12180 44 St SE Bay 38",
+  "city": "Calgary",
+  "postalCode": "T2Z 4A2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://generalplumbing.ca/",
+  "phone": "+1 403-390-1115",
+  "phoneUnformatted": "+14033901115",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.941691,
+    "lng": -113.9707889
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJBxP2y-N5cVMRIadRK6IdjXY",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning repair service",
+    "Furnace repair service",
+    "Heating contractor"
+  ],
+  "fid": "0x537179e3cbf61307:0x768d1da22b51a721",
+  "cid": "8542516650540377889",
+  "reviewsCount": 521,
+  "reviewsDistribution": {
+    "oneStar": 8,
+    "twoStar": 2,
+    "threeStar": 3,
+    "fourStar": 13,
+    "fiveStar": 495
+  },
+  "imagesCount": 55,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.772Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Alberta%20General%20Plumbing&query_place_id=ChIJBxP2y-N5cVMRIadRK6IdjXY",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 33,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHkexv_pdfjzcVOQEL9cVpZBrGDxVWspyWN4vbfzZkUvudb2EPI8HzcQo5mnmNW0D7udS3k_GNDpc1yktFM_XbJwZRo7KIU5CZlZ5CCCRLaTu6YueqX4EfP7cRdh2G61MMIWPoK=w408-h306-k-no",
+  "kgmid": "/g/11cs47pr2c",
+  "domain": "generalplumbing.ca",
+  "scrapedUrls": [
+    "https://generalplumbing.ca/",
+    "https://generalplumbing.ca/boiler-hydronic-systems/",
+    "https://generalplumbing.ca/services/",
+    "https://generalplumbing.ca/",
+    "https://generalplumbing.ca/contact/"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@generalplumbing.ca"
+  ],
+  "phones": [
+    "4033901115",
+    "4033529872"
+  ],
+  "phonesUncertain": [
+    "(403) 390-1115",
+    "(403) 352-9872"
+  ],
+  "linkedIns": [],
+  "twitters": [
+    "https://twitter.com/GeneralPlumbin1"
+  ],
+  "instagrams": [],
+  "facebooks": [
+    "https://www.facebook.com/General-Plumbing-And-Heating-494499587290525"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Reliant Comfort Systems",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "3953 112 Ave SE, Calgary, AB T2C 2Z6, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "3953 112 Ave SE",
+  "city": "Calgary",
+  "postalCode": "T2C 2Z6",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "phone": "+1 403-453-2112",
+  "phoneUnformatted": "+14034532112",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": 50.9515409,
+    "lng": -113.9802925
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 3.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJDXRqB41wcVMRhn3Tk5jpWjE",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Furnace repair service",
+    "Furnace store"
+  ],
+  "fid": "0x5371708d076a740d:0x315ae99893d37d86",
+  "cid": "3556411697286839686",
+  "reviewsCount": 20,
+  "reviewsDistribution": {
+    "oneStar": 6,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 2,
+    "fiveStar": 11
+  },
+  "imagesCount": 3,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.772Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Reliant%20Comfort%20Systems&query_place_id=ChIJDXRqB41wcVMRhn3Tk5jpWjE",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 28,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHHOPWk1nKJd8jjObKyBUQVCRIEjWHFeP430J355NNa0AnMTpJ8Nlddf1sNvjUE-2aOydVfec_qU_O5TvEdiUxuh-9Sv1i9PVu0ddYQZ47Ko3GDG_AmxKwJV6JaU4d6K4Hu8rh2=w408-h544-k-no",
+  "kgmid": "/g/1hc13s5dv",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Plumbest Plumbing & Heating",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://plumbest.ca/",
+  "phone": "+1 403-463-8330",
+  "phoneUnformatted": "+14034638330",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJFcFGkc3YXg8RkyniVD1kLiY",
+  "categories": [
+    "Plumber",
+    "Service establishment"
+  ],
+  "fid": "0xf5ed8cd9146c115:0x262e643d54e22993",
+  "cid": "2751246636949842323",
+  "reviewsCount": 12,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 11
+  },
+  "imagesCount": 7,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.698Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "English": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Plumbest%20Plumbing%20%26%20Heating&query_place_id=ChIJFcFGkc3YXg8RkyniVD1kLiY",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 39,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHNBy8aA7TrendAxWrP1tQ6f7qvAjKgnw5d1U6Cr4gQNEp0kpY7BeR3VZR2NTOw649DUUykBYbC8DqwpbtBHsY7InvsJSPswYIXKKh5RsiNGIBjOCE9GH7-Q3vNJhHpptoNqnORo3LO1zft=w474-h240-k-no",
+  "kgmid": "/g/11m5h9j3s6",
+  "domain": "plumbest.ca",
+  "scrapedUrls": [
+    "http://plumbest.ca/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Lovely 2Bedroom/1Bath Private Suite + Free parking + Separate HVAC Entire Suite!",
+  "subTitle": null,
+  "description": null,
+  "price": "$101",
+  "categoryName": "Cottage",
+  "address": "Calgary, AB T3M 3G4, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": null,
+  "city": "Calgary",
+  "postalCode": null,
+  "state": "Alberta",
+  "countryCode": "CA",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8691559,
+    "lng": -113.9448853
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJl_SMmxKdcVMR-BLq_Si4_XY",
+  "categories": [
+    "Cottage",
+    "Vacation rental"
+  ],
+  "fid": "0x53719d129b8cf497:0x76fdb828fdea12f8",
+  "cid": "8574211751781470968",
+  "reviewsCount": null,
+  "imagesCount": 40,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.698Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": "Cottage",
+  "checkInDate": "2026-05-11",
+  "checkOutDate": "2026-05-14",
+  "hotelAds": [
+    {
+      "title": "Expedia.com",
+      "googleUrl": "https://www.google.com/travel/clk?pc=AA80Osy7p_6hhIKCl8ewhgGq7gNQzBDcMFdG1f96p1IVcDF9-gH0iYbOVhedamnSUsvh3K9UmXc0feszjnbxRC13YhIEBm7iW41m8LQ1CTISZM3TfL0iAzaqg6R5f26aXmfL1fxRhzRO8-eCMjQZgHiTDgC_K8GkWrhTDOul4HGGpkr-RAzUdoGcDqFz8jNROdtaqvoNBqWm8-3mMV1r48ljhoY&pcurl=https://www.expedia.com/Hotel-Search?selected%3D120641789%26startDate%3D2026-05-11%26endDate%3D2026-05-14%26MDPCID%3DUS.META.HPA.ORGANIC-desktop.VR%26langid%3D1033%26adults%3D2%26children%3D%26MDPDTL%3DHTL.120641789.20260511.20260514.DDT.23.CID..AUDID.%26mctc%3D10%26ct%3Dhotel%26exp_curr%3DUSD%26exp_dp%3D336.45%26exp_tx%3D104.19%26mpr%3D70.84%26exp_pg%3Dgoogle%26langid%3Den%26ad%3D2%26tp%3D%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_term%3D120641789%26utm_content%3Dmapresults%26utm_campaign%3DHotelAds%26rateplanid%3D0000ad808f9143bb4749bd63e9fe3d49e48f%26mpm%3D103%26mpn%3D120641789%26mpo%3DEC%26mpp%3D1&s=AD1XQnm8YhEuNTfoKL3iToz9y_dm",
+      "isOfficialSite": false,
+      "price": "$112",
+      "url": "https://www.expedia.com/Hotel-Search?selected=120641789&startDate=2026-05-11&endDate=2026-05-14&MDPCID=US.META.HPA.ORGANIC-desktop.VR&langid=1033&adults=2&children=&MDPDTL=HTL.120641789.20260511.20260514.DDT.23.CID..AUDID.&mctc=10&ct=hotel&exp_curr=USD&exp_dp=336.45&exp_tx=104.19&mpr=70.84&exp_pg=google&langid=en&ad=2&tp=&utm_source=google&utm_medium=cpc&utm_term=120641789&utm_content=mapresults&utm_campaign=HotelAds&rateplanid=0000ad808f9143bb4749bd63e9fe3d49e48f&mpm=103&mpn=120641789&mpo=EC&mpp=1"
+    },
+    {
+      "title": "Vrbo.com",
+      "googleUrl": "https://www.google.com/travel/clk?pc=AA80OsyUjbHSsJT4U2kvnju1C36GIRM_4wWv4ZTNZJuVDf8V9X8rSAPTxVUFZjbZ-qWkXa1ZHtx_jyr1wO3GuTB7pJF7msgNso1yg6GUgqRZc0-OpAn7BhK7o84JvMCDZUZ_7al-5kN_CSVO2mKKHQh7WttQRzDUI6G4z-5jCVZwdeJCuGrcKLvcIA&pcurl=https://www.vrbo.com/search?selected%3D120641789%26startDate%3D2026-05-11%26endDate%3D2026-05-14%26MDPCID%3DVRBO-US.META.HPA.ORGANIC-desktop.VR%26adults%3D2%26children%3D%26MDPDTL%3DHTL.120641789.20260511.20260514.DDT.23.CID..AUDID..RRID.vrbo_us_desktop%26mctc%3D10%26ct%3Dhotel%26mpg%3DUSD%26mpf%3D336.45%26mpj%3D104.19%26mpr%3D70.84%26mpl%3DUSD%26langid%3Den%26rateplanid%3D0000ad808f9143bb4749bd63e9fe3d49e48f%26mpm%3D103%26mpn%3D120641789%26mpo%3DEC%26mpp%3D1&s=AD1XQnn0fjsNB-5DZlh1vREVsiOv",
+      "isOfficialSite": false,
+      "price": "$112",
+      "url": "https://www.vrbo.com/search?selected=120641789&startDate=2026-05-11&endDate=2026-05-14&MDPCID=VRBO-US.META.HPA.ORGANIC-desktop.VR&adults=2&children=&MDPDTL=HTL.120641789.20260511.20260514.DDT.23.CID..AUDID..RRID.vrbo_us_desktop&mctc=10&ct=hotel&mpg=USD&mpf=336.45&mpj=104.19&mpr=70.84&mpl=USD&langid=en&rateplanid=0000ad808f9143bb4749bd63e9fe3d49e48f&mpm=103&mpn=120641789&mpo=EC&mpp=1"
+    }
+  ],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Amenities": [
+      {
+        "Free Wi-Fi": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Lovely%202Bedroom%2F1Bath%20Private%20Suite%20%2B%20Free%20parking%20%2B%20Separate%20HVAC%20Entire%20Suite!&query_place_id=ChIJl_SMmxKdcVMR-BLq_Si4_XY",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 37,
+  "isAdvertisement": false,
+  "imageUrl": "https://images.trvl-media.com/lodging/121000000/120650000/120641800/120641789/b40474e1_z.jpg",
+  "kgmid": "/g/11yn27y_9r",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Air Towne Inc.",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://www.airtowne.ca/",
+  "phone": "+1 403-826-5448",
+  "phoneUnformatted": "+14038265448",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJOdBkPOSdcVMREEzVYtZRl0o",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Construction company",
+    "Service establishment",
+    "Heating contractor"
+  ],
+  "fid": "0x53719de43c64d039:0x4a9751d662d54c10",
+  "cid": "5374854661512973328",
+  "reviewsCount": 126,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 126
+  },
+  "imagesCount": 46,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.772Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Air%20Towne%20Inc.&query_place_id=ChIJOdBkPOSdcVMREEzVYtZRl0o",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 31,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGiv2sLDaOBu4lPtXHYqllvdVi6J8L7J_G-rqk5JWEIliDalrzfnirVTZwLuyMO65_eYCJ3kJp_bqWyn-CzeUtLfg-_PnmP2eEgpx3S8y2euoldgJDxLjd3qQ1dW8apPCmEFeiJFw=w408-h474-k-no",
+  "kgmid": "/g/11g9qg91pk",
+  "domain": "airtowne.ca",
+  "scrapedUrls": [
+    "https://airtowne.ca/",
+    "https://airtowne.ca/contact-us",
+    "https://airtowne.ca/contact-us#9755f17f-9d26-47b6-a449-388f12696a9b",
+    "https://airtowne.ca/",
+    "https://airtowne.ca/services"
+  ],
+  "depth": 0,
+  "emails": [
+    "admin@airtowne.ca"
+  ],
+  "phones": [
+    "4038265448"
+  ],
+  "phonesUncertain": [
+    "826-5448"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/airtowne"
+  ],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/airtowneinc"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/AirTowne"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "X-Stream Plumbing And Heating Ltd.",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "phone": "+1 403-585-2539",
+  "phoneUnformatted": "+14035852539",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJz8_pMZt3cVMR2zSYtz5tMWg",
+  "categories": [
+    "Plumber",
+    "Service establishment",
+    "Furnace repair service",
+    "Gasfitter"
+  ],
+  "fid": "0x5371779b31e9cfcf:0x68316d3eb79834db",
+  "cid": "7507902169938932955",
+  "reviewsCount": 27,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 27
+  },
+  "imagesCount": 5,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.697Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=X-Stream%20Plumbing%20And%20Heating%20Ltd.&query_place_id=ChIJz8_pMZt3cVMR2zSYtz5tMWg",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 33,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEx_u6jI7ydNMulZf_ro9dbR8NuhEs6UjBOtAJXCkA6TKaEqNDCskMFu0zmaDUIvI3bQDmlGqcexhGi8RTdr6GpJtleOjX0MHauIHKz7TVbiE-YnYGMky4wn9JbVwIx42gZYt5t=w464-h240-k-no",
+  "kgmid": "/g/11clm29xpb",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Klemenz Mechanical",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://www.klemenzmechanical.com/",
+  "phone": "+1 403-478-2266",
+  "phoneUnformatted": "+14034782266",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ4eKhplOvz40R93TtKYvO7bU",
+  "categories": [
+    "HVAC contractor",
+    "Service establishment"
+  ],
+  "fid": "0x8dcfaf53a6a1e2e1:0xb5edce8b29ed74f7",
+  "cid": "13109361187444585719",
+  "reviewsCount": null,
+  "imagesCount": 0,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.697Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Klemenz%20Mechanical&query_place_id=ChIJ4eKhplOvz40R93TtKYvO7bU",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 35,
+  "isAdvertisement": false,
+  "imageUrl": null,
+  "kgmid": "/g/11svw_lk8p",
+  "domain": "klemenzmechanical.com",
+  "scrapedUrls": [
+    "https://klemenzmechanical.com/",
+    "https://klemenzmechanical.com/services",
+    "https://klemenzmechanical.com/#",
+    "https://klemenzmechanical.com/",
+    "https://klemenzmechanical.com/contact-us"
+  ],
+  "depth": 0,
+  "emails": [
+    "estimates@klemenzmechanical.com"
+  ],
+  "phones": [
+    "4034789435",
+    "4034782266"
+  ],
+  "phonesUncertain": [
+    "403-478-9435",
+    "403-478-2266"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [
+    "https://wa.me/14039999675"
+  ],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "F.A.C.T.S. Mechanical",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "169 Cramond Close SE, Calgary, AB T3M 1C2, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "169 Cramond Close SE",
+  "city": "Calgary",
+  "postalCode": "T3M 1C2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://factsmechanical.ca/",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8956752,
+    "lng": -113.9817409
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ-cEPdV5z0KgR8ZAfdxdu80Y",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning repair service",
+    "Furnace repair service"
+  ],
+  "fid": "0xa8d0735e750fc1f9:0x46f36e17771f90f1",
+  "cid": "5112551049057505521",
+  "reviewsCount": 2,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 2
+  },
+  "imagesCount": 44,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.697Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 8 PM"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      },
+      {
+        "English": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=F.A.C.T.S.%20Mechanical&query_place_id=ChIJ-cEPdV5z0KgR8ZAfdxdu80Y",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 27,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGOjBwM5TH-C6NDpk3i2aP3QFnrgdejMHKe5HxItNZpAsRpzCKp95F9venefict0kM_bmeKWi_BvYmMCUzAUakVoGnKSdtoyzpAsU9JbpSV1oMqSxsaZWfjsTsnDquYOBwUFFUcKg=w408-h306-k-no",
+  "kgmid": "/g/11y8zj4_lq",
+  "domain": "factsmechanical.ca",
+  "scrapedUrls": [
+    "https://factsmechanical.ca/",
+    "https://factsmechanical.ca/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "The Electrifying Dutchman",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "47 Auburn Sound Cir SE, Calgary, AB T3M 0G6, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "47 Auburn Sound Cir SE",
+  "city": "Calgary",
+  "postalCode": "T3M 0G6",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://www.electrifyingdutchman.com/",
+  "phone": "+1 403-383-4878",
+  "phoneUnformatted": "+14033834878",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8931151,
+    "lng": -113.9644666
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJpbPNuRN3cVMRaMH76bumOf0",
+  "categories": [
+    "Electrician",
+    "Electric vehicle charging station contractor",
+    "Electrical installation service",
+    "Repair service"
+  ],
+  "fid": "0x53717713b9cdb3a5:0xfd39a6bbe9fbc168",
+  "cid": "18246798691282960744",
+  "reviewsCount": 73,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 71
+  },
+  "imagesCount": 138,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.697Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10 AM to 6 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Electrifying%20Dutchman&query_place_id=ChIJpbPNuRN3cVMRaMH76bumOf0",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 32,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEyFXsdiVFqDH_G5t7EbTKFAXj7Xi4yFD7mkKYETNbrMGWZfOAEuhc_gEX2a-6EFke5ZVQHMYkTRIZR5x8gIdYd1qKCxOl0jmQpHWHPJD0Oh_1Y1aq0Ig6LkWbe0fJ-A6anw_q_=w408-h306-k-no",
+  "kgmid": "/g/11h9263g51",
+  "domain": "electrifyingdutchman.com",
+  "scrapedUrls": [
+    "https://electrifyingdutchman.com/",
+    "https://electrifyingdutchman.com/commercial",
+    "https://electrifyingdutchman.com/services/commercial-service-work",
+    "https://electrifyingdutchman.com/services/commercial-ev-chargers",
+    "https://electrifyingdutchman.com/residential"
+  ],
+  "depth": 0,
+  "emails": [
+    "electrifyingdutchman@gmail.com"
+  ],
+  "phones": [],
+  "phonesUncertain": [
+    "383.4878"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/electrifying_dutchman"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/electrifying.dutchman"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Service Experts Heating & Air Conditioning",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "11500 35 St SE #8002, Calgary, AB T2C 0J4, Canada",
+  "neighborhood": "Shepard Industrial",
+  "street": "11500 35 St SE #8002",
+  "city": "Calgary",
+  "postalCode": "T2C 0J4",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.calgarynewconstructionhvac.com/?utm_source=google-business-profile&utm_medium=organic&utm_campaign=business-listing&utm_content=central",
+  "phone": "+1 403-279-5760",
+  "phoneUnformatted": "+14032795760",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9491631,
+    "lng": -113.9826706
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJl89ZdgxlcVMRhdzoD6p5PlU",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Air conditioning system supplier",
+    "Furnace repair service",
+    "Heating contractor",
+    "Heating equipment supplier",
+    "Plumber"
+  ],
+  "fid": "0x5371650c7659cf97:0x553e79aa0fe8dc85",
+  "cid": "6142480713098255493",
+  "reviewsCount": 8,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 6
+  },
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.772Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "English": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Service%20Experts%20Heating%20%26%20Air%20Conditioning&query_place_id=ChIJl89ZdgxlcVMRhdzoD6p5PlU",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 36,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=csq1tKiVOCwJUiVd9bbV-w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=20.798254&pitch=0&thumbfov=100",
+  "kgmid": "/g/1tgxt6fv",
+  "domain": "calgarynewconstructionhvac.com",
+  "scrapedUrls": [
+    "https://www.calgarynewconstructionhvac.com/?utm_source=google-business-profile&utm_medium=organic&utm_campaign=business-listing&utm_content=central",
+    "https://www.calgarynewconstructionhvac.com/about-us/100-satisfaction-guarantee/",
+    "https://www.calgarynewconstructionhvac.com/about-us/",
+    "https://www.calgarynewconstructionhvac.com/about-us/contact/",
+    "https://www.calgarynewconstructionhvac.com/blog/"
+  ],
+  "depth": 0,
+  "emails": [
+    "afterhourscanada@serviceexperts.ca",
+    "calgaryrnc@serviceexperts.ca"
+  ],
+  "phones": [
+    "4032795760",
+    "403-279-5760"
+  ],
+  "phonesUncertain": [
+    "403-279-5760"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/service-experts"
+  ],
+  "twitters": [
+    "http://twitter.com/serviceexperts"
+  ],
+  "instagrams": [],
+  "facebooks": [
+    "https://www.facebook.com/Service-Experts-Heating-Air-Conditioning-Calgary"
+  ],
+  "youtubes": [
+    "https://www.youtube.com/serviceexperts"
+  ],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Modern Mechanical Services",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Mechanical contractor",
+  "address": "4150 Seton Dr SE #404, Calgary, AB T3M 3C7, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "4150 Seton Dr SE #404",
+  "city": "Calgary",
+  "postalCode": "T3M 3C7",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://modernmechanicalservices.ca/",
+  "phone": "+1 587-436-9108",
+  "phoneUnformatted": "+15874369108",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8770499,
+    "lng": -113.9506
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJp72ydnGdcVMR-hEM65boVzQ",
+  "categories": [
+    "Mechanical contractor",
+    "Home builder"
+  ],
+  "fid": "0x53719d7176b2bda7:0x3457e896eb0c11fa",
+  "cid": "3771738947832254970",
+  "reviewsCount": 101,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 101
+  },
+  "imagesCount": 74,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.697Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Modern%20Mechanical%20Services&query_place_id=ChIJp72ydnGdcVMR-hEM65boVzQ",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 26,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEGt-83Jrr2kA57CitTXdvwfBoewAN1_GSDIr1WeDdra5LIOhpin40bfglpH58iudnxQd-neJp0RA_rKT7_m_MvsbTLsdEipoKk9SZ7AGXx-lhcH_MWvVPfqpKk8J3rf-IlWoMA=w426-h240-k-no",
+  "kgmid": "/g/11qnwsyqk9",
+  "domain": "modernmechanicalservices.ca",
+  "scrapedUrls": [
+    "https://modernmechanicalservices.ca/",
+    "https://modernmechanicalservices.ca/#",
+    "https://modernmechanicalservices.ca/m/create-account",
+    "https://modernmechanicalservices.ca/m/login?r=%2Fm%2Faccount",
+    "https://modernmechanicalservices.ca/contact-us"
+  ],
+  "depth": 0,
+  "emails": [
+    "filler@godaddy.com"
+  ],
+  "phones": [
+    "15874369108"
+  ],
+  "phonesUncertain": [
+    "587-436-9108",
+    "404-4150"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [
+    "https://wa.me/15874369108"
+  ],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "AK Brown Ltd",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "10707 50 St SE, Calgary, AB T2C 3E5, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "10707 50 St SE",
+  "city": "Calgary",
+  "postalCode": "T2C 3E5",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://akbrown.com/",
+  "phone": "+1 403-237-5540",
+  "phoneUnformatted": "+14032375540",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9575205,
+    "lng": -113.9621119
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJd61Ajpx6cVMRwUnAu6OXz8Q",
+  "categories": [
+    "HVAC contractor"
+  ],
+  "fid": "0x53717a9c8e40ad77:0xc4cf97a3bbc049c1",
+  "cid": "14181720481098385857",
+  "reviewsCount": 29,
+  "reviewsDistribution": {
+    "oneStar": 4,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 24
+  },
+  "imagesCount": 4,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:26.609Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 5 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 5 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 5 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 5 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 5 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=AK%20Brown%20Ltd&query_place_id=ChIJd61Ajpx6cVMRwUnAu6OXz8Q",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 42,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFQyZemURpUvVwpNc_XJWbqq3AqeaQRGMl8bPuZTxT33OCFdsEPh0NMr8_cpOunz4XFPEiKrdxvvh_p7cyiFhiEwE9HXVCQEWc11Im3wa_zS0U1GQGWaLwaDLtB7H4ULfwvICkI=w408-h306-k-no",
+  "kgmid": "/g/1trpqglb",
+  "domain": "akbrown.com",
+  "scrapedUrls": [
+    "https://akbrown.com/",
+    "https://akbrown.com/about-us/our-team",
+    "https://akbrown.com/careers",
+    "https://akbrown.com/services/fire-suppression-system",
+    "https://akbrown.com/about-us"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@akbrown.com",
+    "allan@akbrown.com",
+    "John.brown@akbrown.com",
+    "Kevin@akbrown.com",
+    "shaun.fedechko@akbrown.com",
+    "brennan.grasdahl@akbrown.com",
+    "Dave.mekechuk@akbrown.com",
+    "mike.robson@akbrown.com",
+    "billing@akbrown.com",
+    "Dorron.Scherger@akbrown.com",
+    "robert.dedeugd@akbrown.com",
+    "Chris.Hannah@akbrown.com",
+    "Jared.Bonneville@akbrown.com",
+    "john.ferrier@akbrown.com",
+    "Greg.Thoman@akbrown.com"
+  ],
+  "phones": [
+    "403.237.5540"
+  ],
+  "phonesUncertain": [
+    "403.237.5540"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/akbrownltd"
+  ],
+  "twitters": [],
+  "instagrams": [
+    "http://instagram.com/akbrownltd"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/AKBrownLTD"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "ICE Western Sales Ltd",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Heating equipment supplier",
+  "address": "9765 54th St SE, Calgary, AB T2C 5J6, Canada",
+  "neighborhood": "Section 23",
+  "street": "9765 54th St SE",
+  "city": "Calgary",
+  "postalCode": "T2C 5J6",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://www.icewestern.com/",
+  "phone": "+1 403-252-5577",
+  "phoneUnformatted": "+14032525577",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9663988,
+    "lng": -113.9575679
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 3.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJsTe1_vF5cVMRzWgAAYDWhj8",
+  "categories": [
+    "Heating equipment supplier",
+    "Manufacturer"
+  ],
+  "fid": "0x537179f1feb537b1:0x3f86d680010068cd",
+  "cid": "4577581916529649869",
+  "reviewsCount": 34,
+  "imagesCount": 18,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.867Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=ICE%20Western%20Sales%20Ltd&query_place_id=ChIJsTe1_vF5cVMRzWgAAYDWhj8",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 19,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFX23BYAuzXGc-ViAVEV3HUvKr5helgpdHY0VKGGR-1Bv2TY3wd3YZgWxGINI_QPBgQ0lNt4QwpOsEDjKS1RG_UnyGsPDbPi7MFJR78O6tCwO0IlRtW-3GnldB1xkLYPui5Wh1=w408-h306-k-no",
+  "kgmid": "/g/1thq4zft",
+  "domain": "icewestern.com",
+  "scrapedUrls": [
+    "https://icewestern.com/",
+    "https://icewestern.com/contact",
+    "https://icewestern.com/",
+    "https://icewestern.com/careers",
+    "https://icewestern.com/corporate-profile"
+  ],
+  "depth": 0,
+  "emails": [
+    "jim.c@icewestern.com",
+    "accounting@icewestern.com",
+    "humanresources@icewestern.com",
+    "partsdepartment@icewestern.com",
+    "service@icewestern.com"
+  ],
+  "phones": [],
+  "phonesUncertain": [
+    "403.252.5577",
+    "403-252-5577",
+    "403-252-5556",
+    "844-423-9378"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/ice-western-sales"
+  ],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Shift Heating & Cooling Services Ltd",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "5100 64 Ave SE #20, Calgary, AB T2C 4V3, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "5100 64 Ave SE #20",
+  "city": "Calgary",
+  "postalCode": "T2C 4V3",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://shiftheatcool.ca/",
+  "phone": "+1 587-741-7286",
+  "phoneUnformatted": "+15877417286",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9973501,
+    "lng": -113.9606651
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJLUVdNfp3cVMR29m4B9PBNR0",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Furnace parts supplier",
+    "Furnace repair service",
+    "Heating contractor"
+  ],
+  "fid": "0x537177fa355d452d:0x1d35c1d307b8d9db",
+  "cid": "2104801512977390043",
+  "reviewsCount": 210,
+  "imagesCount": 53,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.867Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ],
+    "Crowd": [
+      {
+        "LGBTQ+ friendly": true
+      },
+      {
+        "Transgender safespace": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shift%20Heating%20%26%20Cooling%20Services%20Ltd&query_place_id=ChIJLUVdNfp3cVMR29m4B9PBNR0",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 20,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFYsTEI2iT17rfu2ctNwcFV579QZumuzlRMBuc8A4D3OmW3q9S2bLu7SkToclP9YfsfWn5r5DM4DKu2zUJznzsSKgQCmCfuLW9Fv0UBU5MxJQPoVr3D7MWG3ecjUsYBe37E8JgU0g=w426-h240-k-no",
+  "kgmid": "/g/1tj9s_zf",
+  "domain": "shiftheatcool.ca",
+  "scrapedUrls": [
+    "https://shiftheatcool.ca/",
+    "https://shiftheatcool.ca/about-us/",
+    "https://shiftheatcool.ca/contact-us/",
+    "https://shiftheatcool.ca/about-us/",
+    "https://shiftheatcool.ca/careers/"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@shiftservices.ca"
+  ],
+  "phones": [
+    "+587-742-7678"
+  ],
+  "phonesUncertain": [
+    "587-742-7678",
+    "(403) 452–7076",
+    "(888) 852–6001"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/shift.services",
+    "https://www.instagram.com/shiftairmech"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/ShiftHeatingCoolingAB",
+    "https://www.facebook.com/profile.php?id=61567110655010"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Plumbing & Heating Paramedics",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://www.plumbingparamedics.ca/?utm_source=google&utm_medium=organic&utm_campaign=local+listings",
+  "phone": "+1 587-205-4554",
+  "phoneUnformatted": "+15872054554",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9433782,
+    "lng": -114.090531
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJY79HiaNwcVMR-QFx_Rynp7o",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Air duct cleaning service",
+    "Drainage service",
+    "Service establishment",
+    "Furnace repair service",
+    "Heating contractor",
+    "Plumber"
+  ],
+  "fid": "0x537170a38947bf63:0xbaa7a71cfd7101f9",
+  "cid": "13449902555118240249",
+  "reviewsCount": 1288,
+  "imagesCount": 333,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.867Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": false
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Crowd": [
+      {
+        "LGBTQ+ friendly": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Plumbing%20%26%20Heating%20Paramedics&query_place_id=ChIJY79HiaNwcVMR-QFx_Rynp7o",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 15,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFeSvRyPTo3QhKicxQs2X5-r27clZLEBk4ZKcJmO4Cd2FPA8iAHYTA9sQ4sCsPBWGPDx804EksRFLJ1XhwJBulzrikDropcskl0oaUGFx-VdPSiULwQgUmmsxBEq8OYeZhERoxTIKZh9arV=w408-h544-k-no",
+  "kgmid": "/g/1hc7p7p2z",
+  "domain": "plumbingparamedics.ca",
+  "scrapedUrls": [
+    "https://www.plumbingparamedics.ca/?utm_source=google&utm_medium=organic&utm_campaign=local+listings",
+    "https://www.plumbingparamedics.ca/about-us",
+    "https://www.plumbingparamedics.ca/contact-us",
+    "https://www.plumbingparamedics.ca/blog/breakdowns-and-keep-your-home-comfortable-in-every-season-hvac-maintenance-in-calgary-how-regular-tune-ups-save-you-money-all-year",
+    "https://www.plumbingparamedics.ca/careers"
+  ],
+  "depth": 0,
+  "emails": [
+    "help@plumbingparamedics.ca"
+  ],
+  "phones": [
+    "587-316-2946",
+    "(587)206-6881",
+    "587-327-6643",
+    "587-206-6881"
+  ],
+  "phonesUncertain": [
+    "587-792-2370",
+    "50.955093",
+    "113.965028",
+    "(587) 206-6881",
+    "587-327-6643",
+    "(587) 206-68814",
+    "(587) 747-6979",
+    "587-327-664324"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/plumbing-paramedics"
+  ],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/plumbingheatingparamedicsyyc"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/plumbingparamedics"
+  ],
+  "youtubes": [
+    "https://www.youtube.com/channel/UC3k_OuMVt8cl09ommvHri8g"
+  ],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "MV Pro Mechanical Inc. (previously known as MilanVic Plumbing & Heating Ltd.)",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://hvacservicescalgary.ca/",
+  "phone": "+1 403-890-8685",
+  "phoneUnformatted": "+14038908685",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJHRT8nT-dcVMRIPnRtem3Vco",
+  "categories": [
+    "Plumber",
+    "Service establishment",
+    "Gasfitter"
+  ],
+  "fid": "0x53719d3f9dfc141d:0xca55b7e9b5d1f920",
+  "cid": "14579761583087548704",
+  "reviewsCount": 21,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 21
+  },
+  "imagesCount": 40,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:25.698Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": false
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      },
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=MV%20Pro%20Mechanical%20Inc.%20(previously%20known%20as%20MilanVic%20Plumbing%20%26%20Heating%20Ltd.)&query_place_id=ChIJHRT8nT-dcVMRIPnRtem3Vco",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 38,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHrmIodwhybibr7W9w-LblU0kOdwUHMHZqoRmtc_fyeWWImY7Oz73-TFyqtX3SuphuqvF-x9_nuByoSyg4VlvvyzF_yTemVrEJVoJGGjOccCHFWfuBZ5PIMDe1Choxvpi8R7st_=w408-h306-k-no",
+  "kgmid": "/g/11qptbsc9m",
+  "domain": "hvacservicescalgary.ca",
+  "scrapedUrls": [
+    "https://hvacservicescalgary.ca/",
+    "https://hvacservicescalgary.ca/contact/",
+    "https://hvacservicescalgary.ca/faq/",
+    "https://hvacservicescalgary.ca/blog/",
+    "https://hvacservicescalgary.ca/about/"
+  ],
+  "depth": 0,
+  "emails": [
+    "milanvicplumbing@gmail.com"
+  ],
+  "phones": [
+    "+14038908685"
+  ],
+  "phonesUncertain": [
+    "+14038908685",
+    "114.0719",
+    "403-890-8685",
+    "20131998",
+    "1978-1998"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [
+    "https://wa.me/14038908685"
+  ],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Shawmann Plumbing and Heating Ltd",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "180 Copperstone Gardens SE, Calgary, AB T2Z 0R8, Canada",
+  "neighborhood": "Copperfield",
+  "street": "180 Copperstone Gardens SE",
+  "city": "Calgary",
+  "postalCode": "T2Z 0R8",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://www.shawmannplumbing.com/",
+  "phone": "+1 587-325-5646",
+  "phoneUnformatted": "+15873255646",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.918431,
+    "lng": -113.921669
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJC6GvJBsbOq8RQlygYFUwkO4",
+  "categories": [
+    "HVAC contractor",
+    "Furnace repair service",
+    "Gasfitter",
+    "Heating contractor",
+    "Plumber"
+  ],
+  "fid": "0xaf3a1b1b24afa10b:0xee90305560a05c42",
+  "cid": "17190292920924658754",
+  "reviewsCount": 67,
+  "imagesCount": 25,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.867Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shawmann%20Plumbing%20and%20Heating%20Ltd&query_place_id=ChIJC6GvJBsbOq8RQlygYFUwkO4",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHQf-O615bX7Ppgg2CRa_21x_b5tARvPBLrjTygS-1HAo-dDFclAuamdG6dT46gMBScpJbIv5JTwb4M_-mw3P69dG9RCNSB7kuROJs2TjVVOO7idD0a3MNcvSAWNRhR1jmZNmDXj_2_2IhI=w408-h544-k-no",
+  "kgmid": "/g/11yl6jh070",
+  "domain": "shawmannplumbing.com",
+  "scrapedUrls": [
+    "https://shawmannplumbing.com/",
+    "https://shawmannplumbing.com/",
+    "https://shawmannplumbing.com/faqs/",
+    "https://shawmannplumbing.com/about-us/",
+    "https://shawmannplumbing.com/contact-us/"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@shawmannplumbing.ca",
+    "info@shawmannplumbing.com"
+  ],
+  "phones": [],
+  "phonesUncertain": [
+    "325-5646",
+    "(587) 325-5646"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "RB Impact HVAC",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "4420 75 Ave SE #12, Calgary, AB T2C 2H8, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "4420 75 Ave SE #12",
+  "city": "Calgary",
+  "postalCode": "T2C 2H8",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://rbimpact.ca/",
+  "phone": "+1 403-620-7200",
+  "phoneUnformatted": "+14036207200",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9878029,
+    "lng": -113.9718912
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJHzTTF1UXK4gRrA7jtdYwgp8",
+  "categories": [
+    "HVAC contractor"
+  ],
+  "fid": "0x882b175517d3341f:0x9f8230d6b5e30eac",
+  "cid": "11493802897735618220",
+  "reviewsCount": 88,
+  "imagesCount": 39,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.866Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=RB%20Impact%20HVAC&query_place_id=ChIJHzTTF1UXK4gRrA7jtdYwgp8",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 9,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF3cJVA3Z_Zxl76yyinkReZ3GEElqY_3B1_5tbOEm5YyOayZlOQmp_Ir8roBfVWS8Z-A2meVNBXC_Ka2crd2Xd4_xcbk4ahsdjyWesQIa8gWh-aFboFCUyddlxAFginP89aT3WPKA=w408-h270-k-no",
+  "kgmid": "/g/11qnd67jv1",
+  "domain": "rbimpact.ca",
+  "scrapedUrls": [
+    "http://rbimpact.ca/",
+    "http://rbimpact.ca/faq",
+    "http://rbimpact.ca/aboutus",
+    "http://rbimpact.ca/blog",
+    "http://rbimpact.ca/services/furnaces"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "825 484 2500",
+    "403 620 7200"
+  ],
+  "phonesUncertain": [
+    "403-620-7200"
+  ],
+  "linkedIns": [
+    "https://linkedin.com/company/rb-impact-hvac-services"
+  ],
+  "twitters": [],
+  "instagrams": [
+    "https://instagram.com/rbimpact_hvac",
+    "https://www.instagram.com/rbimpact_hvac"
+  ],
+  "facebooks": [
+    "https://facebook.com/rb.impact.2025"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "POLAR MOBILITY RESEARCH LTD",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "7860 62 St SE, Calgary, AB T2C 5K2, Canada",
+  "neighborhood": "Great Plains",
+  "street": "7860 62 St SE",
+  "city": "Calgary",
+  "postalCode": "T2C 5K2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://polarmobility.com/?utm_source=organic&utm_medium=gbp&utm_campaign=gbp-link",
+  "phone": "+1 403-279-3633",
+  "phoneUnformatted": "+14032793633",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9831939,
+    "lng": -113.9406052
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ2yryKxB6cVMRbRiFLUcULZk",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning system supplier",
+    "Heating equipment supplier",
+    "Refrigerated transport service"
+  ],
+  "fid": "0x53717a102bf22adb:0x992d14472d85186d",
+  "cid": "11037500557693884525",
+  "reviewsCount": 66,
+  "imagesCount": 12,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.866Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 4:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=POLAR%20MOBILITY%20RESEARCH%20LTD&query_place_id=ChIJ2yryKxB6cVMRbRiFLUcULZk",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 10,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEhnqWJgcHrQbPsmGadXihlhGVCTyxgZxmhR87ypLQZQNRtQKOQwC95qxC-L1TTNS5PU0vG_iBuCV_UfY6CylI8nhzmESwZ87i2JUsbQpXC7T2JgsAMMth7jtbBwTJN8xc4FXRePw=w408-h244-k-no",
+  "kgmid": "/g/1td6xt2l",
+  "domain": "polarmobility.com",
+  "scrapedUrls": [
+    "https://polarmobility.com/?utm_source=organic&utm_medium=gbp&utm_campaign=gbp-link",
+    "https://polarmobility.com/air-filtration/air-filtration-units-systems/cabin-enclosures/filter-pressurizers/",
+    "https://polarmobility.com/about/",
+    "https://polarmobility.com/contact/",
+    "https://polarmobility.com/contact/"
+  ],
+  "depth": 0,
+  "emails": [
+    "jesseh@polarmobility.com",
+    "mikew@polarmobility.com",
+    "sebastianc@polarmobility.com",
+    "lenora@polarmobility.com",
+    "jet@polarmobility.com"
+  ],
+  "phones": [
+    "18003098155",
+    "4032793633",
+    "18889490999",
+    "7804655068",
+    "4033403166",
+    "14032793633",
+    "14033403166",
+    "17804655068"
+  ],
+  "phonesUncertain": [
+    "800-309-8155",
+    "403-279-3633",
+    "888-949-0999",
+    "465-5068",
+    "403-340-3166",
+    "780-465-5068",
+    "403-236-2759"
+  ],
+  "linkedIns": [
+    "https://ca.linkedin.com/company/polar-mobility-research-ltd"
+  ],
+  "twitters": [
+    "https://twitter.com/MobilityPolar"
+  ],
+  "instagrams": [
+    "https://www.instagram.com/polarmobility"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/profile.php?id=100064892717327"
+  ],
+  "youtubes": [
+    "https://www.youtube.com/channel/UCfyd_4GIpRgjh9xPr4Q_GSA"
+  ],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "HVAC Pro - Heating and Cooling",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Heating contractor",
+  "address": "8800 Venture Ave SE #2128, Calgary, AB T3S 0B8, Canada",
+  "neighborhood": null,
+  "street": "8800 Venture Ave SE #2128",
+  "city": "Calgary",
+  "postalCode": "T3S 0B8",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.hvacproalberta.ca/",
+  "phone": "+1 403-333-0630",
+  "phoneUnformatted": "+14033330630",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9712214,
+    "lng": -113.9057925
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 3.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJCTrdKAx5cVMRhohG9ccaZrg",
+  "categories": [
+    "Heating contractor"
+  ],
+  "fid": "0x5371790c28dd3a09:0xb8661ac7f5468886",
+  "cid": "13287337196719081606",
+  "reviewsCount": 8,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.866Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=HVAC%20Pro%20-%20Heating%20and%20Cooling&query_place_id=ChIJCTrdKAx5cVMRhohG9ccaZrg",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=pJPwtvwfp_WEGHIb3c7-zA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=7.577302&pitch=0&thumbfov=100",
+  "kgmid": "/g/11vq54xyxh",
+  "domain": "hvacproalberta.ca",
+  "scrapedUrls": [
+    "http://www.hvacproalberta.ca/",
+    "http://www.hvacproalberta.ca/contact-hvacpro/",
+    "http://www.hvacproalberta.ca/#",
+    "http://www.hvacproalberta.ca/ductwork-calgary/",
+    "http://www.hvacproalberta.ca/about-hvacpro/"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@hvacproalberta.ca",
+    "info@waterheaterpro.ca"
+  ],
+  "phones": [
+    "+14033330630"
+  ],
+  "phonesUncertain": [
+    "403 333 0630"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/waterheatercalgary"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/waterheatercalgary"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Reliance Calgary Heating, Air Conditioning & Plumbing",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "3953 112 Ave SE, Calgary, AB T2C 0J4, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "3953 112 Ave SE",
+  "city": "Calgary",
+  "postalCode": "T2C 0J4",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://reliancehomecomfort.com/calgary/furnace/furnace-repair/?utm_source=google&utm_medium=organic&utm_campaign=gmb-calgary",
+  "phone": "(844) 426-7661",
+  "phoneUnformatted": "+18444267661",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.952014,
+    "lng": -113.9805607
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJUapAm113cVMR9G9klhigeTw",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning store",
+    "Air conditioning system supplier",
+    "Electrician",
+    "Furnace repair service",
+    "Furnace store",
+    "Heating contractor",
+    "Air conditioning repair service",
+    "Plumber"
+  ],
+  "fid": "0x5371775d9b40aa51:0x3c79a01896646ff4",
+  "cid": "4357690141920489460",
+  "reviewsCount": 5374,
+  "imagesCount": 205,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.867Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Planning": [
+      {
+        "Appointment required": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Reliance%20Calgary%20Heating%2C%20Air%20Conditioning%20%26%20Plumbing&query_place_id=ChIJUapAm113cVMR9G9klhigeTw",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFzAJVy8dXtOlmzSQeYQPzajRXEtJ5c7gBulbWV-nvfalBW4AMNuzw4YpmCLHSnSoYMW_a4MDAAP6aYzqlfabuU2FDuIGH6mMyE7NQ2hnZcG3Y0-G831chlVNL9u3b52s2tF976WQ=w457-h240-k-no",
+  "kgmid": "/g/1ptyt7z3x",
+  "domain": "reliancehomecomfort.com",
+  "scrapedUrls": [
+    "http://reliancehomecomfort.com/calgary/furnace/furnace-repair/?utm_source=google&utm_medium=organic&utm_campaign=gmb-calgary",
+    "https://reliancehomecomfort.com/calgary/contact-us/",
+    "http://reliancehomecomfort.com/calgary/contact-us/",
+    "https://reliancehomecomfort.com/contact-us/",
+    "https://reliancehomecomfort.com/calgary/about-us/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "18888371451",
+    "18667354262"
+  ],
+  "phonesUncertain": [
+    "3953 112",
+    "888-837-1451",
+    "866-735-4262"
+  ],
+  "linkedIns": [
+    "https://ca.linkedin.com/company/reliance-home-comfort"
+  ],
+  "twitters": [
+    "https://twitter.com/RelianceCares"
+  ],
+  "instagrams": [
+    "https://www.instagram.com/reliance_comfort"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/reliancehomecomfort"
+  ],
+  "youtubes": [
+    "https://www.youtube.com/user/reliancehomecomfort"
+  ],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Arpi's Industries Ltd.",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "6815 40 St SE, Calgary, AB T2C 2W7, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "6815 40 St SE",
+  "city": "Calgary",
+  "postalCode": "T2C 2W7",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.arpis.com/",
+  "phone": "+1 403-236-2444",
+  "phoneUnformatted": "+14032362444",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9941035,
+    "lng": -113.9770916
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJVV6fDRR6cVMRwaAnltMRySg",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Air conditioning system supplier",
+    "Air duct cleaning service",
+    "Furnace repair service",
+    "Heating contractor",
+    "Hot water system supplier",
+    "Plumber"
+  ],
+  "fid": "0x53717a140d9f5e55:0x28c911d39627a0c1",
+  "cid": "2938899832290910401",
+  "reviewsCount": 4228,
+  "imagesCount": 88,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.848Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7:30 AM to 5 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7:30 AM to 5 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7:30 AM to 5 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7:30 AM to 5 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7:30 AM to 5 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "From the business": [
+      {
+        "Identifies as women-owned": true
+      }
+    ],
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Arpi's%20Industries%20Ltd.&query_place_id=ChIJVV6fDRR6cVMRwaAnltMRySg",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 18,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGdf5y1feBt9ev0p3F9YoCN1NyAGbE5G4EBfJ1cGMzBQO4Pe9EOocmCPEBc9pMv4sxn6DFNZMpMticXeBrqwo6jiM3eVQ7rfnYvgRlFJb5Umj2NmJSo8NDWgqy5bMZSzwNRqW8=w408-h368-k-no",
+  "kgmid": "/g/1tcz_5rs",
+  "domain": "arpis.com",
+  "scrapedUrls": [
+    "https://www.arpis.com/",
+    "https://www.arpis.com/contact/customer-survey/",
+    "https://www.arpis.com/about/",
+    "https://www.arpis.com/contact/",
+    "https://www.arpis.com/about/"
+  ],
+  "depth": 0,
+  "emails": [
+    "arpiscal@arpis.com"
+  ],
+  "phones": [
+    "+1(403) 236-2444",
+    "+14032362444",
+    "+1403-236-2444"
+  ],
+  "phonesUncertain": [
+    "(403) 236-2444",
+    "(403) 236-8345",
+    "403-236-2444"
+  ],
+  "linkedIns": [
+    "https://ca.linkedin.com/company/arpi%27s-industries-ltd"
+  ],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/arpisindustriesyyc"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/arpisindustries"
+  ],
+  "youtubes": [
+    "https://www.youtube.com/channel/UCb6gbWJt3U0C1Fg33GpzVaA",
+    "https://www.youtube.com/embed/89UtW1vaMZ4",
+    "https://www.youtube.com/embed/Ec4vrCkiFBQ"
+  ],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Correll Heating and Cooling",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "http://www.correll.ca/",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9541194,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJy_b99I53cVMRDRMmvixAjQ0",
+  "categories": [
+    "HVAC contractor",
+    "Service establishment"
+  ],
+  "fid": "0x5371778ef4fdf6cb:0xd8d402cbe26130d",
+  "cid": "976507255122170637",
+  "reviewsCount": 66,
+  "imagesCount": 15,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.866Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Correll%20Heating%20and%20Cooling&query_place_id=ChIJy_b99I53cVMRDRMmvixAjQ0",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 3,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHEGiN8HI24kyOB6eLBODnULCa6VT1zgP4zxpUL5kQn858Bi0v3cAU5ZIl6JpV49bjVDvB_FRsdIwAam9CCKE_Ugsz7xZ_8fv-uiuS6tF14Z3cwoe66jQIx2bzAoGPdaXFw9xaywA=w408-h544-k-no",
+  "kgmid": "/g/11gfk4931h",
+  "domain": "correll.ca",
+  "scrapedUrls": [
+    "https://correll.ca/",
+    "https://correll.ca/about-correll-heating-cooling/careers/",
+    "https://correll.ca/contact-us/",
+    "https://correll.ca/about-correll-heating-cooling/",
+    "https://correll.ca/about-correll-heating-cooling/testimonials/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "+14034786911"
+  ],
+  "phonesUncertain": [
+    "(403) 478-6911"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "The Heating Ninja - Heating and Cooling",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "4407 116 Ave SE #22, Calgary, AB T2Z 3Z4, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "4407 116 Ave SE #22",
+  "city": "Calgary",
+  "postalCode": "T2Z 3Z4",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://theheatingninja.com/?utm_source=organic&utm_medium=gbp&utm_campaign=gbp-link",
+  "phone": "+1 403-969-5781",
+  "phoneUnformatted": "+14039695781",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9466695,
+    "lng": -113.9725142
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJpZCXSaJ3cVMRFT_KdzCX1b4",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Air conditioning system supplier",
+    "Air filter supplier",
+    "Furnace repair service",
+    "Gas installation service",
+    "Heating contractor",
+    "Heating equipment supplier",
+    "Hot water system supplier"
+  ],
+  "fid": "0x537177a2499790a5:0xbed5973077ca3f15",
+  "cid": "13751063271669645077",
+  "reviewsCount": 117,
+  "imagesCount": 28,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.848Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      },
+      {
+        "English": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ],
+    "Amenities": [
+      {
+        "Gender-neutral restroom": true
+      }
+    ],
+    "Crowd": [
+      {
+        "LGBTQ+ friendly": true
+      },
+      {
+        "Transgender safespace": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Heating%20Ninja%20-%20Heating%20and%20Cooling&query_place_id=ChIJpZCXSaJ3cVMRFT_KdzCX1b4",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 19,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGRZCw9XxQOC34tMmuf9iLWuUPnZ1FBBacxIFnVp3M7fLkH-v_GM2LzXIXlEpOq_FpV7I27lQ8k5IMv-eoo5o9n8JEqSR7Lg5w4cuI3TPASk3q3Gw51_KEKZZUVVRWwJAkqXqL1=w408-h544-k-no",
+  "kgmid": "/g/11bzv9qcmk",
+  "domain": "theheatingninja.com",
+  "scrapedUrls": [
+    "https://theheatingninja.com/?utm_source=organic&utm_medium=gbp&utm_campaign=gbp-link",
+    "https://theheatingninja.com/about-us/",
+    "https://theheatingninja.com/about-us/why-choose-us/",
+    "https://theheatingninja.com/about-us/our-story/",
+    "https://theheatingninja.com/contact/"
+  ],
+  "depth": 0,
+  "emails": [
+    "matt@theheatingninja.com",
+    "admin@theheatingninja.com"
+  ],
+  "phones": [
+    "4039695781",
+    "5875831948",
+    "4039695763",
+    "587-583-1948"
+  ],
+  "phonesUncertain": [
+    "587-583-1948",
+    "403-969-5781",
+    "403-969-5763",
+    "4407 116"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/the-heating-ninja"
+  ],
+  "twitters": [
+    "https://twitter.com/theheatingninja"
+  ],
+  "instagrams": [
+    "https://www.instagram.com/theheatingninja.ca"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/theheatingninja"
+  ],
+  "youtubes": [
+    "https://www.youtube.com/@TheHeatingNinja"
+  ],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Alberta Mountain Air Heating & Air Conditioning",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "11929 40 St SE #214, Calgary, AB T2Z 4M8, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "11929 40 St SE #214",
+  "city": "Calgary",
+  "postalCode": "T2Z 4M8",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://albertamountainair.com/",
+  "phone": "+1 403-236-4366",
+  "phoneUnformatted": "+14032364366",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.94388,
+    "lng": -113.976851
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJEWAbm3p3cVMRMetowZGl_qo",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Furnace store",
+    "Furnace repair service"
+  ],
+  "fid": "0x5371777a9b1b6011:0xaafea591c168eb31",
+  "cid": "12321467675965975345",
+  "reviewsCount": 972,
+  "imagesCount": 86,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.848Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 4 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 4 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 4 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 4 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 4 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": true
+      }
+    ],
+    "Planning": [
+      {
+        "Appointment required": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Alberta%20Mountain%20Air%20Heating%20%26%20Air%20Conditioning&query_place_id=ChIJEWAbm3p3cVMRMetowZGl_qo",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 16,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHk_H6oObTZduwoEwVsX4g2L9P17qCpercV00UCIXwqKyTyANPwiNNlbwZVHtYK_3V6pP4NoWPwfUX25oNUjg-eJ-jb6MTsHuFMH8RYRrNlNR9C0etpK7fLRZUdrB-Mr0yTKxliBA=w408-h544-k-no",
+  "kgmid": "/g/1tk6p_p2",
+  "domain": "albertamountainair.com",
+  "scrapedUrls": [
+    "https://albertamountainair.com/",
+    "https://albertamountainair.com/blog/",
+    "https://albertamountainair.com/contact/",
+    "https://albertamountainair.com/about/",
+    "https://albertamountainair.com/current-promotions/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "14032364366",
+    "+14032364366",
+    "403-236-4366"
+  ],
+  "phonesUncertain": [
+    "(403) 236-4366",
+    "403-236-4366"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [
+    "https://www.facebook.com/AlbertaMountainAir"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Laveck Holdings HVAC",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://www.laveckholdingshvac.ca/",
+  "phone": "+1 403-975-7044",
+  "phoneUnformatted": "+14039757044",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9433782,
+    "lng": -113.9392992
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJGVUD5r53cVMRQAeFJUc0o1Q",
+  "categories": [
+    "HVAC contractor",
+    "Service establishment"
+  ],
+  "fid": "0x537177bee6035519:0x54a3344725850740",
+  "cid": "6098775800566581056",
+  "reviewsCount": 24,
+  "imagesCount": 75,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.848Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Laveck%20Holdings%20HVAC&query_place_id=ChIJGVUD5r53cVMRQAeFJUc0o1Q",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 17,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWgYKm9tAWgNtEqDmXlJNFzy9xuLHBvJMLhtzX1v6G3qc8aLiLE7q_F9Vcbl2yd0NuXDHgicjbkcyhQgqRJquvBmwVRSVGMmXv40qAs5PzS9-I-8B5XZmpUKayd4zi-7OUZg2Yig=w408-h544-k-no",
+  "kgmid": "/g/11nys5bpkh",
+  "domain": "laveckholdingshvac.ca",
+  "scrapedUrls": [
+    "https://laveckholdingshvac.ca/",
+    "https://laveckholdingshvac.ca/#services",
+    "https://laveckholdingshvac.ca/#contact"
+  ],
+  "depth": 0,
+  "emails": [
+    "Laveckholdings@gmail.com"
+  ],
+  "phones": [],
+  "phonesUncertain": [
+    "403-975-7044",
+    "(403) 975-7044"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Dime home comfort",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "phone": "+1 403-805-8290",
+  "phoneUnformatted": "+14038058290",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJDdq_izSdcVMRc6OpOuXIRbc",
+  "categories": [
+    "HVAC contractor",
+    "Service establishment"
+  ],
+  "fid": "0x53719d348bbfda0d:0xb745c8e53aa9a373",
+  "cid": "13206182369191109491",
+  "reviewsCount": 1,
+  "imagesCount": 0,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.848Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Dime%20home%20comfort&query_place_id=ChIJDdq_izSdcVMRc6OpOuXIRbc",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": null,
+  "kgmid": "/g/11mw13z_px",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "EMCO Calgary HVAC",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Heating equipment supplier",
+  "address": "5480 76 Ave SE, Calgary, AB T2C 4S3, Canada",
+  "neighborhood": "Great Plains",
+  "street": "5480 76 Ave SE",
+  "city": "Calgary",
+  "postalCode": "T2C 4S3",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://emco.ca/stores/emco-calgary-hvac/",
+  "phone": "+1 403-258-2225",
+  "phoneUnformatted": "+14032582225",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9859809,
+    "lng": -113.9565364
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ7VlsziN6cVMRsnUQgQ4QsXY",
+  "categories": [
+    "Heating equipment supplier",
+    "Air conditioning system supplier",
+    "Plumbing supply store"
+  ],
+  "fid": "0x53717a23ce6c59ed:0x76b1100e811075b2",
+  "cid": "8552634821834208690",
+  "reviewsCount": 40,
+  "imagesCount": 12,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.866Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 4:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 4:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 4:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 4:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 4:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=EMCO%20Calgary%20HVAC&query_place_id=ChIJ7VlsziN6cVMRsnUQgQ4QsXY",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF3FoFrEQCGlBxC5SiWZtsUWMxh0NFcH8w6w6P_0ILgeGCBclt0ZIU-Hat16poO2_6Aj-kHt4mKNkpyBzlkCdJ1ap89zwlWzmbIwzFOynC0qvqDZyl04_xz1VNEmapAQbssZzWN=w408-h315-k-no",
+  "kgmid": "/g/1thd6brk",
+  "domain": "emco.ca",
+  "scrapedUrls": [
+    "https://emco.ca/stores/emco-calgary-hvac/",
+    "https://emco.ca/about-us/",
+    "https://emco.ca/homeowners/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "403-258-2225"
+  ],
+  "phonesUncertain": [
+    "403-258-2225",
+    "403-640-1397",
+    "255075100"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Distinct Heating & Cooling",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://www.distincthvac.ca/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+  "phone": "+1 403-477-3810",
+  "phoneUnformatted": "+14034773810",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8994864,
+    "lng": -114.0527286
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJwYqK3Ad2cVMRHi_V4pnp7oE",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Air conditioning system supplier",
+    "Service establishment",
+    "Heating contractor",
+    "Furnace repair service"
+  ],
+  "fid": "0x53717607dc8a8ac1:0x81eee999e2d52f1e",
+  "cid": "9362677522494730014",
+  "reviewsCount": 355,
+  "imagesCount": 44,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.848Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Planning": [
+      {
+        "Appointment required": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Distinct%20Heating%20%26%20Cooling&query_place_id=ChIJwYqK3Ad2cVMRHi_V4pnp7oE",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF7q7yVq9STdYaE2N6pX_NHaohJalXjPEtD4B03FIHVPSJ5pVlakPxy9FbfhHrgcwmnwycD6ntrF6SUm7MwEmJu2WcoeZuLHbl4-phMZXpCWLYP0-Tvd5EVDSgm9NDKuIod2HZsZXqW-ORE=w408-h544-k-no",
+  "kgmid": "/g/1th281_k",
+  "domain": "distincthvac.ca",
+  "scrapedUrls": [
+    "https://www.distincthvac.ca/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "https://www.distincthvac.ca/request-service/",
+    "https://www.distincthvac.ca/careers/",
+    "https://www.distincthvac.ca/",
+    "https://www.distincthvac.ca/contact/"
+  ],
+  "depth": 0,
+  "emails": [
+    "lilianwilson220@gmail.com"
+  ],
+  "phones": [],
+  "phonesUncertain": [
+    "(403) 477-3810",
+    "+12252677158",
+    "1759802242",
+    "1760189733",
+    "1760395154",
+    "1760501239",
+    "1760556330",
+    "1760556801",
+    "1760565847",
+    "1760909185",
+    "1761087903",
+    "1761140468",
+    "1761147860",
+    "1761246932",
+    "1761776639",
+    "1761862470",
+    "1761865761",
+    "1762302413",
+    "1762540260",
+    "1762819790",
+    "1762821249",
+    "1763228164",
+    "1763523138",
+    "1763910257",
+    "1763935049",
+    "1763998599",
+    "1764112402",
+    "1764125696",
+    "1764357607",
+    "1764561747",
+    "1764737851",
+    "1764753443",
+    "1764984657",
+    "1764993768",
+    "1765346458",
+    "1765584223",
+    "1766447547",
+    "1766512408",
+    "1767716024",
+    "1767755972",
+    "1767974603",
+    "1768406176",
+    "1769028475",
+    "1770078358",
+    "1771009039",
+    "1771634371",
+    "1772813273",
+    "1773509139",
+    "1775750287",
+    "1776182478"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/distinct_heating_cooling"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/DistinctHVAC",
+    "https://facebook.com/3119385708243602",
+    "https://facebook.com/10155367230850806",
+    "https://facebook.com/10156777139538541",
+    "https://facebook.com/10162107101550192",
+    "https://facebook.com/10220461191022279",
+    "https://facebook.com/2481582505495880",
+    "https://facebook.com/891391345523705"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Auburn Bay Appliance Repair",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "244 Auburn Glen Cl SE, Calgary, AB T3M 2P4, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "244 Auburn Glen Cl SE",
+  "city": "Calgary",
+  "postalCode": "T3M 2P4",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://abrepair.ca/",
+  "phone": "+1 403-444-8332",
+  "phoneUnformatted": "+14034448332",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8983863,
+    "lng": -113.9495676
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJv07yEjd3cVMRbjHISaQ9-zo",
+  "categories": [
+    "HVAC contractor",
+    "Furnace repair service",
+    "Appliance repair service",
+    "Refrigerator repair service",
+    "Washer & dryer repair service"
+  ],
+  "fid": "0x5371773712f24ebf:0x3afb3da449c8316e",
+  "cid": "4250058449175982446",
+  "reviewsCount": 40,
+  "imagesCount": 3,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.847Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "6 AM to 11 PM"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "From the business": [
+      {
+        "Identifies as women-owned": true
+      }
+    ],
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Planning": [
+      {
+        "Appointment required": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      },
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Auburn%20Bay%20Appliance%20Repair&query_place_id=ChIJv07yEjd3cVMRbjHISaQ9-zo",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFY3pdWPWVhRhHUZIHCuQX7fMImWP0hWNtOw-v8P9PUMOmdkeL8z9sNo3vVmidsQp9kQsVt8TA2kPRZDgb2n2UpcJVUSbvhHd-CHEGMCBOz8U45PsF-Uz4TX495ZlfVEMd_jMhP=w408-h377-k-no",
+  "kgmid": "/g/11ftgtglm5",
+  "domain": "abrepair.ca",
+  "scrapedUrls": [
+    "https://abrepair.ca/",
+    "https://abrepair.ca/dishwasher-repair/",
+    "https://abrepair.ca/",
+    "https://abrepair.ca/oven-range-and-stove-repair/",
+    "https://abrepair.ca/#"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@abrepair.ca"
+  ],
+  "phones": [
+    "+14034448332"
+  ],
+  "phonesUncertain": [
+    "403-444-8332",
+    "2002-2026"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Clarke HVAC and Controls",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Air conditioning repair service",
+  "address": "347 Marina Grove SE, Calgary, AB T3M 3J6, Canada",
+  "neighborhood": "Mahogany",
+  "street": "347 Marina Grove SE",
+  "city": "Calgary",
+  "postalCode": "T3M 3J6",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "phone": "+1 403-478-8785",
+  "phoneUnformatted": "+14034788785",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.890556,
+    "lng": -113.9277184
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJkcmOYkR3cVMR24BXgte-vpk",
+  "categories": [
+    "Air conditioning repair service"
+  ],
+  "fid": "0x53717744628ec991:0x99bebed7825780db",
+  "cid": "11078501966192017627",
+  "reviewsCount": null,
+  "imagesCount": 0,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.847Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Clarke%20HVAC%20and%20Controls&query_place_id=ChIJkcmOYkR3cVMR24BXgte-vpk",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": null,
+  "kgmid": "/g/11t8_mm3g1",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Airman Heating and Air Conditioning Inc",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "242 Mahogany Heights SE, Calgary, AB T3M 1X1, Canada",
+  "neighborhood": "Mahogany",
+  "street": "242 Mahogany Heights SE",
+  "city": "Calgary",
+  "postalCode": "T3M 1X1",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.airmanheatingandairconditioninginc.com/",
+  "phone": "+1 403-700-5053",
+  "phoneUnformatted": "+14037005053",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9040421,
+    "lng": -113.931647
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ-8LEcBB3cVMRrJKsTqxPcqE",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Furnace repair service"
+  ],
+  "fid": "0x5371771070c4c2fb:0xa1724fac4eac92ac",
+  "cid": "11633448388924314284",
+  "reviewsCount": 63,
+  "imagesCount": 17,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.847Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "6:30 AM to 8 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "6:30 AM to 8 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "6:30 AM to 8:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "6:30 AM to 8 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "6:30 AM to 8 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 5 PM"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Airman%20Heating%20and%20Air%20Conditioning%20Inc&query_place_id=ChIJ-8LEcBB3cVMRrJKsTqxPcqE",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHHUYJgaUaZqmdJc0ELTtEY_86m4qE60AqBfnfhRtpQCOdAZFYp6f13jOngCbb_eLRi2-AvGj7eZOS2TdP1JC2zUHqq4Z4iNHULzP4y2mWxOZ1OVaJY4-fiLf8TlPvyvoJy8YBzYQ=w408-h488-k-no",
+  "kgmid": "/g/11fs8r45_w",
+  "domain": "airmanheatingandairconditioninginc.com",
+  "scrapedUrls": [
+    "https://www.airmanheatingandairconditioninginc.com/",
+    "https://www.airmanheatingandairconditioninginc.com/#comp-mj0salbg",
+    "https://www.airmanheatingandairconditioninginc.com/#comp-mj0s8o9o",
+    "https://www.airmanheatingandairconditioninginc.com/#comp-mj0sd8mz",
+    "https://www.airmanheatingandairconditioninginc.com/#comp-mj0sbh8k"
+  ],
+  "depth": 0,
+  "emails": [
+    "airmanheatingandac2019@gmail.com"
+  ],
+  "phones": [
+    "403-700-5053",
+    "4037005053"
+  ],
+  "phonesUncertain": [
+    "403-700-5053"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/in/jeremy-larson-118693197"
+  ],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/airmanheatingandac"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/Airman-Heating-And-Air-Conditioning-Inc"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "One Stop Heating & Air Conditioning",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "283 Wolf Creek Way SE, Calgary, AB T2X 4Z3, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "283 Wolf Creek Way SE",
+  "city": "Calgary",
+  "postalCode": "T2X 4Z3",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://onestophvac.ca/",
+  "phone": "+1 587-227-7847",
+  "phoneUnformatted": "+15872277847",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8762021,
+    "lng": -114.0115728
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJBckz_j2dcVMRYroF2nLcHoY",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning repair service",
+    "Furnace repair service"
+  ],
+  "fid": "0x53719d3dfe33c905:0x861edc72da05ba62",
+  "cid": "9664404236225854050",
+  "reviewsCount": 219,
+  "imagesCount": 43,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.847Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      },
+      {
+        "English": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=One%20Stop%20Heating%20%26%20Air%20Conditioning&query_place_id=ChIJBckz_j2dcVMRYroF2nLcHoY",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 10,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHtepbFfPCHdqHhXqVGygCDArliAyWHTcwrRUQ51kXoSTraREMcCUzCTU5XSIHuO-m8m2tQ_NbwnfQ1SuDmBKPikwu7Guy-Vc_QAqN_2xpab0TIDGcDS6DvVAtlLkrHbGFoxjc=w408-h306-k-no",
+  "kgmid": "/g/11vd3m7w9f",
+  "domain": "onestophvac.ca",
+  "scrapedUrls": [
+    "https://onestophvac.ca/",
+    "https://onestophvac.ca/projects/",
+    "https://onestophvac.ca/about-us/",
+    "https://onestophvac.ca/contact/",
+    "https://onestophvac.ca/blog/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "(587) 227-7847"
+  ],
+  "phonesUncertain": [
+    "(587) 227-7847",
+    "587-227-7847",
+    "50.876200",
+    "114.011490",
+    "100083250290445"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/onestophvac.ca"
+  ],
+  "facebooks": [],
+  "youtubes": [
+    "https://www.youtube.com/embed/TEVO6EKT_uo",
+    "https://www.youtube.com/embed/c2anV6jgoaU",
+    "https://www.youtube.com/embed/34_lxF9Lad4",
+    "https://www.youtube.com/embed/FNJwFhT8qm8",
+    "https://www.youtube.com/@OneStopHVAC"
+  ],
+  "tiktoks": [],
+  "pinterests": [
+    "https://ca.pinterest.com/onestophvaccalgary"
+  ],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Solid Rock HVAC",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "98 Brightonstone Grove SE, Calgary, AB T2Z 0C7, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "98 Brightonstone Grove SE",
+  "city": "Calgary",
+  "postalCode": "T2Z 0C7",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://solidrockhvac.ca/",
+  "phone": "+1 587-894-4822",
+  "phoneUnformatted": "+15878944822",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9216643,
+    "lng": -113.952179
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJRfSGw9B3cVMRa5tnWi_iIGw",
+  "categories": [
+    "HVAC contractor",
+    "Furnace repair service"
+  ],
+  "fid": "0x537177d0c386f445:0x6c20e22f5a679b6b",
+  "cid": "7791476048359037803",
+  "reviewsCount": 121,
+  "imagesCount": 17,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:29:24.847Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Solid%20Rock%20HVAC&query_place_id=ChIJRfSGw9B3cVMRa5tnWi_iIGw",
+  "searchPageUrl": "https://www.google.com/maps/search/hvac%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "hvac ",
+  "language": "en",
+  "rank": 7,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHBcbLOsrEFfI8yPnBvSjK8FW4vrLT4iKp62ej1bluKpGpQ2BFJcigviryupEuyx9J4ctBVXt5fl6QW5fBSWIlWMnFfhoQf65WZGvl9PDB7_iz6mA4QMxulBolD-otE-UAxWX2H=w408-h408-k-no",
+  "kgmid": "/g/11jchg4c85",
+  "domain": "solidrockhvac.ca",
+  "scrapedUrls": [
+    "https://solidrockhvac.ca/",
+    "https://solidrockhvac.ca/",
+    "https://solidrockhvac.ca/contact/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+}]

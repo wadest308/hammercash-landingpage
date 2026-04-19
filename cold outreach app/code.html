@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HammerCash Outreach</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "primary": "#abc7ff",
+                    "primary-container": "#438fff",
+                    "on-primary-fixed": "#001b3f",
+                    "tertiary": "#4cd7f6",
+                    "tertiary-container": "#009eb9",
+                    "surface": "#0f131d",
+                    "on-surface": "#dfe2f1",
+                    "on-surface-variant": "#c1c6d6",
+                    "surface-container-lowest": "#0a0e18",
+                    "surface-container-low": "#171b26",
+                    "surface-container": "#1c1f2a",
+                    "surface-container-high": "#262a35",
+                    "surface-container-highest": "#313540",
+                    "outline": "#8b919f",
+                    "outline-variant": "#414754",
+                    "error": "#ffb4ab",
+                    "success": "#4ade80"
+                },
+                "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                }
+            }
+        }
+    }
+</script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .glass-panel { background: rgba(23, 27, 38, 0.6); backdrop-filter: blur(24px); }
+    .text-gradient { background: linear-gradient(135deg, #abc7ff 0%, #438fff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .primary-gradient { background: linear-gradient(135deg, #abc7ff 0%, #438fff 100%); }
+    .view-hidden { display: none !important; }
+    
+    /* Animation for view transitions */
+    .view-enter { animation: fadeIn 0.3s ease-out forwards; }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 overflow-x-hidden">
+
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-screen w-72 bg-[#171b26]/60 backdrop-blur-2xl flex flex-col py-10 px-6 gap-y-2 shadow-[20px_0_80px_-15px_rgba(0,0,0,0.5)] z-50 transition-all">
+    <div class="mb-10 px-4 cursor-pointer" onclick="switchTab('dashboard')">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl primary-gradient flex items-center justify-center shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined text-on-primary-fixed" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+            </div>
+            <div>
+                <h1 class="text-xl font-black text-white tracking-tighter font-headline">Editorial</h1>
+                <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold opacity-60">Cold Outreach</p>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="flex-1 space-y-1" id="navSidebar">
+        <!-- Dashboard / Overview -->
+        <a href="#" onclick="switchTab('dashboard')" class="nav-btn flex items-center gap-4 px-4 py-3 rounded-lg text-slate-400 opacity-60 hover:opacity-100 hover:bg-white/5 transition-all duration-300 scale-[0.99] active:scale-95 font-headline text-sm tracking-tight font-semibold" data-target="dashboard">
+            <span class="material-symbols-outlined">dashboard</span>
+            <span>Dashboard</span>
+        </a>
+        <!-- Campaigns -->
+        <a href="#" onclick="switchTab('campaigns')" class="nav-btn flex items-center gap-4 px-4 py-3 rounded-lg bg-gradient-to-r from-[#abc7ff]/10 to-transparent text-[#abc7ff] font-bold border-l-2 border-[#abc7ff] scale-[0.99] active:scale-95 transition-all duration-300 font-headline text-sm tracking-tight" data-target="campaigns">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+            <span>Campaigns</span>
+        </a>
+        <!-- Unibox -->
+        <a href="#" onclick="switchTab('unibox')" class="nav-btn flex items-center gap-4 px-4 py-3 rounded-lg text-slate-400 opacity-60 hover:opacity-100 hover:bg-white/5 transition-all duration-300 scale-[0.99] active:scale-95 font-headline text-sm tracking-tight font-semibold" data-target="unibox">
+            <span class="material-symbols-outlined">all_inbox</span>
+            <span>Unibox <span class="bg-primary text-on-primary-fixed text-[10px] px-2 py-0.5 rounded-full ml-2">3</span></span>
+        </a>
+        <!-- Leads -->
+        <a href="#" onclick="switchTab('leads')" class="nav-btn flex items-center gap-4 px-4 py-3 rounded-lg text-slate-400 opacity-60 hover:opacity-100 hover:bg-white/5 transition-all duration-300 scale-[0.99] active:scale-95 font-headline text-sm tracking-tight font-semibold" data-target="leads">
+            <span class="material-symbols-outlined">groups</span>
+            <span>Leads</span>
+        </a>
+        <!-- Global Settings -->
+        <a href="#" onclick="switchTab('settings')" class="nav-btn flex items-center gap-4 px-4 py-3 rounded-lg text-slate-400 opacity-60 hover:opacity-100 hover:bg-white/5 transition-all duration-300 scale-[0.99] active:scale-95 font-headline text-sm tracking-tight font-semibold" data-target="settings">
+            <span class="material-symbols-outlined">settings</span>
+            <span>Global Settings</span>
+        </a>
+    </nav>
+    <div class="mt-auto relative">
+        <button onclick="toggleModal('newCampaignModal')" class="w-full py-4 primary-gradient rounded-xl font-headline font-bold text-on-primary-fixed shadow-xl shadow-primary/10 hover:brightness-110 transition-all flex items-center justify-center gap-2 active:scale-95">
+            <span class="material-symbols-outlined text-sm">add</span> New Campaign
+        </button>
+    </div>
+</aside>
+
+<!-- TopNavBar -->
+<header class="sticky top-0 z-40 w-full bg-[#0f131d]/30 backdrop-blur-md flex justify-between items-center h-20 px-12 ml-72 border-b border-white/5">
+    <div class="flex items-center gap-4 flex-1">
+        <div class="relative w-full max-w-md group">
+            <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+            <input class="w-full bg-surface-container-lowest border-none rounded-xl pl-12 pr-4 py-2.5 text-sm text-on-surface placeholder:text-outline focus:ring-1 focus:ring-primary/40 transition-all shadow-inner" placeholder="Search campaign assets, leads, or settings..." type="text"/>
+        </div>
+    </div>
+    <div class="flex items-center gap-6">
+        <button onclick="alert('Warmup network is active! 12 inboxes healthy.')" class="flex items-center gap-2 bg-success/10 text-success px-4 py-1.5 rounded-full text-xs font-bold border border-success/20 hover:bg-success/20 transition-all">
+            <span class="w-2 h-2 rounded-full bg-success animate-pulse"></span>
+            Warmup Active
+        </button>
+        <div class="h-8 w-[1px] bg-outline-variant/30"></div>
+        <div class="flex items-center gap-3 pl-2">
+            <div class="text-right">
+                <p class="text-sm font-bold text-white font-headline leading-none">Alex Sterling</p>
+                <p class="text-[10px] text-primary/70 font-semibold tracking-wide">Workspace Admin</p>
+            </div>
+            <img class="w-10 h-10 rounded-full border-2 border-primary/20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk7baV-8bc10lcJLwfrhxd83YrGrDhW6NFetrN18Lq9_LHTIDV9wCtFT3bcryixfQbUvWxp7Feyoj3GQ_F_1QxR2_ZPNodYwyXN4H4JwmobX2pI09esthB_rqcv7rP5KYyRwWa5mmViFZMEfd-SGgO_pJ5-n_qrWKCo8Z2AfzkJ17ha-U4hX_td2ySfGR-IbGa48Ba7OibUouBEDbjg2SWxn0O6_myCuEb-M2BcI-8piCCnUD6mSqXLn5KiaxMpvFmJT_KTy1yIlI"/>
+        </div>
+    </div>
+</header>
+
+<!-- ================= VIEWS CONTAINER ================= -->
+<div id="views-container" class="ml-72 p-12">
+
+    <!-- VIEW: CAMPAIGNS (Default from PRD) -->
+    <main id="view-campaigns" class="view space-y-12">
+        <div class="flex justify-between items-end">
+            <div>
+                <h2 class="text-4xl font-black font-headline tracking-tighter mb-2">Campaigns</h2>
+                <p class="text-on-surface-variant max-w-md font-body">Manage sequences, A/B tests, and track your active outreach.</p>
+            </div>
+            <button onclick="toggleModal('newCampaignModal')" class="bg-surface-container-high border border-outline-variant/20 hover:bg-primary hover:text-on-primary-fixed transition-all px-6 py-3 rounded-xl font-bold font-headline text-sm">
+                Create Campaign
+            </button>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Campaign Item 1 -->
+            <div class="group flex items-center justify-between p-6 bg-surface-container-low rounded-2xl border-l-4 border-primary transition-all duration-300 hover:bg-surface-container-high cursor-pointer">
+                <div class="flex items-center gap-6">
+                    <div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary transition-all group-hover:scale-110">
+                        <span class="material-symbols-outlined">rocket_launch</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-headline text-lg mb-1">HammerCash Cold Launch - Series A</h4>
+                        <div class="flex items-center gap-4 text-xs text-on-surface-variant font-medium">
+                            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">mail</span> 488 Enrolled</span>
+                            <span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+                            <span class="flex items-center gap-1 text-success"><span class="material-symbols-outlined text-[14px]">check_circle</span> 62% Open Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-8">
+                    <div class="px-4 py-1.5 rounded-full bg-success/10 text-success text-xs font-bold uppercase tracking-widest border border-success/20">Active</div>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-full text-outline hover:text-white transition-colors"><span class="material-symbols-outlined">more_vert</span></button>
+                </div>
+            </div>
+            
+            <!-- Campaign Item 2 -->
+            <div class="group flex items-center justify-between p-6 bg-surface-container-low rounded-2xl border-l-4 border-outline transition-all duration-300 hover:bg-surface-container-high cursor-pointer">
+                <div class="flex items-center gap-6">
+                    <div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-outline transition-all group-hover:scale-110">
+                        <span class="material-symbols-outlined">draft</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold font-headline text-lg mb-1">Contractor Follow-up Drip</h4>
+                        <div class="flex items-center gap-4 text-xs text-on-surface-variant font-medium">
+                            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">list</span> 3 Steps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-8">
+                    <div class="px-4 py-1.5 rounded-full bg-surface-container-high text-outline text-xs font-bold uppercase tracking-widest border border-outline/20">Draft</div>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-full text-outline hover:text-white transition-colors"><span class="material-symbols-outlined">more_vert</span></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- VIEW: DASHBOARD (The original main view) -->
+    <main id="view-dashboard" class="view space-y-12 view-hidden">
+        <section class="relative overflow-hidden rounded-3xl p-10 bg-surface-container-low">
+            <div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+                <div class="w-full h-full primary-gradient blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+            </div>
+            <div class="relative z-10 flex justify-between items-end">
+                <div>
+                    <h2 class="text-4xl font-black font-headline tracking-tighter mb-2">Editorial Overview</h2>
+                    <p class="text-on-surface-variant max-w-md font-body">Manage your outreach pipeline with precision.</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="text-right">
+                        <span class="block text-xs font-bold text-outline uppercase tracking-widest mb-1">Active Leads</span>
+                        <span class="text-3xl font-black font-headline text-gradient">2,481</span>
+                    </div>
+                    <div class="w-[1px] h-10 bg-outline-variant/30 self-center"></div>
+                    <div class="text-right">
+                        <span class="block text-xs font-bold text-outline uppercase tracking-widest mb-1">Emails Sent</span>
+                        <span class="text-3xl font-black font-headline text-white">18.2k</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="grid grid-cols-12 gap-6">
+            <!-- Open Rate Chart -->
+            <div class="col-span-8 bg-surface-container rounded-3xl p-8 border border-outline-variant/10">
+                <h3 class="text-lg font-bold font-headline mb-1">Open Rate Trend</h3>
+                <div class="h-48 flex items-end gap-3 mt-8">
+                    <div class="flex-1 bg-primary/10 rounded-t-lg h-[40%]"></div>
+                    <div class="flex-1 bg-primary/10 rounded-t-lg h-[55%]"></div>
+                    <div class="flex-1 bg-primary/10 rounded-t-lg h-[45%]"></div>
+                    <div class="flex-1 bg-primary/10 rounded-t-lg h-[70%]"></div>
+                    <div class="flex-1 bg-primary/20 rounded-t-lg h-[85%] border-t-2 border-primary"></div>
+                    <div class="flex-1 bg-primary/10 rounded-t-lg h-[60%]"></div>
+                </div>
+            </div>
+            <!-- Reply Rate -->
+            <div class="col-span-4 bg-surface-container rounded-3xl p-8 border border-outline-variant/10 flex flex-col items-center justify-center">
+                <h3 class="text-xl font-bold font-headline mb-4">Avg Reply Rate</h3>
+                <span class="text-6xl font-black font-headline text-tertiary">68%</span>
+                <p class="text-sm font-bold text-outline uppercase tracking-widest mt-2">Excellent</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- VIEW: UNIBOX -->
+    <main id="view-unibox" class="view space-y-8 view-hidden h-[80vh] flex flex-col">
+        <h2 class="text-4xl font-black font-headline tracking-tighter">Unified Inbox</h2>
+        <div class="flex-1 bg-surface-container-low rounded-3xl border border-outline-variant/20 flex overflow-hidden">
+            <!-- Inbox List -->
+            <div class="w-1/3 border-r border-outline-variant/20 overflow-y-auto bg-surface-container-lowest">
+                <div class="p-4 border-b border-outline-variant/20 font-bold font-headline sticky top-0 bg-surface-container-lowest">Recent Replies (3)</div>
+                <!-- Message 1 -->
+                <div class="p-4 border-b border-outline-variant/10 hover:bg-surface-container-low cursor-pointer bg-primary/5">
+                    <div class="flex justify-between mb-1">
+                        <span class="font-bold text-sm">Wade Digital</span>
+                        <span class="text-xs text-outline">10:42 AM</span>
+                    </div>
+                    <p class="text-xs text-primary font-bold mb-1 truncate">Re: HammerCash Demo?</p>
+                    <p class="text-xs text-on-surface-variant truncate">Yes, actually we are looking for exactly this. Let's chat.</p>
+                </div>
+                <!-- Message 2 -->
+                <div class="p-4 border-b border-outline-variant/10 hover:bg-surface-container-low cursor-pointer">
+                    <div class="flex justify-between mb-1">
+                        <span class="font-bold text-sm">Apollo Plumbers</span>
+                        <span class="text-xs text-outline">Yesterday</span>
+                    </div>
+                    <p class="text-xs font-bold mb-1 truncate">Re: Securing your payments</p>
+                    <p class="text-xs text-on-surface-variant truncate">Not interested at this time, thanks.</p>
+                </div>
+            </div>
+            <!-- Message View -->
+            <div class="w-2/3 p-8 flex flex-col">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-2">Re: HammerCash Demo?</h3>
+                    <div class="flex gap-2 text-sm text-outline">
+                        <span>From: wade@wadedigital.com</span> • <span>To: alex@tryhammercash.com</span>
+                    </div>
+                </div>
+                <div class="flex-1 text-sm leading-relaxed text-on-surface-variant space-y-4">
+                    <p>Hi Alex,</p>
+                    <p>Yes, actually we are looking for exactly this. Out of our last 10 jobs we had 2 disputes that cost us a lot. I'd love to see how your milestone system works.</p>
+                    <p>Are you free on Tuesday?</p>
+                </div>
+                <div class="mt-auto">
+                    <textarea class="w-full bg-surface-container rounded-xl p-4 border border-outline-variant/20 text-sm focus:ring-1 focus:ring-primary" rows="4" placeholder="Type your reply..."></textarea>
+                    <div class="flex justify-end mt-4">
+                        <button class="bg-primary text-on-primary-fixed px-6 py-2 rounded-lg font-bold">Send Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- VIEW: LEADS -->
+    <main id="view-leads" class="view space-y-8 view-hidden">
+        <div class="flex justify-between items-end">
+            <div>
+                <h2 class="text-4xl font-black font-headline tracking-tighter mb-2">Leads Database</h2>
+                <p class="text-on-surface-variant">488 Cleaned Leads imported via CSV.</p>
+            </div>
+            <button onclick="alert('Import CSV feature triggered.')" class="bg-surface-container-high border border-outline-variant/20 hover:bg-primary hover:text-on-primary-fixed transition-all px-6 py-3 rounded-xl font-bold font-headline text-sm flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">upload_file</span> Import Leads
+            </button>
+        </div>
+        
+        <div class="bg-surface-container-low rounded-3xl border border-outline-variant/20 overflow-hidden">
+            <table class="w-full text-left text-sm">
+                <thead class="bg-surface-container-highest/50 text-outline uppercase tracking-wider text-xs font-bold font-headline">
+                    <tr>
+                        <th class="p-4">Company</th>
+                        <th class="p-4">Contact</th>
+                        <th class="p-4">Email</th>
+                        <th class="p-4">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-outline-variant/10">
+                    <tr class="hover:bg-surface-container">
+                        <td class="p-4 font-bold text-white">Apex Electric</td>
+                        <td class="p-4">John Doe</td>
+                        <td class="p-4 text-primary">john@apexelectric.ca</td>
+                        <td class="p-4"><span class="px-3 py-1 bg-surface-container-high rounded-full text-xs">Uncontacted</span></td>
+                    </tr>
+                    <tr class="hover:bg-surface-container">
+                        <td class="p-4 font-bold text-white">Forbes Electrical</td>
+                        <td class="p-4">N/A</td>
+                        <td class="p-4 text-primary">admin@forbeselectrical.ca</td>
+                        <td class="p-4"><span class="px-3 py-1 bg-success/10 text-success rounded-full text-xs border border-success/20">Enrolled (Step 1)</span></td>
+                    </tr>
+                    <tr class="hover:bg-surface-container">
+                        <td class="p-4 font-bold text-white">RB Financial</td>
+                        <td class="p-4">Raul Bolufe</td>
+                        <td class="p-4 text-primary">raul.bolufe@rbfinancial.ca</td>
+                        <td class="p-4"><span class="px-3 py-1 bg-error/10 text-error rounded-full text-xs border border-error/20">Bounced</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- VIEW: GLOBAL SETTINGS -->
+    <main id="view-settings" class="view space-y-8 view-hidden">
+        <h2 class="text-4xl font-black font-headline tracking-tighter">Global Settings</h2>
+        
+        <div class="bg-surface-container-low rounded-3xl border border-outline-variant/20 p-8 space-y-8">
+            <div>
+                <h3 class="text-xl font-bold border-b border-outline-variant/20 pb-4 mb-4">Sender Accounts (Rotation)</h3>
+                <div class="flex gap-4">
+                    <div class="bg-surface-container p-4 rounded-xl border border-success/30 flex-1 flex justify-between items-center">
+                        <span class="font-bold">wade@tryhammercash.com</span>
+                        <span class="text-success text-xs font-bold bg-success/10 px-2 py-1 rounded">Healthy</span>
+                    </div>
+                    <div class="bg-surface-container p-4 rounded-xl border border-success/30 flex-1 flex justify-between items-center">
+                        <span class="font-bold">sales@tryhammercash.com</span>
+                        <span class="text-success text-xs font-bold bg-success/10 px-2 py-1 rounded">Healthy</span>
+                    </div>
+                    <button class="bg-primary/10 text-primary border border-primary/20 px-4 rounded-xl font-bold flex items-center justify-center hover:bg-primary/20">
+                        + Add SMTP
+                    </button>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold border-b border-outline-variant/20 pb-4 mb-4">Daily Limits</h3>
+                <div class="flex items-center gap-4">
+                    <label class="text-sm">Max emails per account / day:</label>
+                    <input type="number" value="35" class="bg-surface-container border border-outline-variant/30 rounded px-4 py-2 w-24">
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+<!-- NEW CAMPAIGN MODAL (Hidden by default) -->
+<div id="newCampaignModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-surface-container rounded-3xl border border-outline-variant/20 p-8 max-w-2xl w-full shadow-2xl transform scale-95 transition-transform duration-300" id="modalContent">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-black font-headline">Create New Campaign</h2>
+            <button onclick="toggleModal('newCampaignModal')" class="text-outline hover:text-white"><span class="material-symbols-outlined">close</span></button>
+        </div>
+        
+        <div class="space-y-6">
+            <div>
+                <label class="block text-sm font-bold mb-2">Campaign Name</label>
+                <input type="text" placeholder="e.g. Q1 Canada Contractors" class="w-full bg-surface-container-low border border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-1 focus:ring-primary">
+            </div>
+            
+            <div>
+                <label class="block text-sm font-bold mb-2">Select Lead List</label>
+                <select class="w-full bg-surface-container-low border border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-1 focus:ring-primary">
+                    <option>HammerCash_Leads.csv (488 Contacts)</option>
+                    <option>Upload New CSV...</option>
+                </select>
+            </div>
+            
+            <div class="pt-4 flex justify-end gap-4">
+                <button onclick="toggleModal('newCampaignModal')" class="px-6 py-3 font-bold hover:text-white text-outline">Cancel</button>
+                <button onclick="alert('Directing to Drag & Drop Sequence Builder...'); toggleModal('newCampaignModal'); switchTab('campaigns');" class="bg-primary text-on-primary-fixed px-8 py-3 rounded-xl font-bold">Build Sequence ➔</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts for Interactivity -->
+<script>
+    function switchTab(tabId) {
+        // Hide all views
+        document.querySelectorAll('.view').forEach(view => {
+            view.classList.add('view-hidden');
+            view.classList.remove('view-enter');
+        });
+        
+        // Remove active state from nav buttons
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.className = 'nav-btn flex items-center gap-4 px-4 py-3 rounded-lg text-slate-400 opacity-60 hover:opacity-100 hover:bg-white/5 transition-all duration-300 scale-[0.99] active:scale-95 font-headline text-sm tracking-tight font-semibold';
+            
+            if(btn.dataset.target === 'campaigns') {
+                 // reset campaigns specific styling if it was inactive
+            }
+        });
+        
+        // Show selected view
+        const activeView = document.getElementById('view-' + tabId);
+        if (activeView) {
+            activeView.classList.remove('view-hidden');
+            // Trigger reflow to restart animation
+            void activeView.offsetWidth; 
+            activeView.classList.add('view-enter');
+        }
+        
+        // Activate selected nav button
+        const activeBtn = document.querySelector(`.nav-btn[data-target="${tabId}"]`);
+        if (activeBtn) {
+            activeBtn.className = 'nav-btn flex items-center gap-4 px-4 py-3 rounded-lg bg-gradient-to-r from-[#abc7ff]/10 to-transparent text-[#abc7ff] font-bold border-l-2 border-[#abc7ff] scale-[0.99] active:scale-95 transition-all duration-300 font-headline text-sm tracking-tight';
+        }
+    }
+
+    function toggleModal(modalId) {
+        const modal = document.getElementById(modalId);
+        const content = document.getElementById('modalContent');
+        if (modal.classList.contains('pointer-events-none')) {
+            // Open
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            content.classList.remove('scale-95');
+        } else {
+            // Close
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            content.classList.add('scale-95');
+        }
+    }
+
+    // Default to 'Campaigns' on load since it was the original UI intent
+    switchTab('campaigns');
+</script>
+
+</body>
+</html>

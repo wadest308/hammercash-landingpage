@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HammerCash Outreach · Editorial</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        primary: '#abc7ff', 'primary-dim': '#438fff',
+        tertiary: '#4cd7f6',
+        surface: '#0f131d', 'surface-low': '#171b26', 'surface-mid': '#1c1f2a',
+        'surface-high': '#262a35', 'surface-highest': '#313540', 'surface-lowest': '#0a0e18',
+        outline: '#8b919f', 'outline-dim': '#414754',
+        'on-surface': '#dfe2f1', 'on-muted': '#c1c6d6',
+        success: '#4ade80', warning: '#fbbf24', danger: '#f87171',
+      },
+      fontFamily: { headline: ['Manrope'], body: ['Inter'] }
+    }
+  }
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  .ms { font-family: 'Material Symbols Outlined'; font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; font-size: 20px; line-height: 1; user-select: none; }
+  .ms-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .g { background: linear-gradient(135deg, #abc7ff 0%, #438fff 100%); }
+  .tg { background: linear-gradient(135deg, #abc7ff, #438fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .glass { background: rgba(23,27,38,0.7); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+  .view { display: none; }
+  .view.active { display: block; animation: fadeUp .3s ease; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+  .nav-item { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: 8px; color: #8b919f; font-family: Manrope; font-size: 13px; font-weight: 600; cursor: pointer; transition: all .2s; border-left: 2px solid transparent; }
+  .nav-item:hover { color: #dfe2f1; background: rgba(255,255,255,.05); }
+  .nav-item.active { color: #abc7ff; background: linear-gradient(90deg, rgba(171,199,255,.12), transparent); border-left-color: #abc7ff; }
+  .tag { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 9999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+  .tag-active { background: rgba(74,222,128,.1); color: #4ade80; border: 1px solid rgba(74,222,128,.2); }
+  .tag-draft { background: rgba(139,145,159,.1); color: #8b919f; border: 1px solid rgba(139,145,159,.2); }
+  .tag-paused { background: rgba(251,191,36,.1); color: #fbbf24; border: 1px solid rgba(251,191,36,.2); }
+  .tag-bounced { background: rgba(248,113,113,.1); color: #f87171; border: 1px solid rgba(248,113,113,.2); }
+  .tag-interested { background: rgba(76,215,246,.1); color: #4cd7f6; border: 1px solid rgba(76,215,246,.2); }
+  .tag-uncontacted { background: rgba(171,199,255,.1); color: #abc7ff; border: 1px solid rgba(171,199,255,.2); }
+  .card { background: #1c1f2a; border-radius: 20px; border: 1px solid rgba(65,71,84,.3); }
+  .input { width: 100%; background: #1c1f2a; border: 1px solid rgba(65,71,84,.5); border-radius: 10px; padding: 10px 14px; color: #dfe2f1; font-size: 14px; outline: none; transition: border .2s; }
+  .input:focus { border-color: rgba(171,199,255,.5); }
+  .btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 18px; border-radius: 10px; font-family: Manrope; font-weight: 700; font-size: 13px; cursor: pointer; transition: all .2s; }
+  .btn-primary { background: linear-gradient(135deg, #abc7ff, #438fff); color: #001b3f; }
+  .btn-primary:hover { filter: brightness(1.1); }
+  .btn-ghost { background: rgba(255,255,255,.05); color: #c1c6d6; border: 1px solid rgba(65,71,84,.4); }
+  .btn-ghost:hover { background: rgba(255,255,255,.1); color: #fff; }
+  .btn-danger { background: rgba(248,113,113,.1); color: #f87171; border: 1px solid rgba(248,113,113,.2); }
+  .modal-overlay { position: fixed; inset:0; background: rgba(0,0,0,.85); backdrop-filter: blur(8px); z-index: 100; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition: opacity .25s; }
+  .modal-overlay.open { opacity:1; pointer-events:all; }
+  .modal-box { background: #1c1f2a; border: 1px solid rgba(65,71,84,.4); border-radius: 24px; padding: 32px; width: 640px; max-width: 95vw; max-height: 90vh; overflow-y: auto; transform: scale(.95); transition: transform .25s; }
+  .modal-overlay.open .modal-box { transform: scale(1); }
+  .progress-bar { height: 6px; border-radius: 9999px; background: #262a35; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 9999px; background: linear-gradient(90deg, #abc7ff, #4cd7f6); transition: width .5s ease; }
+  .seq-step { display: flex; gap: 16px; position: relative; }
+  .seq-dot { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items:center; justify-content:center; flex-shrink: 0; font-size: 11px; font-weight: 800; }
+  .seq-line { position: absolute; left: 13px; top: 28px; bottom: -20px; width: 2px; background: linear-gradient(to bottom, #abc7ff55, transparent); }
+  table { width: 100%; border-collapse: collapse; }
+  thead th { padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: #8b919f; border-bottom: 1px solid rgba(65,71,84,.3); }
+  tbody tr { border-bottom: 1px solid rgba(65,71,84,.15); transition: background .15s; }
+  tbody tr:hover { background: rgba(255,255,255,.02); }
+  tbody td { padding: 14px 16px; font-size: 13px; color: #c1c6d6; }
+  .warmup-meter { height: 8px; border-radius: 9999px; background: rgba(255,255,255,.06); overflow:hidden; margin-top:8px; }
+  .warmup-fill { height: 100%; border-radius: 9999px; transition: width .5s; }
+  .toast { position: fixed; bottom: 24px; right: 24px; background: #262a35; border: 1px solid rgba(74,222,128,.3); color: #4ade80; padding: 12px 20px; border-radius: 12px; font-size: 13px; font-weight: 600; z-index: 200; transform: translateY(80px); opacity:0; transition: all .3s; pointer-events:none; display:flex; align-items:center; gap:8px; }
+  .toast.show { transform: translateY(0); opacity:1; }
+  ::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: transparent; } ::-webkit-scrollbar-thumb { background: #414754; border-radius: 4px; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body overflow-x-hidden">
+
+<!-- ===== SIDEBAR ===== -->
+<aside class="fixed left-0 top-0 h-screen w-64 glass flex flex-col py-8 px-4 z-50 border-r border-white/5">
+  <div class="px-2 mb-8 cursor-pointer" onclick="switchView('dashboard')">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl g flex items-center justify-center shadow-lg">
+        <span class="ms ms-fill text-[#001b3f]" style="font-size:18px">bolt</span>
+      </div>
+      <div>
+        <div class="font-headline text-white font-black text-base tracking-tight">Editorial</div>
+        <div class="text-[10px] font-bold uppercase tracking-widest text-outline opacity-70">Cold Outreach</div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="flex-1 space-y-1">
+    <div class="nav-item active" onclick="switchView('dashboard')" data-view="dashboard"><span class="ms">dashboard</span>Dashboard</div>
+    <div class="nav-item" onclick="switchView('campaigns')" data-view="campaigns"><span class="ms">auto_awesome</span>Campaigns <span id="badge-campaigns" class="ml-auto text-[10px] bg-primary/20 text-primary px-2 py-0.5 rounded-full">3</span></div>
+    <div class="nav-item" onclick="switchView('templates')" data-view="templates"><span class="ms">description</span>Templates <span class="ml-auto text-[10px] bg-warning/20 text-warning px-2 py-0.5 rounded-full">3</span></div>
+    <div class="nav-item" onclick="switchView('unibox')" data-view="unibox"><span class="ms">all_inbox</span>Unibox <span class="ml-auto text-[10px] bg-tertiary/20 text-tertiary px-2 py-0.5 rounded-full">3</span></div>
+    <div class="nav-item" onclick="switchView('leads')" data-view="leads"><span class="ms">groups</span>Leads <span id="leads-count-badge" class="ml-auto text-[10px] bg-outline/20 text-outline px-2 py-0.5 rounded-full">488</span></div>
+    <div class="nav-item" onclick="switchView('warmup')" data-view="warmup"><span class="ms">local_fire_department</span>Warmup</div>
+    <div class="nav-item" onclick="switchView('settings')" data-view="settings"><span class="ms">settings</span>Global Settings</div>
+  </nav>
+
+  <div class="mt-auto pt-4 border-t border-white/5">
+    <div class="flex items-center gap-3 mb-4 px-2">
+      <div class="w-8 h-8 rounded-full g flex items-center justify-center text-[#001b3f] font-bold text-sm">W</div>
+      <div class="flex-1 min-w-0">
+        <div class="font-headline font-bold text-white text-sm truncate">Wade Lieu</div>
+        <div class="text-[10px] text-primary/70 font-semibold">Owner · HammerCash</div>
+      </div>
+    </div>
+    <button class="btn btn-primary w-full justify-center" onclick="openModal('modal-new-campaign')">
+      <span class="ms" style="font-size:16px">add</span> New Campaign
+    </button>
+  </div>
+</aside>
+
+<!-- ===== TOP BAR ===== -->
+<header class="fixed top-0 left-64 right-0 h-16 glass border-b border-white/5 flex items-center justify-between px-8 z-40">
+  <div class="relative flex-1 max-w-sm">
+    <span class="ms absolute left-3 top-1/2 -translate-y-1/2 text-outline" style="font-size:18px">search</span>
+    <input class="input pl-10 py-2 text-sm" placeholder="Search campaigns, leads..." type="text"/>
+  </div>
+  <div class="flex items-center gap-3 ml-4">
+    <div class="flex items-center gap-2 bg-success/10 text-success border border-success/20 px-3 py-1.5 rounded-full text-xs font-bold">
+      <span class="w-2 h-2 rounded-full bg-success animate-pulse"></span> Warmup Active
+    </div>
+    <button class="w-9 h-9 rounded-lg bg-surface-high flex items-center justify-center text-outline hover:text-white transition-colors" title="Notifications">
+      <span class="ms">notifications</span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="ml-64 pt-16 min-h-screen">
+
+  <!-- =============================== -->
+  <!--          DASHBOARD VIEW         -->
+  <!-- =============================== -->
+  <div id="view-dashboard" class="view active p-8 space-y-8">
+    <!-- Hero Banner -->
+    <div class="relative overflow-hidden rounded-3xl p-8 bg-surface-mid border border-outline-dim/20">
+      <div class="absolute top-0 right-0 w-80 h-80 rounded-full blur-[100px] opacity-15 g pointer-events-none translate-x-1/3 -translate-y-1/3"></div>
+      <div class="relative z-10 flex flex-wrap justify-between items-end gap-6">
+        <div>
+          <h1 class="font-headline text-4xl font-black tracking-tighter mb-2">Editorial Overview</h1>
+          <p class="text-on-muted max-w-lg">Manage your HammerCash outreach pipeline. Reply rate is up <span class="text-tertiary font-bold">12.4%</span> this week.</p>
+        </div>
+        <div class="flex gap-8">
+          <div class="text-right">
+            <div class="text-xs font-bold text-outline uppercase tracking-widest mb-1">Active Leads</div>
+            <div class="text-3xl font-black font-headline tg">488</div>
+          </div>
+          <div class="w-px h-10 bg-outline-dim/30 self-center"></div>
+          <div class="text-right">
+            <div class="text-xs font-bold text-outline uppercase tracking-widest mb-1">Emails Queued</div>
+            <div class="text-3xl font-black font-headline text-white">1,464</div>
+          </div>
+          <div class="w-px h-10 bg-outline-dim/30 self-center"></div>
+          <div class="text-right">
+            <div class="text-xs font-bold text-outline uppercase tracking-widest mb-1">Sent Today</div>
+            <div class="text-3xl font-black font-headline text-white">70</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metric Cards -->
+    <div class="grid grid-cols-4 gap-4">
+      <div class="card p-6">
+        <div class="text-xs font-bold text-outline uppercase tracking-widest mb-3">Open Rate</div>
+        <div class="text-4xl font-black font-headline text-primary mb-1">62%</div>
+        <div class="text-xs text-success font-bold flex items-center gap-1"><span class="ms" style="font-size:14px">trending_up</span>+8.2% vs last wk</div>
+        <div class="progress-bar mt-4"><div class="progress-fill" style="width:62%"></div></div>
+      </div>
+      <div class="card p-6">
+        <div class="text-xs font-bold text-outline uppercase tracking-widest mb-3">Reply Rate</div>
+        <div class="text-4xl font-black font-headline text-tertiary mb-1">8.4%</div>
+        <div class="text-xs text-success font-bold flex items-center gap-1"><span class="ms" style="font-size:14px">trending_up</span>+2.1% vs last wk</div>
+        <div class="progress-bar mt-4"><div class="progress-fill" style="width:8.4%;background:linear-gradient(90deg,#4cd7f6,#abc7ff)"></div></div>
+      </div>
+      <div class="card p-6">
+        <div class="text-xs font-bold text-outline uppercase tracking-widest mb-3">Bounce Rate</div>
+        <div class="text-4xl font-black font-headline text-warning mb-1">1.8%</div>
+        <div class="text-xs text-success font-bold flex items-center gap-1"><span class="ms" style="font-size:14px">check_circle</span>Below 2% target</div>
+        <div class="progress-bar mt-4"><div class="progress-fill" style="width:1.8%;background:linear-gradient(90deg,#4ade80,#fbbf24)"></div></div>
+      </div>
+      <div class="card p-6">
+        <div class="text-xs font-bold text-outline uppercase tracking-widest mb-3">Inbox Placement</div>
+        <div class="text-4xl font-black font-headline text-success mb-1">97%</div>
+        <div class="text-xs text-success font-bold flex items-center gap-1"><span class="ms" style="font-size:14px">inbox</span>Primary inbox</div>
+        <div class="progress-bar mt-4"><div class="progress-fill" style="width:97%;background:linear-gradient(90deg,#4ade80,#4cd7f6)"></div></div>
+      </div>
+    </div>
+
+    <!-- Open Rate Chart + Active Sequences -->
+    <div class="grid grid-cols-12 gap-6">
+      <div class="col-span-7 card p-6">
+        <div class="flex justify-between items-start mb-6">
+          <div>
+            <div class="font-headline font-bold text-lg">Open Rate Trend</div>
+            <p class="text-sm text-on-muted">Last 7 days across all campaigns</p>
+          </div>
+          <div class="flex items-center gap-2 bg-surface-high px-3 py-1 rounded-full text-xs font-bold text-primary">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> Live
+          </div>
+        </div>
+        <div class="h-40 flex items-end gap-2">
+          <div class="flex-1 rounded-t-md bg-primary/10 hover:bg-primary/25 transition-colors" style="height:40%" title="Mon: 41%"></div>
+          <div class="flex-1 rounded-t-md bg-primary/10 hover:bg-primary/25 transition-colors" style="height:52%" title="Tue: 52%"></div>
+          <div class="flex-1 rounded-t-md bg-primary/10 hover:bg-primary/25 transition-colors" style="height:47%" title="Wed: 47%"></div>
+          <div class="flex-1 rounded-t-md bg-primary/10 hover:bg-primary/25 transition-colors" style="height:69%" title="Thu: 69%"></div>
+          <div class="flex-1 rounded-t-md bg-primary/20 hover:bg-primary/35 transition-colors border-t-2 border-primary" style="height:85%" title="Fri: 85%"></div>
+          <div class="flex-1 rounded-t-md bg-primary/10 hover:bg-primary/25 transition-colors" style="height:58%" title="Sat: 58%"></div>
+          <div class="flex-1 rounded-t-md bg-primary/10 hover:bg-primary/25 transition-colors" style="height:62%" title="Sun: 62%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-outline mt-2">
+          <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span class="text-primary font-bold">Fri</span><span>Sat</span><span>Sun</span>
+        </div>
+      </div>
+
+      <div class="col-span-5 card p-6 flex flex-col">
+        <div class="font-headline font-bold text-lg mb-1">Sender Health</div>
+        <p class="text-sm text-on-muted mb-6">2 accounts connected</p>
+        <div class="space-y-4 flex-1">
+          <div>
+            <div class="flex justify-between text-sm mb-1">
+              <span class="font-semibold text-white">wade@tryhammercash.com</span>
+              <span class="text-success font-bold">98%</span>
+            </div>
+            <div class="warmup-meter"><div class="warmup-fill bg-success" style="width:98%"></div></div>
+            <div class="text-xs text-outline mt-1">35/35 sent today · Primary inbox</div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-1">
+              <span class="font-semibold text-white">sales@tryhammercash.com</span>
+              <span class="text-success font-bold">95%</span>
+            </div>
+            <div class="warmup-meter"><div class="warmup-fill bg-success" style="width:95%"></div></div>
+            <div class="text-xs text-outline mt-1">35/35 sent today · Primary inbox</div>
+          </div>
+        </div>
+        <button class="btn btn-ghost mt-4 w-full justify-center text-xs" onclick="switchView('settings')">Manage Accounts</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================== -->
+  <!--         CAMPAIGNS VIEW          -->
+  <!-- =============================== -->
+  <div id="view-campaigns" class="view p-8 space-y-6">
+    <div class="flex justify-between items-end">
+      <div>
+        <h1 class="font-headline text-3xl font-black tracking-tighter">Campaigns</h1>
+        <p class="text-on-muted text-sm mt-1">Build and manage your multi-step email sequences.</p>
+      </div>
+      <button class="btn btn-primary" onclick="openModal('modal-new-campaign')">
+        <span class="ms" style="font-size:16px">add</span> New Campaign
+      </button>
+    </div>
+
+    <!-- Campaign Cards -->
+    <div id="campaigns-list" class="space-y-4">
+      <!-- populated by JS -->
+    </div>
+  </div>
+
+  <!-- =============================== -->
+  <!--        TEMPLATES VIEW           -->
+  <!-- =============================== -->
+  <div id="view-templates" class="view p-8 space-y-6">
+    <div class="flex justify-between items-end">
+      <div>
+        <h1 class="font-headline text-3xl font-black tracking-tighter">Email Templates</h1>
+        <p class="text-on-muted text-sm mt-1">Battle-tested cold email sequences adapted for HammerCash. Click "Use Template" to launch a campaign.</p>
+      </div>
+    </div>
+    <div id="templates-list" class="space-y-6">
+      <!-- populated by JS -->
+    </div>
+  </div>
+
+  <!-- =============================== -->
+  <!--         CAMPAIGN DETAIL VIEW    -->
+  <!-- =============================== -->
+  <div id="view-campaign-detail" class="view p-8 space-y-6">
+    <div class="flex items-center gap-4 mb-2">
+      <button class="btn btn-ghost text-xs" onclick="switchView('campaigns')"><span class="ms" style="font-size:16px">arrow_back</span> Back</button>
+      <h1 class="font-headline text-2xl font-black tracking-tight" id="detail-name">Campaign Name</h1>
+      <span id="detail-status-tag" class="tag tag-active ml-2">Active</span>
+      <button class="btn btn-ghost text-xs ml-auto" onclick="openModal('modal-edit-campaign')"><span class="ms" style="font-size:15px">edit</span> Edit</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-4 gap-4" id="detail-stats">
+      <div class="card p-5 text-center"><div class="text-3xl font-black font-headline text-white" id="ds-sent">0</div><div class="text-xs text-outline mt-1 uppercase tracking-wider">Enrolled</div></div>
+      <div class="card p-5 text-center"><div class="text-3xl font-black font-headline text-primary" id="ds-open">0%</div><div class="text-xs text-outline mt-1 uppercase tracking-wider">Open Rate</div></div>
+      <div class="card p-5 text-center"><div class="text-3xl font-black font-headline text-tertiary" id="ds-reply">0%</div><div class="text-xs text-outline mt-1 uppercase tracking-wider">Reply Rate</div></div>
+      <div class="card p-5 text-center"><div class="text-3xl font-black font-headline text-success" id="ds-place">97%</div><div class="text-xs text-outline mt-1 uppercase tracking-wider">Inbox Placement</div></div>
+    </div>
+
+    <!-- Sequence Builder -->
+    <div class="card p-6">
+      <div class="font-headline font-bold text-lg mb-6">Sequence Steps</div>
+      <div id="detail-sequence" class="space-y-8 relative pl-2">
+        <!-- populated by JS -->
+      </div>
+      <button class="btn btn-ghost text-xs mt-6" onclick="alert('Drag-and-drop step builder — coming in Phase 2!')"><span class="ms" style="font-size:15px">add</span> Add Step</button>
+    </div>
+  </div>
+
+  <!-- =============================== -->
+  <!--           UNIBOX VIEW           -->
+  <!-- =============================== -->
+  <div id="view-unibox" class="view" style="height: calc(100vh - 64px); display:none; flex-direction:row;">
+    <!-- Thread List -->
+    <div class="w-80 border-r border-outline-dim/20 bg-surface-lowest flex flex-col flex-shrink-0">
+      <div class="p-4 border-b border-outline-dim/20">
+        <div class="font-headline font-bold text-base mb-3">Unified Inbox</div>
+        <input class="input text-sm py-2" placeholder="Search replies..."/>
+      </div>
+      <div class="flex-1 overflow-y-auto" id="unibox-threads">
+        <!-- populated by JS -->
+      </div>
+    </div>
+    <!-- Message Pane -->
+    <div class="flex-1 flex flex-col">
+      <div class="p-6 border-b border-outline-dim/20 flex justify-between items-start">
+        <div>
+          <div class="font-headline font-bold text-lg" id="ub-subject">Select a conversation</div>
+          <div class="text-sm text-on-muted mt-1" id="ub-meta"></div>
+        </div>
+        <div class="flex gap-2" id="ub-tags"></div>
+      </div>
+      <div class="flex-1 overflow-y-auto p-6" id="ub-body">
+        <div class="text-on-muted text-sm text-center mt-20">Select a conversation from the left to view the message.</div>
+      </div>
+      <div class="p-4 border-t border-outline-dim/20" id="ub-reply-area" style="display:none">
+        <textarea id="ub-reply-input" class="input text-sm" rows="3" placeholder="Type your reply..."></textarea>
+        <div class="flex justify-between items-center mt-3">
+          <span class="text-xs text-outline">Sending from: <strong class="text-white">wade@tryhammercash.com</strong></span>
+          <button class="btn btn-primary text-xs" onclick="sendReply()"><span class="ms" style="font-size:15px">send</span> Send Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================== -->
+  <!--           LEADS VIEW            -->
+  <!-- =============================== -->
+  <div id="view-leads" class="view p-8 space-y-6">
+    <div class="flex justify-between items-end">
+      <div>
+        <h1 class="font-headline text-3xl font-black tracking-tighter">Leads Database</h1>
+        <p class="text-on-muted text-sm mt-1"><span id="leads-total">488</span> cleaned contacts imported from HammerCash_Leads.csv</p>
+      </div>
+      <div class="flex gap-3">
+        <label class="btn btn-ghost text-xs cursor-pointer" for="csv-upload">
+          <span class="ms" style="font-size:15px">upload_file</span> Import CSV
+          <input type="file" id="csv-upload" accept=".csv" class="hidden" onchange="handleCSV(this)"/>
+        </label>
+        <button class="btn btn-ghost text-xs" onclick="exportLeads()"><span class="ms" style="font-size:15px">download</span> Export</button>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="flex items-center gap-3 flex-wrap">
+      <input class="input text-sm py-2 max-w-xs" placeholder="Filter by name, email, company..." oninput="filterLeads(this.value)"/>
+      <select class="input text-sm py-2 w-40" onchange="filterByStatus(this.value)">
+        <option value="">All Statuses</option>
+        <option>Uncontacted</option>
+        <option>Enrolled</option>
+        <option>Replied</option>
+        <option>Bounced</option>
+      </select>
+      <span class="text-xs text-outline ml-auto">Showing <span id="showing-count">10</span> of <span id="total-count">488</span></span>
+    </div>
+
+    <div class="card overflow-hidden">
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th><input type="checkbox" onchange="toggleAllLeads(this)" class="rounded"/></th>
+              <th>Company</th><th>Email</th><th>Contact</th><th>City</th><th>Status</th><th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="leads-table-body">
+            <!-- populated by JS -->
+          </tbody>
+        </table>
+      </div>
+      <div class="p-4 border-t border-outline-dim/15 flex justify-between items-center text-xs text-outline">
+        <span>Page 1 of 49</span>
+        <div class="flex gap-2">
+          <button class="btn btn-ghost text-xs py-1 px-3">Previous</button>
+          <button class="btn btn-ghost text-xs py-1 px-3">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================== -->
+  <!--           WARMUP VIEW           -->
+  <!-- =============================== -->
+  <div id="view-warmup" class="view p-8 space-y-6">
+    <div class="flex justify-between items-end">
+      <div>
+        <h1 class="font-headline text-3xl font-black tracking-tighter">Email Warmup</h1>
+        <p class="text-on-muted text-sm mt-1">Monitor inbox health scores. Warmup for 14-21 days before sending campaigns.</p>
+      </div>
+      <div class="flex items-center gap-2 bg-success/10 text-success border border-success/20 px-4 py-2 rounded-full text-sm font-bold">
+        <span class="w-2 h-2 rounded-full bg-success animate-pulse"></span> Warmup Network Active
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+      <!-- Account 1 -->
+      <div class="card p-6 space-y-4">
+        <div class="flex justify-between items-start">
+          <div>
+            <div class="font-headline font-bold text-white">wade@tryhammercash.com</div>
+            <div class="text-xs text-outline mt-0.5">Google Workspace · Active 14 days</div>
+          </div>
+          <span class="tag tag-active">Healthy</span>
+        </div>
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div class="bg-surface-high rounded-xl p-3"><div class="text-xl font-black font-headline text-success">98</div><div class="text-xs text-outline mt-1">Health Score</div></div>
+          <div class="bg-surface-high rounded-xl p-3"><div class="text-xl font-black font-headline text-primary">97%</div><div class="text-xs text-outline mt-1">Inbox Rate</div></div>
+          <div class="bg-surface-high rounded-xl p-3"><div class="text-xl font-black font-headline text-warning">2%</div><div class="text-xs text-outline mt-1">Spam Rate</div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs mb-1"><span class="text-outline">Daily warmup sends</span><span class="text-white font-bold">8 / 10</span></div>
+          <div class="warmup-meter"><div class="warmup-fill bg-success" style="width:80%"></div></div>
+        </div>
+        <div class="text-xs text-on-muted">SPF ✅ &nbsp; DKIM ✅ &nbsp; DMARC ✅</div>
+      </div>
+
+      <!-- Account 2 -->
+      <div class="card p-6 space-y-4">
+        <div class="flex justify-between items-start">
+          <div>
+            <div class="font-headline font-bold text-white">sales@tryhammercash.com</div>
+            <div class="text-xs text-outline mt-0.5">Google Workspace · Active 14 days</div>
+          </div>
+          <span class="tag tag-active">Healthy</span>
+        </div>
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div class="bg-surface-high rounded-xl p-3"><div class="text-xl font-black font-headline text-success">95</div><div class="text-xs text-outline mt-1">Health Score</div></div>
+          <div class="bg-surface-high rounded-xl p-3"><div class="text-xl font-black font-headline text-primary">95%</div><div class="text-xs text-outline mt-1">Inbox Rate</div></div>
+          <div class="bg-surface-high rounded-xl p-3"><div class="text-xl font-black font-headline text-warning">3%</div><div class="text-xs text-outline mt-1">Spam Rate</div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs mb-1"><span class="text-outline">Daily warmup sends</span><span class="text-white font-bold">7 / 10</span></div>
+          <div class="warmup-meter"><div class="warmup-fill bg-success" style="width:70%"></div></div>
+        </div>
+        <div class="text-xs text-on-muted">SPF ✅ &nbsp; DKIM ✅ &nbsp; DMARC ✅</div>
+      </div>
+    </div>
+
+    <!-- Deliverability Guide CTA -->
+    <div class="card p-6 border-l-4 border-primary">
+      <div class="flex items-start gap-4">
+        <span class="ms text-primary ms-fill" style="font-size:28px;margin-top:2px">verified_user</span>
+        <div class="flex-1">
+          <div class="font-headline font-bold text-white mb-1">Deliverability Checklist</div>
+          <p class="text-sm text-on-muted">Before sending any cold emails, ensure all 4 items are checked off.</p>
+          <div class="grid grid-cols-2 gap-2 mt-4">
+            <div class="flex items-center gap-2 text-sm text-success"><span class="ms ms-fill" style="font-size:16px">check_circle</span> Secondary domain purchased</div>
+            <div class="flex items-center gap-2 text-sm text-success"><span class="ms ms-fill" style="font-size:16px">check_circle</span> Google Workspace setup</div>
+            <div class="flex items-center gap-2 text-sm text-success"><span class="ms ms-fill" style="font-size:16px">check_circle</span> SPF / DKIM / DMARC configured</div>
+            <div class="flex items-center gap-2 text-sm text-success"><span class="ms ms-fill" style="font-size:16px">check_circle</span> 14-day warmup complete</div>
+          </div>
+        </div>
+        <span class="tag tag-active">All Clear</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================== -->
+  <!--          SETTINGS VIEW          -->
+  <!-- =============================== -->
+  <div id="view-settings" class="view p-8 space-y-6">
+    <h1 class="font-headline text-3xl font-black tracking-tighter">Global Settings</h1>
+
+    <!-- Sending Accounts -->
+    <div class="card p-6 space-y-4">
+      <div class="font-headline font-bold text-lg border-b border-outline-dim/20 pb-3">Sender Accounts (Rotation Pool)</div>
+      <div class="space-y-3" id="smtp-accounts">
+        <div class="flex items-center justify-between bg-surface-high rounded-xl px-4 py-3">
+          <div class="flex items-center gap-3">
+            <span class="ms text-success ms-fill" style="font-size:18px">check_circle</span>
+            <div>
+              <div class="font-bold text-white text-sm">wade@tryhammercash.com</div>
+              <div class="text-xs text-outline">Google Workspace · SMTP · Primary</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="tag tag-active">Connected</span>
+            <button class="btn btn-ghost text-xs py-1 px-2" onclick="alert('Account settings panel — edit SMTP credentials here.')"><span class="ms" style="font-size:14px">edit</span></button>
+          </div>
+        </div>
+        <div class="flex items-center justify-between bg-surface-high rounded-xl px-4 py-3">
+          <div class="flex items-center gap-3">
+            <span class="ms text-success ms-fill" style="font-size:18px">check_circle</span>
+            <div>
+              <div class="font-bold text-white text-sm">sales@tryhammercash.com</div>
+              <div class="text-xs text-outline">Google Workspace · SMTP</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="tag tag-active">Connected</span>
+            <button class="btn btn-ghost text-xs py-1 px-2" onclick="alert('Account settings panel')"><span class="ms" style="font-size:14px">edit</span></button>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-ghost text-xs" onclick="openModal('modal-add-smtp')">
+        <span class="ms" style="font-size:15px">add</span> Add SMTP / Gmail Account
+      </button>
+    </div>
+
+    <!-- Sending Limits -->
+    <div class="card p-6 space-y-4">
+      <div class="font-headline font-bold text-lg border-b border-outline-dim/20 pb-3">Daily Sending Limits (Deliverability)</div>
+      <div class="grid grid-cols-2 gap-6">
+        <div>
+          <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Max emails per account / day</label>
+          <input type="number" value="35" class="input" min="1" max="100"/>
+          <p class="text-xs text-on-muted mt-1">Recommended: 30–50 to mimic human behavior</p>
+        </div>
+        <div>
+          <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Send window (local time)</label>
+          <div class="flex items-center gap-3">
+            <input type="time" value="09:00" class="input"/>
+            <span class="text-on-muted">to</span>
+            <input type="time" value="17:00" class="input"/>
+          </div>
+        </div>
+        <div>
+          <label class="text-xs font-bold text-outline uppercase tracking-wider block mb-2">Send days</label>
+          <div class="flex gap-2 flex-wrap" id="send-days">
+            <button class="tag tag-active cursor-pointer" onclick="toggleDay(this)">Mon</button>
+            <button class="tag tag-active cursor-pointer" onclick="toggleDay(this)">Tue</button>
+            <button class="tag tag-active cursor-pointer" onclick="toggleDay(this)">Wed</button>
+            <button class="tag tag-active cursor-pointer" onclick="toggleDay(this)">Thu</button>
+            <button class="tag tag-active cursor-pointer" onclick="toggleDay(this)">Fri</button>
+            <button class="tag tag-draft cursor-pointer" onclick="toggleDay(this)">Sat</button>
+            <button class="tag tag-draft cursor-pointer" onclick="toggleDay(this)">Sun</button>
+          </div>
+        </div>
+        <div>
+          <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Open tracking</label>
+          <div class="flex items-center gap-3 mt-2">
+            <div class="relative w-11 h-6 cursor-pointer" onclick="toggleTracking('open-tracking')">
+              <div id="open-tracking-track" class="w-11 h-6 rounded-full bg-outline-dim/40 transition-colors"></div>
+              <div id="open-tracking-thumb" class="absolute top-1 left-1 w-4 h-4 rounded-full bg-white transition-transform"></div>
+            </div>
+            <span class="text-sm text-on-muted" id="open-tracking-label">Off (recommended for 1st email)</span>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary mt-2" onclick="saveSettings()"><span class="ms" style="font-size:15px">save</span> Save Settings</button>
+    </div>
+
+    <!-- Unsubscribe -->
+    <div class="card p-6 space-y-4">
+      <div class="font-headline font-bold text-lg border-b border-outline-dim/20 pb-3">Unsubscribe & Compliance</div>
+      <div class="flex items-center gap-4">
+        <div class="flex-1">
+          <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Unsubscribe footer text</label>
+          <textarea class="input text-sm" rows="2">If you'd like to opt out, simply reply "unsubscribe" and we'll remove you immediately.</textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ============================= MODALS ============================= -->
+
+<!-- New Campaign Modal -->
+<div id="modal-new-campaign" class="modal-overlay" onclick="modalOverlayClick(event, 'modal-new-campaign')">
+  <div class="modal-box">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="font-headline font-black text-2xl">Create New Campaign</h2>
+      <button onclick="closeModal('modal-new-campaign')" class="text-outline hover:text-white"><span class="ms" style="font-size:22px">close</span></button>
+    </div>
+    <div class="space-y-5">
+      <div>
+        <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Campaign Name</label>
+        <input id="nc-name" class="input" placeholder="e.g. HammerCash Canada Spring Push"/>
+      </div>
+      <div>
+        <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Lead List</label>
+        <select id="nc-leads" class="input">
+          <option>HammerCash_Leads.csv (488 contacts)</option>
+          <option>Upload new CSV...</option>
+        </select>
+      </div>
+      <div>
+        <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Sender Rotation</label>
+        <select id="nc-sender" class="input">
+          <option>Auto-rotate (wade@ + sales@) — Recommended</option>
+          <option>wade@tryhammercash.com only</option>
+          <option>sales@tryhammercash.com only</option>
+        </select>
+      </div>
+      <div>
+        <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Email Step 1 — Subject</label>
+        <input id="nc-subject" class="input" placeholder="{Hey|Hi|Hello} {{First Name}}, quick question about {{Company}}"/>
+      </div>
+      <div>
+        <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Email Step 1 — Body</label>
+        <textarea id="nc-body" class="input text-sm" rows="5" placeholder="Hi {{First Name}},
+
+I noticed {{Company}} is a contractor in {{City}} and wanted to reach out.
+
+HammerCash secures payment before the job starts — you get paid in milestones, not after chasing clients.
+
+Would a 15-min call this week make sense?
+
+Best,
+Wade"></textarea>
+      </div>
+      <div class="text-xs text-on-muted bg-surface-high rounded-lg p-3 border border-outline-dim/20">
+        <span class="text-primary font-bold">Variables available:</span> {{First Name}} · {{Last Name}} · {{Company}} · {{City}} · {{Website}}<br/>
+        <span class="text-primary font-bold">Spintax:</span> {Hi|Hello|Hey} to randomize greetings per send
+      </div>
+      <div class="flex justify-end gap-3 pt-2">
+        <button class="btn btn-ghost" onclick="closeModal('modal-new-campaign')">Cancel</button>
+        <button class="btn btn-primary" onclick="createCampaign()"><span class="ms" style="font-size:15px">rocket_launch</span> Launch Campaign</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add SMTP Modal -->
+<div id="modal-add-smtp" class="modal-overlay" onclick="modalOverlayClick(event, 'modal-add-smtp')">
+  <div class="modal-box">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="font-headline font-black text-2xl">Add Sender Account</h2>
+      <button onclick="closeModal('modal-add-smtp')" class="text-outline hover:text-white"><span class="ms" style="font-size:22px">close</span></button>
+    </div>
+    <div class="space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="col-span-2">
+          <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Email Address</label>
+          <input class="input" placeholder="hello@yourdomain.com"/>
+        </div>
+        <div>
+          <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">SMTP Host</label>
+          <input class="input" placeholder="smtp.gmail.com"/>
+        </div>
+        <div>
+          <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">SMTP Port</label>
+          <input class="input" value="587"/>
+        </div>
+        <div class="col-span-2">
+          <label class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">App Password / OAuth Token</label>
+          <input type="password" class="input" placeholder="Google App Password or OAuth Token"/>
+          <p class="text-xs text-on-muted mt-1">Use Google App Passwords for Gmail — not your main password.</p>
+        </div>
+      </div>
+      <div class="flex justify-end gap-3 pt-2">
+        <button class="btn btn-ghost" onclick="closeModal('modal-add-smtp')">Cancel</button>
+        <button class="btn btn-primary" onclick="addSMTP()"><span class="ms" style="font-size:15px">add</span> Connect Account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast">
+  <span class="ms ms-fill text-success" style="font-size:18px">check_circle</span>
+  <span id="toast-msg">Done!</span>
+</div>
+
+<!-- ============================= JS ============================= -->
+<script>
+// ========= BACKEND INTEGRATION =========
+async function callBackend(endpoint, data) {
+  try {
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    return await response.json();
+  } catch (e) {
+    console.error('Backend error:', e);
+    return { status: 'error', detail: e.message };
+  }
+}
+
+async function sendRealEmail(to, subject, body) {
+  const data = {
+    sender_email: "wadelieu17@gmail.com",
+    sender_password: "chmw aaac xlpd zvpo",
+    receiver_email: to,
+    subject: subject,
+    body: body
+  };
+  toast('Sending email via HammerCash Engine...');
+  const res = await callBackend('http://localhost:8001/api/send-email', data);
+  if (res.status === 'success') {
+    toast('Success: Email sent to ' + to);
+  } else {
+    toast('Error: ' + (res.detail || 'Failed to send'), 5000);
+  }
+}
+
+// ========= DATA STORE =========
+const store = {
+  campaigns: [
+    {
+      id: 1, name: "Template 1 — The Appointment Guarantee", status: "active",
+      leads: 488, opened: 62, replied: 8.4, placement: 97,
+      sequence: [
+        {
+          step: 1, label: "Initial Outreach", delay: "Send immediately",
+          subject: "{{First Name}}, q",
+          body: "Hi {{First Name}},\n\nI found you on LinkedIn & thought I'd reach out.\n\nI'm the founder of HammerCash, and I built a system for contractors that secures payment BEFORE the job starts — so you never chase a client again.\n\nI helped one roofing company eliminate 3 payment disputes in just 30 days. Based on what I've seen, I think I could do something similar for {{Company}}.\n\nWe'd even set up your first job for free so you can see how it works.\n\nCould I show you over a 10-min call this week?\n\n—\nWade Lieu\nFounder, HAMMERCASH\n403-402-8896\nwade.lieu17@gmail.com\nCalgary, AB"
+        },
+        {
+          step: 2, label: "Follow-Up", delay: "1–2 days after Step 1 (if no reply)",
+          subject: "",
+          body: "Hi {{First Name}}, just checking in again. Would there be interest in this?\n\nTLDR:\n• Know this is a long shot, but I work specifically with contractors\n• Think I can add a fair amount of value (see previous email)\n\nIf this isn't the right fit no hard feelings, just wanted to put that out there. Let me know.\n\n—\nWade Lieu\nFounder, HAMMERCASH\n403-402-8896\nwade.lieu17@gmail.com\nCalgary, AB"
+        }
+      ]
+    },
+    {
+      id: 2, name: "Template 2 — The Niche Contractor Approach", status: "active",
+      leads: 488, opened: 0, replied: 0, placement: 97,
+      sequence: [
+        {
+          step: 1, label: "Initial Outreach", delay: "Send immediately",
+          subject: "{{First Name}}, q",
+          body: "{{icebreaker}}\n\nI know this is a long shot, but I work specifically with contractors and trades businesses across Canada. Basically, I built HammerCash — a payment protection system that secures funds upfront before the job starts, then releases them in milestones as work gets done.\n\nI run HammerCash and have personally helped a number of contractors eliminate payment disputes and late invoices entirely.\n\nFully aware we haven't talked prior to this and you'll probably think this is cold outreach. To be frank, {{Company}} was one of the first businesses I found when looking into {{City}} contractors, and I think you'd be a great fit.\n\nAlso, in my experience, getting protected on your next job is super easy to set up — and I could walk you through it totally upfront at no cost.\n\nWould this make sense for you? If so — do you want me to just send an example contract setup, or would you rather get on a quick call?\n\n—\nWade Lieu\nFounder, HAMMERCASH\n403-402-8896\nwade.lieu17@gmail.com\nCalgary, AB"
+        },
+        {
+          step: 2, label: "Follow-Up", delay: "1–2 days after Step 1 (if no reply)",
+          subject: "",
+          body: "Hi {{First Name}}, just checking in again. Would there be interest in this?\n\nTLDR:\n• Know this is a long shot, but I work specifically with contractors\n• Think I can add a fair amount of value (see previous email)\n\nIf this isn't the right fit no hard feelings, just wanted to put that out there. Let me know.\n\n—\nWade Lieu\nFounder, HAMMERCASH\n403-402-8896\nwade.lieu17@gmail.com\nCalgary, AB"
+        }
+      ]
+    },
+    {
+      id: 3, name: "Template 3 — The Low-Risk Demo Offer", status: "draft",
+      leads: 0, opened: 0, replied: 0, placement: 0,
+      sequence: [
+        {
+          step: 1, label: "Initial Outreach", delay: "Send immediately",
+          subject: "{{First Name}}, q",
+          body: "{{icebreaker}}\n\nAm new to reaching out like this, so please bear with me. But I put something together that works really well for contractors.\n\nTo make a long story short — it's a payment protection system that secures your money BEFORE the job starts and releases it in milestones. Costs literally nothing unless you actually get paid.\n\nI ran into this problem myself when I was doing contract work in Vancouver — clients were slow to pay, and one bad job wiped out a month of profit. So I built HammerCash to solve it.\n\nI know this is completely out of left field, but I'm fairly confident we could protect {{Company}} on your very next job.\n\nJust wanted to see if there was interest — you were one of the first contractors I found when looking into {{City}}.\n\nWould this be of any value? Wouldn't cost you anything upfront. I'd even set it up for your first job for free so you can see how it works.\n\n—\nWade Lieu\nFounder, HAMMERCASH\n403-402-8896\nwade.lieu17@gmail.com\nCalgary, AB\nhammercash.com"
+        },
+        {
+          step: 2, label: "Follow-Up", delay: "1–2 days after Step 1 (if no reply)",
+          subject: "",
+          body: "Hi {{First Name}}, just checking in again. Would there be interest in this?\n\nTLDR:\n• Know this is a long shot, but I work specifically with contractors\n• Think I can add a fair amount of value (see previous email)\n\nIf this isn't the right fit no hard feelings, just wanted to put that out there. Let me know.\n\n—\nWade Lieu\nFounder, HAMMERCASH\n403-402-8896\nwade.lieu17@gmail.com\nCalgary, AB"
+        }
+      ]
+    }
+  ],
+  leads: [
+    { company: "Apex Electric Ltd", email: "john@apexelectric.ca", contact: "John Doe", city: "Calgary, AB", status: "Enrolled" },
+    { company: "Forbes Electrical", email: "admin@forbeselectrical.ca", contact: "N/A", city: "Calgary, AB", status: "Enrolled" },
+    { company: "RB Financial", email: "raul.bolufe@rbfinancial.ca", contact: "Raul Bolufe", city: "Mississauga, ON", status: "Bounced" },
+    { company: "Nexus HVAC Pro", email: "info@nexushvac.ca", contact: "Mike Chen", city: "Toronto, ON", status: "Replied" },
+    { company: "Peak Plumbing", email: "service@peakplumbing.ca", contact: "Sara Lee", city: "Edmonton, AB", status: "Uncontacted" },
+    { company: "TrueNorth Roofers", email: "contact@truenorthroof.ca", contact: "Dan Walsh", city: "Vancouver, BC", status: "Uncontacted" },
+    { company: "Maple Electrical Co", email: "hello@mapleelectrical.ca", contact: "Kim Park", city: "Winnipeg, MB", status: "Uncontacted" },
+    { company: "Summit Builders", email: "info@summitbuilders.ca", contact: "Tom Green", city: "Ottawa, ON", status: "Enrolled" },
+    { company: "Prairie Contracting", email: "bid@prairiecontract.ca", contact: "Lisa Roy", city: "Saskatoon, SK", status: "Uncontacted" },
+    { company: "Atlantic Mechanical", email: "ops@atlanticmech.ca", contact: "Bob Tremblay", city: "Halifax, NS", status: "Uncontacted" },
+  ],
+  unibox: [
+    { id:1, from:"Wade Digital", fromEmail:"wade@wadedigital.ca", subject:"Re: Securing your payments before the job", preview:"Yes, actually we've had 2 disputes this year. Can we chat Tuesday?", body:"Hi,\n\nYes, actually we've had 2 disputes this year that cost us a ton. I'd love to see how your milestone system works.\n\nAre you free on Tuesday?", tag:"Interested", time:"10:42 AM" },
+    { id:2, from:"Apollo Plumbers", fromEmail:"joe@apolloplumb.ca", subject:"Re: HammerCash — protecting your next job", preview:"Not interested right now but maybe later this year.", body:"Hi,\n\nNot interested at this time, thanks for reaching out though. Maybe later this year.\n\nJoe", tag:"Not Interested", time:"Yesterday" },
+    { id:3, from:"Mike@NexusHVAC", fromEmail:"info@nexushvac.ca", subject:"Re: Quick question, Mike", preview:"I'm out of the office until April 25. I'll be in touch then.", body:"Thanks for your email! I'm currently out of the office until April 25, 2026.\n\nI'll review your message and get back to you when I return.\n\nMike Chen", tag:"Out of Office", time:"Apr 17" },
+  ],
+  activeCampaignId: null,
+  activeUniboxId: null,
+  trackingEnabled: false
+};
+
+// ========= NAVIGATION =========
+function switchView(viewId) {
+  document.querySelectorAll('.view').forEach(v => {
+    v.classList.remove('active');
+    v.style.display = 'none';
+  });
+  const el = document.getElementById('view-' + viewId);
+  if (el) {
+    if (viewId === 'unibox') {
+      el.style.display = 'flex';
+      el.classList.add('active');
+    } else {
+      el.style.display = 'block';
+      el.classList.add('active');
+    }
+  }
+  document.querySelectorAll('.nav-item').forEach(n => {
+    n.classList.toggle('active', n.dataset.view === viewId);
+  });
+  if (viewId === 'campaigns') renderCampaigns();
+  if (viewId === 'leads') renderLeads(store.leads);
+  if (viewId === 'unibox') renderUnibox();
+  if (viewId === 'templates') renderTemplates();
+}
+
+// ========= MODALS =========
+function openModal(id) { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+function modalOverlayClick(e, id) { if (e.target === e.currentTarget) closeModal(id); }
+
+// ========= TOAST =========
+function toast(msg, duration=2500) {
+  const t = document.getElementById('toast');
+  document.getElementById('toast-msg').textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), duration);
+}
+
+// ========= TEMPLATES =========
+const TEMPLATE_META = [
+  { id:1, tag:'Guarantee Approach', tagClass:'tag-active', icon:'verified', desc:'Leads with a specific results guarantee — great for high-trust outreach. Boldly promises value upfront.' },
+  { id:2, tag:'Niche Contractor', tagClass:'tag-interested', icon:'construction', desc:'Hyper-specific to trades & contractors. Uses an icebreaker opener and a soft CTA to reduce friction.' },
+  { id:3, tag:'Low-Risk Demo', tagClass:'tag-paused', icon:'handshake', desc:'Low-pressure story-based angle. Wade shares personal backstory to build credibility and offers a free setup.' },
+];
+
+function renderTemplates() {
+  const list = document.getElementById('templates-list');
+  list.innerHTML = store.campaigns.map((c, idx) => {
+    const meta = TEMPLATE_META[idx] || {};
+    const step1 = c.sequence[0];
+    const step2 = c.sequence[1];
+    return `
+    <div class="card p-6 space-y-5">
+      <div class="flex items-start justify-between gap-4">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-surface-high flex items-center justify-center text-primary flex-shrink-0">
+            <span class="ms ms-fill" style="font-size:22px">${meta.icon || 'mail'}</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 mb-1">
+              <div class="font-headline font-bold text-white text-lg">${c.name}</div>
+              <span class="tag ${meta.tagClass || 'tag-draft'}">${meta.tag || ''}</span>
+            </div>
+            <p class="text-sm text-on-muted max-w-xl">${meta.desc || ''}</p>
+          </div>
+        </div>
+        <button class="btn btn-primary flex-shrink-0" onclick="useTemplate(${c.id})">
+          <span class="ms" style="font-size:15px">rocket_launch</span> Use Template
+        </button>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="bg-surface-high rounded-2xl p-5 border border-outline-dim/15">
+        <div class="flex justify-between items-center mb-3">
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full g text-[#001b3f] flex items-center justify-center text-xs font-black">1</div>
+            <div class="font-headline font-bold text-sm">Step 1 — Initial Outreach</div>
+          </div>
+          <div class="text-xs text-outline">Send immediately</div>
+        </div>
+        <div class="text-xs font-bold text-primary mb-2">Subject: ${ step1.subject || '(Same thread as step 1)'}</div>
+        <pre class="text-xs text-on-muted leading-relaxed whitespace-pre-wrap font-body">${step1.body}</pre>
+      </div>
+
+      <!-- Step 2 -->
+      ${step2 ? `
+      <div class="bg-surface-lowest rounded-2xl p-5 border border-outline-dim/10">
+        <div class="flex justify-between items-center mb-3">
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-outline-dim text-outline flex items-center justify-center text-xs font-black">2</div>
+            <div class="font-headline font-bold text-sm">Step 2 — Follow-Up</div>
+          </div>
+          <div class="text-xs text-outline">${step2.delay}</div>
+        </div>
+        <div class="text-xs font-bold text-outline mb-2">Subject: ${step2.subject || '(Continues same thread — leave blank)'}</div>
+        <pre class="text-xs text-on-muted leading-relaxed whitespace-pre-wrap font-body">${step2.body}</pre>
+      </div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function useTemplate(id) {
+  closeModal && closeModal('modal-new-campaign');
+  openCampaignDetail(id);
+  toast('Template loaded! Review the sequence below, then hit Launch.');
+}
+
+// ========= CAMPAIGNS =========
+function renderCampaigns() {
+  const list = document.getElementById('campaigns-list');
+  list.innerHTML = store.campaigns.map(c => `
+    <div class="card p-5 flex items-center justify-between gap-4 cursor-pointer hover:border-outline/40 transition-all border-l-4 ${c.status==='active' ? 'border-l-primary' : 'border-l-outline-dim'}" onclick="openCampaignDetail(${c.id})">
+      <div class="flex items-center gap-5">
+        <div class="w-11 h-11 rounded-xl bg-surface-high flex items-center justify-center text-primary">
+          <span class="ms ms-fill">${c.status==='active' ? 'rocket_launch' : 'draft'}</span>
+        </div>
+        <div>
+          <div class="font-headline font-bold text-white">${c.name}</div>
+          <div class="flex items-center gap-3 mt-1 text-xs text-on-muted">
+            <span><span class="ms" style="font-size:13px">people</span> ${c.leads} enrolled</span>
+            ${c.status==='active' ? `<span class="text-primary">· ${c.opened}% open · ${c.replied}% reply</span>` : ''}
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="tag ${c.status==='active' ? 'tag-active' : 'tag-draft'}">${c.status}</span>
+        <button class="btn btn-ghost text-xs py-1 px-2" onclick="event.stopPropagation(); openModal('modal-new-campaign')"><span class="ms" style="font-size:14px">edit</span></button>
+        <button class="btn btn-danger text-xs py-1 px-2" onclick="event.stopPropagation(); deleteCampaign(${c.id})"><span class="ms" style="font-size:14px">delete</span></button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openCampaignDetail(id) {
+  const c = store.campaigns.find(x => x.id === id);
+  if (!c) return;
+  store.activeCampaignId = id;
+  document.getElementById('detail-name').textContent = c.name;
+  document.getElementById('detail-status-tag').className = `tag ml-2 ${c.status==='active' ? 'tag-active' : 'tag-draft'}`;
+  document.getElementById('detail-status-tag').textContent = c.status;
+  document.getElementById('ds-sent').textContent = c.leads;
+  document.getElementById('ds-open').textContent = c.opened + '%';
+  document.getElementById('ds-reply').textContent = c.replied + '%';
+  document.getElementById('ds-place').textContent = c.placement + '%';
+  // Sequence
+  const seqEl = document.getElementById('detail-sequence');
+  seqEl.innerHTML = c.sequence.map((s, i) => `
+    <div class="seq-step">
+      ${i < c.sequence.length - 1 ? '<div class="seq-line"></div>' : ''}
+      <div class="seq-dot g text-[#001b3f]">${s.step}</div>
+      <div class="flex-1 bg-surface-high rounded-2xl p-5 border border-outline-dim/15">
+        <div class="flex justify-between items-start mb-3">
+          <div>
+            <div class="font-headline font-bold text-white">${s.label}</div>
+            <div class="text-xs text-on-muted mt-0.5"><span class="ms" style="font-size:13px">schedule</span> ${s.delay}</div>
+          </div>
+          <button class="btn btn-ghost text-xs py-1 px-2" onclick="previewEmail(${i})"><span class="ms" style="font-size:14px">visibility</span> Preview</button>
+        </div>
+        <div class="text-sm font-semibold text-primary mb-1">Subject: ${s.subject}</div>
+        <div class="text-xs text-on-muted whitespace-pre-line">${s.body.substring(0, 150)}...</div>
+      </div>
+    </div>
+  `).join('');
+  switchView('campaign-detail');
+}
+
+function deleteCampaign(id) {
+  if (!confirm('Delete this campaign?')) return;
+  store.campaigns = store.campaigns.filter(c => c.id !== id);
+  renderCampaigns();
+  toast('Campaign deleted.');
+}
+
+function createCampaign() {
+  const name = document.getElementById('nc-name').value.trim();
+  const subject = document.getElementById('nc-subject').value.trim();
+  const body = document.getElementById('nc-body').value.trim();
+  if (!name) { alert('Please enter a campaign name.'); return; }
+  
+  // Real sending simulation if it's a test
+  if (confirm("Would you like to send a real test email to wadelieu@gmail.com now?")) {
+    sendRealEmail("wadelieu@gmail.com", subject || "HammerCash Test", body || "Testing HammerCash Engine.");
+  }
+
+  const newC = {
+    id: Date.now(), name, status: 'active', leads: 488, opened: 0, replied: 0, placement: 97,
+    sequence: [
+      { step: 1, label: 'Initial Outreach', delay: 'Send immediately', subject: subject || '{Hey|Hello} {{First Name}}', body: body || 'Hi {{First Name}},\n\n...' },
+      { step: 2, label: 'Follow-Up #1', delay: '3 days after Step 1 (if no reply)', subject: 'Re: ' + (subject || 'Quick question'), body: 'Hey {{First Name}},\n\nJust following up...' }
+    ]
+  };
+  store.campaigns.unshift(newC);
+  closeModal('modal-new-campaign');
+  document.getElementById('nc-name').value = '';
+  document.getElementById('nc-subject').value = '';
+  document.getElementById('nc-body').value = '';
+  toast('Campaign launched! 🚀');
+  openCampaignDetail(newC.id);
+}
+
+function previewEmail(idx) {
+  const c = store.campaigns.find(x => x.id === store.activeCampaignId);
+  if (!c) return;
+  const s = c.sequence[idx];
+  const personalized = (text) => text
+    .replace(/{{First Name}}/g, 'John').replace(/{{Last Name}}/g, 'Doe')
+    .replace(/{{Company}}/g, 'Apex Electric').replace(/{{City}}/g, 'Calgary')
+    .replace(/{{Website}}/g, 'apexelectric.ca')
+    .replace(/\{([^|{}]+)\|([^|{}]+)\|?([^{}]*)\}/g, (m, a) => a);
+  alert(`--- PREVIEW (personalized for "John @ Apex Electric") ---\n\nSubject: ${personalized(s.subject)}\n\n${personalized(s.body)}`);
+}
+
+// ========= LEADS =========
+function renderLeads(leads) {
+  const tbody = document.getElementById('leads-table-body');
+  tbody.innerHTML = leads.map(l => `
+    <tr>
+      <td><input type="checkbox" class="rounded"/></td>
+      <td class="font-semibold text-white">${l.company}</td>
+      <td class="text-primary">${l.email}</td>
+      <td>${l.contact}</td>
+      <td>${l.city}</td>
+      <td><span class="tag tag-${l.status.toLowerCase().replace(' ','-')}">${l.status}</span></td>
+      <td>
+        <div class="flex gap-1">
+          <button class="btn btn-ghost text-xs py-0.5 px-2" onclick="alert('Viewing lead: ${l.email}')"><span class="ms" style="font-size:13px">visibility</span></button>
+          <button class="btn btn-danger text-xs py-0.5 px-2" onclick="alert('Removing: ${l.email}')"><span class="ms" style="font-size:13px">delete</span></button>
+        </div>
+      </td>
+    </tr>
+  `).join('');
+  document.getElementById('showing-count').textContent = leads.length;
+  document.getElementById('total-count').textContent = Math.max(488, leads.length);
+}
+
+function filterLeads(query) {
+  const q = query.toLowerCase();
+  const filtered = store.leads.filter(l =>
+    l.email.toLowerCase().includes(q) || l.company.toLowerCase().includes(q) || l.contact.toLowerCase().includes(q)
+  );
+  renderLeads(filtered);
+}
+
+function filterByStatus(status) {
+  const filtered = status ? store.leads.filter(l => l.status === status) : store.leads;
+  renderLeads(filtered);
+}
+
+function toggleAllLeads(el) {
+  document.querySelectorAll('#leads-table-body input[type="checkbox"]').forEach(cb => cb.checked = el.checked);
+}
+
+function handleCSV(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    const lines = e.target.result.split('\n');
+    const headers = lines[0].split(',').map(h => h.trim().replace(/"/g,''));
+    const newLeads = lines.slice(1).filter(l => l.trim()).map(line => {
+      const cols = line.split(',').map(c => c.trim().replace(/"/g,''));
+      const obj = {};
+      headers.forEach((h, i) => obj[h] = cols[i] || '');
+      return {
+        company: obj['Company'] || obj['companyName'] || 'Unknown',
+        email: obj['Email'] || obj['email'] || '',
+        contact: (obj['First Name'] || obj['firstName'] || '') + ' ' + (obj['Last Name'] || obj['lastName'] || ''),
+        city: obj['City'] || obj['companyCity'] || '',
+        status: 'Uncontacted'
+      };
+    }).filter(l => l.email);
+    store.leads.push(...newLeads);
+    document.getElementById('leads-total').textContent = store.leads.length;
+    document.getElementById('leads-count-badge').textContent = store.leads.length;
+    renderLeads(store.leads);
+    toast(`Imported ${newLeads.length} new leads from ${file.name}`);
+  };
+  reader.readAsText(file);
+}
+
+function exportLeads() {
+  const rows = [['Company','Email','Contact','City','Status']];
+  store.leads.forEach(l => rows.push([l.company, l.email, l.contact, l.city, l.status]));
+  const csv = rows.map(r => r.map(c => `"${c}"`).join(',')).join('\n');
+  const a = document.createElement('a');
+  a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+  a.download = 'HammerCash_Leads_Export.csv';
+  a.click();
+  toast('Leads exported!');
+}
+
+// ========= UNIBOX =========
+function renderUnibox() {
+  const threads = document.getElementById('unibox-threads');
+  threads.innerHTML = store.unibox.map(m => `
+    <div class="p-4 border-b border-outline-dim/15 cursor-pointer hover:bg-surface-mid transition-colors ${store.activeUniboxId === m.id ? 'bg-surface-mid' : ''}" onclick="openThread(${m.id})">
+      <div class="flex justify-between items-center mb-1">
+        <span class="font-bold text-sm text-white">${m.from}</span>
+        <span class="text-xs text-outline">${m.time}</span>
+      </div>
+      <div class="text-xs font-semibold text-primary mb-1 truncate">${m.subject}</div>
+      <div class="text-xs text-on-muted truncate">${m.preview}</div>
+    </div>
+  `).join('');
+}
+
+function openThread(id) {
+  store.activeUniboxId = id;
+  renderUnibox();
+  const m = store.unibox.find(x => x.id === id);
+  if (!m) return;
+  document.getElementById('ub-subject').textContent = m.subject;
+  document.getElementById('ub-meta').textContent = `From: ${m.from} <${m.fromEmail}>`;
+  const tagColors = { 'Interested': 'tag-interested', 'Not Interested': 'tag-draft', 'Out of Office': 'tag-paused' };
+  document.getElementById('ub-tags').innerHTML = `<span class="tag ${tagColors[m.tag] || 'tag-draft'}">${m.tag}</span>`;
+  document.getElementById('ub-body').innerHTML = `<div class="bg-surface-high rounded-xl p-5 text-sm leading-relaxed whitespace-pre-line">${m.body}</div>`;
+  document.getElementById('ub-reply-area').style.display = 'block';
+}
+
+function sendReply() {
+  const reply = document.getElementById('ub-reply-input').value.trim();
+  if (!reply) return;
+  const m = store.unibox.find(x => x.id === store.activeUniboxId);
+  const currentBody = document.getElementById('ub-body').innerHTML;
+  document.getElementById('ub-body').innerHTML = currentBody + `
+    <div class="bg-primary/10 border border-primary/20 rounded-xl p-5 mt-4 text-sm leading-relaxed">
+      <div class="text-xs text-primary font-bold mb-2">You (just now)</div>
+      ${reply.replace(/\n/g,'<br/>')}
+    </div>
+  `;
+  document.getElementById('ub-reply-input').value = '';
+  toast('Reply sent!');
+}
+
+// ========= SETTINGS HELPERS =========
+function toggleDay(btn) {
+  if (btn.classList.contains('tag-active')) {
+    btn.classList.remove('tag-active'); btn.classList.add('tag-draft');
+  } else {
+    btn.classList.remove('tag-draft'); btn.classList.add('tag-active');
+  }
+}
+
+const trackingState = { open: false };
+function toggleTracking(id) {
+  trackingState[id] = !trackingState[id];
+  const on = trackingState[id];
+  document.getElementById(id + '-track').style.background = on ? '#abc7ff' : '';
+  document.getElementById(id + '-thumb').style.transform = on ? 'translateX(20px)' : '';
+  document.getElementById(id + '-label').textContent = on ? 'On' : 'Off (recommended for 1st email)';
+}
+
+function saveSettings() { toast('Settings saved!'); }
+
+function addSMTP() {
+  closeModal('modal-add-smtp');
+  toast('Sender account connected!');
+}
+
+// ========= INIT =========
+renderCampaigns();
+renderLeads(store.leads);
+renderUnibox();
+switchView('dashboard');
+</script>
+</body>
+</html>

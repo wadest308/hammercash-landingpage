@@ -1,0 +1,2663 @@
+[{
+  "title": "Ryan My Fireplace Guy",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Gas installation service",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://myfireplaceguy.com/",
+  "phone": "+1 587-223-8884",
+  "phoneUnformatted": "+15872238884",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9942804,
+    "lng": -114.1199156
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJeZYgI-53cVMRjWe1KpMnXEg",
+  "categories": [
+    "Gas installation service",
+    "Service establishment",
+    "Furnace repair service"
+  ],
+  "fid": "0x537177ee23209679:0x485c27932ab5678d",
+  "cid": "5214085981618399117",
+  "reviewsCount": 206,
+  "reviewsDistribution": {
+    "oneStar": 6,
+    "twoStar": 3,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 195
+  },
+  "imagesCount": 15,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:15.418Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": false
+      }
+    ],
+    "Planning": [
+      {
+        "Appointment required": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Ryan%20My%20Fireplace%20Guy&query_place_id=ChIJeZYgI-53cVMRjWe1KpMnXEg",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 102,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGeaYhgv7G9Vt-kFJo4nLRDFUUVkvR9CsiXyGTHAk2oLwh__Gvlm0ZpiLiCLTgG0v5-2I6EViwVeF6Tjts2ctVXtKb7chaPnoL0xJh-CZNu8gLPT4DhNJyogYqdgZUFcKMMN8qqgA=w426-h240-k-no",
+  "kgmid": "/g/11bxf4006t",
+  "domain": "myfireplaceguy.com",
+  "scrapedUrls": [
+    "https://myfireplaceguy.com/",
+    "https://myfireplaceguy.com/contact/",
+    "https://myfireplaceguy.com/services/",
+    "https://myfireplaceguy.com/",
+    "https://myfireplaceguy.com/#"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "587-223-8884"
+  ],
+  "phonesUncertain": [
+    "587-223-8884",
+    "160586735660405",
+    "180061019117103",
+    "202599920775190",
+    "241326285110138",
+    "321831273539475",
+    "344799117",
+    "344860930",
+    "345146514",
+    "345331394",
+    "345380567678547",
+    "467411442051692",
+    "51.29350",
+    "550884163867304",
+    "6459539",
+    "828002673727636",
+    "179571164542320",
+    "178978718778401",
+    "178640214203772",
+    "178858462968353",
+    "178497679254175",
+    "64743636",
+    "64745640"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/ryanmyfireplaceguy"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/myfireplaceguy"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Home Services at The Home Depot",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Contractor",
+  "address": "5125 126 Ave SE, Calgary, AB T2Z 0B2, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "5125 126 Ave SE",
+  "city": "Calgary",
+  "postalCode": "T2Z 0B2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://stores.homedepot.ca/ab/calgary/home-services/?utm_source=google&utm_medium=organic&utm_campaign=local&utm_content=HS7082",
+  "phone": "(800) 466-3337",
+  "phoneUnformatted": "+18004663337",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9337462,
+    "lng": -113.9601039
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJKwCwscB3cVMR-EhjSKV4xOA",
+  "categories": [
+    "Contractor",
+    "Air conditioning repair service",
+    "Electrician",
+    "Flooring contractor",
+    "Garage builder",
+    "Handyman/Handywoman/Handyperson",
+    "Painter",
+    "Plumber",
+    "Remodeler",
+    "Window installation service"
+  ],
+  "fid": "0x537177c0b1b0002b:0xe0c478a5486348f8",
+  "cid": "16196202811210549496",
+  "reviewsCount": 5,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 4
+  },
+  "imagesCount": 16,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:14.616Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Home%20Services%20at%20The%20Home%20Depot&query_place_id=ChIJKwCwscB3cVMR-EhjSKV4xOA",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 100,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG_UjlmQO7fivvO0AlxX6p8mfk4NkTd3kXT9ulkPOQ-uLpF9HUNfhUgM6g1o6IfS1yCoiu7wN9HpGAM8qZKubR-Q2xysSqw47dBUt4MTggor3TousMnLOM1pmEJfYSAehZCIZpemfbXQv8-=w408-h320-k-no",
+  "kgmid": "/g/11p64t6pfz",
+  "domain": "homedepot.ca",
+  "scrapedUrls": [
+    "https://stores.homedepot.ca/ab/calgary/home-services/?utm_source=google&utm_medium=organic&utm_campaign=local&utm_content=HS7082",
+    "https://www.homedepot.ca/en/home/customer-support/in-store-pick-up-faq.html",
+    "https://www.homedepot.ca/en/home/customer-support.html",
+    "https://www.homedepot.ca/en/home/corporate-information/media-relations.html",
+    "https://www.homedepot.ca/en/home/customer-support/return-policy.html"
+  ],
+  "depth": 0,
+  "emails": [
+    "media@homedepot.com"
+  ],
+  "phones": [
+    "800-466-3337"
+  ],
+  "phonesUncertain": [
+    "800-466-3337",
+    "800-628-0525",
+    "800-759-2054",
+    "800-759-2070",
+    "800-747-3787",
+    "800-668-5336",
+    "866-207-3933",
+    "800-668-2266"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/1551117",
+    "https://www.linkedin.com/company/homedepotcanada"
+  ],
+  "twitters": [
+    "https://x.com/homedepotcanada",
+    "https://twitter.com/homedepotcanada"
+  ],
+  "instagrams": [
+    "https://www.instagram.com/homedepotcanada",
+    "https://www.instagram.com/homedepot"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/homedepotcanada",
+    "https://www.facebook.com/homedepot"
+  ],
+  "youtubes": [
+    "https://www.youtube.com/homedepotcanada"
+  ],
+  "tiktoks": [
+    "https://www.tiktok.com/@homedepotcanada"
+  ],
+  "pinterests": [
+    "https://www.pinterest.com/homedepotcanada"
+  ],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "MV Pro Mechanical Inc. (previously known as MilanVic Plumbing & Heating Ltd.)",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://hvacservicescalgary.ca/",
+  "phone": "+1 403-890-8685",
+  "phoneUnformatted": "+14038908685",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJHRT8nT-dcVMRIPnRtem3Vco",
+  "categories": [
+    "Plumber",
+    "Service establishment",
+    "Gasfitter"
+  ],
+  "fid": "0x53719d3f9dfc141d:0xca55b7e9b5d1f920",
+  "cid": "14579761583087548704",
+  "reviewsCount": 21,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 21
+  },
+  "imagesCount": 40,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:20.747Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": false
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      },
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=MV%20Pro%20Mechanical%20Inc.%20(previously%20known%20as%20MilanVic%20Plumbing%20%26%20Heating%20Ltd.)&query_place_id=ChIJHRT8nT-dcVMRIPnRtem3Vco",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 39,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF5TuM1PBP1K5Ug7CVwT8pYn6DCAFFzJKKnvsEVNdG0g0Gavk19z0HBUJoLkQteu7PTr_kaN7IfNcN6NQcnHhl1kfSsntDQZ8JxwfZuRvUgXVfyMLDUddEGCYEQ-BPTTSaUm773=w408-h306-k-no",
+  "kgmid": "/g/11qptbsc9m",
+  "domain": "hvacservicescalgary.ca",
+  "scrapedUrls": [
+    "https://hvacservicescalgary.ca/",
+    "https://hvacservicescalgary.ca/contact/",
+    "https://hvacservicescalgary.ca/faq/",
+    "https://hvacservicescalgary.ca/blog/",
+    "https://hvacservicescalgary.ca/about/"
+  ],
+  "depth": 0,
+  "emails": [
+    "milanvicplumbing@gmail.com"
+  ],
+  "phones": [
+    "+14038908685"
+  ],
+  "phonesUncertain": [
+    "+14038908685",
+    "114.0719",
+    "403-890-8685",
+    "20131998",
+    "1978-1998"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [
+    "https://wa.me/14038908685"
+  ],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Flowrise Plumbing & Heating",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://flowriseplumbing.ca/",
+  "phone": "+1 403-874-3931",
+  "phoneUnformatted": "+14038743931",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8994864,
+    "lng": -114.0527286
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJi9BRIdqf6mkRSRjkUTcSF5A",
+  "categories": [
+    "Plumber",
+    "Service establishment"
+  ],
+  "fid": "0x69ea9fda2151d08b:0x9017123751e41849",
+  "cid": "10382787494732372041",
+  "reviewsCount": 8,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 8
+  },
+  "imagesCount": 23,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:20.747Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "English": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      },
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Flowrise%20Plumbing%20%26%20Heating&query_place_id=ChIJi9BRIdqf6mkRSRjkUTcSF5A",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 36,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF9uqjJxw9ZevONot2RHpu0AySmJZIq3z8AL2yBqdx5Mn1eXGeRBBIuyrglJZ2b_zlmKK1lQibSUqA5XwMCZhVMcfRgGul2uq34Pmf8LWxYt_jSy-YOza95lp2OU5Y7R3FCAklWUvPEY2jg=w408-h536-k-no",
+  "kgmid": "/g/11z0mdp7hb",
+  "domain": "flowriseplumbing.ca",
+  "scrapedUrls": [
+    "https://www.flowriseplumbing.ca/",
+    "https://www.flowriseplumbing.ca/about.html",
+    "https://www.flowriseplumbing.ca/contact.html",
+    "https://www.flowriseplumbing.ca/blog/index.html",
+    "https://www.flowriseplumbing.ca/services/index.html"
+  ],
+  "depth": 0,
+  "emails": [
+    "support@flowriseplumbing.ca"
+  ],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "X-Stream Plumbing And Heating Ltd.",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "phone": "+1 403-585-2539",
+  "phoneUnformatted": "+14035852539",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJz8_pMZt3cVMR2zSYtz5tMWg",
+  "categories": [
+    "Plumber",
+    "Service establishment",
+    "Furnace repair service",
+    "Gasfitter"
+  ],
+  "fid": "0x5371779b31e9cfcf:0x68316d3eb79834db",
+  "cid": "7507902169938932955",
+  "reviewsCount": 27,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 27
+  },
+  "imagesCount": 5,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:20.746Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=X-Stream%20Plumbing%20And%20Heating%20Ltd.&query_place_id=ChIJz8_pMZt3cVMR2zSYtz5tMWg",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 27,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHfyH7Oe2LfllKWaq6m-qNFRSYikdDYIRyXZAk2gIukx-oo-UEGinKzqyhdr6W_QlIvek3VkBPAb9Kvgd1bcS99RSYgdyUYSRRULbs_SjTocle3W7iUWYjC7SJ6vdnNkO5rmnf5=w408-h544-k-no",
+  "kgmid": "/g/11clm29xpb",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Eagle Construction Calgary",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "General Contractor",
+  "address": "25 Auburn Meadows Ave SE, Calgary, AB T2M 2L3, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "25 Auburn Meadows Ave SE",
+  "city": "Calgary",
+  "postalCode": "T2M 2L3",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.eagleconstructioncalgary.com/",
+  "phone": "+1 587-700-4166",
+  "phoneUnformatted": "+15877004166",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8962959,
+    "lng": -113.9440655
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ9bmrTGq9OEERX4G9UEWUB5c",
+  "categories": [
+    "General Contractor",
+    "Dry Wall Contractor",
+    "Garage builder",
+    "Painting",
+    "Roofing Service",
+    "Stucco contractor",
+    "Tile contractor",
+    "Waterproofing service"
+  ],
+  "fid": "0x4138bd6a4cabb9f5:0x9707944550bd815f",
+  "cid": "10882830049992343903",
+  "reviewsCount": 5,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 4
+  },
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:20.747Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 8 PM"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Eagle%20Construction%20Calgary&query_place_id=ChIJ9bmrTGq9OEERX4G9UEWUB5c",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 38,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=2Y81EmkJVhogNd-cGbqiOw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=158.0583&pitch=0&thumbfov=100",
+  "kgmid": "/g/11wr4c1p0m",
+  "domain": "eagleconstructioncalgary.com",
+  "scrapedUrls": [
+    "https://www.eagleconstructioncalgary.com/",
+    "https://www.eagleconstructioncalgary.com/#stucco",
+    "https://www.eagleconstructioncalgary.com/#tail",
+    "https://www.eagleconstructioncalgary.com/#interior",
+    "https://www.eagleconstructioncalgary.com/#painting"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@eagleconstructioncalgary.com"
+  ],
+  "phones": [
+    "+1 (587) 582-0416"
+  ],
+  "phonesUncertain": [
+    "+1 (587) 582-0416"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Plumbest Plumbing & Heating",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "https://plumbest.ca/",
+  "phone": "+1 403-463-8330",
+  "phoneUnformatted": "+14034638330",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 51.0276233,
+    "lng": -114.087835
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJFcFGkc3YXg8RkyniVD1kLiY",
+  "categories": [
+    "Plumber",
+    "Service establishment"
+  ],
+  "fid": "0xf5ed8cd9146c115:0x262e643d54e22993",
+  "cid": "2751246636949842323",
+  "reviewsCount": 12,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 11
+  },
+  "imagesCount": 7,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:20.747Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "7 AM to 7 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "English": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Plumbest%20Plumbing%20%26%20Heating&query_place_id=ChIJFcFGkc3YXg8RkyniVD1kLiY",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 34,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHNBy8aA7TrendAxWrP1tQ6f7qvAjKgnw5d1U6Cr4gQNEp0kpY7BeR3VZR2NTOw649DUUykBYbC8DqwpbtBHsY7InvsJSPswYIXKKh5RsiNGIBjOCE9GH7-Q3vNJhHpptoNqnORo3LO1zft=w474-h240-k-no",
+  "kgmid": "/g/11m5h9j3s6",
+  "domain": "plumbest.ca",
+  "scrapedUrls": [
+    "http://plumbest.ca/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "F.A.C.T.S. Mechanical",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "169 Cramond Close SE, Calgary, AB T3M 1C2, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "169 Cramond Close SE",
+  "city": "Calgary",
+  "postalCode": "T3M 1C2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://factsmechanical.ca/",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8956752,
+    "lng": -113.9817409
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ-cEPdV5z0KgR8ZAfdxdu80Y",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning repair shop",
+    "Furnace repair service"
+  ],
+  "fid": "0xa8d0735e750fc1f9:0x46f36e17771f90f1",
+  "cid": "5112551049057505521",
+  "reviewsCount": 2,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 2
+  },
+  "imagesCount": 44,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:20.746Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "4 to 8 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 8 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 8 PM"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "On-site services": true
+      },
+      {
+        "English": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation services": true
+      },
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=F.A.C.T.S.%20Mechanical&query_place_id=ChIJ-cEPdV5z0KgR8ZAfdxdu80Y",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 24,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFxDyHzXHs5jbNfLAn3wE_QwMXOV4-IMbC8AO-SbXiOqHNUbgm88MpQYmRRFJBQCAoWvm9kIvQYh4u3e8nnPEQPHZGiW5xbEoDzIfC3uL36lOSF9KD9euMRXZ4F_4hefQJd0DdX=w408-h408-k-no",
+  "kgmid": "/g/11y8zj4_lq",
+  "domain": "factsmechanical.ca",
+  "scrapedUrls": [
+    "https://factsmechanical.ca/",
+    "https://factsmechanical.ca/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "TR. Plumbing & Heating",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "phone": "+1 403-431-7731",
+  "phoneUnformatted": "+14034317731",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8849142,
+    "lng": -114.0722118
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJuwavJ3m0SQwRYLGDfQKtSZw",
+  "categories": [
+    "Plumber",
+    "Service establishment"
+  ],
+  "fid": "0xc49b47927af06bb:0x9c49ad027d83b160",
+  "cid": "11261722569423958368",
+  "reviewsCount": null,
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:19.127Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=TR.%20Plumbing%20%26%20Heating&query_place_id=ChIJuwavJ3m0SQwRYLGDfQKtSZw",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYuuIeHmgh-Utx4lkMWnvd3RfN6aNk_H8AeL9Z9jJN0Umkis2Q8oVj4ls1NXHpOPxzgFa66Cb2MLji21jzxBjB_fG0sZFRMdkGKg3ExewaGEO2eZHW63jSztAZgEF_CIc-ZWzgeZAYeJc=w408-h544-k-no",
+  "kgmid": "/g/11z5xgf4b0",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Modern Mechanical Services",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Mechanical contractor",
+  "address": "4150 Seton Dr SE #404, Calgary, AB T3M 3C7, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "4150 Seton Dr SE #404",
+  "city": "Calgary",
+  "postalCode": "T3M 3C7",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://modernmechanicalservices.ca/",
+  "phone": "+1 587-436-9108",
+  "phoneUnformatted": "+15874369108",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8770499,
+    "lng": -113.9506
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJp72ydnGdcVMR-hEM65boVzQ",
+  "categories": [
+    "Mechanical contractor",
+    "Home builder"
+  ],
+  "fid": "0x53719d7176b2bda7:0x3457e896eb0c11fa",
+  "cid": "3771738947832254970",
+  "reviewsCount": 101,
+  "imagesCount": 74,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:19.127Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 5 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Modern%20Mechanical%20Services&query_place_id=ChIJp72ydnGdcVMR-hEM65boVzQ",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 7,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG8lP5z0Rl9KwhBvDOXTOyPLr0wZhr6USTX2aNF1fPRz5jdZvcLi4NW46r7glIbsAIAcGD1S_X0jDL0oaJoOnN37gNfzL4D52muNSNbR3TzeCFrAiewIwQO2dJNyDuj3Ysexpn-zw=w408-h544-k-no",
+  "kgmid": "/g/11qnwsyqk9",
+  "domain": "modernmechanicalservices.ca",
+  "scrapedUrls": [
+    "https://modernmechanicalservices.ca/",
+    "https://modernmechanicalservices.ca/#",
+    "https://modernmechanicalservices.ca/contact-us",
+    "https://modernmechanicalservices.ca/m/login?r=%2Fm%2Faccount",
+    "https://modernmechanicalservices.ca/m/create-account"
+  ],
+  "depth": 0,
+  "emails": [
+    "filler@godaddy.com"
+  ],
+  "phones": [
+    "15874369108"
+  ],
+  "phonesUncertain": [
+    "587-436-9108",
+    "404-4150"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [
+    "https://wa.me/15874369108"
+  ],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Auburn Bay Appliance Repair",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "244 Auburn Glen Cl SE, Calgary, AB T3M 2P4, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "244 Auburn Glen Cl SE",
+  "city": "Calgary",
+  "postalCode": "T3M 2P4",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://abrepair.ca/",
+  "phone": "+1 403-444-8332",
+  "phoneUnformatted": "+14034448332",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8983863,
+    "lng": -113.9495676
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJv07yEjd3cVMRbjHISaQ9-zo",
+  "categories": [
+    "HVAC contractor",
+    "Furnace repair service",
+    "Appliance repair service",
+    "Refrigerator repair service",
+    "Washer & dryer repair service"
+  ],
+  "fid": "0x5371773712f24ebf:0x3afb3da449c8316e",
+  "cid": "4250058449175982446",
+  "reviewsCount": 40,
+  "imagesCount": 3,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:19.127Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "6 AM to 11 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "6 AM to 11 PM"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "From the business": [
+      {
+        "Identifies as women-owned": true
+      }
+    ],
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Planning": [
+      {
+        "Appointment required": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      },
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Auburn%20Bay%20Appliance%20Repair&query_place_id=ChIJv07yEjd3cVMRbjHISaQ9-zo",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFY3pdWPWVhRhHUZIHCuQX7fMImWP0hWNtOw-v8P9PUMOmdkeL8z9sNo3vVmidsQp9kQsVt8TA2kPRZDgb2n2UpcJVUSbvhHd-CHEGMCBOz8U45PsF-Uz4TX495ZlfVEMd_jMhP=w408-h377-k-no",
+  "kgmid": "/g/11ftgtglm5",
+  "domain": "abrepair.ca",
+  "scrapedUrls": [
+    "https://abrepair.ca/",
+    "https://abrepair.ca/dishwasher-repair/",
+    "https://abrepair.ca/",
+    "https://abrepair.ca/#",
+    "https://abrepair.ca/oven-range-and-stove-repair/"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@abrepair.ca"
+  ],
+  "phones": [
+    "+14034448332"
+  ],
+  "phonesUncertain": [
+    "403-444-8332",
+    "2002-2026"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "KAN Mechanical Plumbing & Heating",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "125 Mahogany St S E Unit 101, Calgary, AB T3M 0T2, Canada",
+  "neighborhood": "Mahogany",
+  "street": "125 Mahogany St S E Unit 101",
+  "city": "Calgary",
+  "postalCode": "T3M 0T2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "http://kanmechanical.com/",
+  "phone": "+1 403-383-0063",
+  "phoneUnformatted": "+14033830063",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8962234,
+    "lng": -113.9400124
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJPzx6bmd-8CQRY4hyhAtEwxw",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Furnace repair service",
+    "Gas installation service",
+    "Gasfitter",
+    "Heating contractor",
+    "Plumber",
+    "Sheet metal contractor"
+  ],
+  "fid": "0x24f07e676e7a3c3f:0x1cc3440b84728863",
+  "cid": "2072575069777987683",
+  "reviewsCount": 110,
+  "imagesCount": 28,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:19.127Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      },
+      {
+        "NFC mobile payments": true
+      },
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=KAN%20Mechanical%20Plumbing%20%26%20Heating&query_place_id=ChIJPzx6bmd-8CQRY4hyhAtEwxw",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEvPSRzMDtLTVrX7NZ43J-eG7TNsymhhUpCYxEGHnFpF28E4BqP3FlCBCRbU5EfcxC2tBUPw92LoNw13sWwrJeAQMrDtCvKqcBQcpbyDuZidsstExM9Y7FC-11R6ardQZSWH4F_1A2qMkNF=w408-h544-k-no",
+  "kgmid": "/g/11sx3mw5zl",
+  "domain": "kanmechanical.com",
+  "scrapedUrls": [
+    "https://kanmechanical.com/",
+    "https://kanmechanical.com/contact-us/",
+    "https://kanmechanical.com/careers/",
+    "https://kanmechanical.com/about/",
+    "https://kanmechanical.com/blog/"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@kanmechanical.com"
+  ],
+  "phones": [
+    "(403)383-0063",
+    "(403) 383-0063"
+  ],
+  "phonesUncertain": [
+    "(403) 383-0063"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/kan-mechanical-inc"
+  ],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/kan.mechanical"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/profile.php?id=100071280872584"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "New Cozy 2 bedrooms lower suite with own furnace free prkng 3min to SHC hospital",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Apartment",
+  "address": "Calgary, AB T3M 3G8, Canada",
+  "neighborhood": "Ricardo Ranch",
+  "street": null,
+  "city": "Calgary",
+  "postalCode": null,
+  "state": "Alberta",
+  "countryCode": "CA",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8626518,
+    "lng": -113.9518432
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJWTyWcgmdcVMRADinLnRquyg",
+  "categories": [
+    "Apartment",
+    "Vacation rental"
+  ],
+  "fid": "0x53719d0972963c59:0x28bb6a742ea73800",
+  "cid": "2935056629393471488",
+  "reviewsCount": 10,
+  "imagesCount": 47,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:19.126Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": "Apartment",
+  "checkInDate": "2026-05-11",
+  "checkOutDate": "2026-05-14",
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=New%20Cozy%202%20bedrooms%20lower%20suite%20with%20own%20furnace%20free%20prkng%203min%20to%20SHC%20hospital&query_place_id=ChIJWTyWcgmdcVMRADinLnRquyg",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 2,
+  "isAdvertisement": false,
+  "imageUrl": "https://media.vrbo.com/lodging/85000000/84060000/84052300/84052245/8e65c56b.jpg?impolicy=ccrop&w=1000&h=666&q=medium",
+  "kgmid": "/g/11l1pm7cb_",
+  "emails": [],
+  "phones": [],
+  "phonesUncertain": [],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [],
+  "facebooks": [],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Dairy Queen (Treat)",
+  "subTitle": null,
+  "description": "Soft-serve ice cream & signature shakes top the menu at this classic burger & fries fast-food chain.",
+  "price": "$",
+  "categoryName": "Ice cream shop",
+  "address": "35 McKenzie Towne Ave SE, Calgary, AB T2Z 0S8, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "35 McKenzie Towne Ave SE",
+  "city": "Calgary",
+  "postalCode": "T2Z 0S8",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.dairyqueen.com/en-ca/locations/ab/calgary/35-mckenzie-towne-ave-se/12057/?utm_source=organic&utm_campaign=yext%2F&y_source=1_ODk5NDM3MS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+  "phone": "+1 403-457-4407",
+  "phoneUnformatted": "+14034574407",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9158855,
+    "lng": -113.9592738
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 3.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJg2_kV5F3cVMRzLcgPArcG48",
+  "categories": [
+    "Ice cream shop"
+  ],
+  "fid": "0x5371779157e46f83:0x8f1bdc0a3c20b7cc",
+  "cid": "10312077708311443404",
+  "reviewsCount": 455,
+  "reviewsDistribution": {
+    "oneStar": 74,
+    "twoStar": 15,
+    "threeStar": 63,
+    "fourStar": 114,
+    "fiveStar": 189
+  },
+  "imagesCount": 288,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:15.418Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "10 AM to 10 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "10 AM to 10 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "10 AM to 10 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "10 AM to 10 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "10 AM to 10 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10 AM to 10 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "10 AM to 10 PM"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Delivery": true
+      },
+      {
+        "Onsite services": true
+      },
+      {
+        "Takeout": true
+      },
+      {
+        "Dine-in": true
+      }
+    ],
+    "Popular for": [
+      {
+        "Solo dining": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible entrance": false
+      }
+    ],
+    "Dining options": [
+      {
+        "Seating": true
+      },
+      {
+        "Table service": false
+      }
+    ],
+    "Amenities": [
+      {
+        "Restroom": true
+      }
+    ],
+    "Atmosphere": [
+      {
+        "Casual": true
+      }
+    ],
+    "Crowd": [
+      {
+        "Family-friendly": true
+      },
+      {
+        "Groups": true
+      }
+    ],
+    "Planning": [
+      {
+        "Quick visit": true
+      }
+    ],
+    "Payments": [
+      {
+        "Debit cards": true
+      },
+      {
+        "NFC mobile payments": true
+      },
+      {
+        "Credit cards": true
+      }
+    ],
+    "Children": [
+      {
+        "Good for kids": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Dairy%20Queen%20(Treat)&query_place_id=ChIJg2_kV5F3cVMRzLcgPArcG48",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 101,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEoFrBLq2RvPWWsTpDUcMu3G9IUupAxDgW2l3Xo1Y2rEBrO5jmHosqq9uvJFBZlqbDFsXdwtsrk-B0Wx8A1cvcE2Ohe8iAYWZQWbOUb1AyOnZACVWL9fV9JEjN0HbVPZTnARmxNVg=w408-h306-k-no",
+  "kgmid": "/g/11h1cr14t",
+  "domain": "dairyqueen.com",
+  "scrapedUrls": [
+    "https://www.dairyqueen.com/en-ca/locations/ab/calgary/35-mckenzie-towne-ave-se/27363/",
+    "https://www.dairyqueen.com/en-ca/faq/"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "(403) 457-4407"
+  ],
+  "phonesUncertain": [
+    "(403) 457-4407"
+  ],
+  "linkedIns": [],
+  "twitters": [
+    "https://twitter.com/dqcanada"
+  ],
+  "instagrams": [
+    "https://www.instagram.com/dqcanada"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/dqcanada"
+  ],
+  "youtubes": [],
+  "tiktoks": [
+    "https://www.tiktok.com/@dqcanada"
+  ],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Integrity Plumbing Solutions",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "81 Masters St SE, Calgary, AB T3M 2R7, Canada",
+  "neighborhood": "Mahogany",
+  "street": "81 Masters St SE",
+  "city": "Calgary",
+  "postalCode": "T3M 2R7",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.integrityplumbingyyc.ca/",
+  "phone": "+1 403-307-0760",
+  "phoneUnformatted": "+14033070760",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8952392,
+    "lng": -113.908637
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJy7dtNemKzUkRiuh0NJvxmmo",
+  "categories": [
+    "Plumber",
+    "Bathroom remodeler",
+    "Drainage service",
+    "Furnace repair service",
+    "Gasfitter",
+    "Water softening equipment supplier"
+  ],
+  "fid": "0x49cd8ae9356db7cb:0x6a9af19b3474e88a",
+  "cid": "7681717763336104074",
+  "reviewsCount": 140,
+  "imagesCount": 77,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:19.127Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      },
+      {
+        "NFC mobile payments": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Integrity%20Plumbing%20Solutions&query_place_id=ChIJy7dtNemKzUkRiuh0NJvxmmo",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 15,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAErCV61BUp2P2Z4jpoc-y6xjjmuUor6M39BoPjB0Q9fq8BFkyqeL3iTd_SSNlWUXrP6bN6DIDWA0co2DDjyXpDjCNNDHN6veuSx8pQUScBASkYE1glOXRY47yP2stgwlWSSwfAlqUaFw8Bh=w408-h544-k-no",
+  "kgmid": "/g/11yk49p65d",
+  "domain": "integrityplumbingyyc.ca",
+  "scrapedUrls": [
+    "https://www.integrityplumbingyyc.ca/",
+    "https://www.integrityplumbingyyc.ca/about-us",
+    "https://www.integrityplumbingyyc.ca/blog",
+    "https://www.integrityplumbingyyc.ca/contact-us",
+    "https://www.integrityplumbingyyc.ca/"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@integrityplumbingyyc.ca",
+    "info@mysite.com"
+  ],
+  "phones": [
+    "+14033070760",
+    "1234567890"
+  ],
+  "phonesUncertain": [
+    "403-307-0760",
+    "123-456-7890"
+  ],
+  "linkedIns": [],
+  "twitters": [
+    "https://x.com/integrity_plumb"
+  ],
+  "instagrams": [
+    "https://www.instagram.com/integrityplumbing24"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/integrityplumbingsolution",
+    "facebook.com/integrityplumbingsolution"
+  ],
+  "youtubes": [],
+  "tiktoks": [
+    "https://www.tiktok.com/@yourplumberyyc"
+  ],
+  "pinterests": [
+    "https://www.pinterest.com/integrityplumbing24"
+  ],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "Purcell Heating and Air Ltd",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "14 Mahogany Passage SE, Calgary, AB T3M 2K6, Canada",
+  "neighborhood": "Mahogany",
+  "street": "14 Mahogany Passage SE",
+  "city": "Calgary",
+  "postalCode": "T3M 2K6",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://www.purcellheating.ca/",
+  "phone": "+1 403-312-9099",
+  "phoneUnformatted": "+14033129099",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8897662,
+    "lng": -113.9380778
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJF9elC4AZZoIRtuM3ILpdOAk",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning repair service",
+    "Electrical installation service",
+    "Furnace parts supplier",
+    "Furnace repair service",
+    "Furnace store",
+    "Gasfitter",
+    "Heating equipment supplier",
+    "Plumber",
+    "Sheet metal contractor"
+  ],
+  "fid": "0x826619800ba5d717:0x9385dba2037e3b6",
+  "cid": "664383999022982070",
+  "reviewsCount": 78,
+  "imagesCount": 37,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:19.125Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7:30 AM to 5:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7:30 AM to 5:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7:30 AM to 5:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7:30 AM to 5:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7:30 AM to 5:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8:30 AM to 3 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      },
+      {
+        "English": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Installation service": true
+      },
+      {
+        "Repair services": true
+      }
+    ],
+    "Crowd": [
+      {
+        "LGBTQ+ friendly": true
+      },
+      {
+        "Transgender safespace": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Purcell%20Heating%20and%20Air%20Ltd&query_place_id=ChIJF9elC4AZZoIRtuM3ILpdOAk",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 1,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2KukUeAvhWbpb3MMLduwZcGxzr1_IiDNkLS5HuA3Piv7OTlMPR7jfK1_a033Vxt5-mXGNYu6xQ1PwYVpUl-CnyC2Sk-Dk6I8plnW7dp3umhoESyTHUH5RGyEDk4gHPUyXb_002DS61Vxh=w408-h544-k-no",
+  "kgmid": "/g/11xmntmq3f",
+  "domain": "purcellheating.ca",
+  "scrapedUrls": [
+    "https://www.purcellheating.ca/",
+    "https://www.purcellheating.ca/#content",
+    "https://www.purcellheating.ca/blogs/",
+    "https://www.purcellheating.ca/alberta-membership-plans/",
+    "https://www.purcellheating.ca/contact-us/"
+  ],
+  "depth": 0,
+  "emails": [
+    "services@purcellheating.ca"
+  ],
+  "phones": [],
+  "phonesUncertain": [
+    "(403) 312-9099",
+    "(250) 688-9222",
+    "0209624"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/purcellheatingair",
+    "https://www.instagram.com/purcell_heating_and_air_bc"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/PurcellHvac"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "AirFlex Heating & Air Conditioning",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "100 Auburn Meadows Manor SE, Calgary, AB T3M 3H2, Canada",
+  "neighborhood": "Southeast Calgary",
+  "street": "100 Auburn Meadows Manor SE",
+  "city": "Calgary",
+  "postalCode": "T3M 3H2",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://airflex.ca/",
+  "phone": "+1 587-225-9100",
+  "phoneUnformatted": "+15872259100",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.8927398,
+    "lng": -113.9454791
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ1ZkPmcedcVMRLRymZEmQyvY",
+  "categories": [
+    "HVAC contractor",
+    "Air conditioning contractor",
+    "Air conditioning repair service",
+    "Furnace repair service"
+  ],
+  "fid": "0x53719dc7990f99d5:0xf6ca904964a61c2d",
+  "cid": "17783184723521444909",
+  "reviewsCount": 7,
+  "imagesCount": 10,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:19.127Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 6 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 6 PM"
+    }
+  ],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=AirFlex%20Heating%20%26%20Air%20Conditioning&query_place_id=ChIJ1ZkPmcedcVMRLRymZEmQyvY",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.855265977028644,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=V1YCcc08agMrrOsLsJYEYw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=282.34558&pitch=0&thumbfov=100",
+  "kgmid": "/g/11js2_t2j7",
+  "domain": "airflex.ca",
+  "scrapedUrls": [
+    "https://airflex.ca/",
+    "https://airflex.ca/about-us.html",
+    "https://airflex.ca/about-us.html#approach",
+    "https://airflex.ca/blog",
+    "https://airflex.ca/contact-us.html"
+  ],
+  "depth": 0,
+  "emails": [],
+  "phones": [
+    "(587)225-9100"
+  ],
+  "phonesUncertain": [
+    "(587) 225-9100"
+  ],
+  "linkedIns": [
+    "https://www.linkedin.com/company/airflex-heating-air-conditioning"
+  ],
+  "twitters": [
+    "https://twitter.com/AirFlex_HVAC"
+  ],
+  "instagrams": [
+    "https://www.instagram.com/airflex_hvac"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/AirFlex.HVAC"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "RAY-Z Plumbing & Heating - Southwest Calgary",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": null,
+  "neighborhood": null,
+  "street": null,
+  "city": null,
+  "postalCode": null,
+  "state": null,
+  "countryCode": null,
+  "website": "http://www.rayzplumbing.ca/",
+  "phone": "+1 403-668-5434",
+  "phoneUnformatted": "+14036685434",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 50.9433782,
+    "lng": -114.0440112
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJl1E8tPR5cVMREvufpQkFBiA",
+  "categories": [
+    "Plumber",
+    "Service establishment"
+  ],
+  "fid": "0x537179f4b43c5197:0x20060509a59ffb12",
+  "cid": "2307537398065527570",
+  "reviewsCount": null,
+  "imagesCount": 0,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:14.616Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=RAY-Z%20Plumbing%20%26%20Heating%20-%20Southwest%20Calgary&query_place_id=ChIJl1E8tPR5cVMREvufpQkFBiA",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 98,
+  "isAdvertisement": false,
+  "imageUrl": null,
+  "kgmid": "/g/11hx0y2klp",
+  "domain": "rayzplumbing.ca",
+  "scrapedUrls": [
+    "https://rayzplumbing.ca/",
+    "https://rayzplumbing.ca/join-our-team/",
+    "https://rayzplumbing.ca/about-us/#our-vision",
+    "https://rayzplumbing.ca/contact/",
+    "https://rayzplumbing.ca/about-us/"
+  ],
+  "depth": 0,
+  "emails": [
+    "info@rayzplumbing.ca"
+  ],
+  "phones": [
+    "403-668-5434",
+    "+14036685434",
+    "+1403-668-5434",
+    "403 668 5434"
+  ],
+  "phonesUncertain": [
+    "403-668-5434"
+  ],
+  "linkedIns": [],
+  "twitters": [
+    "https://twitter.com/RayZ_Plumbing",
+    "https://x.com/RayZ_Plumbing"
+  ],
+  "instagrams": [
+    "https://www.instagram.com/RayzPlumbingCalgary",
+    "http://www.instagram.com/rayzplumbingyyc"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/RayzPlumbingCalgary"
+  ],
+  "youtubes": [
+    "https://www.youtube.com/RayZPlumbingHeating",
+    "https://www.youtube.com/@RayZPlumbing"
+  ],
+  "tiktoks": [
+    "https://www.tiktok.com/@rayz.plumbing.heating"
+  ],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+},
+{
+  "title": "A Better Way Plumbing",
+  "subTitle": null,
+  "description": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "11979 40 St SE, Calgary, AB T2Z 4M3, Canada",
+  "neighborhood": "East Shepard Industrial",
+  "street": "11979 40 St SE",
+  "city": "Calgary",
+  "postalCode": "T2Z 4M3",
+  "state": "Alberta",
+  "countryCode": "CA",
+  "website": "https://abetterwayplumbing.com/about-us/",
+  "phone": "+1 403-667-5862",
+  "phoneUnformatted": "+14036675862",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": 50.9430947,
+    "lng": -113.9770499
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJp759F26dcVMR6ksIS6NpAEg",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x53719d6e177dbea7:0x480069a34b084bea",
+  "cid": "5188262920790232042",
+  "reviewsCount": null,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-04-18T17:31:14.616Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "openingHours": [],
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ],
+    "Payments": [
+      {
+        "Credit cards": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=A%20Better%20Way%20Plumbing&query_place_id=ChIJp759F26dcVMR6ksIS6NpAEg",
+  "searchPageUrl": "https://www.google.com/maps/search/furnace%20/@50.94138981351432,-113.88334802444844,13z?hl=en",
+  "searchString": "furnace ",
+  "language": "en",
+  "rank": 94,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=sfQD3jtMdKEColv57L6n3A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=303.86588&pitch=0&thumbfov=100",
+  "kgmid": "/g/11kt8cl8t4",
+  "domain": "abetterwayplumbing.com",
+  "scrapedUrls": [
+    "http://abetterwayplumbing.com/about-us/",
+    "https://abetterwayplumbing.com/about-us/reviews/",
+    "https://abetterwayplumbing.com/contact-us/",
+    "https://abetterwayplumbing.com/about-us/",
+    "https://abetterwayplumbing.com/about-us/warranty/"
+  ],
+  "depth": 0,
+  "emails": [
+    "+AB+T2Z+3L4/@50.9194914"
+  ],
+  "phones": [
+    "403-667-5862"
+  ],
+  "phonesUncertain": [
+    "(403) 295-3028",
+    "113.963335",
+    "113.965523",
+    "50.919491",
+    "53717790",
+    "403-667-5862",
+    "116 11979",
+    "403.667.5862",
+    "403-474-6161"
+  ],
+  "linkedIns": [],
+  "twitters": [],
+  "instagrams": [
+    "https://www.instagram.com/abetterwayplumbing"
+  ],
+  "facebooks": [
+    "https://www.facebook.com/ABetterWayPlumbingandHeating"
+  ],
+  "youtubes": [],
+  "tiktoks": [],
+  "pinterests": [],
+  "discords": [],
+  "snapchats": [],
+  "threads": [],
+  "telegrams": [],
+  "reddits": [],
+  "whatsapps": [],
+  "reviews": null,
+  "leadsEnrichment": []
+}]

@@ -1,0 +1,78 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "tertiary-fixed-dim": "#c8c6c6",
+        "surface-tint": "#904d00",
+        "on-tertiary-container": "#3e3e3e",
+        "inverse-primary": "#ffb77d",
+        "surface": "#fff8f5",
+        "on-tertiary": "#ffffff",
+        "on-secondary-container": "#005084",
+        "on-secondary-fixed-variant": "#00497b",
+        "secondary-fixed-dim": "#9ccaff",
+        "primary-fixed-dim": "#ffb77d",
+        "surface-container": "#ffeadd",
+        "secondary-fixed": "#d0e4ff",
+        "primary-fixed": "#ffdcc3",
+        "outline-variant": "#ddc1ae",
+        "on-tertiary-fixed-variant": "#474747",
+        "on-primary-fixed": "#2f1500",
+        "on-primary-container": "#623200",
+        "secondary": "#206298",
+        "on-primary": "#ffffff",
+        "inverse-surface": "#3a2e25",
+        "surface-variant": "#f3dfd1",
+        "error-container": "#ffdad6",
+        "tertiary-container": "#aba9a9",
+        "surface-container-low": "#fff1e9",
+        "on-secondary": "#ffffff",
+        "on-surface-variant": "#564334",
+        "surface-dim": "#ead6c9",
+        "background": "#fff8f5",
+        "on-error-container": "#93000a",
+        "on-background": "#241912",
+        "tertiary-fixed": "#e4e2e1",
+        "on-tertiary-fixed": "#1b1c1c",
+        "on-secondary-fixed": "#001d35",
+        "surface-container-highest": "#f3dfd1",
+        "surface-container-lowest": "#ffffff",
+        "secondary-container": "#8bc3ff",
+        "error": "#ba1a1a",
+        "on-surface": "#241912",
+        "surface-container-high": "#f9e4d7",
+        "on-error": "#ffffff",
+        "inverse-on-surface": "#ffede3",
+        "tertiary": "#5f5e5e",
+        "outline": "#897362",
+        "primary-container": "#ff8c00",
+        "primary": "#904d00",
+        "surface-bright": "#fff8f5",
+        "on-primary-fixed-variant": "#6e3900",
+        // Extended based on PRD:
+        "safety-orange": "#FF8C00",
+        "charcoal-gray": "#2D2D2D",
+        "crisp-white": "#FFFFFF",
+        "trust-blue": "#005288"
+      },
+      borderRadius: {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "headline": ["Work Sans", "sans-serif"],
+        "body": ["Inter", "sans-serif"],
+        "label": ["Inter", "sans-serif"]
+      }
+    },
+  },
+  plugins: [],
+}
