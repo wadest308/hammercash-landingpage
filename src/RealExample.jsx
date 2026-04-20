@@ -26,14 +26,14 @@ const RealExample = () => {
                         <li className="flex items-center justify-between">
                             <div>
                                 <h4 className="text-xl font-bold text-[#2D2D2D]">Mid-Project (50%)</h4>
-                                <p className="text-neutral-500">Released after the main structure is complete and approved by the homeowner.</p>
+                                <p className="text-neutral-500">Paid to your Stripe account after the main structure is complete.</p>
                             </div>
                             <span className="text-xl font-bold text-green-600">$5,000</span>
                         </li>
                         <li className="flex items-center justify-between">
                             <div>
                                 <h4 className="text-xl font-bold text-[#2D2D2D]">Final Payment (25%)</h4>
-                                <p className="text-neutral-500">The final amount is paid once the job is 100% complete and the customer is satisfied.</p>
+                                <p className="text-neutral-500">Final payment is collected through Stripe once the job is complete.</p>
                             </div>
                             <span className="text-xl font-bold text-green-600">$2,500</span>
                         </li>

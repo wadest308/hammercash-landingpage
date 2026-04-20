@@ -82,7 +82,7 @@ const Modal = ({ isOpen, closeModal }) => {
               textAlign: 'center',
               marginBottom: '16px',
             }}>
-              Secure Your First Job.
+              Get Early Access — It's Free
             </h3>
             <p style={{
               color: 'grey',

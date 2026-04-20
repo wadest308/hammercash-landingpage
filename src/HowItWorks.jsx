@@ -21,7 +21,7 @@ const HowItWorks = () => {
               <span className="font-headline text-3xl font-bold text-white">2</span>
             </div>
             <h3 className="text-2xl font-bold text-[#2D2D2D] mb-4">Customer Pays Securely</h3>
-            <p className="text-neutral-500 leading-relaxed">Your customer funds the full job upfront into a secure account before you begin.</p>
+            <p className="text-neutral-500 leading-relaxed">Your customer pays securely through Stripe before work begins.</p>
           </div>
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-20 h-20 rounded-full bg-[#FF8C00] mb-6 border border-gray-200">

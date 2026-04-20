@@ -19,6 +19,7 @@ const FaqItem = ({ question, answer }) => {
           fontSize: '16px',
           fontWeight: '600',
           color: '#2D2D2D',
+          outline: 'none',
         }}
       >
         {question}
@@ -51,7 +52,7 @@ const FAQ = () => {
     },
     {
       question: "What if there is a problem?",
-      answer: "Payments can be paused and reviewed so things stay fair."
+      answer: "If a dispute arises, both you and the customer can pause the project and payments. We provide a clear process to help mediate and resolve the issue fairly, ensuring no funds are released until both parties agree."
     },
     {
       question: "How much does it cost?",
@@ -67,7 +68,7 @@ const FAQ = () => {
     },
     {
       question: "Can I use this anywhere?",
-      answer: "Yes. It works for contractors anywhere."
+      answer: "Yes. As long as you have a Stripe account, you can use HammerCash to get paid for your work, no matter where you or your customers are located."
     }
   ];
 

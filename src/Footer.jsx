@@ -6,21 +6,21 @@ const Footer = () => {
       <div className="flex flex-col gap-4 items-center md:items-start mb-8 md:mb-0">
         <div className="text-white text-lg font-bold font-headline">HammerCash</div>
         <p className="font-body text-sm leading-relaxed max-w-xs text-center md:text-left text-white">
-          Get paid faster. Work with confidence.
+        HammerCash is a software platform that facilitates payments between customers and contractors using Stripe Connect. HammerCash does not hold, store, or control contractor funds. All payments are processed and routed by Stripe. Contractors are responsible for completing work and managing their accounts.
         </p>
         <span className="font-body text-white/70 text-sm leading-relaxed">© 2026 HammerCash. Calgary, AB.</span>
       </div>
       <div className="flex gap-12">
         <div className="flex flex-col gap-3">
           <span className="text-white font-bold text-xs uppercase tracking-widest mb-2">Company</span>
-          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="#">Privacy Policy</a>
-          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="#">Terms of Service</a>
-          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="#">Contact Us</a>
+          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="/privacy-policy">Privacy Policy</a>
+          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="/terms">Terms of Service</a>
+          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="mailto:wadelieu17@gmail.com">Contact Us</a>
         </div>
         <div className="flex flex-col gap-3">
           <span className="text-white font-bold text-xs uppercase tracking-widest mb-2">Social</span>
-          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="#">LinkedIn</a>
-          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="#">Twitter</a>
+          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
         </div>
       </div>
     </footer>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = ({ openModal }) => {
   return (
-    <section className="hero-gradient min-h-[921px] flex flex-col justify-center items-center px-6 py-12 md:py-0 relative overflow-hidden">
+    <section className="hero-gradient min-h-[700px] flex flex-col justify-center items-center px-6 py-8 md:py-0 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <img
           className="w-full h-full object-cover mix-blend-overlay"
@@ -37,7 +37,7 @@ const Hero = ({ openModal }) => {
                 cursor: 'pointer',
                 fontSize: '18px'
               }}>
-              Create Your First Job
+              Get Started Free
             </button>
             <button
               onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
