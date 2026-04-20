@@ -39,6 +39,7 @@ const Hero = ({ openModal }) => {
               }}>
               Get Started Free
             </button>
+            <p className="text-white/60 text-sm mt-2">Free to sign up. Set up your first job in 2 minutes.</p>
             <button
               onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-white/10 text-white backdrop-blur-md px-8 py-4 rounded-lg font-headline font-bold text-lg hover:bg-white/20 transition-all"

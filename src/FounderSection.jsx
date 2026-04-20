@@ -6,7 +6,7 @@ const FounderSection = () => {
       <div className="max-w-3xl mx-auto">
         <h4 className="font-headline text-3xl font-bold text-white mb-4">Why I built this.</h4>
         <p className="font-body text-lg text-white/80 leading-relaxed">
-          I watched too many skilled contractors get stiffed after doing great work. The customer has all the power once the job is done. HammerCash flips that.  Your customer has already paid through Stripe before you start a single day of work.
+          I watched too many skilled contractors get stiffed after doing great work. The customer has all the power once the job is done. HammerCash flips that.  You know the payment has already been processed through Stripe before a single day of work begins.
         </p>
         <p className="font-body text-lg text-white/80 leading-relaxed mt-4">
           — Wade, Founder of HammerCash

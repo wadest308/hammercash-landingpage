@@ -11,6 +11,8 @@ const TrustSignalBar = () => {
             <span className="material-symbols-outlined text-4xl text-[#635BFF]">credit_card</span>
             <span className="font-headline font-bold text-xl text-[#2D2D2D]">Stripe</span>
           </div>
+          <p className="text-sm text-gray-500">Powered by Stripe Connect</p>
+          </div>
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-4xl text-[#4CAF50]">lock</span>
             <span className="font-headline font-bold text-xl text-[#2D2D2D]">SSL Secured</span>
@@ -18,7 +20,7 @@ const TrustSignalBar = () => {
         </div>
         <ul className="text-center space-y-2">
           <li className="flex items-center justify-center md:justify-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Customers pay through secure online checkout</li>
-          <li className="flex items-center justify-center md:justify-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Payment is collected by Stripe before work begins</li>
+          <li className="flex items-center justify-center md:justify-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Payments are processed directly through Stripe Connect before work begins</li>
           <li className="flex items-center justify-center md:justify-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Payments are routed to your Stripe account at each milestone</li>
         </ul>
         <p className="text-[#564334]/60 font-medium text-sm text-center">

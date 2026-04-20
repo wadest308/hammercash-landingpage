@@ -28,7 +28,7 @@ const HowItWorks = () => {
               <span className="font-headline text-3xl font-bold text-white">3</span>
             </div>
             <h3 className="text-2xl font-bold text-[#2D2D2D] mb-4">Get Paid As You Go</h3>
-            <p className="text-neutral-500 leading-relaxed"> As each stage is finished, payment is released to your bank account via Stripe.</p>
+            <p className="text-neutral-500 leading-relaxed"> As each stage is finished, payment is sent directly to your connected Stripe account.</p>
           </div>
         </div>
         
@@ -38,3 +38,4 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
+t HowItWorks;

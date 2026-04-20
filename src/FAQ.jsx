@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const FaqItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <div style={{ borderBottom: '1px solid #e5e7eb', padding: '16px 0' }}>
@@ -40,27 +40,27 @@ const FAQ = () => {
   const faqs = [
       {
         question: "Where does the money go?",
-        answer: "Your customer\'s payment is processed by Stripe and routed directly to your connected Stripe account. HammerCash never touches the funds."
+        answer: "HammerCash never touches your funds. Your customer's payment is processed by Stripe and routed directly to your connected Stripe account."
       },
       {
-        question: "Do you hold my customer\'s funds?",
+        question: "Do you hold my customer's funds?",
         answer: "No. HammerCash does not hold, store, or control any funds. All payments are processed and routed by Stripe Connect."
       },
       {
         question: "What happens if the job is cancelled?",
-        answer: "Cancellation and refund terms are agreed between you and your customer. Stripe handles any payment reversals according to their standard policies."
+        answer: "Cancellation terms are agreed between you and your customer. Stripe handles any payment reversals according to their standard policies."
       },
       {
         question: "How do I receive my money?",
-        answer: "Payments are deposited directly to your bank account through your connected Stripe account at each completed milestone."
+        answer: "Payments deposit directly to your bank account through your connected Stripe account at each completed milestone."
       },
       {
         question: "How much does it cost?",
-        answer: "HammerCash charges 3% only after your customer pays. There are no monthly fees and no upfront costs. Standard Stripe processing fees apply and are paid by the customer."
+        answer: "3% only after your customer pays. No monthly fees, no upfront costs. Standard Stripe processing fees apply and are paid by the customer."
       },
       {
         question: "Do customers need an account?",
-        answer: "No. Customers pay through a simple online checkout. No account or app required on their end."
+        answer: "No. Customers pay through a simple online checkout link. No app or account required."
       },
     ];
 

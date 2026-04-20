@@ -16,6 +16,8 @@ const Footer = () => {
           <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="/privacy-policy">Privacy Policy</a>
           <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="/terms">Terms of Service</a>
           <a className="text-white hover:text-[#005288] transition-all font-body text-sm" href="mailto:wadelieu17@gmail.com">Contact Us</a>
+
+          <p className="text-white/70 text-sm mt-4">Questions? Email us at support@hammercash.co</p>
         </div>
         <div className="flex flex-col gap-3">
           <span className="text-white font-bold text-xs uppercase tracking-widest mb-2">Social</span>
