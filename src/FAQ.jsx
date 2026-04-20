@@ -38,39 +38,31 @@ const FaqItem = ({ question, answer }) => {
 
 const FAQ = () => {
   const faqs = [
-    {
-      question: "How does this work?",
-      answer: "You create a job, your customer pays, and you get paid as the work is completed."
-    },
-    {
-      question: "Where does the money go?",
-      answer: "Payments are handled securely through Stripe and held until they are released."
-    },
-    {
-      question: "Do I get paid before starting?",
-      answer: "Yes. The job is funded before you begin so you know the money is there."
-    },
-    {
-      question: "What if there is a problem?",
-      answer: "If a dispute arises, both you and the customer can pause the project and payments. We provide a clear process to help mediate and resolve the issue fairly, ensuring no funds are released until both parties agree."
-    },
-    {
-      question: "How much does it cost?",
-      answer: "3% when you get paid, plus standard processing fees."
-    },
-    {
-      question: "Do customers need an account?",
-      answer: "No. They can review the job and pay without signing up."
-    },
-    {
-      question: "Is this safe?",
-      answer: "Yes. Stripe handles all payments securely."
-    },
-    {
-      question: "Can I use this anywhere?",
-      answer: "Yes. As long as you have a Stripe account, you can use HammerCash to get paid for your work, no matter where you or your customers are located."
-    }
-  ];
+      {
+        question: "Where does the money go?",
+        answer: "Your customer\'s payment is processed by Stripe and routed directly to your connected Stripe account. HammerCash never touches the funds."
+      },
+      {
+        question: "Do you hold my customer\'s funds?",
+        answer: "No. HammerCash does not hold, store, or control any funds. All payments are processed and routed by Stripe Connect."
+      },
+      {
+        question: "What happens if the job is cancelled?",
+        answer: "Cancellation and refund terms are agreed between you and your customer. Stripe handles any payment reversals according to their standard policies."
+      },
+      {
+        question: "How do I receive my money?",
+        answer: "Payments are deposited directly to your bank account through your connected Stripe account at each completed milestone."
+      },
+      {
+        question: "How much does it cost?",
+        answer: "HammerCash charges 3% only after your customer pays. There are no monthly fees and no upfront costs. Standard Stripe processing fees apply and are paid by the customer."
+      },
+      {
+        question: "Do customers need an account?",
+        answer: "No. Customers pay through a simple online checkout. No account or app required on their end."
+      },
+    ];
 
   return (
     <section id="faq" className="py-12 md:py-20 px-8 bg-white">

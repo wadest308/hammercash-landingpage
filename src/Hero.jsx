@@ -17,11 +17,11 @@ const Hero = ({ openModal }) => {
             Get Paid <span style={{ color: '#FF8C00' }}>Before You Start</span> the Job.
           </h1>
           <div className="text-white/80 text-lg leading-relaxed max-w-xl space-y-4">
-            <p>Stop guessing if you'll get paid. Lock it in first.</p>
+            <p>Your customer pays through Stripe before you lift a hammer.</p>
             <ul className="text-white text-lg space-y-2">
-              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Finish jobs without worrying about payment</li>
-              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Customers fund the job before you begin</li>
-              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Get paid step by step as work is completed</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Finish jobs without worrying about getting paid</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Customer payment is collected by Stripe before you begin</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Get paid to your Stripe account as work is completed</li>
             </ul>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">

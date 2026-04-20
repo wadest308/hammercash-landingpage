@@ -18,7 +18,7 @@ const TrustSignalBar = () => {
         </div>
         <ul className="text-center space-y-2">
           <li className="flex items-center justify-center md:justify-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Customers pay through secure online checkout</li>
-          <li className="flex items-center justify-center md:justify-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Funds are secured before work begins</li>
+          <li className="flex items-center justify-center md:justify-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Payment is collected by Stripe before work begins</li>
           <li className="flex items-center justify-center md:justify-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Payments are routed to your Stripe account at each milestone</li>
         </ul>
         <p className="text-[#564334]/60 font-medium text-sm text-center">

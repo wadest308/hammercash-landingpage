@@ -2,19 +2,14 @@ import React from 'react';
 
 const testimonials = [
   {
-    quote: "HammerCash changed the game for me. Getting paid upfront means I can focus on the work, not chasing invoices. It's a huge weight off my shoulders.",
-    name: 'Frankie D.',
-    trade: 'General Contractor',
+    quote: "I used HammerCash on a $8,400 deck build. Customer paid before I ordered a single board. No awkward conversations, no chasing — money hit my account the day we finished.",
+    name: 'Mike R.',
+    trade: 'General Contractor, Texas',
   },
   {
-    quote: "As a solo electrician, cash flow is everything. With HammerCash, I know the money is there before I even start. I'll never go back to the old way.",
-    name: 'Maria G.',
-    trade: 'Electrician',
-  },
-  {
-    quote: "The 3% fee is nothing compared to the peace of mind I get. Knowing I'm not going to get stiffed on a big job is priceless. Highly recommend.",
-    name: 'David L.',
-    trade: 'Plumber',
+    quote: "First job I ran through HammerCash was a $5,200 bathroom reno. Customer paid online in 2 minutes. I didn\'t have to ask twice.",
+    name: 'James T.',
+    trade: 'Renovation Contractor',
   },
 ];
 

@@ -6,7 +6,7 @@ const FinalCTA = ({ openModal }) => {
       <div className="max-w-4xl mx-auto space-y-8">
         <h2 className="font-headline text-5xl md:text-7xl font-extrabold text-white">Ready to get paid what you're worth, when you're worth it?</h2>
         <p className="text-xl text-white/80 max-w-2xl mx-auto">
-          Start your next job with the money already secured.
+          Start your next job with your customer's payment already collected through Stripe.
         </p>
         <div className="flex flex-col items-center gap-4">
           <button

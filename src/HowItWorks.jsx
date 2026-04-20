@@ -20,15 +20,15 @@ const HowItWorks = () => {
             <div className="flex items-center justify-center w-20 h-20 rounded-full bg-[#FF8C00] mb-6 border border-gray-200">
               <span className="font-headline text-3xl font-bold text-white">2</span>
             </div>
-            <h3 className="text-2xl font-bold text-[#2D2D2D] mb-4">Customer Pays Securely</h3>
-            <p className="text-neutral-500 leading-relaxed">Your customer pays securely through Stripe before work begins.</p>
+            <h3 className="text-2xl font-bold text-[#2D2D2D] mb-4"> Customer Pays via Stripe</h3>
+            <p className="text-neutral-500 leading-relaxed"> Your customer pays with a credit card before work begins. Powered by Stripe Connect.</p>
           </div>
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-20 h-20 rounded-full bg-[#FF8C00] mb-6 border border-gray-200">
               <span className="font-headline text-3xl font-bold text-white">3</span>
             </div>
             <h3 className="text-2xl font-bold text-[#2D2D2D] mb-4">Get Paid As You Go</h3>
-            <p className="text-neutral-500 leading-relaxed">As each stage is finished the funds are released directly to your bank.</p>
+            <p className="text-neutral-500 leading-relaxed"> As each stage is finished, payment is released to your bank account via Stripe.</p>
           </div>
         </div>
         
