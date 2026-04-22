@@ -14,19 +14,20 @@ const Hero = ({ openModal }) => {
         <div className="flex-1 space-y-8 md:pl-8">
           
           <h1 className="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.1] -tracking-[0.02em]">
-            Get Paid <span style={{ color: '#FF8C00' }}>Before You Start</span> the Job.
+            Secure <span style={{ color: '#FF8C00' }}>Milestone Payments</span> for Contractors.
           </h1>
           <div className="text-white/80 text-lg leading-relaxed max-w-xl space-y-4">
-            <p>Your customer pays through Stripe before you lift a hammer.</p>
+            <p>Start jobs with confidence. Your customers pay upfront securely via Stripe.</p>
             <ul className="text-white text-lg space-y-2">
-              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Finish jobs without worrying about getting paid</li>
-              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Customer payment is collected by Stripe before you begin</li>
-              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Get paid to your Stripe account as work is completed</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Secure payments processed by Stripe before work begins</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Funds are transferred directly to you as milestones are completed</li>
+              <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> Professional, transparent payment tracking for your clients</li>
             </ul>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <button
               onClick={openModal}
+              className="hover-btn-glow"
               style={{
                 backgroundColor: '#FF8C00',
                 color: 'white',

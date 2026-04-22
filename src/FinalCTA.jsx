@@ -11,6 +11,7 @@ const FinalCTA = ({ openModal }) => {
         <div className="flex flex-col items-center gap-4">
           <button
             onClick={openModal}
+            className="hover-btn-glow"
             style={{
               backgroundColor: '#FF8C00',
               color: 'white',

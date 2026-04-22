@@ -4,7 +4,7 @@ const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div style={{ borderBottom: '1px solid #e5e7eb', padding: '16px 0' }}>
+    <div className="hover-faq-glow" style={{ borderBottom: '1px solid #e5e7eb', padding: '16px 0' }}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         style={{
@@ -43,12 +43,16 @@ const FAQ = () => {
         answer: "HammerCash never touches your funds. Your customer's payment is processed by Stripe and routed directly to your connected Stripe account."
       },
       {
-        question: "Do you hold my customer's funds?",
-        answer: "No. HammerCash does not hold, store, or control any funds. All payments are processed and routed by Stripe Connect."
+        question: "Are you an escrow service?",
+        answer: "No. HammerCash is a software platform. We do not act as a bank, escrow service, or financial institution. We do not hold or manage your funds. Payments are processed securely via Stripe Connect."
+      },
+      {
+        question: "Who handles disputes or refunds?",
+        answer: "Contractors and customers define their own agreements. HammerCash does not mediate disputes. All refunds and disputes must be handled directly between the contractor and the customer, and are subject to Stripe's standard policies."
       },
       {
         question: "What happens if the job is cancelled?",
-        answer: "Cancellation terms are agreed between you and your customer. Stripe handles any payment reversals according to their standard policies."
+        answer: "Cancellation terms are agreed between you and your customer. Stripe handles any payment reversals according to their standard policies. HammerCash does not issue refunds."
       },
       {
         question: "How do I receive my money?",
@@ -56,7 +60,7 @@ const FAQ = () => {
       },
       {
         question: "How much does it cost?",
-        answer: "HammerCash charges a 3% platform fee which is deducted from each payment after your customer pays. Stripe's standard card processing fees are separate and also apply to every transaction."
+        answer: "HammerCash charges a 3% platform fee which is deducted from each payment automatically through Stripe after your customer pays. Stripe's standard card processing fees are separate and also apply to every transaction."
       },
       {
         question: "Do customers need an account?",

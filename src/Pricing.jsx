@@ -10,10 +10,10 @@ const Pricing = ({ openModal }) => {
           <p className="text-[#564334] text-lg max-w-2xl mx-auto">No upfront cost. No monthly fees.</p>
         </div>
         <div className="flex flex-col items-center gap-6">
-          <div className="bg-white p-12 md:p-16 rounded-3xl border border-[#ddc1ae] flex flex-col shadow-xl max-w-3xl text-center items-center">
+          <div className="bg-white p-12 md:p-16 rounded-3xl border border-[#ddc1ae] flex flex-col shadow-xl max-w-3xl text-center items-center hover-card-glow">
             <h3 className="font-headline text-3xl md:text-4xl font-extrabold text-[#2D2D2D] mb-6">Pay As You Go.</h3>
             <p className="text-[#564334] text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-              HammerCash charges a 3% platform fee which is deducted from each payment after your customer pays. Stripe's standard card processing fees are separate and also apply to every transaction.
+              HammerCash charges a 3% platform fee which is deducted automatically through Stripe from each payment. Stripe's standard card processing fees are separate and apply directly via Stripe for every transaction.
             </p>
             <ul className="text-left space-y-2 mb-10">
               <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> You only pay when money comes in</li>
@@ -22,6 +22,7 @@ const Pricing = ({ openModal }) => {
             </ul>
             <button
               onClick={openModal}
+              className="hover-btn-glow"
               style={{
                 backgroundColor: '#FF8C00',
                 color: 'white',

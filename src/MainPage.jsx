@@ -26,19 +26,19 @@ function MainPage() {
 
         <div className="hidden md:flex gap-8 items-center">
           <a
-            className="font-headline text-white border-b-2 border-[#FF8C00] pb-1 uppercase tracking-wider text-sm font-semibold"
+            className="font-headline text-white/80 hover-nav-glow uppercase tracking-wider text-sm font-semibold"
             href="#"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           >
             Services
           </a>
-          <a className="font-headline text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-wider text-sm font-semibold" href="#pricing">Pricing</a>
-          <a className="font-headline text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-wider text-sm font-semibold" href="#about">About</a>
-          <a className="font-headline text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-wider text-sm font-semibold" href="#footer">Contact</a>
+          <a className="font-headline text-white/80 hover-nav-glow uppercase tracking-wider text-sm font-semibold" href="#pricing">Pricing</a>
+          <a className="font-headline text-white/80 hover-nav-glow uppercase tracking-wider text-sm font-semibold" href="#about">About</a>
+          <a className="font-headline text-white/80 hover-nav-glow uppercase tracking-wider text-sm font-semibold" href="#footer">Contact</a>
         </div>
         <button
           onClick={openModal}
-          className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[12px] py-2 px-3 md:text-[18px] md:py-4 md:px-8">
+          className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[12px] py-2 px-3 md:text-[18px] md:py-4 md:px-8 hover-btn-glow">
           Get Started Free
         </button>
       </nav>

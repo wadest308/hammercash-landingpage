@@ -25,4 +25,45 @@
   .cta-gradient {
       background: linear-gradient(to bottom right, #FF8C00, #E67E00);
   }
+
+  .hover-btn-glow {
+    transition: all 0.2s ease;
+  }
+  .hover-btn-glow:hover {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.5) !important;
+    transform: translateY(-2px);
+  }
+
+  .hover-card-glow {
+    transition: all 0.25s ease;
+  }
+  .hover-card-glow:hover {
+    border: 1px solid rgba(249, 115, 22, 0.4) !important;
+    box-shadow: 0 0 25px rgba(249, 115, 22, 0.15) !important;
+    transform: translateY(-3px) !important;
+  }
+
+  .hover-nav-glow {
+    transition: color 0.2s ease;
+  }
+  .hover-nav-glow:hover {
+    color: #f97316 !important;
+  }
+
+  .hover-circle-glow {
+    transition: all 0.2s ease;
+  }
+  .hover-circle-glow:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.6) !important;
+  }
+
+  .hover-faq-glow {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+  }
+  .hover-faq-glow:hover {
+    border-left: 3px solid #f97316 !important;
+    padding-left: 12px !important;
+  }
 }

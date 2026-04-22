@@ -148,7 +148,7 @@ const Modal = ({ isOpen, closeModal }) => {
                   <option value="Other">Other</option>
                 </select>
               </div>
-              <button type="submit" style={{
+              <button type="submit" className="hover-btn-glow" style={{
                 width: '100%',
                 padding: '12px',
                 backgroundColor: '#FF8C00',

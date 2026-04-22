@@ -6,7 +6,7 @@ const ProblemSolution = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-12 items-stretch">
 
         {/* Problem Card */}
-        <div className="flex-1 p-8 rounded-xl border border-gray-200 bg-white shadow-sm transition-all">
+        <div className="flex-1 p-8 rounded-xl border border-gray-200 bg-white shadow-sm transition-all hover-card-glow">
           <h3 className="font-headline text-2xl font-bold text-[#2D2D2D] mb-6 flex items-center gap-3">
             <span className="material-symbols-outlined text-red-500 text-3xl">cancel</span>
             The Problem
@@ -28,7 +28,7 @@ const ProblemSolution = () => {
         </div>
 
         {/* Solution Card */}
-        <div className="flex-1 p-8 md:p-10 rounded-xl border-2 border-green-100 bg-white shadow-[0_8px_30px_rgb(34,197,94,0.12)] relative overflow-hidden transform md:-translate-y-2 transition-all">
+        <div className="flex-1 p-8 md:p-10 rounded-xl border-2 border-green-100 bg-white shadow-[0_8px_30px_rgb(34,197,94,0.12)] relative overflow-hidden transition-all hover-card-glow">
           {/* Subtle background glow effects */}
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-green-50 rounded-full blur-3xl opacity-60"></div>
           <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-orange-50 rounded-full blur-3xl opacity-60"></div>
@@ -40,15 +40,15 @@ const ProblemSolution = () => {
           <ul className="space-y-6 relative z-10">
             <li className="flex items-start gap-3">
               <span className="material-symbols-outlined text-green-500 text-xl mt-1">check_circle</span>
-              <p className="text-neutral-700 leading-relaxed"><strong>Guaranteed Funds:</strong> Customers pay the full project amount upfront through Stripe before work begins. Funds are processed and routed directly to your connected Stripe account as each milestone is completed.</p>
+              <p className="text-neutral-700 leading-relaxed"><strong>Upfront Commitment:</strong> Customers pay the project amount securely through Stripe before work begins. Funds are processed and routed directly to your connected Stripe account.</p>
             </li>
             <li className="flex items-start gap-3">
               <span className="material-symbols-outlined text-green-500 text-xl mt-1">check_circle</span>
-              <p className="text-neutral-700 leading-relaxed"><strong>Automation:</strong> Get paid automatically as each milestone is completed—no more creating invoices or chasing clients.</p>
+              <p className="text-neutral-700 leading-relaxed"><strong>Milestone Tracking:</strong> Payments are routed automatically as each milestone is completed—no more creating manual invoices or chasing clients.</p>
             </li>
             <li className="flex items-start gap-3">
               <span className="material-symbols-outlined text-green-500 text-xl mt-1">check_circle</span>
-              <p className="text-neutral-700 leading-relaxed"><strong>Zero Risk:</strong> Start every project with total peace of mind, knowing the money is already there waiting for you.</p>
+              <p className="text-neutral-700 leading-relaxed"><strong>Clear Agreements:</strong> Start every project with clarity. Both parties agree on milestones, and payments are secured via Stripe upfront.</p>
             </li>
           </ul>
         </div>
