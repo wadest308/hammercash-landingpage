@@ -8,8 +8,16 @@ import Contact from './Contact';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import PaymentForm from './PaymentForm';
+import CreateJob from './CreateJob';
+import DashboardLayout from './dashboard/DashboardLayout';
+import DashboardHome from './dashboard/DashboardHome';
+import DashboardCreateJob from './dashboard/CreateJob';
+import JobsList from './dashboard/JobsList';
+import JobDetail from './dashboard/JobDetail';
+import Account from './dashboard/Account';
+import Payments from './dashboard/Payments';
 
-const stripePromise = loadStripe(import.meta.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
 
 function App() {
   return (
@@ -20,7 +28,18 @@ function App() {
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/create-job" element={<CreateJob />} />
         <Route path="/pay" element={<Elements stripe={stripePromise}><PaymentForm /></Elements>} />
+
+        {/* Contractor Dashboard */}
+        <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<DashboardHome />} />
+          <Route path="create" element={<DashboardCreateJob />} />
+          <Route path="jobs" element={<JobsList />} />
+          <Route path="jobs/:id" element={<JobDetail />} />
+          <Route path="account" element={<Account />} />
+          <Route path="payments" element={<Payments />} />
+        </Route>
       </Routes>
     </Router>
   );
