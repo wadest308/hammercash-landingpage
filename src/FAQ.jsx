@@ -56,7 +56,7 @@ const FAQ = () => {
       },
       {
         question: "How much does it cost?",
-        answer: "3% only after your customer pays. No monthly fees, no upfront costs. Standard Stripe processing fees apply and are paid by the customer."
+        answer: "HammerCash charges a 3% platform fee which is deducted from each payment after your customer pays. Stripe's standard card processing fees are separate and also apply to every transaction."
       },
       {
         question: "Do customers need an account?",

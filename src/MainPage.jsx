@@ -32,7 +32,7 @@ function MainPage() {
           >
             Services
           </a>
-          <a className="font-headline text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-wider text-sm font-semibold" href="#pricing">Packages</a>
+          <a className="font-headline text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-wider text-sm font-semibold" href="#pricing">Pricing</a>
           <a className="font-headline text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-wider text-sm font-semibold" href="#about">About</a>
           <a className="font-headline text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-wider text-sm font-semibold" href="#footer">Contact</a>
         </div>

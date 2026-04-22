@@ -40,7 +40,7 @@ const ProblemSolution = () => {
           <ul className="space-y-6 relative z-10">
             <li className="flex items-start gap-3">
               <span className="material-symbols-outlined text-green-500 text-xl mt-1">check_circle</span>
-              <p className="text-neutral-700 leading-relaxed"><strong>Guaranteed Funds:</strong> Customers secure the full project amount in escrow before you even step foot on the job site.</p>
+              <p className="text-neutral-700 leading-relaxed"><strong>Guaranteed Funds:</strong> Customers pay the full project amount upfront through Stripe before work begins. Funds are processed and routed directly to your connected Stripe account as each milestone is completed.</p>
             </li>
             <li className="flex items-start gap-3">
               <span className="material-symbols-outlined text-green-500 text-xl mt-1">check_circle</span>

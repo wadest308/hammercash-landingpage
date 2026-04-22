@@ -11,7 +11,7 @@ const Hero = ({ openModal }) => {
         />
       </div>
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-16 relative z-10">
-        <div className="flex-1 space-y-8">
+        <div className="flex-1 space-y-8 md:pl-8">
           
           <h1 className="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.1] -tracking-[0.02em]">
             Get Paid <span style={{ color: '#FF8C00' }}>Before You Start</span> the Job.

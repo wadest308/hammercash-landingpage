@@ -12,7 +12,7 @@ const testimonials = [
     trade: 'Renovation Contractor',
   },
   {
-    quote: "HammerCash completely eliminated the anxiety of taking on $20k+ projects. The client funded the escrow, and milestones released automatically as we passed inspections. Unbelievably smooth.",
+    quote: "HammerCash completely eliminated the anxiety of taking on $20k+ projects. The client paid the full amount upfront, and milestones released automatically as we passed inspections. Unbelievably smooth.",
     name: 'David L.',
     trade: 'Custom Home Builder',
   },

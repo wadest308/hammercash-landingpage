@@ -13,7 +13,7 @@ const Pricing = ({ openModal }) => {
           <div className="bg-white p-12 md:p-16 rounded-3xl border border-[#ddc1ae] flex flex-col shadow-xl max-w-3xl text-center items-center">
             <h3 className="font-headline text-3xl md:text-4xl font-extrabold text-[#2D2D2D] mb-6">Pay As You Go.</h3>
             <p className="text-[#564334] text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-              We take 3% only after your customer pays. Free to start. No risk.
+              HammerCash charges a 3% platform fee which is deducted from each payment after your customer pays. Stripe's standard card processing fees are separate and also apply to every transaction.
             </p>
             <ul className="text-left space-y-2 mb-10">
               <li className="flex items-start gap-2"><span style={{ color: '#FF8C00' }}>✓</span> You only pay when money comes in</li>
@@ -34,9 +34,7 @@ const Pricing = ({ openModal }) => {
               }}>
               Create Your First Job
             </button>
-            <p className="text-[#564334] font-medium text-sm mt-4">
-              Plus standard payment processing fees paid by the customer.
-            </p>
+            
           </div>
         </div>
       </div>
