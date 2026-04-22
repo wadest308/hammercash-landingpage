@@ -10,7 +10,7 @@ const Footer = () => {
         </p>
         <div className="font-body text-white/60 text-sm leading-relaxed mt-2">
           <p>Calgary, AB, Canada</p>
-          <p>support@hammercash.com</p>
+          <p>wadelieu17@gmail.com</p>
           <p className="mt-4">© 2026 HammerCash Inc.</p>
         </div>
       </div>

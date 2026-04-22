@@ -22,12 +22,10 @@ function Contact() {
             <div className="bg-[#1e1e1e] p-6 rounded-lg border border-neutral-700">
               <h2 className="font-headline text-xl font-bold text-[#FF8C00] mb-2">Support & Inquiries</h2>
               <p className="text-neutral-400">Email us anytime and we'll get back to you within 24 hours.</p>
-              <a href="mailto:support@hammercash.com" className="text-white hover:text-[#FF8C00] font-bold text-lg mt-2 block">
-                support@hammercash.com
-              </a>
-              <a href="mailto:wadelieu17@gmail.com" className="text-white hover:text-[#FF8C00] font-bold text-lg block">
+              <a href="mailto:wadelieu17@gmail.com" className="text-white hover:text-[#FF8C00] font-bold text-lg mt-2 block">
                 wadelieu17@gmail.com
               </a>
+
             </div>
           </div>
         </div>
