@@ -5,6 +5,11 @@ import PrivacyPolicy from './PrivacyPolicy';
 import TermsOfService from './TermsOfService';
 import RefundPolicy from './RefundPolicy';
 import Contact from './Contact';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import PaymentForm from './PaymentForm';
+
+const stripePromise = loadStripe(import.meta.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
 function App() {
   return (
@@ -15,6 +20,7 @@ function App() {
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/pay" element={<Elements stripe={stripePromise}><PaymentForm /></Elements>} />
       </Routes>
     </Router>
   );

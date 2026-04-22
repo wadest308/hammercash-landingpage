@@ -44,6 +44,11 @@ function MainPage() {
       </nav>
 
       <main className="pt-16">
+        <button onClick={async () => {
+          const response = await fetch('http://localhost:3001/api/stripe/connect', { method: 'POST' });
+          const { url } = await response.json();
+          window.location.href = url;
+        }}>Connect with Stripe</button>
         <Hero openModal={openModal} />
         <ProblemSolution />
         <HowItWorks />
