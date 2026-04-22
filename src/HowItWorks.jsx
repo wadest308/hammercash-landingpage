@@ -38,4 +38,3 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
-t HowItWorks;

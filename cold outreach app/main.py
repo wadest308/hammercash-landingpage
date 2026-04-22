@@ -47,7 +47,7 @@ async def send_email(request: EmailRequest):
     # --- Build the message ---
     message = MIMEMultipart()
 
-    # Sender display name (e.g., "Wade <wade@tryhammercash.com>")
+    # Sender display name (e.g., "Wade <wadelieu17@gmail.com>")
     from_display = f"{request.sender_name} <{request.sender_email}>"
     message['From'] = from_display
     message['To'] = request.receiver_email

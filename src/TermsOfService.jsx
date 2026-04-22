@@ -42,30 +42,44 @@ function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">5. Contractor Responsibilities</h2>
+              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">5. Payment Processing</h2>
+              <p className="leading-relaxed">
+                Payments are processed by Stripe. By using HammerCash, contractors agree to Stripe's Terms of Service and Connected Account Agreement. HammerCash is a platform only and is not a bank, escrow service, or financial institution.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">6. Contractor Responsibilities</h2>
               <p className="leading-relaxed">
                 Contractors are responsible for completing agreed work, fulfilling legal trade obligations, and managing their own Stripe account.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">6. Prohibited Use</h2>
+              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">7. Prohibited Use</h2>
               <p className="leading-relaxed">
                 Do not use HammerCash for illegal services, false information, or anything that violates Stripe's Terms of Service.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">7. Limitation of Liability</h2>
+              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">8. Limitation of Liability</h2>
               <p className="leading-relaxed">
                 HammerCash provides software only. We are not responsible for contractor disputes, work quality, or failed payments.
               </p>
             </div>
 
             <div>
-              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">8. Contact</h2>
+              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">9. Refunds and Cancellations</h2>
               <p className="leading-relaxed">
-                contact@hammercash.com
+                HammerCash does not issue refunds as we do not hold or control any funds. If a job is cancelled before or during work, refund and cancellation terms are agreed upon directly between the contractor and their customer. All payment reversals are handled by Stripe according to their standard policies.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">10. Contact</h2>
+              <p className="leading-relaxed">
+                wadelieu17@gmail.com
               </p>
             </div>
           </div>

@@ -3,7 +3,7 @@ import Hero from './Hero';
 import ProblemSection from './ProblemSection';
 import Testimonials from './Testimonials';
 import HowItWorks from './HowItWorks';
-import TrustSignalBar from './TrustSignalBar';
+// import TrustSignalBar from './TrustSignalBar';
 import Pricing from './Pricing';
 import FounderSection from './FounderSection';
 import FAQ from './FAQ';
@@ -48,7 +48,7 @@ function MainPage() {
         <ProblemSection />
         <HowItWorks />
         <Testimonials />
-        <TrustSignalBar />
+        {/* <TrustSignalBar /> */}
         <Pricing openModal={openModal} />
         <FounderSection />
         <FAQ />

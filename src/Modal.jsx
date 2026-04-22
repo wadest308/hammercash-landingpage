@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Modal = ({ isOpen, closeModal }) => {
   const [name, setName] = useState('');
@@ -164,8 +165,9 @@ const Modal = ({ isOpen, closeModal }) => {
                 fontSize: '12px',
                 textAlign: 'center',
                 marginTop: '16px',
+                color: 'grey'
               }}>
-                Free to join. No credit card required.
+                By signing up you agree to our <Link to="/terms" style={{ color: '#FF8C00' }}>Terms of Service</Link> and <Link to="/privacy-policy" style={{ color: '#FF8C00' }}>Privacy Policy</Link>.
               </p>
             </form>
           </>

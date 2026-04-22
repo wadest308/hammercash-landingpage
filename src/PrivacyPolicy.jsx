@@ -52,14 +52,14 @@ function PrivacyPolicy() {
             <div>
               <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">6. Your Rights</h2>
               <p className="leading-relaxed">
-                You may request access to or deletion of your data by emailing contact@hammercash.com
+                You may request access to or deletion of your data by emailing wadelieu17@gmail.com
               </p>
             </div>
 
             <div>
               <h2 className="font-headline text-2xl font-bold text-[#FF8C00] mb-3">7. Contact</h2>
               <p className="leading-relaxed">
-                contact@hammercash.com
+                wadelieu17@gmail.com
               </p>
             </div>
           </div>
