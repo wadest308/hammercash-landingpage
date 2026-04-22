@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './Hero';
-import ProblemSection from './ProblemSection';
+import ProblemSolution from './ProblemSolution';
 import Testimonials from './Testimonials';
 import HowItWorks from './HowItWorks';
 // import TrustSignalBar from './TrustSignalBar';
@@ -45,7 +45,7 @@ function MainPage() {
 
       <main className="pt-16">
         <Hero openModal={openModal} />
-        <ProblemSection />
+        <ProblemSolution />
         <HowItWorks />
         <Testimonials />
         {/* <TrustSignalBar /> */}

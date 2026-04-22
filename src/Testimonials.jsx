@@ -11,6 +11,11 @@ const testimonials = [
     name: 'James T.',
     trade: 'Renovation Contractor',
   },
+  {
+    quote: "HammerCash completely eliminated the anxiety of taking on $20k+ projects. The client funded the escrow, and milestones released automatically as we passed inspections. Unbelievably smooth.",
+    name: 'David L.',
+    trade: 'Custom Home Builder',
+  },
 ];
 
 const Testimonials = () => {
