@@ -4,7 +4,7 @@ const ProblemSolution = () => {
   return (
     <section className="py-12 md:py-20 px-4 sm:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-12 items-stretch">
-        
+
         {/* Problem Card */}
         <div className="flex-1 p-8 rounded-xl border border-gray-200 bg-white shadow-sm transition-all">
           <h3 className="font-headline text-2xl font-bold text-[#2D2D2D] mb-6 flex items-center gap-3">
@@ -32,7 +32,7 @@ const ProblemSolution = () => {
           {/* Subtle background glow effects */}
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-green-50 rounded-full blur-3xl opacity-60"></div>
           <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-orange-50 rounded-full blur-3xl opacity-60"></div>
-          
+
           <h3 className="font-headline text-2xl font-bold text-[#FF8C00] mb-6 flex items-center gap-3 relative z-10">
             <span className="material-symbols-outlined text-green-500 text-3xl">check_circle</span>
             The Solution
