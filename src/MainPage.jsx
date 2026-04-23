@@ -12,8 +12,21 @@ import Footer from './Footer';
 import Modal from './Modal';
 import useModal from './useModal';
 
+import { useNavigate } from 'react-router-dom';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from './firebase';
+
 function MainPage() {
+  const navigate = useNavigate();
   const { isOpen, openModal, closeModal } = useModal();
+  const [user, setUser] = React.useState(null);
+
+  React.useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+    return unsubscribe;
+  }, []);
 
   return (
     <div className="light">
@@ -37,27 +50,22 @@ function MainPage() {
           <a className="font-headline text-white/80 hover-nav-glow uppercase tracking-wider text-sm font-semibold" href="#footer">Contact</a>
         </div>
         <button
-          onClick={openModal}
+          onClick={() => user ? navigate('/dashboard') : navigate('/login')}
           className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[12px] py-2 px-3 md:text-[18px] md:py-4 md:px-8 hover-btn-glow">
           Get Started Free
         </button>
       </nav>
 
       <main className="pt-16">
-        <button onClick={async () => {
-          const response = await fetch('http://localhost:3001/api/stripe/connect', { method: 'POST' });
-          const { url } = await response.json();
-          window.location.href = url;
-        }}>Connect with Stripe</button>
-        <Hero openModal={openModal} />
+        <Hero openModal={() => user ? navigate('/dashboard') : navigate('/login')} />
         <ProblemSolution />
         <HowItWorks />
         <Testimonials />
         {/* <TrustSignalBar /> */}
-        <Pricing openModal={openModal} />
+        <Pricing openModal={() => user ? navigate('/dashboard') : navigate('/login')} />
         <FounderSection />
         <FAQ />
-        <FinalCTA openModal={openModal} />
+        <FinalCTA openModal={() => user ? navigate('/dashboard') : navigate('/login')} />
       </main>
 
       <Footer />

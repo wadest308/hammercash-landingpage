@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet, NavLink, useLocation } from 'react-router-dom';
+import { Outlet, NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { auth } from '../firebase';
 import './Dashboard.css';
 
 const NAV_ITEMS = [
@@ -11,6 +12,7 @@ const NAV_ITEMS = [
 ];
 
 export default function DashboardLayout() {
+  const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [stripeConnected, setStripeConnected] = useState(false);
   const location = useLocation();
@@ -85,6 +87,24 @@ export default function DashboardLayout() {
         </nav>
 
         <div className="sidebar-footer">
+          <button
+            onClick={() => {
+              auth.signOut();
+              navigate('/');
+            }}
+            style={{
+              width: '100%',
+              padding: '12px 16px',
+              marginBottom: '10px',
+              backgroundColor: '#4B5563',
+              color: 'white',
+              border: 'none',
+              borderRadius: '10px',
+              cursor: 'pointer'
+            }}
+          >
+            Logout
+          </button>
           <span className="sidebar-footer-text">© 2026 HammerCash</span>
         </div>
       </aside>

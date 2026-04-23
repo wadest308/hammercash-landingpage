@@ -17,6 +17,10 @@ import JobDetail from './dashboard/JobDetail';
 import Account from './dashboard/Account';
 import Payments from './dashboard/Payments';
 
+import Login from './Login';
+
+import ProtectedRoute from './ProtectedRoute';
+
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
 
 function App() {
@@ -30,9 +34,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/create-job" element={<CreateJob />} />
         <Route path="/pay" element={<Elements stripe={stripePromise}><PaymentForm /></Elements>} />
+        <Route path="/login" element={<Login />} />
+
 
         {/* Contractor Dashboard */}
-        <Route path="/dashboard" element={<DashboardLayout />}>
+        <Route path="/dashboard" element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
           <Route index element={<DashboardHome />} />
           <Route path="create" element={<DashboardCreateJob />} />
           <Route path="jobs" element={<JobsList />} />
