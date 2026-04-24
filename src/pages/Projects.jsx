@@ -9,28 +9,30 @@ export default function Projects() {
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
-    const fetch = async () => {
+    const fetchJobs = async () => {
       try {
         const user = getAuth().currentUser;
         const q = query(collection(db, 'jobs'), where('uid', '==', user.uid));
-        const snap = await getDocs(q);
-        setJobs(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-      } catch (e) {
-        console.error(e);
+        const snapshot = await getDocs(q);
+        setJobs(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+      } catch (err) {
+        console.error('Projects fetch error:', err);
       } finally {
         setLoading(false);
       }
     };
-    fetch();
+    fetchJobs();
   }, []);
 
-  const filtered = filter === 'All' ? jobs : jobs.filter(j => j.status === filter);
-  const fmt = (n) => '$' + (n || 0).toLocaleString('en-US', { minimumFractionDigits: 2 });
+  const filteredJobs = filter === 'All' ? jobs : jobs.filter(j => j.status === filter);
+  const formatCurrency = (n) => '$' + (n || 0).toLocaleString('en-US', { minimumFractionDigits: 2 });
 
   if (loading) return <div className="p-8 text-gray-400 text-sm">Loading projects...</div>;
 
   return (
     <div className="p-8">
+      
+      {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <div>
           <h2 className="text-xl font-semibold">Projects</h2>
@@ -39,7 +41,7 @@ export default function Projects() {
         <select
           value={filter}
           onChange={e => setFilter(e.target.value)}
-          className="text-sm border border-gray-200 rounded-lg px-3 py-2 text-gray-500"
+          className="text-sm border border-gray-200 rounded-lg px-3 py-2 text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-400"
         >
           <option>All</option>
           <option>In Progress</option>
@@ -48,7 +50,8 @@ export default function Projects() {
         </select>
       </div>
 
-      {filtered.length === 0 ? (
+      {/* Projects Table */}
+      {filteredJobs.length === 0 ? (
         <div className="border border-gray-200 rounded-lg p-12 text-center">
           <p className="text-gray-400 text-sm">
             {filter === 'All' 
@@ -70,17 +73,17 @@ export default function Projects() {
               </tr>
             </thead>
             <tbody>
-              {filtered.map(job => (
-                <tr key={job.id} className="border-b border-gray-100 hover:bg-gray-50">
+              {filteredJobs.map(job => (
+                <tr key={job.id} className="border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
                   <td className="px-6 py-4">
                     <p className="font-medium">{job.projectName}</p>
-                    <p className="text-gray-400 text-xs">#{job.id.slice(0,6).toUpperCase()}</p>
+                    <p className="text-gray-400 text-xs">ID: #HC-{job.id.slice(0,6).toUpperCase()}</p>
                   </td>
                   <td className="px-6 py-4">
-                    <p>{job.customerName}</p>
+                    <p className="text-gray-700">{job.customerName}</p>
                     <p className="text-gray-400 text-xs">{job.customerEmail}</p>
                   </td>
-                  <td className="px-6 py-4 font-medium">{fmt(job.totalAmount)}</td>
+                  <td className="px-6 py-4 font-medium">{formatCurrency(job.totalAmount)}</td>
                   <td className="px-6 py-4">
                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                       job.status === 'Completed' ? 'bg-green-100 text-green-700' :
@@ -90,9 +93,13 @@ export default function Projects() {
                       {job.status || 'In Progress'}
                     </span>
                   </td>
-                  <td className="px-6 py-4 text-gray-400">
+                  <td className="px-6 py-4 text-gray-400 text-xs">
                     {job.createdAt?.toDate
-                      ? job.createdAt.toDate().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+                      ? job.createdAt.toDate().toLocaleDateString('en-US', { 
+                          month: 'short', 
+                          day: 'numeric', 
+                          year: 'numeric' 
+                        })
                       : '—'
                     }
                   </td>
