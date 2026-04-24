@@ -1,112 +1,125 @@
 import { useEffect, useState } from 'react';
-import { collection, query, where, getDocs } from 'firebase/firestore';
+import { useNavigate } from 'react-router-dom';
+import { collection, query, where, onSnapshot, doc, deleteDoc, getDocs, writeBatch } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { db } from '../firebase';
+import StatusBadge from '../components/StatusBadge';
+
+const StreetViewThumbnail = ({ address }) => {
+  const url = `https://maps.googleapis.com/maps/api/streetview?size=80x55&location=${encodeURIComponent(address)}&key=${import.meta.env.VITE_GOOGLE_PLACES_API_KEY}`;
+  return <img src={url} alt="Street View" className="w-20 h-[55px] object-cover rounded-md" />;
+};
 
 export default function Projects() {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('All');
+  const navigate = useNavigate();
+  const auth = getAuth();
 
   useEffect(() => {
-    const fetchJobs = async () => {
-      try {
-        const user = getAuth().currentUser;
-        const q = query(collection(db, 'jobs'), where('uid', '==', user.uid));
-        const snapshot = await getDocs(q);
-        setJobs(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
-      } catch (err) {
-        console.error('Projects fetch error:', err);
-      } finally {
+    const user = auth.currentUser;
+    if (!user) {
         setLoading(false);
-      }
+        return;
     };
-    fetchJobs();
-  }, []);
 
-  const filteredJobs = filter === 'All' ? jobs : jobs.filter(j => j.status === filter);
+    const q = query(collection(db, 'jobs'), where('uid', '==', user.uid));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const jobList = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      setJobs(jobList);
+      setLoading(false);
+    }, (err) => {
+      console.error('Projects fetch error:', err);
+      setLoading(false);
+    });
+
+    return () => unsubscribe();
+  }, [auth.currentUser]);
+
+  const handleDelete = async (e, projectId, projectUid) => {
+    e.stopPropagation(); // Prevent row navigation
+    const user = auth.currentUser;
+    if (projectUid !== user.uid) {
+        alert("You are not authorized to delete this project.");
+        return;
+    }
+
+    if (window.confirm("Are you sure you want to delete this project? This cannot be undone.")) {
+        try {
+            const batch = writeBatch(db);
+            const projectRef = doc(db, "jobs", projectId);
+            batch.delete(projectRef);
+            const milestonesQuery = query(collection(db, "milestones"), where("jobId", "==", projectId));
+            const milestoneSnapshot = await getDocs(milestonesQuery);
+            milestoneSnapshot.forEach((doc) => {
+                batch.delete(doc.ref);
+            });
+            await batch.commit();
+        } catch (error) {
+            console.error("Error deleting project:", error);
+            alert("Failed to delete project. Please try again.");
+        }
+    }
+  };
+
+  const filteredJobs = filter === 'All' ? jobs : jobs.filter(j => (j.status || 'in_progress') === filter);
   const formatCurrency = (n) => '$' + (n || 0).toLocaleString('en-US', { minimumFractionDigits: 2 });
 
   if (loading) return <div className="p-8 text-gray-400 text-sm">Loading projects...</div>;
 
   return (
     <div className="p-8">
-      
-      {/* Header */}
-      <div className="flex justify-between items-center mb-6">
-        <div>
-          <h2 className="text-xl font-semibold">Projects</h2>
-          <p className="text-gray-400 text-sm">{jobs.length} total project{jobs.length !== 1 ? 's' : ''}</p>
+        {/* Firestore Migration Note: Old projects without lat/lng will show the fallback icon. */}
+        {/* To fix, contractors should edit the project and re-save the address to generate coordinates. */}
+        {/* ... header ... */}
+        <div className="flex justify-between items-center mb-6">
+            <div>
+                <h2 className="text-xl font-semibold">Projects</h2>
+                <p className="text-gray-400 text-sm">{jobs.length} total project{jobs.length !== 1 ? 's' : ''}</p>
+            </div>
+            <select value={filter} onChange={e => setFilter(e.target.value)} className="text-sm border rounded-lg px-3 py-2">
+                <option>All</option>
+                <option value="in_progress">Active Work</option>
+                <option value="awaiting_payment">Awaiting Payment</option>
+                <option value="funded">Funded</option>
+                <option value="awaiting_approval">Awaiting Approval</option>
+                <option value="completed">Completed</option>
+            </select>
         </div>
-        <select
-          value={filter}
-          onChange={e => setFilter(e.target.value)}
-          className="text-sm border border-gray-200 rounded-lg px-3 py-2 text-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-400"
-        >
-          <option>All</option>
-          <option>In Progress</option>
-          <option>Submitted</option>
-          <option>Completed</option>
-        </select>
-      </div>
 
-      {/* Projects Table */}
       {filteredJobs.length === 0 ? (
-        <div className="border border-gray-200 rounded-lg p-12 text-center">
-          <p className="text-gray-400 text-sm">
-            {filter === 'All' 
-              ? 'No projects yet. Click New Project to create your first one.'
-              : `No projects with status "${filter}".`
-            }
-          </p>
-        </div>
+        <div className="border-2 border-dashed border-gray-200 rounded-lg p-12 text-center"><p className="text-gray-400 text-sm">No projects found.</p></div>
       ) : (
-        <div className="border border-gray-200 rounded-lg overflow-hidden">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="text-left text-xs text-gray-400 uppercase tracking-wider bg-gray-50 border-b border-gray-200">
-                <th className="px-6 py-3">Project</th>
-                <th className="px-6 py-3">Customer</th>
-                <th className="px-6 py-3">Total Amount</th>
-                <th className="px-6 py-3">Status</th>
-                <th className="px-6 py-3">Created</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredJobs.map(job => (
-                <tr key={job.id} className="border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
-                  <td className="px-6 py-4">
-                    <p className="font-medium">{job.projectName}</p>
-                    <p className="text-gray-400 text-xs">ID: #HC-{job.id.slice(0,6).toUpperCase()}</p>
-                  </td>
-                  <td className="px-6 py-4">
-                    <p className="text-gray-700">{job.customerName}</p>
-                    <p className="text-gray-400 text-xs">{job.customerEmail}</p>
-                  </td>
-                  <td className="px-6 py-4 font-medium">{formatCurrency(job.totalAmount)}</td>
-                  <td className="px-6 py-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      job.status === 'Completed' ? 'bg-green-100 text-green-700' :
-                      job.status === 'Submitted' ? 'bg-yellow-100 text-yellow-700' :
-                      'bg-blue-100 text-blue-600'
-                    }`}>
-                      {job.status || 'In Progress'}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-gray-400 text-xs">
-                    {job.createdAt?.toDate
-                      ? job.createdAt.toDate().toLocaleDateString('en-US', { 
-                          month: 'short', 
-                          day: 'numeric', 
-                          year: 'numeric' 
-                        })
-                      : '—'
-                    }
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="border border-gray-200 rounded-lg overflow-hidden divide-y divide-gray-200">
+            {filteredJobs.map(job => (
+                <div key={job.id} onClick={() => navigate(`/dashboard/projects/${job.id}`)} className="p-4 hover:bg-gray-50 cursor-pointer">
+                    <div className="flex items-center">
+                        <StreetViewThumbnail address={job.address} />
+                        <div className="ml-4 flex-1">
+                            <div className="flex justify-between items-start">
+                                <div>
+                                    <p className="text-lg font-bold text-black">{job.projectName}</p>
+                                    <p className="text-sm text-gray-500">{job.address}</p>
+                                </div>
+                                <p className="text-lg font-bold">${(job.totalAmount || 0).toLocaleString()}</p>
+                            </div>
+                            <div className="flex justify-between items-end mt-2">
+                                <div>
+                                    <p className="text-sm text-gray-600">{job.customerName}</p>
+                                    <p className="text-xs text-gray-400">{job.customerEmail}</p>
+                                </div>
+                                <div className="flex items-center space-x-4">
+                                    <StatusBadge status={job.status || 'in_progress'} />
+                                    <button onClick={(e) => handleDelete(e, job.id, job.uid)} className="border border-red-500 text-red-500 hover:bg-red-50 text-xs font-bold py-1 px-3 rounded">
+                                      Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
         </div>
       )}
     </div>

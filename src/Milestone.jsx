@@ -1,192 +1,183 @@
-
-import React, { useState, useEffect } from 'react';
-import { collection, query, where, getDocs, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import React, { useState, useEffect, useMemo } from 'react';
+import { collection, query, where, onSnapshot } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { db } from './firebase';
-import { sendMilestoneApprovalRequest, sendMilestoneReleasedNotification } from './utils/notifications';
 
-const StatusBadge = ({ status }) => {
-    const statusStyles = {
-        pending: 'bg-gray-100 text-gray-600',
-        in_progress: 'bg-blue-100 text-blue-700',
-        submitted: 'bg-yellow-100 text-yellow-700',
-        released: 'bg-green-100 text-green-700',
-    };
-    const statusText = {
-        pending: 'Pending',
-        in_progress: 'In Progress',
-        submitted: 'Awaiting Approval',
-        released: 'Released',
-    };
-    return <span className={`px-2.5 py-1 text-xs font-medium rounded-full ${statusStyles[status] || statusStyles.pending}`}>{statusText[status] || status}</span>;
+const MediumProjectCard = ({ project }) => {
+  const { projectName, address, lat, lng, customerName, totalAmount, status } = project || {};
+  const apiKey = import.meta.env.VITE_GOOGLE_PLACES_API_KEY;
+
+  const streetViewUrl = useMemo(() => {
+    if (lat && lng) {
+      return `https://maps.googleapis.com/maps/api/streetview?size=260x160&location=${lat},${lng}&key=${apiKey}`;
+    }
+    return null;
+  }, [lat, lng, apiKey]);
+
+  if (!project) return null;
+
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden flex mb-6">
+        <div className="w-1/3 flex-shrink-0">
+            <img src={`https://maps.googleapis.com/maps/api/streetview?size=260x160&location=${encodeURIComponent(project.address)}&key=${import.meta.env.VITE_GOOGLE_PLACES_API_KEY}`} alt={`Street view of ${address}`} className="w-full h-full object-cover" />
+        </div>
+        <div className="p-4 flex-grow">
+            <h2 className="text-lg font-bold text-gray-800">{projectName}</h2>
+            <p className="text-xs text-gray-500 mt-1">{address}</p>
+            <div className="mt-3 grid grid-cols-2 gap-2 text-sm">
+                <div><span className="font-semibold text-orange-600">Client:</span><span className="ml-2 text-gray-700">{customerName}</span></div>
+                <div><span className="font-semibold text-gray-600">Value:</span><span className="ml-2 text-gray-700">${(totalAmount || 0).toLocaleString()}</span></div>
+                 <div><span className="font-semibold text-gray-600">Status:</span><span className="ml-2 text-gray-700">{status}</span></div>
+            </div>
+        </div>
+    </div>
+  );
+};
+
+const PaymentSummaryCard = ({ project }) => {
+  const total = project.totalAmount || 0;
+  // These are placeholders, as the data is not available in the project object yet
+  const funded = 0;
+  const released = 0;
+  const remaining = total - released;
+
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+      <h2 className="text-lg font-bold text-gray-800 mb-4">Payment Summary</h2>
+      <div className="space-y-3">
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Total Project Value</span>
+          <span className="text-sm font-semibold text-gray-900">${total.toLocaleString()}</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Funded</span>
+          <span className="text-sm font-semibold text-green-600">${funded.toLocaleString()}</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Released</span>
+          <span className="text-sm font-semibold text-gray-900">${released.toLocaleString()}</span>
+        </div>
+        <div className="flex justify-between items-center pt-3 border-t border-gray-200 mt-3">
+          <span className="text-sm font-semibold text-gray-900">Remaining</span>
+          <span className="text-sm font-bold text-gray-900">${remaining.toLocaleString()}</span>
+        </div>
+      </div>
+      <div className="mt-6">
+        <button
+          type="button"
+          onClick={() => window.alert("Payment request feature coming soon. Your contractor will be contacted.")}
+          className="w-full inline-flex items-center justify-center px-4 py-2 bg-orange-600 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+        >
+          Request Funding
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default function Milestone() {
+    const [projects, setProjects] = useState([]);
+    const [selectedProjectId, setSelectedProjectId] = useState('');
     const [milestones, setMilestones] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [userRole, setUserRole] = useState('contractor'); // Assume contractor default, adjust as needed
-
+    
     const auth = getAuth();
     const user = auth.currentUser;
 
-    const fetchMilestones = async () => {
-        if (!user) {
+    useEffect(() => {
+        if (!user) return;
+        const q = query(collection(db, 'jobs'), where('uid', '==', user.uid));
+        const unsubscribe = onSnapshot(q, (snapshot) => {
+            const userProjects = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            setProjects(userProjects);
+            if (userProjects.length > 0 && !selectedProjectId) {
+                setSelectedProjectId(userProjects[0].id);
+            }
+            setLoading(false); // Initial load is done
+        }, err => {
+            console.error("Error fetching projects:", err);
+            setError("Could not load projects.");
             setLoading(false);
-            return;
-        }
-        
-        setLoading(true);
-        try {
-            // A real app would determine if user is homeowner or contractor for a project
-            // For now, we query milestones where the user is either the contractor OR the homeowner
-            const contractorQuery = query(collection(db, 'milestones'), where('uid', '==', user.uid));
-            const homeownerQuery = query(collection(db, 'milestones'), where('homeownerEmail', '==', user.email));
-
-            const [contractorSnapshot, homeownerSnapshot] = await Promise.all([getDocs(contractorQuery), getDocs(homeownerQuery)]);
-            
-            const contractorMilestones = contractorSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data(), role: 'contractor' }));
-            const homeownerMilestones = homeownerSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data(), role: 'homeowner' }));
-
-            // Simple merge and de-dupe
-            const allMilestones = [...contractorMilestones, ...homeownerMilestones];
-            const uniqueMilestones = Array.from(new Map(allMilestones.map(item => [item.id, item])).values());
-
-            setMilestones(uniqueMilestones);
-        } catch (err) {
-            console.error("Error fetching milestones:", err);
-            setError("Unable to load data. Please refresh.");
-        }
-        setLoading(false);
-    };
+        });
+        return () => unsubscribe();
+    }, [user, selectedProjectId]);
 
     useEffect(() => {
-        fetchMilestones();
-    }, [user]);
+        if (!selectedProjectId || !user) {
+            setMilestones([]);
+            return;
+        };
+        
+        const q = query(collection(db, 'milestones'), where('jobId', '==', selectedProjectId), where('uid', '==', user.uid));
+        const unsubscribe = onSnapshot(q, (snapshot) => {
+            setMilestones(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+        }, err => {
+            console.error("Error fetching milestones:", err);
+            setError("Could not load milestones for this project.");
+        });
 
-    // Called when contractor clicks "Mark Complete"
-    const handleContractorApprove = async (milestone) => {
-        try {
-            const milestoneRef = doc(db, 'milestones', milestone.id);
-            await updateDoc(milestoneRef, {
-                contractorApproved: true,
-                contractorApprovedAt: serverTimestamp(),
-                status: 'submitted',
-            });
+        return () => unsubscribe();
+    }, [selectedProjectId, user]);
 
-            await sendMilestoneApprovalRequest({
-                toEmail: milestone.homeownerEmail,
-                toName: 'Homeowner',
-                projectName: milestone.projectName || 'Your Project',
-                milestoneTitle: milestone.title,
-                milestoneAmount: milestone.amount,
-                dueDate: milestone.dueDate,
-            });
-            alert('Milestone marked complete. Homeowner has been notified by email.');
-            fetchMilestones(); // Refresh data
-        } catch (error) {
-            console.error('Error approving milestone:', error);
-            alert('Something went wrong. Please try again.');
-        }
-    };
-
-    // Called when homeowner clicks "Approve Release"
-    const handleHomeownerApprove = async (milestone) => {
-        try {
-            const milestoneRef = doc(db, 'milestones', milestone.id);
-            const updatedData = {
-                homeownerApproved: true,
-                homeownerApprovedAt: serverTimestamp(),
-                status: 'released',
-                releasedAt: serverTimestamp(),
-            };
-
-            await updateDoc(milestoneRef, updatedData);
-
-            await sendMilestoneReleasedNotification({
-                toEmail: milestone.homeownerEmail,
-                toName: 'Homeowner',
-                projectName: milestone.projectName || 'Your Project',
-                milestoneTitle: milestone.title,
-                milestoneAmount: milestone.amount,
-            });
-
-            await sendMilestoneReleasedNotification({
-                toEmail: milestone.contractorEmail,
-                toName: 'Contractor',
-                projectName: milestone.projectName || 'Your Project',
-                milestoneTitle: milestone.title,
-                milestoneAmount: milestone.amount,
-            });
-
-            alert('Milestone approved and released! Both parties have been notified by email.');
-            fetchMilestones(); // Refresh data
-        } catch (error) {
-            console.error('Error approving milestone:', error);
-            alert('Something went wrong. Please try again.');
-        }
-    };
-    
-    const handleRequestChanges = (milestone) => {
-        // Placeholder for change request logic
-        alert("Change request functionality not yet implemented.");
-    }
-
-    const renderContent = () => {
-        if (loading) return <div className="p-8 text-center text-gray-500">Loading milestones...</div>;
-        if (error) return <div className="p-8 text-center text-red-500">{error}</div>;
-        return (
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                <table className="min-w-full divide-y divide-gray-200">
-                    <thead className="bg-gray-50">
-                        <tr>
-                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Title</th>
-                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Status</th>
-                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Amount</th>
-                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Due Date</th>
-                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
-                        {milestones.length > 0 ? (
-                            milestones.map(m => (
-                                <tr key={m.id} className="hover:bg-gray-50">
-                                    <td className="p-4 text-sm font-medium text-gray-900">{m.title}</td>
-                                    <td className="p-4 text-sm"><StatusBadge status={m.status.toLowerCase()} /></td>
-                                    <td className="p-4 text-sm text-gray-600">${(m.amount || 0).toLocaleString()}</td>
-                                    <td className="p-4 text-sm text-gray-600">{m.dueDate ? new Date(m.dueDate).toLocaleDateString() : 'N/A'}</td>
-                                    <td className="p-4 text-sm">
-                                        {m.role === 'contractor' && m.status.toLowerCase() === 'in progress' && (
-                                            <button onClick={() => handleContractorApprove(m)} className="bg-orange-500 text-white px-3 py-1 rounded text-sm hover:bg-orange-600">Mark Complete</button>
-                                        )}
-                                        {m.role === 'homeowner' && m.status.toLowerCase() === 'submitted' && (
-                                            <div className="flex gap-2">
-                                                <button onClick={() => handleHomeownerApprove(m)} className="bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700">Approve Release</button>
-                                                <button onClick={() => handleRequestChanges(m)} className="border border-gray-400 text-gray-600 px-3 py-1 rounded text-sm hover:bg-gray-100">Request Changes</button>
-                                            </div>
-                                        )}
-                                        {m.status.toLowerCase() === 'released' && <span className="text-green-600 font-semibold text-sm">✓ Released</span>}
-                                        {m.status.toLowerCase() === 'submitted' && m.role === 'contractor' && <span className="text-yellow-600 text-sm">Awaiting Homeowner</span>}
-                                    </td>
-                                </tr>
-                            ))
-                        ) : (
-                            <tr><td colSpan="5" className="text-center py-16 text-gray-500">No milestones found.</td></tr>
-                        )}
-                    </tbody>
-                </table>
-            </div>
-        );
-    };
+    const selectedProject = projects.find(p => p.id === selectedProjectId);
 
     return (
-        <div className="bg-gray-100 min-h-screen font-sans p-8">
-            <div className="max-w-7xl mx-auto">
-                <div className="flex justify-between items-center mb-6">
-                    <h1 className="text-2xl font-bold text-gray-900">Milestones</h1>
-                </div>
-                {renderContent()}
+        <div className="p-8">
+            <div className="flex justify-between items-center mb-6">
+                <h1 className="text-2xl font-bold text-gray-900">Milestones</h1>
+                <select 
+                    value={selectedProjectId}
+                    onChange={(e) => setSelectedProjectId(e.target.value)}
+                    className="text-sm border border-gray-200 rounded-lg px-3 py-2 text-gray-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                    disabled={projects.length === 0}
+                >
+                    {projects.length === 0 && <option>No projects found</option>}
+                    {projects.map(p => <option key={p.id} value={p.id}>{p.projectName}</option>)}
+                </select>
             </div>
+
+            {selectedProject && 
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="lg:col-span-2">
+                        <MediumProjectCard project={selectedProject} />
+                        {loading ? (
+                            <div className="p-8 text-center text-gray-500">Loading...</div>
+                        ) : error ? (
+                            <div className="p-8 text-center text-red-500">{error}</div>
+                        ) : (
+                            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                                <table className="min-w-full divide-y divide-gray-200">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Title</th>
+                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Status</th>
+                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Amount</th>
+                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Due Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="bg-white divide-y divide-gray-200">
+                                        {milestones.length > 0 ? milestones.map(m => (
+                                            <tr key={m.id}>
+                                                <td className="p-4 text-sm font-medium text-gray-900">{m.title}</td>
+                                                <td className="p-4 text-sm text-gray-600">{m.status}</td>
+                                                <td className="p-4 text-sm text-gray-600">${(m.amount || 0).toLocaleString()}</td>
+                                                <td className="p-4 text-sm text-gray-600">{m.dueDate}</td>
+                                            </tr>
+                                        )) : (
+                                            <tr><td colSpan="4" className="text-center py-16 text-gray-500">No milestones for this project.</td></tr>
+                                        )}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+                    </div>
+                    <div className="lg:col-span-1">
+                        <PaymentSummaryCard project={selectedProject} />
+                    </div>
+                </div>
+            }
+
         </div>
     );
 }

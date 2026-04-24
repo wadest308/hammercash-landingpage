@@ -21,6 +21,8 @@ import LoginPage from './pages/auth/LoginPage';
 import SignUpPage from './pages/auth/SignUpPage';
 import SelectRole from './pages/SelectRole';
 import Projects from './pages/Projects';
+import ProjectDetail from './pages/ProjectDetail';
+import Transactions from './pages/Transactions';
 
 
 import ProtectedRoute from './ProtectedRoute';
@@ -60,7 +62,8 @@ function App() {
           <Route index element={<DashboardHomeWrapper />} />
           <Route path="milestones" element={<Milestone />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="transactions" element={<PlaceholderPage title="Transactions" />} />
+          <Route path="projects/:id" element={<ProjectDetail />} />
+          <Route path="transactions" element={<Transactions />} />
           <Route path="settings" element={<PlaceholderPage title="Settings" />} />
           <Route path="create" element={<DashboardCreateJob />} />
           <Route path="jobs" element={<JobsList />} />

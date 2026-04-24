@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { collection, query, where, onSnapshot } from 'firebase/firestore';
+import { getAuth, signOut } from 'firebase/auth';
+import { db } from '../firebase';
+import StatusBadge from '../components/StatusBadge';
 
 // --- ICONS (Heroicons placeholders) ---
 const ChartBarIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>;
@@ -16,8 +20,7 @@ const SearchIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-5 
 const Sidebar = () => {
     const navItems = [
         { name: 'Dashboard', icon: <ChartBarIcon /> },
-        { name: 'Jobs', icon: <BriefcaseIcon /> },
-        { name: 'Milestones', icon: <CheckCircleIcon /> },
+        { name: 'Projects', icon: <BriefcaseIcon /> },
         { name: 'Payments', icon: <CurrencyDollarIcon /> },
         { name: 'Clients', icon: <UserGroupIcon /> },
         { name: 'Settings', icon: <CogIcon /> },
@@ -44,18 +47,58 @@ const Sidebar = () => {
                     </a>
                 ))}
             </nav>
-            <div className="p-4 border-t border-gray-800">
-                <div className="flex items-center">
-                    <img className="h-10 w-10 rounded-full" src="https://ui-avatars.com/api/?name=John+Doe" alt="User avatar" />
-                    <div className="ml-4">
-                        <p className="font-semibold text-white">John Doe</p>
-                        <p className="text-sm text-gray-400">Contractor</p>
-                    </div>
-                </div>
-            </div>
         </aside>
     );
 };
+
+const ProfileDropdown = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
+    const auth = getAuth();
+    const dropdownRef = useRef(null);
+
+    const handleLogout = () => {
+        signOut(auth).then(() => {
+            navigate('/login');
+        }).catch((error) => {
+            console.error('Logout error:', error);
+        });
+    };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [dropdownRef]);
+
+    return (
+        <div className="relative" ref={dropdownRef}>
+            <button onClick={() => setIsOpen(!isOpen)} className="flex items-center space-x-2">
+                <img className="h-9 w-9 rounded-full" src="https://ui-avatars.com/api/?name=John+Doe" alt="User avatar" />
+            </button>
+
+            {isOpen && (
+                <div className="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5 z-10">
+                    <div className="px-4 py-3">
+                        <p className="text-sm font-semibold text-gray-900">John Doe</p>
+                        <p className="text-sm text-gray-500">Contractor</p>
+                    </div>
+                    <div className="border-t border-gray-100"></div>
+                    <a href="/dashboard/settings" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Account</a>
+                    <a href="/dashboard/settings" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Payout Settings</a>
+                    <div className="border-t border-gray-100"></div>
+                    <button onClick={handleLogout} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</button>
+                </div>
+            )}
+        </div>
+    );
+}
 
 const Header = () => {
     const navigate = useNavigate();
@@ -68,16 +111,19 @@ const Header = () => {
                 <input 
                     type="text" 
                     className="pl-10 pr-4 py-2 w-80 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" 
-                    placeholder="Search for jobs, clients..."
+                    placeholder="Search for projects, clients..."
                 />
             </div>
             <div className="flex items-center space-x-6">
-                <button className="text-gray-500 hover:text-gray-700">
+                <button onClick={() => navigate('/dashboard/create')} className="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-indigo-700">
+                    + Create New Project
+                </button>
+                 <button className="text-gray-500 hover:text-gray-700">
                     <BellIcon />
                 </button>
-                <button onClick={() => navigate('/dashboard/create')} className="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-indigo-700">
-                    + New Job
-                </button>
+                <div className="border-l border-gray-200 pl-6">
+                    <ProfileDropdown />
+                </div>
             </div>
         </header>
     );
@@ -97,71 +143,64 @@ const KpiCard = ({ title, value, change, icon }) => {
     );
 };
 
-const JobsTable = () => {
-    const jobs = [
-        { name: 'E-commerce Platform', client: 'Stripe', status: 'In Progress', progress: 75, nextMilestone: '$5,000' },
-        { name: 'SaaS Dashboard', client: 'Vercel', status: 'Pending', progress: 10, nextMilestone: '$2,500' },
-        { name: 'Mobile App API', client: 'Figma', status: 'Completed', progress: 100, nextMilestone: '-' },
-        { name: 'Marketing Website', client: 'Notion', status: 'In Progress', progress: 40, nextMilestone: '$8,000' },
-    ];
+const ProjectsTable = () => {
+    const projects = [
+        { name: 'E-commerce Platform', client: 'Stripe', status: 'in_progress', progress: 75, nextMilestone: '$5,000', address: '123 Main St, San Francisco, CA', customerName: 'John Doe', customerEmail: 'john@stripe.com', totalAmount: 10000 },
+        { name: 'SaaS Dashboard', client: 'Vercel', status: 'awaiting_payment', progress: 10, nextMilestone: '$2,500', address: '456 Market St, San Francisco, CA', customerName: 'Jane Smith', customerEmail: 'jane@vercel.com', totalAmount: 20000 },
+    ]; // Using dummy data to show the layout
+    const navigate = useNavigate();
     
-    const StatusBadge = ({status}) => {
-        const base = "px-2.5 py-0.5 rounded-full text-xs font-medium";
-        const styles = {
-            'In Progress': 'bg-blue-100 text-blue-800',
-            'Pending': 'bg-yellow-100 text-yellow-800',
-            'Completed': 'bg-green-100 text-green-800',
-        }
-        return <span className={`\${base} \${styles[status]}`}>{status}</span>
-    }
-
     return (
         <div className="bg-white border border-gray-200 rounded-lg">
-            <div className="p-6">
-                <h2 className="text-lg font-semibold text-gray-900">Active Jobs</h2>
+            <div className="p-6 flex justify-between items-center">
+                <h2 className="text-lg font-semibold text-gray-900">Active Projects</h2>
             </div>
-            <table className="w-full">
-                <thead className="bg-gray-50">
-                    <tr>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Job Name</th>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Client</th>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Progress</th>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Next Milestone</th>
-                        <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
-                    </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                    {jobs.map(job => (
-                        <tr key={job.name} className="hover:bg-gray-50">
-                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{job.name}</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{job.client}</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm"><StatusBadge status={job.status} /></td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                <div className="flex items-center">
-                                    <div className="w-24 bg-gray-200 rounded-full h-2 mr-2">
-                                        <div className="bg-indigo-600 h-2 rounded-full" style={{ width: `\${job.progress}%` }}></div>
+
+            {projects.length > 0 ? (
+                <div className="divide-y divide-gray-200">
+                    {projects.map(project => (
+                        <div key={project.name} className="p-4 hover:bg-gray-50">
+                            <div className="flex items-center">
+                                <div className="w-20 h-[55px] bg-gray-200 rounded-md"></div>
+                                <div className="ml-4 flex-1">
+                                    <div className="flex justify-between items-start">
+                                        <div>
+                                            <p className="text-lg font-bold text-black">{project.name}</p>
+                                            <p className="text-sm text-gray-500">{project.address}</p>
+                                        </div>
+                                        <p className="text-lg font-bold">${(project.totalAmount || 0).toLocaleString()}</p>
                                     </div>
-                                    <span>{job.progress}%</span>
+                                    <div className="flex justify-between items-end mt-2">
+                                        <div>
+                                            <p className="text-sm text-gray-600">{project.customerName}</p>
+                                            <p className="text-xs text-gray-400">{project.customerEmail}</p>
+                                        </div>
+                                        <StatusBadge status={project.status} />
+                                    </div>
                                 </div>
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{job.nextMilestone}</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                <a href="#" className="text-indigo-600 hover:text-indigo-900">View</a>
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                     ))}
-                </tbody>
-            </table>
+                </div>
+            ) : (
+                <div className="text-center py-16 border-t border-gray-200">
+                    <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <h2 className="mt-2 text-lg font-semibold text-gray-900">No Projects Yet</h2>
+                    <p className="mt-1 text-sm text-gray-500">Get started by creating your first project.</p>
+                    <div className="mt-6">
+                        <button onClick={() => navigate('/dashboard/create')} type="button" className="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            + Create New Project
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
 
 const MilestoneCard = ({ milestone }) => {
-    const statusColors = {
-        'Awaiting Approval': 'bg-yellow-100 text-yellow-800',
-        'Funded': 'bg-blue-100 text-blue-800',
-    };
     return (
         <div className="bg-white p-4 rounded-lg border border-gray-200 flex items-center justify-between">
             <div>
@@ -170,7 +209,7 @@ const MilestoneCard = ({ milestone }) => {
             </div>
             <div className="text-right">
                 <p className="font-semibold text-gray-900">{milestone.amount}</p>
-                <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${statusColors[milestone.status]}`}>{milestone.status}</span>
+                <StatusBadge status={milestone.status} />
             </div>
         </div>
     );
@@ -197,17 +236,54 @@ const ActivityFeedItem = ({ activity }) => {
 
 
 const Dashboard = () => {
+    const [stats, setStats] = useState({
+        totalEarnings: 0,
+        activeProjects: 0,
+        pendingPayments: 0,
+        totalProjectValue: 0,
+    });
+    const auth = getAuth();
+
+    useEffect(() => {
+        const user = auth.currentUser;
+        if (!user) return;
+
+        const jobsQuery = query(collection(db, 'jobs'), where('uid', '==', user.uid));
+        const milestonesQuery = query(collection(db, 'milestones'), where('uid', '==', user.uid));
+
+        const unsubscribeJobs = onSnapshot(jobsQuery, (snapshot) => {
+            const jobs = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            
+            const totalEarnings = jobs.filter(j => j.status === 'completed').reduce((acc, j) => acc + j.totalAmount, 0);
+            const activeProjects = jobs.filter(j => j.status !== 'completed').length;
+            const totalProjectValue = jobs.reduce((acc, j) => acc + j.totalAmount, 0);
+
+            setStats(prevStats => ({ ...prevStats, totalEarnings, activeProjects, totalProjectValue }));
+        });
+
+        const unsubscribeMilestones = onSnapshot(milestonesQuery, (snapshot) => {
+            const milestones = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            const pendingPayments = milestones.filter(m => m.status === 'awaiting_approval').length;
+            setStats(prevStats => ({ ...prevStats, pendingPayments }));
+        });
+
+        return () => {
+            unsubscribeJobs();
+            unsubscribeMilestones();
+        };
+    }, [auth.currentUser]);
+
     const kpis = [
-        { title: 'Total Active Jobs', value: '12', icon: <BriefcaseIcon /> },
-        { title: 'Total Locked Funds', value: '$42,500', icon: <CurrencyDollarIcon /> },
-        { title: 'Released Payments', value: '$120,750', icon: <CheckCircleIcon /> },
-        { title: 'Pending Milestones', value: '3', icon: <ChartBarIcon /> },
+        { title: 'Total Earnings', value: `$${stats.totalEarnings.toLocaleString()}`, icon: <CurrencyDollarIcon /> },
+        { title: 'Active Projects', value: stats.activeProjects, icon: <BriefcaseIcon /> },
+        { title: 'Pending Payments', value: stats.pendingPayments, icon: <ChartBarIcon /> },
+        { title: 'Total Project Value', value: `$${stats.totalProjectValue.toLocaleString()}`, icon: <CheckCircleIcon /> },
     ];
     
     const milestones = [
-        { name: 'Phase 2: UI Design', job: 'E-commerce Platform', amount: '$5,000', status: 'Awaiting Approval' },
-        { name: 'Backend Integration', job: 'SaaS Dashboard', amount: '$2,500', status: 'Funded' },
-        { name: 'Content Strategy', job: 'Marketing Website', amount: '$8,000', status: 'Funded' },
+        { name: 'Phase 2: UI Design', job: 'E-commerce Platform', amount: '$5,000', status: 'awaiting_approval' },
+        { name: 'Backend Integration', job: 'SaaS Dashboard', amount: '$2,500', status: 'funded' },
+        { name: 'Content Strategy', job: 'Marketing Website', amount: '$8,000', status: 'funded' },
     ];
     
     const activities = [
@@ -228,9 +304,9 @@ const Dashboard = () => {
                     </div>
 
                     <div className="mt-8 grid grid-cols-3 gap-8">
-                        {/* Main Content: Jobs Table */}
+                        {/* Main Content: Projects Table */}
                         <div className="col-span-2">
-                           <JobsTable />
+                           <ProjectsTable />
                         </div>
 
                         {/* Right Sidebar: Milestones & Activity */}
@@ -256,4 +332,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
