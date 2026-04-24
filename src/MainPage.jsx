@@ -12,21 +12,28 @@ import Footer from './Footer';
 import Modal from './Modal';
 import useModal from './useModal';
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
+import { signInWithGoogle } from './auth';
 
 function MainPage() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { isOpen, openModal, closeModal } = useModal();
   const [user, setUser] = React.useState(null);
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
+      setLoading(false);
     });
     return unsubscribe;
   }, []);
+
+  const handleLogin = () => navigate('/login');
+  const handleGetStarted = () => navigate('/login');
 
   return (
     <div className="light">
@@ -49,23 +56,30 @@ function MainPage() {
           <a className="font-headline text-white/80 hover-nav-glow uppercase tracking-wider text-sm font-semibold" href="#about">About</a>
           <a className="font-headline text-white/80 hover-nav-glow uppercase tracking-wider text-sm font-semibold" href="#footer">Contact</a>
         </div>
-        <button
-          onClick={() => user ? navigate('/dashboard') : navigate('/login')}
-          className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[12px] py-2 px-3 md:text-[18px] md:py-4 md:px-8 hover-btn-glow">
-          Get Started Free
-        </button>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={handleLogin}
+            className="font-headline text-white/80 hover-nav-glow uppercase tracking-wider text-sm font-semibold">
+            Log In
+          </button>
+          <button
+            onClick={handleGetStarted}
+            className="bg-[#FF8C00] text-white border-none rounded-lg font-bold cursor-pointer text-[12px] py-2 px-3 md:text-[18px] md:py-4 md:px-8 hover-btn-glow">
+            Get Started Free
+          </button>
+        </div>
       </nav>
 
       <main className="pt-16">
-        <Hero openModal={() => user ? navigate('/dashboard') : navigate('/login')} />
+        <Hero openModal={handleGetStarted} />
         <ProblemSolution />
         <HowItWorks />
         <Testimonials />
         {/* <TrustSignalBar /> */}
-        <Pricing openModal={() => user ? navigate('/dashboard') : navigate('/login')} />
+        <Pricing openModal={handleGetStarted} />
         <FounderSection />
         <FAQ />
-        <FinalCTA openModal={() => user ? navigate('/dashboard') : navigate('/login')} />
+        <FinalCTA openModal={handleGetStarted} />
       </main>
 
       <Footer />

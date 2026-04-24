@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useOutletContext } from 'react-router-dom';
 import MainPage from './MainPage';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsOfService from './TermsOfService';
@@ -17,11 +17,26 @@ import JobDetail from './dashboard/JobDetail';
 import Account from './dashboard/Account';
 import Payments from './dashboard/Payments';
 
-import Login from './Login';
+import LoginPage from './pages/auth/LoginPage';
+import SignUpPage from './pages/auth/SignUpPage';
+import SelectRole from './pages/SelectRole';
+import Projects from './pages/Projects';
+
 
 import ProtectedRoute from './ProtectedRoute';
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
+
+import Milestone from './Milestone';
+
+const PlaceholderPage = ({ title }) => (
+  <div className="p-8 text-xl font-semibold text-gray-400">{title} — Coming Soon</div>
+);
+
+const DashboardHomeWrapper = () => {
+  const { refreshKey } = useOutletContext();
+  return <DashboardHome key={refreshKey} />;
+};
 
 function App() {
   return (
@@ -34,12 +49,19 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/create-job" element={<CreateJob />} />
         <Route path="/pay" element={<Elements stripe={stripePromise}><PaymentForm /></Elements>} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/select-role" element={<SelectRole />} />
+
 
 
         {/* Contractor Dashboard */}
         <Route path="/dashboard" element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
-          <Route index element={<DashboardHome />} />
+          <Route index element={<DashboardHomeWrapper />} />
+          <Route path="milestones" element={<Milestone />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="transactions" element={<PlaceholderPage title="Transactions" />} />
+          <Route path="settings" element={<PlaceholderPage title="Settings" />} />
           <Route path="create" element={<DashboardCreateJob />} />
           <Route path="jobs" element={<JobsList />} />
           <Route path="jobs/:id" element={<JobDetail />} />
@@ -50,5 +72,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;

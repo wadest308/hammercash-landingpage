@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#00a2f4",
+                    "surface-tint": "#9d4300",
+                    "tertiary-fixed": "#cde5ff",
+                    "text-muted": "#737373",
+                    "inverse-surface": "#3c2d26",
+                    "on-surface": "#251913",
+                    "on-tertiary-fixed-variant": "#004b74",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#636262",
+                    "sidebar-bg": "#0A0A0A",
+                    "status-paid": "#22C55E",
+                    "on-background": "#251913",
+                    "primary-fixed-dim": "#ffb690",
+                    "on-primary-container": "#582200",
+                    "surface-container-low": "#fff1eb",
+                    "canvas-bg": "#FAFAFA",
+                    "inverse-on-surface": "#ffede6",
+                    "status-pending": "#F59E0B",
+                    "surface-container": "#ffeae0",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#f97316",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#001d32",
+                    "surface-container-highest": "#f6ded3",
+                    "text-primary": "#171717",
+                    "surface-card": "#FFFFFF",
+                    "on-tertiary-container": "#003554",
+                    "secondary-container": "#e2dfde",
+                    "background": "#fff8f6",
+                    "status-in-progress": "#3B82F6",
+                    "surface-container-high": "#fce3d9",
+                    "border-subtle": "#E5E5E5",
+                    "primary": "#9d4300",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "tertiary": "#006398",
+                    "on-primary-fixed": "#341100",
+                    "surface-bright": "#fff8f6",
+                    "on-primary-fixed-variant": "#783200",
+                    "tertiary-fixed-dim": "#93ccff",
+                    "outline": "#8c7164",
+                    "secondary": "#5f5e5e",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "outline-variant": "#e0c0b1",
+                    "surface-variant": "#f6ded3",
+                    "on-surface-variant": "#584237",
+                    "primary-fixed": "#ffdbca",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fff8f6",
+                    "inverse-primary": "#ffb690",
+                    "surface-dim": "#edd5cb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-gap": "0.5rem",
+                    "section-gap": "2.5rem",
+                    "card-padding": "1.25rem",
+                    "container-margin": "2rem",
+                    "gutter": "1.5rem"
+            },
+            "fontFamily": {
+                    "metric-value": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-base": ["Inter"],
+                    "table-data": ["Inter"],
+                    "heading-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "metric-value": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-base": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "table-data": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "heading-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                    "display-lg": ["30px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAFA;
+        }
+    </style>
+</head>
+<body class="antialiased text-text-primary">
+<!-- SideNavBar Shell -->
+<aside class="h-screen w-64 fixed left-0 top-0 border-r border-neutral-800 bg-neutral-900 flex flex-col py-6 font-['Inter'] antialiased z-50">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-orange-500 rounded flex items-center justify-center text-white font-black">H</div>
+<div>
+<h1 class="text-xl font-black tracking-tighter text-white">HammerCash</h1>
+<p class="text-[10px] uppercase tracking-widest text-neutral-500 font-bold">Escrow Protection</p>
+</div>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="bg-neutral-800 text-orange-500 border-r-2 border-orange-500 flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-body-base text-body-base">Dashboard</span>
+</a>
+<a class="text-neutral-400 hover:text-white hover:bg-neutral-800/50 flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="font-body-base text-body-base">Projects</span>
+</a>
+<a class="text-neutral-400 hover:text-white hover:bg-neutral-800/50 flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="account_tree">account_tree</span>
+<span class="font-body-base text-body-base">Milestones</span>
+</a>
+<a class="text-neutral-400 hover:text-white hover:bg-neutral-800/50 flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-body-base text-body-base">Transactions</span>
+</a>
+<a class="text-neutral-400 hover:text-white hover:bg-neutral-800/50 flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-body-base text-body-base">Settings</span>
+</a>
+</nav>
+<div class="px-6 mt-auto">
+<button class="w-full py-2.5 px-4 bg-orange-500 text-white rounded font-semibold text-sm hover:bg-orange-600 transition-colors mb-6">
+                New Project
+            </button>
+<div class="space-y-1">
+<a class="text-neutral-400 hover:text-white flex items-center py-2 gap-3 transition-colors text-sm" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="help">help</span>
+                    Help Center
+                </a>
+<a class="text-neutral-400 hover:text-white flex items-center py-2 gap-3 transition-colors text-sm" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="account_circle">account_circle</span>
+                    Account
+                </a>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-64 min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 left-64 h-16 border-b border-neutral-200 bg-white flex justify-between items-center px-8 z-40 font-['Inter'] text-sm font-medium">
+<div class="flex items-center gap-8">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400 text-lg" data-icon="search">search</span>
+<input class="w-full pl-10 pr-4 py-1.5 bg-neutral-50 border border-neutral-200 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-orange-500 transition-all" placeholder="Search projects..." type="text"/>
+</div>
+<nav class="flex gap-6">
+<a class="text-neutral-900 font-semibold border-b-2 border-orange-500 pb-5" href="#">Overview</a>
+<a class="text-neutral-500 hover:text-neutral-900 transition-colors" href="#">History</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 mr-4 border-r border-neutral-200 pr-4">
+<button class="p-2 text-neutral-500 hover:text-orange-500 transition-colors relative">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-orange-500 rounded-full border-2 border-white"></span>
+</button>
+<button class="p-2 text-neutral-500 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+</button>
+<button class="p-2 text-neutral-500 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+</button>
+</div>
+<button class="bg-orange-500 text-white px-4 py-2 rounded font-semibold hover:bg-orange-600 transition-all">
+                    Release Funds
+                </button>
+<div class="w-8 h-8 rounded-full bg-neutral-200 overflow-hidden ml-2">
+<img class="w-full h-full object-cover" data-alt="professional headshot of a middle-aged male architect in a modern office with natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiYuQQx6vR_AEf1nY_CBkZTlEmnat6EC6rtYDFQH50vWaP_dAXq0OHUiJudDP6s4j8-v6C7K1r_rPMt6v4lQBbxslic9Qys1Ibor3gRVr5S_l3SbMFN7atiZR0hrVBm6YmG8xs8AbIyX4Q6n8ZCcv1jKuPtOy7z22NkDNsBeyd5CMXXBvsYYgplwYbC7pggr63ECGp1dT_WM_ds8qsBuhKVff-BPXX71jEMnX1Fwl3hO9uwDFBLCWYQggqjKp1CLMVATQi1X8stKH3"/>
+</div>
+</div>
+</header>
+<!-- Dashboard Canvas -->
+<div class="pt-24 px-8 pb-12 max-w-7xl mx-auto">
+<header class="mb-10 flex justify-between items-end">
+<div>
+<h2 class="font-display-lg text-display-lg text-neutral-900 mb-1">Financial Overview</h2>
+<p class="font-body-base text-neutral-500">Managing 12 active escrow contracts</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 border border-neutral-200 bg-white rounded font-semibold text-sm text-neutral-700 hover:bg-neutral-50 transition-colors">Export Report</button>
+</div>
+</header>
+<!-- KPI Row (4-column grid) -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-section-gap">
+<!-- Total Value -->
+<div class="bg-white border border-border-subtle p-card-padding rounded-lg">
+<p class="font-label-caps text-label-caps text-text-muted mb-4 uppercase">Total Value</p>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-value text-metric-value text-neutral-900">$284,500.00</span>
+</div>
+<div class="mt-4 flex items-center text-xs font-medium text-green-600">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="trending_up">trending_up</span>
+                        12% from last month
+                    </div>
+</div>
+<!-- Held in Escrow -->
+<div class="bg-white border border-border-subtle p-card-padding rounded-lg">
+<p class="font-label-caps text-label-caps text-text-muted mb-4 uppercase">Held in Escrow</p>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-value text-metric-value text-neutral-900">$92,420.00</span>
+</div>
+<div class="mt-4 flex items-center text-xs font-medium text-neutral-500">
+                        4 pending payouts
+                    </div>
+</div>
+<!-- Ready for Payout -->
+<div class="bg-white border border-border-subtle p-card-padding rounded-lg border-l-4 border-l-orange-500">
+<p class="font-label-caps text-label-caps text-text-muted mb-4 uppercase">Ready for Payout</p>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-value text-metric-value text-neutral-900">$18,750.00</span>
+</div>
+<div class="mt-4 flex items-center text-xs font-medium text-orange-600">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="schedule">schedule</span>
+                        Awaiting your approval
+                    </div>
+</div>
+<!-- Active Jobs -->
+<div class="bg-white border border-border-subtle p-card-padding rounded-lg">
+<p class="font-label-caps text-label-caps text-text-muted mb-4 uppercase">Active Jobs</p>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-value text-metric-value text-neutral-900">12</span>
+</div>
+<div class="mt-4 flex items-center text-xs font-medium text-neutral-500">
+                        Across 3 regions
+                    </div>
+</div>
+</div>
+<!-- Milestone Table Section -->
+<section class="bg-white border border-border-subtle rounded-lg overflow-hidden">
+<div class="px-8 py-5 border-b border-border-subtle flex justify-between items-center bg-neutral-50/50">
+<h3 class="font-heading-md text-heading-md text-neutral-900">Active Escrow Projects</h3>
+<div class="flex gap-2">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-neutral-400 text-sm" data-icon="filter_list">filter_list</span>
+<select class="pl-8 pr-4 py-1.5 bg-white border border-border-subtle rounded text-xs font-medium focus:ring-0 focus:border-orange-500 appearance-none">
+<option>All Status</option>
+<option>Paid</option>
+<option>In Progress</option>
+<option>Pending</option>
+</select>
+</div>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-white border-b border-border-subtle">
+<th class="px-8 py-4 font-label-caps text-label-caps text-text-muted uppercase">Project Name</th>
+<th class="px-8 py-4 font-label-caps text-label-caps text-text-muted uppercase">Customer</th>
+<th class="px-8 py-4 font-label-caps text-label-caps text-text-muted uppercase">Milestone Progress</th>
+<th class="px-8 py-4 font-label-caps text-label-caps text-text-muted uppercase">Total Amount</th>
+<th class="px-8 py-4 font-label-caps text-label-caps text-text-muted uppercase">Status</th>
+<th class="px-8 py-4 font-label-caps text-label-caps text-text-muted uppercase"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle">
+<!-- Row 1 -->
+<tr class="hover:bg-neutral-50 transition-colors group">
+<td class="px-8 py-6">
+<div class="font-table-data text-table-data font-semibold text-neutral-900">Urban Loft Renovation</div>
+<div class="text-xs text-neutral-500 mt-0.5">ID: #HC-9921</div>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-neutral-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="headshot of a smiling young professional woman with brown hair in a bright indoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYuzNXM9loGSpNxYf9TnAyrkaqmrujPI7-9Ia3Mohkdp3UrLb7xExrKStL9FYvgrxTAkyGxSVIJxr1lxSiONl8uJYr1pFT4u6eDpuZO2tZ85PYmBBPd5FPawtGMIFeL69jYCyA0wvUBspdW1Ma5RV0kaiqv6sWxlPQDKAaJ0sTf_pi_6lMIIhCJCQtU1PLW1ue3p4dDlaLqzLXE2ib__Bi3FnWcRFxBLPY54DUCKvky2ToiywO43qQbYi4s7aX_QWRQ1zR-ZFcFvKp"/>
+</div>
+<span class="font-table-data text-table-data text-neutral-700">Sarah Jenkins</span>
+</div>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-4 w-48">
+<div class="flex-1 h-2 bg-neutral-100 rounded-full overflow-hidden">
+<div class="h-full bg-status-in-progress" style="width: 65%"></div>
+</div>
+<span class="text-xs font-semibold text-neutral-600">65%</span>
+</div>
+</td>
+<td class="px-8 py-6 font-table-data text-table-data font-medium text-neutral-900">$45,000.00</td>
+<td class="px-8 py-6">
+<span class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-blue-50 text-status-in-progress border border-blue-100">In Progress</span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="text-neutral-400 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-neutral-50 transition-colors group">
+<td class="px-8 py-6">
+<div class="font-table-data text-table-data font-semibold text-neutral-900">Riverside Bridge Support</div>
+<div class="text-xs text-neutral-500 mt-0.5">ID: #HC-9844</div>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-neutral-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a focused professional man in his 30s with a clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ys0eXDhvrWNbEc_a28KkOhxtVFkf07grIK-Dqv1MsWrT5-kxe1enLFMlVEUrKu0RjWxVABa_UoIC6loMzLe7VQCdKoA3oNd_fHOgktDic3gb66QPlf5jb_OZ4TTVUzmAn6nYrQNWTxMs2T0DcqJKCvfdXcSqQt_SG31ShjJ_9KXp7azmATwN4QsdksN-7mC8P09GM5uw7JDTpjvdA0V3gW8i16kBampn84an7s_J9Rk8QF3n1xx0lsjtn445uYQJSWjApRai37LD"/>
+</div>
+<span class="font-table-data text-table-data text-neutral-700">Marcus Thorne</span>
+</div>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-4 w-48">
+<div class="flex-1 h-2 bg-neutral-100 rounded-full overflow-hidden">
+<div class="h-full bg-status-paid" style="width: 100%"></div>
+</div>
+<span class="text-xs font-semibold text-neutral-600">100%</span>
+</div>
+</td>
+<td class="px-8 py-6 font-table-data text-table-data font-medium text-neutral-900">$128,400.00</td>
+<td class="px-8 py-6">
+<span class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-green-50 text-status-paid border border-green-100">Paid</span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="text-neutral-400 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-neutral-50 transition-colors group">
+<td class="px-8 py-6">
+<div class="font-table-data text-table-data font-semibold text-neutral-900">Custom Cabinetry Install</div>
+<div class="text-xs text-neutral-500 mt-0.5">ID: #HC-9712</div>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-neutral-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="headshot of a confident female executive with a slight smile in an office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpInwBxW59bIhmdUmHVLAbBe-nnMlM5q37QYmXtrg9DBaCDrx3DNVw4tp-BH-vgO7boCd0FvqMWCkOjUuyt_cPngoi_ccqHo1-DJ1PDa9pinUFzezNMFozvpDiR3GAXuDx3dRMSKiscQVO_vWG-tT1yzcizSzfhmIUPWavdN_lXz1LxMRHsDbvZcDHuk3HydKC-BAluM9bGensfP-GxtbS6BJsbF0dMhWCn2cYKuzDOF9n1qGxI3Cqp_XCfe3AP6xnzlmS5UAv_6sC"/>
+</div>
+<span class="font-table-data text-table-data text-neutral-700">Eleanor Vance</span>
+</div>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-4 w-48">
+<div class="flex-1 h-2 bg-neutral-100 rounded-full overflow-hidden">
+<div class="h-full bg-status-pending" style="width: 15%"></div>
+</div>
+<span class="text-xs font-semibold text-neutral-600">15%</span>
+</div>
+</td>
+<td class="px-8 py-6 font-table-data text-table-data font-medium text-neutral-900">$12,750.00</td>
+<td class="px-8 py-6">
+<span class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-50 text-status-pending border border-amber-100">Pending</span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="text-neutral-400 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-neutral-50 transition-colors group">
+<td class="px-8 py-6">
+<div class="font-table-data text-table-data font-semibold text-neutral-900">Commercial Flooring Ph. 2</div>
+<div class="text-xs text-neutral-500 mt-0.5">ID: #HC-9601</div>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-neutral-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a man with a beard and professional glasses in front of a neutral gray background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnwMiHQ3VdR8iFOkuYFi-MfkPt7lsWRyDWp2AGkF3BbgJlxQQDPhSIaYZOPYObGE6gnrR4lDQzkVgZ4YR_zERO9VYeaQfRv9t1J3EbHJCp9nHQC2Qrxnk5XJ8Be3pBkr-v7JHDj5m7zkwOyu6Ev7zpd4XMDda5HhdXpzkqFlQD4b_xj8x1TwHX0E5RTsbN9FUn8RFNgiLElXabrOw2QT5UaSBhayTb3gQBn39ZPzNezokvI3MQv3dWh0mJTlNkS7ngGA1E5oVVfSzv"/>
+</div>
+<span class="font-table-data text-table-data text-neutral-700">James Aris</span>
+</div>
+</td>
+<td class="px-8 py-6">
+<div class="flex items-center gap-4 w-48">
+<div class="flex-1 h-2 bg-neutral-100 rounded-full overflow-hidden">
+<div class="h-full bg-status-in-progress" style="width: 42%"></div>
+</div>
+<span class="text-xs font-semibold text-neutral-600">42%</span>
+</div>
+</td>
+<td class="px-8 py-6 font-table-data text-table-data font-medium text-neutral-900">$38,200.00</td>
+<td class="px-8 py-6">
+<span class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-blue-50 text-status-in-progress border border-blue-100">In Progress</span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="text-neutral-400 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-8 py-4 bg-white border-t border-border-subtle flex justify-between items-center">
+<span class="text-xs text-neutral-500 font-medium">Showing 4 of 12 projects</span>
+<div class="flex gap-1">
+<button class="p-1.5 border border-border-subtle rounded hover:bg-neutral-50 disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-sm block" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="p-1.5 border border-border-subtle rounded hover:bg-neutral-50">
+<span class="material-symbols-outlined text-sm block" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Contextual Right Drawer (Action Panel) -->
+<div class="fixed right-0 top-16 bottom-0 w-80 bg-white border-l border-border-subtle shadow-2xl z-30 flex flex-col">
+<div class="p-6 border-b border-border-subtle flex justify-between items-center">
+<h4 class="font-heading-md text-heading-md text-neutral-900">Milestone Release</h4>
+<button class="text-neutral-400 hover:text-neutral-600">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="p-6 flex-1 overflow-y-auto">
+<div class="mb-6">
+<p class="font-label-caps text-label-caps text-text-muted mb-2 uppercase">Project</p>
+<p class="font-body-base font-semibold text-neutral-900">Urban Loft Renovation</p>
+</div>
+<div class="space-y-6">
+<p class="font-label-caps text-label-caps text-text-muted uppercase">Timeline</p>
+<!-- Timeline Component -->
+<div class="relative pl-6 space-y-8">
+<div class="absolute left-2 top-2 bottom-2 w-[1px] bg-neutral-200"></div>
+<!-- Item 1: Complete -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-status-paid flex items-center justify-center border-4 border-white shadow-sm">
+<span class="material-symbols-outlined text-[8px] text-white font-bold" data-icon="check" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-neutral-900">Phase 1: Planning</p>
+<p class="text-xs text-neutral-500">Released on Oct 12, 2023</p>
+<p class="text-xs font-bold text-status-paid mt-1">$4,500.00 Paid</p>
+</div>
+</div>
+<!-- Item 2: Ready -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-orange-500 flex items-center justify-center border-4 border-white shadow-sm ring-2 ring-orange-100">
+</div>
+<div>
+<p class="text-sm font-semibold text-neutral-900">Phase 2: Demolition</p>
+<p class="text-xs text-neutral-500">Verified by Inspector</p>
+<p class="text-xs font-bold text-orange-600 mt-1">$18,750.00 Ready</p>
+<button class="mt-3 w-full py-2 bg-orange-500 text-white rounded font-semibold text-xs hover:bg-orange-600 transition-all">
+                                Release $18,750.00
+                            </button>
+</div>
+</div>
+<!-- Item 3: Upcoming -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-neutral-200 border-4 border-white"></div>
+<div>
+<p class="text-sm font-semibold text-neutral-400">Phase 3: Reconstruction</p>
+<p class="text-xs text-neutral-400">Locked until completion</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 bg-neutral-50 border-t border-border-subtle">
+<div class="flex justify-between items-center mb-4">
+<span class="text-xs font-medium text-neutral-500">Total Escrow Remaining</span>
+<span class="text-sm font-bold text-neutral-900">$40,500.00</span>
+</div>
+<button class="w-full py-3 border border-border-subtle bg-white text-neutral-700 rounded font-semibold text-sm hover:bg-neutral-100 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="description">description</span>
+                View Full Contract
+            </button>
+</div>
+</div>
+</body></html>

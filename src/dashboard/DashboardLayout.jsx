@@ -1,158 +1,107 @@
+
 import React, { useState, useEffect } from 'react';
 import { Outlet, NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { auth } from '../firebase';
-import './Dashboard.css';
+import { getAuth, signOut } from 'firebase/auth';
+import NewProjectModal from './NewProjectModal'; // Import the new modal
 
 const NAV_ITEMS = [
-  { label: 'Dashboard', icon: 'dashboard', path: '/dashboard' },
-  { label: 'My Jobs', icon: 'work', path: '/dashboard/jobs' },
-  { label: 'Create Job', icon: 'add_circle', path: '/dashboard/create' },
-  { label: 'Payments', icon: 'payments', path: '/dashboard/payments' },
-  { label: 'Account', icon: 'person', path: '/dashboard/account' },
+    { label: 'Dashboard', icon: 'dashboard', path: '/dashboard' },
+    { label: 'Projects', icon: 'assignment', path: '/dashboard/projects' },
+    { label: 'Milestones', icon: 'account_tree', path: '/dashboard/milestones' },
+    { label: 'Transactions', icon: 'receipt_long', path: '/dashboard/transactions' },
+    { label: 'Settings', icon: 'settings', path: '/dashboard/settings' },
 ];
 
+const SuccessToast = ({ message, show }) => {
+    if (!show) return null;
+    return (
+        <div className="fixed top-5 right-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg animate-pulse">
+            {message}
+        </div>
+    );
+};
+
 export default function DashboardLayout() {
-  const navigate = useNavigate();
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [stripeConnected, setStripeConnected] = useState(false);
-  const location = useLocation();
+    const navigate = useNavigate();
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+    const location = useLocation();
+    const [showModal, setShowModal] = useState(false);
+    const [refreshKey, setRefreshKey] = useState(0);
 
-  // Close sidebar on route change (mobile)
-  useEffect(() => {
-    setSidebarOpen(false);
-  }, [location.pathname]);
+    const auth = getAuth();
+    const user = auth.currentUser;
+    const photoURL = user?.photoURL || '/default-avatar.png';
 
-  // Close sidebar on escape key
-  useEffect(() => {
-    const handleEscape = (e) => {
-      if (e.key === 'Escape') setSidebarOpen(false);
+    const handleLogout = async () => {
+        await signOut(auth);
+        navigate('/login');
     };
-    document.addEventListener('keydown', handleEscape);
-    return () => document.removeEventListener('keydown', handleEscape);
-  }, []);
 
-  // Prevent body scroll when sidebar is open on mobile
-  useEffect(() => {
-    if (sidebarOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => { document.body.style.overflow = ''; };
-  }, [sidebarOpen]);
+    // Close sidebar on route change for mobile
+    useEffect(() => {
+        if (sidebarOpen) setSidebarOpen(false);
+    }, [location.pathname]);
 
-  const handleStripeConnect = async () => {
-    try {
-      const response = await fetch('/api/stripe/connect', { method: 'POST' });
-      const data = await response.json();
-      if (data.url) {
-        window.location.href = data.url;
-      }
-    } catch (err) {
-      console.error('Stripe connect error:', err);
-    }
-  };
-
-  const contractorName = 'Wade';
-
-  return (
-    <div className="dashboard-wrapper">
-      {/* Mobile overlay */}
-      <div
-        className={`sidebar-overlay ${sidebarOpen ? 'visible' : ''}`}
-        onClick={() => setSidebarOpen(false)}
-        aria-hidden="true"
-      />
-
-      {/* Sidebar */}
-      <aside className={`dashboard-sidebar ${sidebarOpen ? 'open' : ''}`}>
-        <div className="sidebar-logo-area">
-          <img src="/logo2.png" alt="HammerCash" />
+    return (
+        <div className="antialiased text-text-primary">
+            <NewProjectModal 
+                isOpen={showModal} 
+                onClose={() => setShowModal(false)} 
+                onRefresh={() => setRefreshKey(prev => prev + 1)} 
+            />
+            <aside className="h-screen w-64 fixed left-0 top-0 border-r border-neutral-800 bg-neutral-900 flex flex-col py-6 font-['Inter'] antialiased z-50">
+                <div className="px-6 mb-8">
+                    <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center text-white font-black">H</div>
+                        <div>
+                            <h1 className="text-xl font-black tracking-tighter text-white">HammerCash</h1>
+                        </div>
+                    </div>
+                </div>
+                <nav className="flex-1 space-y-1">
+                    {NAV_ITEMS.map((item) => (
+                        <NavLink
+                            key={item.path}
+                            to={item.path}
+                            end={item.path === '/dashboard'}
+                            className={({ isActive }) =>
+                                `text-neutral-400 hover:text-white hover:bg-neutral-800/50 flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out ${isActive ? 'bg-neutral-800 text-orange-500 border-r-2 border-orange-500' : ''}`
+                            }
+                        >
+                            <span className="material-symbols-outlined">{item.icon}</span>
+                            <span>{item.label}</span>
+                        </NavLink>
+                    ))}
+                </nav>
+                <div className="px-6 mt-auto">
+                    <button onClick={() => setShowModal(true)} className="w-full py-2.5 px-4 bg-orange-500 text-white rounded font-semibold text-sm hover:bg-orange-600 transition-colors mb-6">
+                        New Project
+                    </button>
+                    <div className="space-y-1">
+                        <a className="text-neutral-400 hover:text-white flex items-center py-2 gap-3 transition-colors text-sm" href="#">
+                            <span className="material-symbols-outlined text-sm">help</span>
+                            Help Center
+                        </a>
+                        <button onClick={handleLogout} className="text-neutral-400 hover:text-white flex items-center py-2 gap-3 transition-colors text-sm w-full text-left">
+                            <span className="material-symbols-outlined text-sm">logout</span>
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </aside>
+            <main className="ml-64 min-h-screen">
+                <header className="fixed top-0 right-0 left-64 h-16 border-b border-neutral-200 bg-white flex justify-between items-center px-8 z-40">
+                    <div>{/* Header content can go here */}</div>
+                    <div className="flex items-center gap-4">
+                        <div className="w-8 h-8 rounded-full bg-neutral-200 overflow-hidden ml-2">
+                            <img className="w-full h-full object-cover" src={photoURL} alt="User Avatar"/>
+                        </div>
+                    </div>
+                </header>
+                <div className="pt-16">
+                    <Outlet context={{ refreshKey }} />
+                </div>
+            </main>
         </div>
-
-        <nav className="sidebar-nav">
-          {NAV_ITEMS.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              end={item.path === '/dashboard'}
-              className={({ isActive }) =>
-                `sidebar-nav-item ${isActive ? 'active' : ''}`
-              }
-            >
-              <span className="material-symbols-outlined">{item.icon}</span>
-              {item.label}
-            </NavLink>
-          ))}
-        </nav>
-
-        <div className="sidebar-footer">
-          <button
-            onClick={() => {
-              auth.signOut();
-              navigate('/');
-            }}
-            style={{
-              width: '100%',
-              padding: '12px 16px',
-              marginBottom: '10px',
-              backgroundColor: '#4B5563',
-              color: 'white',
-              border: 'none',
-              borderRadius: '10px',
-              cursor: 'pointer'
-            }}
-          >
-            Logout
-          </button>
-          <span className="sidebar-footer-text">© 2026 HammerCash</span>
-        </div>
-      </aside>
-
-      {/* Main content */}
-      <div className="dashboard-main">
-        {/* Top bar */}
-        <header className="dashboard-topbar">
-          <button
-            className="hamburger-btn"
-            onClick={() => setSidebarOpen(true)}
-            aria-label="Open navigation menu"
-          >
-            <span className="material-symbols-outlined">menu</span>
-          </button>
-
-          <div className="topbar-mobile-logo">
-            <img src="/logo2.png" alt="HammerCash" />
-          </div>
-
-          <div className="topbar-left">
-            <h1 className="topbar-welcome">Welcome back, {contractorName} 👋</h1>
-            <p className="topbar-subtitle">Here's what's happening with your jobs today.</p>
-          </div>
-
-          <div className="topbar-right">
-            {stripeConnected ? (
-              <div className="stripe-connected-badge">
-                <span className="material-symbols-outlined">check_circle</span>
-                Stripe Connected
-              </div>
-            ) : (
-              <button
-                className="stripe-connect-btn"
-                onClick={handleStripeConnect}
-              >
-                <span className="material-symbols-outlined">account_balance</span>
-                <span className="btn-label">Connect with Stripe</span>
-              </button>
-            )}
-          </div>
-        </header>
-
-        {/* Page content */}
-        <div className="dashboard-content">
-          <Outlet />
-        </div>
-      </div>
-    </div>
-  );
+    );
 }

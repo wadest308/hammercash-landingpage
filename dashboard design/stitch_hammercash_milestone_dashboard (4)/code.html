@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#00a2f4",
+                        "surface-tint": "#9d4300",
+                        "tertiary-fixed": "#cde5ff",
+                        "text-muted": "#737373",
+                        "inverse-surface": "#3c2d26",
+                        "on-surface": "#251913",
+                        "on-tertiary-fixed-variant": "#004b74",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#636262",
+                        "sidebar-bg": "#0A0A0A",
+                        "status-paid": "#22C55E",
+                        "on-background": "#251913",
+                        "primary-fixed-dim": "#ffb690",
+                        "on-primary-container": "#582200",
+                        "surface-container-low": "#fff1eb",
+                        "canvas-bg": "#FAFAFA",
+                        "inverse-on-surface": "#ffede6",
+                        "status-pending": "#F59E0B",
+                        "surface-container": "#ffeae0",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#f97316",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#001d32",
+                        "surface-container-highest": "#f6ded3",
+                        "text-primary": "#171717",
+                        "surface-card": "#FFFFFF",
+                        "on-tertiary-container": "#003554",
+                        "secondary-container": "#e2dfde",
+                        "background": "#fff8f6",
+                        "status-in-progress": "#3B82F6",
+                        "surface-container-high": "#fce3d9",
+                        "border-subtle": "#E5E5E5",
+                        "primary": "#9d4300",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "tertiary": "#006398",
+                        "on-primary-fixed": "#341100",
+                        "surface-bright": "#fff8f6",
+                        "on-primary-fixed-variant": "#783200",
+                        "tertiary-fixed-dim": "#93ccff",
+                        "outline": "#8c7164",
+                        "secondary": "#5f5e5e",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "outline-variant": "#e0c0b1",
+                        "surface-variant": "#f6ded3",
+                        "on-surface-variant": "#584237",
+                        "primary-fixed": "#ffdbca",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fff8f6",
+                        "inverse-primary": "#ffb690",
+                        "surface-dim": "#edd5cb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "metric-value": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-base": ["Inter"],
+                        "table-data": ["Inter"],
+                        "heading-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "label-caps": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: #FAFAFA; }
+    </style>
+</head>
+<body class="antialiased text-text-primary overflow-hidden">
+<!-- Sidebar Navigation -->
+<aside class="bg-neutral-900 h-screen w-64 fixed left-0 top-0 border-r border-neutral-800 flex flex-col py-6 z-50">
+<div class="px-6 mb-8">
+<h1 class="text-xl font-black tracking-tighter text-white">HammerCash</h1>
+<p class="text-[10px] text-neutral-500 font-bold tracking-widest uppercase mt-1">Escrow Protection</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="text-neutral-400 hover:text-white flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out hover:bg-neutral-800/50" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-body-base text-body-base">Dashboard</span>
+</a>
+<a class="bg-neutral-800 text-orange-500 border-r-2 border-orange-500 flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-body-base text-body-base">Projects</span>
+</a>
+<a class="text-neutral-400 hover:text-white flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out hover:bg-neutral-800/50" href="#">
+<span class="material-symbols-outlined">account_tree</span>
+<span class="font-body-base text-body-base">Milestones</span>
+</a>
+<a class="text-neutral-400 hover:text-white flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out hover:bg-neutral-800/50" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-body-base text-body-base">Transactions</span>
+</a>
+<a class="text-neutral-400 hover:text-white flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out hover:bg-neutral-800/50" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-base text-body-base">Settings</span>
+</a>
+</nav>
+<div class="px-6 pt-4 mt-4 border-t border-neutral-800">
+<button class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">add</span>
+<span class="font-body-sm text-body-sm">New Project</span>
+</button>
+</div>
+<div class="mt-auto space-y-1">
+<a class="text-neutral-400 hover:text-white flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-body-base text-body-base">Help Center</span>
+</a>
+<a class="text-neutral-400 hover:text-white flex items-center px-6 py-3 gap-3 transition-colors duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-body-base text-body-base">Account</span>
+</a>
+</div>
+</aside>
+<!-- Top App Bar -->
+<header class="fixed top-0 right-0 left-64 h-16 border-b border-neutral-200 bg-white flex justify-between items-center px-8 z-40">
+<div class="flex items-center gap-8">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400">search</span>
+<input class="pl-10 pr-4 py-2 border border-neutral-200 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-orange-500 w-64" placeholder="Search projects..." type="text"/>
+</div>
+<nav class="flex gap-6">
+<a class="font-body-sm text-body-sm text-neutral-900 font-semibold border-b-2 border-orange-500 pb-5" href="#">Overview</a>
+<a class="font-body-sm text-body-sm text-neutral-500 hover:text-neutral-900 transition-colors" href="#">History</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-neutral-500 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-neutral-500 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+<button class="bg-white border border-neutral-200 px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-neutral-50 transition-colors">
+                Release Funds
+            </button>
+<div class="h-8 w-8 rounded-full overflow-hidden border border-neutral-200">
+<img alt="User Profile" data-alt="professional portrait of a project manager in a bright corporate office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4Q0-ENi10rGrEHs8SJGA_k2_JBS1Yjv7yEG67KZibaIBslv5EbUT381-byqGWxvZ-Ut5I55Z9fjsGKiO6azgRVYXV3MwvkXNEJC8SPWAE9Ee40ThiKsYAYznXmosG3-fk-ZlvsDiso5ocbLJwECt9mRcPCtEd7XIRnbHJyCRN9hut3z-X4btnCtra5pwnvcTqcCkXnEIpKeQJ-CdICuB9Pb8nOsshtpUkhTRxapK6m13WKcH6V_gMHOMjhWKTgBXPxeUaG4TIb_F_"/>
+</div>
+</div>
+</header>
+<!-- Main Content Grid -->
+<main class="pl-64 pt-16 h-screen">
+<div class="p-8 max-w-7xl mx-auto space-y-8 opacity-40 grayscale pointer-events-none">
+<!-- KPIs -->
+<div class="grid grid-cols-4 gap-6">
+<div class="border border-border-subtle p-stack-gap bg-white p-5">
+<p class="font-label-caps text-label-caps text-text-muted uppercase">Active Escrow</p>
+<p class="font-metric-value text-metric-value mt-2">$24,500.00</p>
+<p class="text-status-paid text-xs font-semibold mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +12% vs last month
+                    </p>
+</div>
+<div class="border border-border-subtle p-stack-gap bg-white p-5">
+<p class="font-label-caps text-label-caps text-text-muted uppercase">Completed</p>
+<p class="font-metric-value text-metric-value mt-2">18</p>
+<p class="text-neutral-500 text-xs font-semibold mt-2">Total projects</p>
+</div>
+<div class="border border-border-subtle p-stack-gap bg-white p-5">
+<p class="font-label-caps text-label-caps text-text-muted uppercase">Pending Release</p>
+<p class="font-metric-value text-metric-value mt-2">$3,200.00</p>
+<p class="text-status-pending text-xs font-semibold mt-2">4 milestones</p>
+</div>
+<div class="border border-border-subtle p-stack-gap bg-white p-5">
+<p class="font-label-caps text-label-caps text-text-muted uppercase">Disputes</p>
+<p class="font-metric-value text-metric-value mt-2">0</p>
+<p class="text-status-paid text-xs font-semibold mt-2">Perfect record</p>
+</div>
+</div>
+<!-- Dashboard Table Placeholder -->
+<div class="bg-white border border-border-subtle rounded-sm overflow-hidden">
+<div class="px-6 py-4 border-b border-border-subtle flex justify-between items-center">
+<h2 class="font-heading-md text-heading-md">Active Projects</h2>
+<button class="text-xs font-bold text-orange-500 flex items-center gap-1">VIEW ALL <span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+<table class="w-full">
+<thead class="bg-neutral-50">
+<tr class="text-left border-b border-border-subtle">
+<th class="px-6 py-4 font-label-caps text-label-caps text-neutral-500">PROJECT</th>
+<th class="px-6 py-4 font-label-caps text-label-caps text-neutral-500">CONTRACTOR</th>
+<th class="px-6 py-4 font-label-caps text-label-caps text-neutral-500">STATUS</th>
+<th class="px-6 py-4 font-label-caps text-label-caps text-neutral-500">PROGRESS</th>
+<th class="px-6 py-4 font-label-caps text-label-caps text-neutral-500">AMOUNT</th>
+</tr>
+</thead>
+<tbody class="font-table-data text-table-data">
+<tr class="border-b border-border-subtle">
+<td class="px-6 py-4 font-semibold">Urban Loft Renovation</td>
+<td class="px-6 py-4">Studio X Builders</td>
+<td class="px-6 py-4"><span class="px-2 py-1 bg-blue-50 text-blue-700 text-[10px] font-bold rounded">IN PROGRESS</span></td>
+<td class="px-6 py-4">
+<div class="w-32 h-2 bg-neutral-100 rounded-full overflow-hidden">
+<div class="h-full bg-neutral-900" style="width: 65%;"></div>
+</div>
+</td>
+<td class="px-6 py-4">$45,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+<!-- Project Milestone Drawer Overlay -->
+<div class="fixed inset-0 bg-neutral-900/40 backdrop-blur-sm z-[60] flex justify-end">
+<!-- Close trigger area -->
+<div class="flex-1 h-full"></div>
+<!-- Drawer Panel -->
+<aside class="w-[500px] bg-white h-full shadow-2xl flex flex-col border-l border-neutral-200">
+<!-- Header -->
+<div class="p-8 border-b border-neutral-100">
+<div class="flex justify-between items-start mb-6">
+<div>
+<span class="font-label-caps text-label-caps text-orange-500 tracking-widest uppercase">Escrow ID: #HC-89021</span>
+<h2 class="font-display-lg text-display-lg text-text-primary mt-1">Urban Loft Renovation</h2>
+</div>
+<button class="h-10 w-10 flex items-center justify-center rounded-full hover:bg-neutral-100 transition-colors">
+<span class="material-symbols-outlined text-neutral-400">close</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 border border-border-subtle rounded-lg bg-neutral-50">
+<p class="font-label-caps text-label-caps text-neutral-500">TOTAL CONTRACT</p>
+<p class="text-xl font-bold mt-1">$45,000.00</p>
+</div>
+<div class="p-4 border border-border-subtle rounded-lg bg-neutral-50">
+<p class="font-label-caps text-label-caps text-neutral-500">RELEASED</p>
+<p class="text-xl font-bold mt-1 text-status-paid">$15,000.00</p>
+</div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex-1 overflow-y-auto p-8 space-y-10">
+<!-- Contractor Info -->
+<div>
+<h3 class="font-label-caps text-label-caps text-neutral-500 mb-4">SERVICE PROVIDER</h3>
+<div class="flex items-center gap-4 p-4 border border-border-subtle rounded-lg">
+<img alt="Studio X Builders" class="w-12 h-12 rounded-full object-cover" data-alt="professional architect holding blueprints in a modern office interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxFe970sSlDGI7QjA8TKrJszQ7NWGLsnSmPTu7-5emJV_G9vNbFCxTrdPWYTEamriZtNd-3bC23l_kEdlV_IuSMJPise8dDkHU04qQBlhXJrJaxJeF_LiNGrD-3WvLBmZwtOZ6s5P48sob_d6ZpVOCXZVEV4U7H_p6URK5xbv1fQj0ZZMHjTZ_lJxo6snL7dlNgHKkeHW5p2mwYcNg69uNJte2BcB-zwhFna12JeCROofX1k0Kbtpy_qvsf_ajzplg-QBWqFk8N4S_"/>
+<div>
+<p class="font-semibold text-neutral-900">Studio X Builders</p>
+<p class="text-sm text-neutral-500">Verified Professional • Since 2021</p>
+</div>
+<button class="ml-auto text-orange-500">
+<span class="material-symbols-outlined">chat</span>
+</button>
+</div>
+</div>
+<!-- Vertical Timeline -->
+<div>
+<h3 class="font-label-caps text-label-caps text-neutral-500 mb-8">MILESTONE TIMELINE</h3>
+<div class="relative space-y-0 pl-4">
+<!-- Connecting Line -->
+<div class="absolute left-[19px] top-2 bottom-2 w-px bg-neutral-200"></div>
+<!-- Phase 1: Paid -->
+<div class="relative flex gap-6 pb-12">
+<div class="z-10 w-3 h-3 rounded-full bg-status-paid border-4 border-green-100 ring-4 ring-white mt-2"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h4 class="font-heading-md text-heading-md">Phase 1: Planning</h4>
+<span class="px-2 py-0.5 bg-green-50 text-status-paid text-[10px] font-bold rounded uppercase">Paid</span>
+</div>
+<p class="text-sm text-neutral-500 mt-1">Architecture drawings, permit applications, and material sourcing.</p>
+<p class="text-sm font-bold text-neutral-900 mt-2">$15,000.00</p>
+<p class="text-[11px] text-neutral-400 mt-1">Processed Oct 12, 2023</p>
+</div>
+</div>
+<!-- Phase 2: Ready for Payout -->
+<div class="relative flex gap-6 pb-12">
+<div class="z-10 w-3 h-3 rounded-full bg-primary-container border-4 border-orange-100 ring-4 ring-white mt-2"></div>
+<div class="flex-1 p-4 border-2 border-orange-100 rounded-xl bg-orange-50/30">
+<div class="flex justify-between items-start">
+<h4 class="font-heading-md text-heading-md text-neutral-900">Phase 2: Demolition</h4>
+<span class="px-2 py-0.5 bg-orange-500 text-white text-[10px] font-bold rounded uppercase">Ready for Payout</span>
+</div>
+<p class="text-sm text-neutral-600 mt-1">Interior wall removal, flooring strip-out, and debris disposal.</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="material-symbols-outlined text-orange-500 text-sm">verified</span>
+<p class="text-xs font-semibold text-orange-600">Verification complete: 3 photos uploaded</p>
+</div>
+<p class="text-lg font-black text-neutral-900 mt-3">$15,000.00</p>
+</div>
+</div>
+<!-- Phase 3: Pending -->
+<div class="relative flex gap-6">
+<div class="z-10 w-3 h-3 rounded-full bg-neutral-200 border-4 border-neutral-100 ring-4 ring-white mt-2"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h4 class="font-heading-md text-heading-md text-neutral-400">Phase 3: Reconstruction</h4>
+<span class="px-2 py-0.5 bg-neutral-100 text-neutral-400 text-[10px] font-bold rounded uppercase">Pending</span>
+</div>
+<p class="text-sm text-neutral-400 mt-1">Framing, electrical rough-in, and drywall installation.</p>
+<p class="text-sm font-bold text-neutral-400 mt-2">$15,000.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer CTA -->
+<div class="p-8 border-t border-neutral-100 bg-white">
+<div class="mb-4 flex justify-between items-end">
+<div>
+<p class="font-label-caps text-label-caps text-neutral-500">PAYMENT TOTAL</p>
+<p class="text-sm text-neutral-400">Includes 0.5% escrow fee</p>
+</div>
+<p class="text-3xl font-black text-neutral-900">$15,075.00</p>
+</div>
+<button class="w-full bg-primary-container hover:bg-orange-600 text-white font-bold py-4 rounded-lg transition-all shadow-lg shadow-orange-500/20 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-weight="fill">verified_user</span>
+<span>Release Milestone</span>
+</button>
+<p class="text-center text-[11px] text-neutral-400 mt-4 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    Funds will be instantly transferred to Studio X Builders.
+                </p>
+</div>
+</aside>
+</div>
+</body></html>
