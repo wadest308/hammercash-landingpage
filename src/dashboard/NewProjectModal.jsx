@@ -1,8 +1,7 @@
-import { useState, useMemo } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { db } from '../firebase';
-import GooglePlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-google-places-autocomplete';
 
 export default function NewProjectModal({ isOpen, onClose, onRefresh }) {
   const [projectName, setProjectName] = useState('');
@@ -12,40 +11,36 @@ export default function NewProjectModal({ isOpen, onClose, onRefresh }) {
   const [description, setDescription] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [address, setAddress] = useState('');
+  const [previewUrl, setPreviewUrl] = useState('');
+  const autocompleteInput = useRef(null);
+  const [scriptLoaded, setScriptLoaded] = useState(false);
 
-  // Separate state for the raw autocomplete value and the processed location data
-  const [place, setPlace] = useState(null);
-  const [location, setLocation] = useState({ address: null, lat: null, lng: null });
-
-  const apiKey = import.meta.env.VITE_GOOGLE_PLACES_API_KEY;
-
-  const handlePlaceSelect = async (newPlace) => {
-    setPlace(newPlace);
-    if (newPlace && newPlace.label) {
-      try {
-        const results = await geocodeByAddress(newPlace.label);
-        const { lat, lng } = await getLatLng(results[0]);
-        setLocation({ address: newPlace.label, lat, lng });
-      } catch (error) {
-        console.error('Geocoding Error:', error);
-        setLocation({ address: newPlace.label, lat: null, lng: null });
-      }
-    } else {
-      setLocation({ address: null, lat: null, lng: null });
+  useEffect(() => {
+    if (isOpen) {
+      const script = document.createElement('script');
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_GOOGLE_PLACES_API_KEY}&libraries=places`;
+      script.async = true;
+      script.onload = () => setScriptLoaded(true);
+      document.body.appendChild(script);
     }
-  };
+  }, [isOpen]);
 
-  const streetViewUrl = useMemo(() => {
-    if (location.lat && location.lng) {
-      return `https://maps.googleapis.com/maps/api/streetview?size=600x300&location=${location.lat},${location.lng}&key=${apiKey}`;
+  useEffect(() => {
+    if (isOpen && scriptLoaded && autocompleteInput.current) {
+      const autocomplete = new window.google.maps.places.Autocomplete(
+        autocompleteInput.current,
+        { types: ['address'] }
+      );
+      autocomplete.addListener('place_changed', () => {
+        const place = autocomplete.getPlace();
+        const addr = place.formatted_address;
+        setAddress(addr);
+        const url = `https://maps.googleapis.com/maps/api/streetview?size=600x300&location=${encodeURIComponent(addr)}&key=${import.meta.env.VITE_GOOGLE_PLACES_API_KEY}`;
+        setPreviewUrl(url);
+      });
     }
-    return null;
-  }, [location, apiKey]);
-
-  const handleClearAddress = () => {
-    setPlace(null);
-    setLocation({ address: null, lat: null, lng: null });
-  };
+  }, [isOpen, scriptLoaded]);
 
   const handleSubmit = async () => {
     setError('');
@@ -66,9 +61,8 @@ export default function NewProjectModal({ isOpen, onClose, onRefresh }) {
         description: description.trim(),
         status: 'in_progress', // Default status
         createdAt: serverTimestamp(),
-        address: location.address,
-        lat: location.lat,
-        lng: location.lng,
+        address: address,
+        imageUrl: previewUrl,
       });
 
       // Reset form
@@ -77,7 +71,8 @@ export default function NewProjectModal({ isOpen, onClose, onRefresh }) {
       setCustomerEmail('');
       setTotalAmount('');
       setDescription('');
-      handleClearAddress();
+      setAddress('');
+      setPreviewUrl('');
       setLoading(false);
 
       if (onRefresh) onRefresh();
@@ -113,27 +108,20 @@ export default function NewProjectModal({ isOpen, onClose, onRefresh }) {
         {/* Address Field */}
         <div className="mb-4">
             <label className="text-sm text-gray-500 mb-1 block">Property Address</label>
-            <GooglePlacesAutocomplete
-                apiKey={apiKey}
-                selectProps={{
-                    value: place,
-                    onChange: handlePlaceSelect,
-                    placeholder: "Start typing the house address...",
-                    styles: {
-                        menu: (provided) => ({ ...provided, zIndex: 9999 }),
-                    },
-                }}
-             />
+            <input
+              ref={autocompleteInput}
+              type="text"
+              placeholder="Enter property address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              className="w-full border rounded-lg px-3 py-2 text-sm"
+            />
         </div>
 
-        {streetViewUrl && (
-            <div className="mb-4 relative">
-                <p className="text-sm text-gray-500 mb-1">Property Preview:</p>
-                <img src={streetViewUrl} alt="Property Preview" className="rounded-lg w-full border border-gray-200" />
-                <button onClick={handleClearAddress} className="absolute top-8 right-2 bg-white rounded-full p-1 shadow-md hover:bg-gray-100">
-                   <svg className="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                </button>
-            </div>
+        {previewUrl && (
+          <div className="mb-4">
+            <img src={previewUrl} crossOrigin="anonymous" alt="Street View Preview" />
+          </div>
         )}
 
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}

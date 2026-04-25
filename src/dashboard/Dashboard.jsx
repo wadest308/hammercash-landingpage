@@ -115,9 +115,7 @@ const Header = () => {
                 />
             </div>
             <div className="flex items-center space-x-6">
-                <button onClick={() => navigate('/dashboard/create')} className="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-indigo-700">
-                    + Create New Project
-                </button>
+                
                  <button className="text-gray-500 hover:text-gray-700">
                     <BellIcon />
                 </button>

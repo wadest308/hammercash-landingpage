@@ -4,10 +4,7 @@ import { getAuth } from 'firebase/auth';
 import { db } from '../firebase';
 
 // Always render the img tag, using the address.
-const StreetViewThumbnail = ({ address }) => {
-  const url = `https://maps.googleapis.com/maps/api/streetview?size=80x55&location=${encodeURIComponent(address)}&key=${import.meta.env.VITE_GOOGLE_PLACES_API_KEY}`;
-  return <img src={url} alt="Street View" className="w-20 h-[55px] object-cover rounded-md" />;
-};
+
 
 const formatStatus = (status) => {
   const map = {
@@ -75,7 +72,7 @@ export default function DashboardHome() {
               {activeJobs.map(job => (
                 <tr key={job.id} className="border-b border-gray-100 hover:bg-gray-50">
                   <td className="px-6 py-2">
-                    <StreetViewThumbnail address={job.address} />
+                    <img src={job.imageUrl} crossOrigin="anonymous" alt="Property" className="w-20 h-[55px] object-cover rounded-md" />
                   </td>
                   <td className="px-6 py-4">
                     <p className="font-medium">{job.projectName}</p>
