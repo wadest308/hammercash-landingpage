@@ -58,40 +58,31 @@ export default function DashboardHome() {
         {activeJobs.length === 0 ? (
           <div className="p-8 text-center text-gray-400 text-sm">No active projects.</div>
         ) : (
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="text-left text-xs text-gray-400 uppercase tracking-wider border-b">
-                <th className="px-6 py-3 w-24"></th>
-                <th className="px-6 py-3">Project Details</th>
-                <th className="px-6 py-3">Customer</th>
-                <th className="px-6 py-3">Total Amount</th>
-                <th className="px-6 py-3">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {activeJobs.map(job => (
-                <tr key={job.id} className="border-b border-gray-100 hover:bg-gray-50">
-                  <td className="px-6 py-2">
-                    <img src={job.imageUrl} crossOrigin="anonymous" alt="Property" className="w-20 h-[55px] object-cover rounded-md" />
-                  </td>
-                  <td className="px-6 py-4">
-                    <p className="font-medium">{job.projectName}</p>
-                    <p className="text-gray-500 text-xs mt-1">{job.address}</p>
-                  </td>
-                  <td className="px-6 py-4">
-                    <p>{job.customerName}</p>
-                    <p className="text-gray-400 text-xs">{job.customerEmail}</p>
-                  </td>
-                  <td className="px-6 py-4 font-medium">{fmt(job.totalAmount)}</td>
-                  <td className="px-6 py-4">
+          <div className="grid grid-cols-1 gap-4">
+            {activeJobs.map(job => (
+              <div key={job.id} className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onClick={() => navigate(`/dashboard/projects/${job.id}`)}>
+                {job.imageUrl ? (
+                  <img src={job.imageUrl} style={{ height: '140px', objectFit: 'cover', borderTopLeftRadius: '6px', borderTopRightRadius: '6px' }} alt="Property" className="w-full" />
+                ) : (
+                  <div style={{ height: '140px', backgroundColor: '#e0e0e0' }}></div>
+                )}
+                <div className="p-4">
+                  <h3 className="font-bold text-lg">{job.projectName}</h3>
+                  <p className="text-sm text-gray-500">{job.address}</p>
+                  <div className="mt-4">
+                    <p className="text-sm"><span className="font-semibold">Customer:</span> {job.customerName}</p>
+                    <p className="text-sm"><span className="font-semibold">Email:</span> {job.customerEmail}</p>
+                  </div>
+                  <div className="mt-4 flex justify-between items-center">
+                    <p className="text-lg font-bold text-orange-500">{fmt(job.totalAmount)}</p>
                     <span className={`px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-600`}>
                       {formatStatus(job.status)}
                     </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         )}
       </div>
     </div>

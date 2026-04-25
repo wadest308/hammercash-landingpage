@@ -91,35 +91,33 @@ export default function Projects() {
       {filteredJobs.length === 0 ? (
         <div className="border-2 border-dashed border-gray-200 rounded-lg p-12 text-center"><p className="text-gray-400 text-sm">No projects found.</p></div>
       ) : (
-        <div className="border border-gray-200 rounded-lg overflow-hidden divide-y divide-gray-200">
-            {filteredJobs.map(job => (
-                <div key={job.id} onClick={() => navigate(`/dashboard/projects/${job.id}`)} className="p-4 hover:bg-gray-50 cursor-pointer">
-                    <div className="flex items-center">
-                        <StreetViewThumbnail address={job.address} />
-                        <div className="ml-4 flex-1">
-                            <div className="flex justify-between items-start">
-                                <div>
-                                    <p className="text-lg font-bold text-black">{job.projectName}</p>
-                                    <p className="text-sm text-gray-500">{job.address}</p>
-                                </div>
-                                <p className="text-lg font-bold">${(job.totalAmount || 0).toLocaleString()}</p>
-                            </div>
-                            <div className="flex justify-between items-end mt-2">
-                                <div>
-                                    <p className="text-sm text-gray-600">{job.customerName}</p>
-                                    <p className="text-xs text-gray-400">{job.customerEmail}</p>
-                                </div>
-                                <div className="flex items-center space-x-4">
-                                    <StatusBadge status={job.status || 'in_progress'} />
-                                    <button onClick={(e) => handleDelete(e, job.id, job.uid)} className="border border-red-500 text-red-500 hover:bg-red-50 text-xs font-bold py-1 px-3 rounded">
-                                      Delete
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div className="grid grid-cols-1 gap-4">
+          {filteredJobs.map(job => (
+            <div key={job.id} className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer" onClick={() => navigate(`/dashboard/projects/${job.id}`)}>
+              {job.imageUrl ? (
+                <img src={job.imageUrl} style={{ height: '140px', objectFit: 'cover', borderTopLeftRadius: '6px', borderTopRightRadius: '6px' }} alt="Property" className="w-full" />
+              ) : (
+                <div style={{ height: '140px', backgroundColor: '#e0e0e0' }}></div>
+              )}
+              <div className="p-4">
+                <h3 className="font-bold text-lg">{job.projectName}</h3>
+                <p className="text-sm text-gray-500">{job.address}</p>
+                <div className="mt-4">
+                  <p className="text-base"><span className="font-semibold">Customer:</span> {job.customerName}</p>
+                  <p className="text-base"><span className="font-semibold">Email:</span> {job.customerEmail}</p>
                 </div>
-            ))}
+                <div className="mt-4 flex justify-between items-center">
+                  <p className="text-lg font-bold text-orange-500">{formatCurrency(job.totalAmount)}</p>
+                  <div className="flex items-center space-x-4">
+                    <StatusBadge status={job.status || 'in_progress'} />
+                    <button onClick={(e) => handleDelete(e, job.id, job.uid)} className="border border-red-500 text-red-500 hover:bg-red-50 text-xs font-bold py-1 px-3 rounded">
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       )}
     </div>

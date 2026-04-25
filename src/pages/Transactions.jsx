@@ -105,37 +105,30 @@ export default function Transactions() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01" />
                                 </svg>
                                 <h2 className="mt-2 text-lg font-semibold text-gray-900">No Payments Yet</h2>
-                                <p className="mt-1 text-sm text-gray-500">No payments yet — create a milestone to start collecting.</p>
+                                <p className="mt-1 text-base text-gray-500">No payments yet — create a milestone to start collecting.</p>
                                 <div className="mt-6">
-                                    <button onClick={() => navigate('/dashboard/milestones')} type="button" className="inline-flex items-center px-4 py-2 bg-orange-600 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                                    <button onClick={() => navigate('/dashboard/milestones')} type="button" className="inline-flex items-center px-4 py-2 bg-orange-600 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
                                         Create a Milestone
                                     </button>
                                 </div>
                             </div>
                         ) : (
-                            <div className="bg-white border border-gray-200 rounded-lg overflow-x-auto">
-                                <table className="min-w-full divide-y divide-gray-200">
-                                    <thead className="bg-gray-50">
-                                        <tr>
-                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Milestone Title</th>
-                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Project Name</th>
-                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Amount</th>
-                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Status</th>
-                                            <th className="p-4 text-left text-xs font-semibold text-gray-500 uppercase">Date</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody className="bg-white divide-y divide-gray-200">
-                                        {transactions.map(t => (
-                                            <tr key={t.id}>
-                                                <td className="p-4 text-sm font-medium text-gray-900">{t.title}</td>
-                                                <td className="p-4 text-sm text-gray-600">{t.projectName}</td>
-                                                <td className="p-4 text-sm font-semibold text-green-600">${(t.amount || 0).toLocaleString()}</td>
-                                                <td className="p-4 text-sm"><StatusBadge status={t.status} /></td>
-                                                <td className="p-4 text-sm text-gray-600">{t.releasedAt?.toDate().toLocaleDateString()}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
+                            <div className="bg-white border border-gray-200 rounded-lg divide-y divide-gray-200">
+                                {transactions.map(t => (
+                                    <div key={t.id} className="p-4">
+                                        <div className="flex justify-between items-start">
+                                            <div>
+                                                <p className="text-lg font-bold text-black">{t.title}</p>
+                                                <p className="text-base text-gray-500">{t.projectName}</p>
+                                            </div>
+                                            <p className="text-lg font-bold text-green-600">${(t.amount || 0).toLocaleString()}</p>
+                                        </div>
+                                        <div className="mt-4 flex justify-between items-center">
+                                            <StatusBadge status={t.status} />
+                                            <p className="text-base text-gray-600">{t.releasedAt?.toDate().toLocaleDateString()}</p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         )}
                     </div>
