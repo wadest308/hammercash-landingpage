@@ -43,13 +43,22 @@ export default function DashboardLayout() {
     }, [location.pathname]);
 
     return (
-        <div className="antialiased text-text-primary">
-            <NewProjectModal 
-                isOpen={showModal} 
-                onClose={() => setShowModal(false)} 
-                onRefresh={() => setRefreshKey(prev => prev + 1)} 
+        <div className="antialiased text-text-primary md:flex">
+            <NewProjectModal
+                isOpen={showModal}
+                onClose={() => setShowModal(false)}
+                onRefresh={() => setRefreshKey(prev => prev + 1)}
             />
-            <aside className="h-screen w-64 fixed left-0 top-0 border-r border-neutral-800 bg-neutral-900 flex flex-col py-6 font-['Inter'] antialiased z-50">
+
+            {/* Overlay for mobile */}
+            {sidebarOpen && (
+                <div
+                    className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+                    onClick={() => setSidebarOpen(false)}
+                ></div>
+            )}
+
+            <aside className={`h-screen w-64 fixed left-0 top-0 border-r border-neutral-800 bg-neutral-900 flex-col py-6 font-['Inter'] antialiased z-50 transform ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:flex`}>
                 <div className="px-6 mb-8">
                     <div className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center text-white font-black">H</div>
@@ -89,9 +98,14 @@ export default function DashboardLayout() {
                     </div>
                 </div>
             </aside>
-            <main className="ml-64 min-h-screen">
-                <header className="fixed top-0 right-0 left-64 h-16 border-b border-neutral-200 bg-white flex justify-between items-center px-8 z-40">
-                    <div>{/* Header content can go here */}</div>
+            <main className="flex-1 min-h-screen md:ml-64">
+                <header className="fixed top-0 right-0 left-0 md:left-64 h-16 border-b border-neutral-200 bg-white flex justify-between items-center px-4 md:px-8 z-30">
+                    <div className="md:hidden">
+                        <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2">
+                            <span className="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                    <div className="hidden md:block">{/* Header content can go here */}</div>
                     <div className="flex items-center gap-4">
                         <div className="w-8 h-8 rounded-full bg-neutral-200 overflow-hidden ml-2">
                             <img className="w-full h-full object-cover" src={photoURL} alt="User Avatar"/>

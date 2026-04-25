@@ -1,1 +1,16 @@
-{"projectId":"prj_4T2O0yA2GVtVVNfkVlbEntDIAGzW","orgId":"team_89pjbJbNAbUAD145VQZLIstT","projectName":"hammercash"}
+{
+  "projectId": "prj_4T2O0yA2GVtVVNfkVlbEntDIAGzW",
+  "orgId": "team_89pjbJbNAbUAD145VQZLIstT",
+  "projectName": "hammercash",
+  "settings": {
+    "createdAt": 1776578743320,
+    "framework": "vite",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}

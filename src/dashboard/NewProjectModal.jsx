@@ -93,8 +93,8 @@ export default function NewProjectModal({ isOpen, onClose, onRefresh }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-xl p-6 w-full max-w-lg mx-4 max-h-[90vh] overflow-y-auto">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+      <div className="bg-white rounded-xl p-6 w-full max-w-lg md:max-w-lg max-h-[90vh] overflow-y-auto w-[90vw]">
 
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-bold">Create New Project</h2>
@@ -102,7 +102,7 @@ export default function NewProjectModal({ isOpen, onClose, onRefresh }) {
         </div>
 
         {/* Existing form fields */}
-        <div className="grid grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div><label className="text-sm text-gray-500 mb-1 block">Project Name *</label><input type="text" value={projectName} onChange={e => setProjectName(e.target.value)} className="w-full border rounded-lg px-3 py-2 text-sm"/></div>
             <div><label className="text-sm text-gray-500 mb-1 block">Total Amount *</label><input type="number" value={totalAmount} onChange={e => setTotalAmount(e.target.value)} className="w-full border rounded-lg px-3 py-2 text-sm"/></div>
             <div><label className="text-sm text-gray-500 mb-1 block">Customer Name *</label><input type="text" value={customerName} onChange={e => setCustomerName(e.target.value)} className="w-full border rounded-lg px-3 py-2 text-sm"/></div>

@@ -299,8 +299,12 @@ const Dashboard = () => {
                 <Header />
                 <main className="flex-1 p-8 overflow-y-auto">
                     {/* KPI Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {kpis.map(kpi => <KpiCard key={kpi.title} {...kpi} />)}
+                    <div className="flex flex-wrap -mx-3">
+                        {kpis.map(kpi => 
+                            <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                                <KpiCard key={kpi.title} {...kpi} />
+                            </div>
+                        )}
                     </div>
 
                     <div className="mt-8 grid grid-cols-3 gap-8">
