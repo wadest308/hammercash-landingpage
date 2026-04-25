@@ -29,7 +29,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [loading, setLoading] = useState(true); // Start loading true for auth check
+  const [loading, setLoading] = useState(false);
 
   const handlePostLogin = async (user) => {
     const userSnap = await getDoc(doc(db, 'users', user.uid));
@@ -42,17 +42,7 @@ export default function LoginPage() {
   };
 
 
-  useEffect(() => {
-    const auth = getAuth();
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        handlePostLogin(user);
-      } else {
-        setLoading(false);
-      }
-    });
-    return () => unsubscribe();
-  }, [navigate]);
+
 
   const handleGoogleSignIn = async () => {
     setLoading(true);
