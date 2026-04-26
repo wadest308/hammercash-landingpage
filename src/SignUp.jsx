@@ -44,25 +44,28 @@ const SignUp = () => {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4">
+    <div className="bg-white text-black min-h-screen flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <img src="/logo2.png" alt="HammerCash Logo" className="h-12 mx-auto mb-4" />
-          <h1 className="text-2xl font-bold">Sign up to find work you love</h1>
+        <div className="flex items-center justify-center mb-6">
+          <h1 className="text-2xl font-bold text-orange-500">🔨 HammerCash</h1>
+        </div>
+          <h1 className="text-2xl font-bold">Start getting paid upfront.</h1>
         </div>
 
         <button
           onClick={handleGoogleSignIn}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center mb-4"
+          className="w-full bg-white hover:bg-gray-100 text-black font-bold py-3 px-4 rounded-lg flex items-center justify-center mb-4 border border-gray-200"
+          style={{ background: 'white', border: '1px solid #dadce0', color: '#3c4043', fontWeight: '500' }}
         >
           <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" className="h-6 mr-4" />
           Continue with Google
         </button>
 
         <div className="flex items-center my-4">
-          <hr className="flex-grow border-neutral-700" />
+          <hr className="flex-grow border-neutral-200" />
           <span className="px-2 text-neutral-400">or</span>
-          <hr className="flex-grow border-neutral-700" />
+          <hr className="flex-grow border-neutral-200" />
         </div>
 
         <form onSubmit={handleEmailSignUp}>
@@ -72,14 +75,14 @@ const SignUp = () => {
               placeholder="First name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="bg-neutral-800 border border-neutral-700 rounded-lg p-3 w-full"
+              className="bg-gray-100 border border-gray-200 rounded-lg p-3 w-full"
             />
             <input
               type="text"
               placeholder="Last name"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              className="bg-neutral-800 border border-neutral-700 rounded-lg p-3 w-full"
+              className="bg-gray-100 border border-gray-200 rounded-lg p-3 w-full"
             />
           </div>
           <input
@@ -87,7 +90,7 @@ const SignUp = () => {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="bg-neutral-800 border border-neutral-700 rounded-lg p-3 w-full mb-4"
+            className="bg-gray-100 border border-gray-200 rounded-lg p-3 w-full mb-4"
           />
           <div className="relative mb-4">
             <input
@@ -95,7 +98,7 @@ const SignUp = () => {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="bg-neutral-800 border border-neutral-700 rounded-lg p-3 w-full"
+              className="bg-gray-100 border border-gray-200 rounded-lg p-3 w-full"
             />
             <button
               type="button"
@@ -108,7 +111,7 @@ const SignUp = () => {
           <select
             value={country}
             onChange={(e) => setCountry(e.target.value)}
-            className="bg-neutral-800 border border-neutral-700 rounded-lg p-3 w-full mb-4"
+            className="bg-gray-100 border border-gray-200 rounded-lg p-3 w-full mb-4"
           >
             <option>United States</option>
             <option>Canada</option>
@@ -141,14 +144,14 @@ const SignUp = () => {
 
           <button
             type="submit"
-            className="w-full bg-[#14a800] hover:bg-[#128a00] text-white font-bold py-3 rounded-full"
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-full"
           >
-            Create my account
+            Sign up with Email
           </button>
         </form>
 
         <p className="text-center mt-8">
-          Already have an account? <Link to="/login" className="text-green-500 hover:underline">Log In</Link>
+          Already have an account? <Link to="/login" className="text-orange-500 hover:underline">Log In</Link>
         </p>
       </div>
     </div>

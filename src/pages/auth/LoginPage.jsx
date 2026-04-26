@@ -104,53 +104,67 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white p-8 rounded-xl shadow-md" style={{borderRadius: '12px'}}>
-        <HammerCashLogo />
-        <h1 className="text-2xl font-bold text-center text-gray-900 mb-6">Sign in to find work you love</h1>
-
-        <form onSubmit={handleContinue}>
-          <div className="relative mb-4">
-             {/* Email Input */}
-          </div>
-          {/* TODO: Add password input */}
-
-          {error && <p className="text-red-500 text-sm text-center mb-4">{error}</p>}
-          
-          <button
-            type="submit"
-            className="w-full bg-[#22A045] text-white font-bold py-3 rounded-lg hover:bg-opacity-90 transition duration-300 disabled:opacity-50"
-            style={{borderRadius: '8px'}}
-            disabled={loading}
-          >
-            Continue
-          </button>
-        </form>
-
-        <div className="flex items-center my-6">
-          <hr className="flex-grow border-t border-gray-300" />
-          <span className="px-4 text-gray-500">OR</span>
-          <hr className="flex-grow border-t border-gray-300" />
-        </div>
-
-        <div className="space-y-4">
-          <button onClick={handleGoogleSignIn} disabled={loading} className="w-full flex items-center justify-center py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition duration-300 disabled:opacity-50" style={{borderRadius: '8px'}}>
-            <GoogleIcon />
-            <span className="font-semibold text-gray-700">Continue with Google</span>
-          </button>
-          <button onClick={handleAppleSignIn} disabled={loading} className="w-full flex items-center justify-center py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition duration-300 disabled:opacity-50" style={{borderRadius: '8px'}}>
-            <AppleIcon />
-            <span className="font-semibold text-gray-700">Continue with Apple</span>
-          </button>
-        </div>
-
-        <p className="text-center text-sm text-gray-600 mt-8">
-          Don't have a HammerCash account?{' '}
-          <Link to="/signup" className="font-semibold text-[#22A045] underline hover:text-opacity-80">Sign Up</Link>
-        </p>
-
-        <p className="text-center text-xs text-gray-400 mt-10">
-          By continuing, you agree to our Terms of Service and acknowledge you've read our Privacy Policy.
-        </p>
+      <div className="flex items-center justify-center mb-6">
+        <h1 className="text-2xl font-bold text-orange-500">🔨 HammerCash</h1>
       </div>
-    </div>
+      <h1 className="text-2xl font-bold text-center text-gray-900 mb-6">Get paid before you pick up a tool.</h1>
+
+      <form onSubmit={handleContinue}>
+        <div className="relative mb-4">
+          <input
+            type="email"
+            placeholder="Email Address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-3 border border-gray-300 rounded-lg"
+          />
+        </div>
+        <div className="relative mb-4">
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full p-3 border border-gray-300 rounded-lg"
+          />
+        </div>
+
+        <div className="text-right mb-4">
+          <a href="#" className="text-sm text-orange-500 hover:underline">Forgot password?</a>
+        </div>
+
+        {error && <p className="text-red-500 text-sm text-center mb-4">{error}</p>}
+
+        <button
+          type="submit"
+          className="w-full bg-[#F97316] text-white font-bold py-3 rounded-lg hover:bg-opacity-90 transition duration-300 disabled:opacity-50"
+          style={{borderRadius: '8px'}}
+          disabled={loading}
+        >
+          Sign In
+        </button>
+      </form>
+      <div className="flex items-center my-6">
+        <hr className="flex-grow border-t border-gray-300" />
+        <span className="px-4 text-gray-500">OR</span>
+        <hr className="flex-grow border-t border-gray-300" />
+      </div>
+
+      <div className="space-y-4">
+        <button onClick={handleGoogleSignIn} disabled={loading} className="w-full flex items-center justify-center py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition duration-300 disabled:opacity-50" style={{ background: 'white', border: '1px solid #dadce0', color: '#3c4043', fontWeight: '500' }}>
+          <GoogleIcon />
+          <span className="font-semibold">Continue with Google</span>
+        </button>
+      </div>
+
+      <p className="text-center text-sm text-gray-600 mt-8">
+        Don't have a HammerCash account?{' '}
+        <Link to="/signup" className="font-semibold text-[#F97316] underline hover:text-opacity-80">Sign Up</Link>
+      </p>
+
+      <p className="text-center text-xs text-gray-400 mt-10">
+        By continuing, you agree to our Terms of Service and acknowledge you've read our Privacy Policy.
+      </p>
+      </div>    </div>
   );
 }

@@ -47,7 +47,14 @@ function Login() {
       {/* Left Column (Auth) */}
       <div className="left-column-auth" style={{ width: '50%', backgroundColor: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '50px' }}>
         <div style={{ width: '100%', maxWidth: '400px' }}>
-          <h1 style={{ color: '#F97316', fontSize: '24px', fontWeight: 'bold', marginBottom: '40px' }}>HammerCash</h1>
+          <div className="flex items-center gap-3 mb-8">
+              <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center text-white font-black">H</div>
+              <div>
+                  <h1 className="text-xl font-black tracking-tighter text-black">HammerCash</h1>
+              </div>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">Get paid before you pick up a tool.</h2>
+          <p className="text-base text-gray-500 mt-2 mb-8">Sign in to your HammerCash account.</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
             <button
               onClick={handleGoogleSignIn}
@@ -66,10 +73,6 @@ function Login() {
             >
               <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" style={{ height: '20px' }} />
               Continue with Google
-            </button>
-            <button style={{ padding: '15px', backgroundColor: '#f3f4f6', color: '#9ca3af', border: '1px solid #E5E7EB', borderRadius: '5px', fontWeight: 'bold', cursor: 'not-allowed', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple logo" style={{ height: '20px' }} />
-              Sign in with Apple (coming soon)
             </button>
           </div>
 

@@ -136,56 +136,57 @@ export default function SignUpPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white p-8 rounded-xl shadow-md" style={{borderRadius: '12px'}}>
-        <HammerCashLogo />
-        <h1 className="text-2xl font-bold text-center text-gray-900 mb-6">Join HammerCash to secure your payments</h1>
-
-        <button onClick={handleGoogleSignIn} disabled={loading} className="w-full flex items-center justify-center py-3 border-transparent text-white rounded-lg hover:bg-opacity-90 transition duration-300 mb-4 disabled:opacity-50" style={{backgroundColor: '#4285F4', borderRadius: '8px'}}>
-          <GoogleIcon />
-          <span className="font-semibold">Continue with Google</span>
-        </button>
-
-        <div className="flex items-center my-4">
-          <hr className="flex-grow border-t border-gray-300" />
-          <span className="px-4 text-gray-500 text-sm">OR</span>
-          <hr className="flex-grow border-t border-gray-300" />
-        </div>
-
-        <form onSubmit={handleCreateAccount} className="space-y-4">
-          <div className="flex gap-4">
-            <input type="text" name="firstName" placeholder="First Name" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg" />
-            <input type="text" name="lastName" placeholder="Last Name" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg" />
-          </div>
-          <input type="email" name="email" placeholder="Email" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg" />
-          <div className="relative">
-            <input type={passwordVisible ? "text" : "password"} name="password" placeholder="Password" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg" />
-            <button type="button" onClick={() => setPasswordVisible(!passwordVisible)} className="absolute inset-y-0 right-0 px-3 flex items-center text-gray-500">
-              {passwordVisible ? <EyeOffIcon className="h-5 w-5" /> : <EyeIcon className="h-5 w-5" />}
-            </button>
-          </div>
-          <select name="country" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg">
-            {countries.map(c => <option key={c} value={c}>{c}</option>)}
-          </select>
-          <div className="space-y-3 pt-2">
-            <label className="flex items-start gap-3 text-sm text-gray-600">
-              <input type="checkbox" name="marketingOptIn" onChange={handleChange} className="mt-1" />
-              <span>Send me helpful emails to set up and get paid.</span>
-            </label>
-            <label className="flex items-start gap-3 text-sm text-gray-600">
-              <input type="checkbox" name="agreedToTerms" onChange={handleChange} className="mt-1" />
-              <span>Yes, I understand and agree to the HammerCash <Link to="/terms" className="underline">Terms of Service</Link> and <Link to="/privacy-policy" className="underline">Privacy Policy</Link>.</span>
-            </label>
-          </div>
-          {error && <p className="text-red-500 text-sm text-center pt-2">{error}</p>}
-          <button type="submit" disabled={loading} className="w-full bg-green-500 text-white font-bold py-3 rounded-lg hover:bg-green-600 transition duration-300 disabled:opacity-50">
-            Create my account
-          </button>
-        </form>
-
-        <p className="text-center text-sm text-gray-600 mt-6">
-          Already have an account?{' '}
-          <Link to="/login" className="font-semibold text-green-600 hover:underline">Log In</Link>
-        </p>
+      <div className="flex items-center justify-center mb-6">
+        <h1 className="text-2xl font-bold text-orange-500">🔨 HammerCash</h1>
       </div>
-    </div>
+      <h1 className="text-2xl font-bold text-center text-gray-900 mb-6">Start getting paid upfront.</h1>
+
+      <button onClick={handleGoogleSignIn} disabled={loading} className="w-full flex items-center justify-center py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition duration-300 disabled:opacity-50" style={{ background: 'white', border: '1px solid #dadce0', color: '#3c4043', fontWeight: '500' }}>
+        <GoogleIcon />
+        <span className="font-semibold">Continue with Google</span>
+      </button>
+
+      <div className="flex items-center my-4">
+        <hr className="flex-grow border-t border-gray-300" />
+        <span className="px-4 text-gray-500 text-sm">OR</span>
+        <hr className="flex-grow border-t border-gray-300" />
+      </div>
+
+      <form onSubmit={handleCreateAccount} className="space-y-4">
+        <div className="flex gap-4">
+          <input type="text" name="firstName" placeholder="First Name" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg" />
+          <input type="text" name="lastName" placeholder="Last Name" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg" />
+        </div>
+        <input type="email" name="email" placeholder="Email" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg" />
+        <div className="relative">
+          <input type={passwordVisible ? "text" : "password"} name="password" placeholder="Password" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg" />
+          <button type="button" onClick={() => setPasswordVisible(!passwordVisible)} className="absolute inset-y-0 right-0 px-3 flex items-center text-gray-500">
+            {passwordVisible ? <EyeOffIcon className="h-5 w-5" /> : <EyeIcon className="h-5 w-5" />}
+          </button>
+        </div>
+        <select name="country" onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-lg">
+          {countries.map(c => <option key={c} value={c}>{c}</option>)}
+        </select>
+        <div className="space-y-3 pt-2">
+          <label className="flex items-start gap-3 text-sm text-gray-600">
+            <input type="checkbox" name="marketingOptIn" onChange={handleChange} className="mt-1" />
+            <span>Send me helpful emails to set up and get paid.</span>
+          </label>
+          <label className="flex items-start gap-3 text-sm text-gray-600">
+            <input type="checkbox" name="agreedToTerms" onChange={handleChange} className="mt-1" />
+            <span>Yes, I understand and agree to the HammerCash <Link to="/terms" className="underline">Terms of Service</Link> and <Link to="/privacy-policy" className="underline">Privacy Policy</Link>.</span>
+          </label>
+        </div>
+        {error && <p className="text-red-500 text-sm text-center pt-2">{error}</p>}
+        <button type="submit" disabled={loading} className="w-full bg-[#F97316] text-white font-bold py-3 rounded-lg hover:bg-opacity-90 transition duration-300 disabled:opacity-50">
+          Sign up with Email
+        </button>
+      </form>
+
+      <p className="text-center text-sm text-gray-600 mt-6">
+        Already have an account?{' '}
+        <Link to="/login" className="font-semibold text-[#F97316] hover:underline">Log In</Link>
+      </p>
+      </div>    </div>
   );
 }
