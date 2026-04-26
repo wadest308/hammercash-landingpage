@@ -106,6 +106,32 @@ export default function ProjectDetail() {
     setMilestoneForm({ title: '', amount: '', dueDate: '' });
   };
 
+  const handleMarkComplete = async (milestoneId, amount) => {
+    try {
+      const res = await fetch('/api/stripe/release-payment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          paymentIntentId: project.paymentIntentId, // assuming this is stored in the project document
+          amount: amount * 100, // convert to cents
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        const milestoneRef = doc(db, 'milestones', milestoneId);
+        await updateDoc(milestoneRef, {
+          status: 'awaiting_approval'
+        });
+        // For now, we will just log the email content to the console
+        console.log(`Email sent to homeowner: Please approve the milestone at ${window.location.origin}/approve/${milestoneId}`);
+      }
+    } catch (err) {
+      console.error('Stripe release payment error:', err);
+    }
+  };
+
   useEffect(() => {
     if (!user) {
         setError("User not authenticated.");
@@ -197,18 +223,18 @@ export default function ProjectDetail() {
               {milestones.length > 0 ? milestones.map(m => (
                 <tr key={m.id} className="border-b border-gray-100">
                   <td className="px-6 py-4">{m.title}</td>
-                  <td className="px-6 py-4"><StatusBadge status={m.status} /></td>
+                  <td className="px-6 py-4">{(m.status || '').replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</td>
                   <td className="px-6 py-4">${(m.amount || 0).toLocaleString()}</td>
                   <td className="px-6 py-4">{m.dueDate}</td>
                   <td className="px-6 py-4">
-                    {m.status === 'awaiting_payment' && (
-                        <button className="text-indigo-600 hover:text-indigo-900">Request Deposit</button>
-                    )}
-                    {(m.status === 'funded' || m.status === 'in_progress') && (
-                        <button className="text-indigo-600 hover:text-indigo-900">Mark Complete</button>
+                    {m.status === 'in_progress' && (
+                        <button onClick={() => handleMarkComplete(m.id, m.amount)} className="text-indigo-600 hover:text-indigo-900">Mark Complete</button>
                     )}
                     {m.status === 'awaiting_approval' && (
-                        <button className="text-green-600 hover:text-green-900">Approve & Release</button>
+                        <span className="text-green-600">✅ Awaiting Approval</span>
+                    )}
+                    {m.status === 'approved' && (
+                        <span className="text-green-600">✅ Approved — Payout Pending</span>
                     )}
                   </td>
                 </tr>

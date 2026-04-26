@@ -104,9 +104,7 @@ export default function Projects() {
                 <p className="text-sm text-gray-500">{job.address}</p>
                 <div className="mt-4">
                   <p className="text-base"><span className="font-semibold">Customer:</span> {job.customerName}</p>
-                  <p className="text-base"><span className="font-semibold">Email:</span> {job.customerEmail}</p>
-                </div>
-                <div className="mt-4 flex justify-between items-center">
+                </div>                <div className="mt-4 flex justify-between items-center">
                   <p className="text-lg font-bold text-orange-500">{formatCurrency(job.totalAmount)}</p>
                   <div className="flex items-center space-x-4">
                     <StatusBadge status={job.status || 'in_progress'} />

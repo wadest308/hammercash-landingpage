@@ -23,7 +23,7 @@ app.post('/api/stripe/connect', async (req, res) => {
     const accountLink = await stripe.accountLinks.create({
       account: account.id,
       refresh_url: 'http://localhost:3000/reauth',
-      return_url: 'http://localhost:3000/return',
+      return_url: 'http://localhost:5173/dashboard/account?stripe_return=true',
       type: 'account_onboarding',
     });
 
@@ -51,6 +51,24 @@ app.post('/api/stripe/create-payment-intent', async (req, res) => {
   } catch (error) {
     console.error('Error creating Payment Intent:', error);
     res.status(500).json({ error: 'Failed to create Payment Intent' });
+  }
+});
+
+app.post('/api/stripe/release-payment', async (req, res) => {
+  try {
+    const { paymentIntentId, amount } = req.body;
+
+    const transfer = await stripe.transfers.create({
+      amount,
+      currency: 'usd',
+      destination: 'acct_1PXYZxK1H3j9Zx', // placeholder
+      transfer_group: paymentIntentId,
+    });
+
+    res.json({ success: true, transfer });
+  } catch (error) {
+    console.error('Error releasing payment:', error);
+    res.status(500).json({ error: 'Failed to release payment' });
   }
 });
 

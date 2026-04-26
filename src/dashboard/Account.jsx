@@ -22,6 +22,13 @@ export default function Account() {
   const [stripeStatus, setStripeStatus] = useState('connected'); // 'connected' | 'disconnected' | 'warning'
   const [stripeAccountId, setStripeAccountId] = useState('acct_1PxYzZK1H3j9Zx');
 
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('stripe_return')) {
+      setStripeStatus('connected');
+    }
+  }, []);
+
   const handleSave = () => {
     // Save profile changes (mock)
     setEditing(false);
